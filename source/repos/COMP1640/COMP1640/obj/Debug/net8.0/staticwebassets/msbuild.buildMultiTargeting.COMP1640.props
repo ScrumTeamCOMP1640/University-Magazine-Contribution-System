@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\COMP1640.props" />
+</Project>
