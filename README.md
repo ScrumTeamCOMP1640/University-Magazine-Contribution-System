@@ -1,4 +1,4 @@
-**University Magazine Contribution System (UMCS)**
+# University Magazine Contribution System (UMCS)
 
 The University **Magazine Contribution System (UMCS)** is a web-based platform designed to facilitate the submission and management of content for university magazines. Whether you’re a student, faculty member, or contributor, UMCS streamlines the process of sharing articles, essays, and other written pieces within the university community.
 
