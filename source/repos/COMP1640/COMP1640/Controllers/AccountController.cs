@@ -56,7 +56,7 @@ namespace COMP1640.Controllers
                     {
                         case 1:
                             HttpContext.Session.SetString("Role", "Administrator");
-                            return RedirectToAction("Index", "Home", new { area = "Admin" });
+                            return RedirectToAction("Index", "AdminHome", new { area = "Admin" });
                         case 2:
                             HttpContext.Session.SetString("Role", "Marketing Manager");
                             return RedirectToAction("Index", "Home");
