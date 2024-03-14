@@ -7,12 +7,14 @@ namespace COMP1640.Controllers
 	public class HomeController : Controller
 	{
 		private readonly ILogger<HomeController> _logger;
-
-		public HomeController(ILogger<HomeController> logger)
+		private readonly UmcsContext _umcs;
+		public HomeController(ILogger<HomeController> logger, UmcsContext umcs)
 		{
 			_logger = logger;
+			_umcs = umcs;
 		}
 
+		
 		public IActionResult Index()
 		{
 			return View();

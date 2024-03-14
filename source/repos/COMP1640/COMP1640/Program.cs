@@ -1,7 +1,15 @@
+using COMP1640.Models;
+using Microsoft.EntityFrameworkCore;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
+
+var connectionString = builder.Configuration.GetConnectionString("UmcsContext");
+builder.Services.AddDbContext<UmcsContext>(x => x.UseSqlServer(connectionString));
+
+builder.Services.AddSession();
 
 var app = builder.Build();
 
@@ -15,6 +23,8 @@ if (!app.Environment.IsDevelopment())
 
 app.UseHttpsRedirection();
 app.UseStaticFiles();
+
+app.UseSession();
 
 app.UseRouting();
 
