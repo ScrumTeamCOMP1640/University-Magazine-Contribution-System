@@ -1,0 +1,37 @@
+﻿@{
+    ViewData["Title"] = "Add User";
+	Layout = "~/Areas/Admin/Views/Shared/LayoutAdmin.cshtml";
+}
+
+<div class="section__body">
+    <div class="container">
+        <div class="title">Add User</div>
+        <div class="content">
+            <form action="">
+                <div class="form-details">
+                    <div class="input-box">
+                        <span class="details">Username</span>
+                        <input type="text" id="username" name="username" placeholder="Enter username">
+                    </div>
+                    <div class="input-box">
+                        <span class="details">Email</span>
+                        <input type="email" id="email" name="email" placeholder="Enter email">
+                    </div>
+                    <div class="input-box">
+                        <span class="details">Role</span>
+                        <select name="role" id="role">
+                            <option value="1">Administrator</option>
+                            <option value="2">Marketing Manager</option>
+                            <option value="3">Marketing Coordinator</option>
+                            <option value="4">Student</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="button__container">
+                    <button type="submit" class="button primary">Create</button>
+                    <a asp-area="Admin" asp-controller="User" asp-action="Index" class="button cancel">Cancel</a>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
