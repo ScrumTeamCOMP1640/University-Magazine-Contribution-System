@@ -1,5 +1,8 @@
-﻿using COMP1640.Models;
+﻿using Azure;
+using COMP1640.Models;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
+using X.PagedList;
 
 namespace COMP1640.Areas.Admin.Controllers
 {
@@ -8,10 +11,15 @@ namespace COMP1640.Areas.Admin.Controllers
     public class RoleController : Controller
     {
         UmcsContext _umcs = new UmcsContext();
-        public IActionResult Index()
+
+        [Route("")]
+        public IActionResult Index(int? page)
         {
-            var roles = _umcs.Roles.ToList();
-            return View(roles);
+            int pageSize = 10;
+            int pageNumber = page == null || page < 0 ? 1 : page.Value;
+            var lstRole = _umcs.Roles.AsNoTracking().OrderBy(_umcs => _umcs.RoleId);
+            PagedList<Role> model = new PagedList<Role>(lstRole, pageNumber, pageSize);
+            return View(model);
         }
 
         [Route("Add")]
@@ -37,10 +45,21 @@ namespace COMP1640.Areas.Admin.Controllers
 
         [Route("Edit")]
         [HttpGet]
-        public IActionResult Edit(int id)
+        public IActionResult Edit(int? id)
         {
+            if (id == null)
+            {
+                return NotFound();
+            }
 
-            return View(_umcs.Roles.FirstOrDefault(m => m.RoleId.Equals(id)));
+            var role = _umcs.Roles.Find(id);
+
+            if (role == null)
+            {
+                return NotFound();
+            }
+
+            return View(role);
         }
 
         [Route("Edit")]
@@ -50,7 +69,7 @@ namespace COMP1640.Areas.Admin.Controllers
         {
             if (ModelState.IsValid)
             {
-                _umcs.Roles.Update(role);
+                _umcs.Entry(role).State = EntityState.Modified;
                 _umcs.SaveChanges();
                 return RedirectToAction("Index");
             }
@@ -65,11 +84,6 @@ namespace COMP1640.Areas.Admin.Controllers
             if(role == null)
             {
                 return NotFound();
-            }
-
-            if (role.Users.Count > 0)
-            {
-                return BadRequest();
             }
 
             _umcs.Roles.Remove(role);

@@ -1,4 +1,6 @@
-﻿﻿
+﻿@{
+    var username = Context.Session.GetString("UserName");
+}﻿
 <!DOCTYPE html>
 <html lang="en">
 
@@ -9,6 +11,27 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="stylesheet" href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css">
     <title>@ViewBag.Title</title>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script>
+        function confirmation(e) {
+            e.preventDefault();
+            var urlToRedirect = e.currentTarget.getAttribute('href');
+
+            Swal.fire({
+                title: 'Are you sure?',
+                text: "You won't be able to revert this!",
+                icon: 'warning',
+                showCancelButton: true,
+                confirmButtonColor: '#3085d6',
+                cancelButtonColor: '#d33',
+                confirmButtonText: 'Yes, delete it!'
+            }).then((result) => {
+                if (result.isConfirmed) {
+                    window.location.href = urlToRedirect;
+                }
+            })
+        }
+    </script>
 </head>
 
 <body>
@@ -30,7 +53,14 @@
 
                 <div class="admin-account">
                     <span class="avatar" style="background-image: url(@Url.Content("~/admin/img/admin.png"));"></span>
-                    <span class="admin-name">Administrator</span>
+                    @if (!string.IsNullOrEmpty(username))
+                    {
+                        <span class="admin-name">@username</span>
+                    }
+                    else
+                    {
+                        <span class="admin-name">Administrator</span>
+                    }
                 </div>
             </div>
         </header>
@@ -46,7 +76,7 @@
                         </li>
 
                         <li class="nav-link">
-                            <a href="#">
+                            <a asp-area="Admin" asp-controller="Role" asp-action="Index">
                                 <i class="bx bxs-universal-access icon"></i>
                                 <span class="text nav-text">Roles</span>
                             </a>
