@@ -13,6 +13,8 @@ public partial class User
 
     public string? Email { get; set; }
 
+    public string? Avatar { get; set; }
+
     public int RoleId { get; set; }
 
     public virtual ICollection<Article> Articles { get; set; } = new List<Article>();

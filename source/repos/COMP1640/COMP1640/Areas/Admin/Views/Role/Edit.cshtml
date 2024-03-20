@@ -1,0 +1,13 @@
+﻿@model COMP1640.Models.Role
+
+<h1>Rolde Edit</h1>
+
+@using (Html.BeginForm("Edit", "Role", FormMethod.Post))
+{
+    <div>
+        @Html.HiddenFor(m => m.RoleId)
+        @Html.TextBoxFor(m => m.RoleName, new { @class = "form-control", value = "@Model.RoleName" })
+    </div>
+    <button type="submit" class="btn btn-primary">Save</button>
+    <button asp-area="Admin" asp-controller="Role" asp-action="Index" class="btn btn-primary">Return</button>
+}

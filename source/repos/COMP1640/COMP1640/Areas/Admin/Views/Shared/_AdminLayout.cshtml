@@ -1,13 +1,94 @@
-﻿<!DOCTYPE html>
+﻿﻿
+<!DOCTYPE html>
+<html lang="en">
 
-<html>
 <head>
-    <meta name="viewport" content="width=device-width" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="~/admin/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css">
     <title>@ViewBag.Title</title>
 </head>
+
 <body>
-    <div>
-        @RenderBody()
+    <div class="main">
+        <header class="section__header">
+            <div class="header__menu">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+            <div class="header__logo">
+                <a href="#" class="header__logo-link">
+                    <img class="header__logo-img" src="~/admin/img/logo.svg" alt="">
+                </a>
+            </div>
+
+            <div class="header__left">
+                <div class="notification">
+                    <i class="fa-solid fa-bell"></i>
+                </div>
+
+                <div class="admin-account">
+                    <span class="avatar" style="background-image: url(@Url.Content("~/admin/img/admin.png"));"></span>
+                    <span class="admin-name">Administrator</span>
+                </div>
+            </div>
+        </header>
+        <nav class="sidebar">
+            <div class="menu-bar">
+                <div class="menu">
+                    <ul class="menu-links">
+                        <li class="nav-link">
+                            <a href="#">
+                                <i class="bx bx-home-alt icon"></i>
+                                <span class="text nav-text">Dashboard</span>
+                            </a>
+                        </li>
+
+                        <li class="nav-link">
+                            <a href="#">
+                                <i class="bx bxs-universal-access icon"></i>
+                                <span class="text nav-text">Roles</span>
+                            </a>
+                        </li>
+
+                        <li class="nav-link">
+                            <a asp-area="Admin" asp-controller="User" asp-action="Index">
+                                <i class="bx bxs-user-account icon"></i>
+                                <span class="text nav-text">Users</span>
+                            </a>
+                        </li>
+
+                        <li class="nav-link">
+                            <a href="#">
+                                <i class="bx bxs-graduation icon"></i>
+                                <span class="text nav-text">Faculties</span>
+                            </a>
+                        </li>
+
+                        <li class="nav-link">
+                            <a href="#">
+                                <i class="bx bxs-calendar-event icon"></i>
+                                <span class="text nav-text">Semester</span>
+                            </a>
+                        </li>
+
+                        <li class="nav-link">
+                            <a asp-controller="Account" asp-action="Logout">
+                                <i class="bx bx-log-out icon"></i>
+                                <span class="text nav-text">Logout</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <section class="home">
+            @RenderBody()
+        </section>
+
     </div>
 </body>
+
 </html>

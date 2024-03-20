@@ -5,6 +5,18 @@
       "PackagePath": "staticwebassets\\COMP1640.bundle.scp.css"
     },
     {
+      "Id": "C:\\Users\\PC\\source\\repos\\University-Magazine-Contribution-System\\source\\repos\\COMP1640\\COMP1640\\wwwroot\\admin\\css\\style.css",
+      "PackagePath": "staticwebassets\\admin\\css\\style.css"
+    },
+    {
+      "Id": "C:\\Users\\PC\\source\\repos\\University-Magazine-Contribution-System\\source\\repos\\COMP1640\\COMP1640\\wwwroot\\admin\\img\\admin.png",
+      "PackagePath": "staticwebassets\\admin\\img\\admin.png"
+    },
+    {
+      "Id": "C:\\Users\\PC\\source\\repos\\University-Magazine-Contribution-System\\source\\repos\\COMP1640\\COMP1640\\wwwroot\\admin\\img\\logo.svg",
+      "PackagePath": "staticwebassets\\admin\\img\\logo.svg"
+    },
+    {
       "Id": "C:\\Users\\PC\\source\\repos\\University-Magazine-Contribution-System\\source\\repos\\COMP1640\\COMP1640\\wwwroot\\css\\base.css",
       "PackagePath": "staticwebassets\\css\\base.css"
     },
@@ -263,6 +275,22 @@
     {
       "Id": "C:\\Users\\PC\\source\\repos\\University-Magazine-Contribution-System\\source\\repos\\COMP1640\\COMP1640\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
+    },
+    {
+      "Id": "C:\\Users\\PC\\source\\repos\\University-Magazine-Contribution-System\\source\\repos\\COMP1640\\COMP1640\\wwwroot\\login\\css\\style.css",
+      "PackagePath": "staticwebassets\\login\\css\\style.css"
+    },
+    {
+      "Id": "C:\\Users\\PC\\source\\repos\\University-Magazine-Contribution-System\\source\\repos\\COMP1640\\COMP1640\\wwwroot\\login\\img\\login.svg",
+      "PackagePath": "staticwebassets\\login\\img\\login.svg"
+    },
+    {
+      "Id": "C:\\Users\\PC\\source\\repos\\University-Magazine-Contribution-System\\source\\repos\\COMP1640\\COMP1640\\wwwroot\\login\\img\\logo.svg",
+      "PackagePath": "staticwebassets\\login\\img\\logo.svg"
+    },
+    {
+      "Id": "C:\\Users\\PC\\source\\repos\\University-Magazine-Contribution-System\\source\\repos\\COMP1640\\COMP1640\\wwwroot\\login\\js\\script.js",
+      "PackagePath": "staticwebassets\\login\\js\\script.js"
     },
     {
       "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.COMP1640.Microsoft.AspNetCore.StaticWebAssets.props",

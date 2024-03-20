@@ -1,0 +1,37 @@
+﻿@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+@model List<COMP1640.Models.Role>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<h1>Role Index</h1>
+<a asp-area="Admin" asp-controller="Role" asp-action="Add" class="btn add">
+	<i class="fa-solid fa-plus"></i>
+</a>
+<table>
+	<thead>
+        <tr>
+            <th>
+                Role Name
+            </th>
+            <th>
+                Action
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var role in Model)
+        {
+            <tr>
+                <td>
+                    @role.RoleName
+                </td>
+                <td>
+                    <a asp-area="Admin" asp-controller="Role" asp-action="Edit" asp-route-id="@role.RoleId" class="btn edit">
+                    <i class="fa-solid fa-edit"></i>
+                    </a>
+                    <a asp-area="Admin" asp-controller="Role" asp-action="Delete" asp-route-id="@role.RoleId" class="btn delete">
+                    <i class="fa-solid fa-trash">Delete</i>
+                    </a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

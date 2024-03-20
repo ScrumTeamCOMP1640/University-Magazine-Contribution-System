@@ -1,21 +1,17 @@
 ﻿using COMP1640.Models;
 using Microsoft.AspNetCore.Mvc;
+using System.Web.Helpers;
 
 namespace COMP1640.Controllers
 {
     public class AccountController : Controller
     {
-        private readonly UmcsContext _umcs;
-
-        public AccountController(UmcsContext umcs)
-        {
-            _umcs = umcs;
-        }
-
+        UmcsContext _umcs = new UmcsContext();
         public IActionResult Login()
         {
             if (HttpContext.Session.GetString("Email") == null)
             {
+                ViewBag.Role = _umcs.Roles.ToList();
                 return View();
             }
             else
@@ -33,24 +29,21 @@ namespace COMP1640.Controllers
                 return RedirectToAction("Index", "Home");
             }
 
-            var customer = _umcs.Users.FirstOrDefault(x => x.Username.Equals(user1.Username));
+            var customer = _umcs.Users.FirstOrDefault(u => u.Email == user1.Email);
 
             if (customer != null)
             {
-                if (user1.Password != null && user1.Password.Equals(customer.Password)/*Crypto.VerifyHashedPassword(customer.Password, user1.Password)*/)
+                if (user1.Password != null && Crypto.VerifyHashedPassword(customer.Password, user1.Password))
                 {
-                    HttpContext.Session.SetString("Email", customer.Email);
-                    HttpContext.Session.SetString("Username", customer.Username);
-
-                    /*if (IsAdmin(customer.RoleId))
+                    if (customer.Username != null)
                     {
-                        return RedirectToAction("Index", "Home", new { area = "Admin" });
+                        HttpContext.Session.SetString("Username", customer.Username);
                     }
-                    else
+
+                    if (customer.Email != null)
                     {
-                        HttpContext.Session.SetString("Role", "Student");
-                        return RedirectToAction("Index", "Home");
-                    }*/
+                        HttpContext.Session.SetString("Email", customer.Email);
+                    }
 
                     switch (customer.RoleId)
                     {
@@ -80,7 +73,7 @@ namespace COMP1640.Controllers
         public IActionResult Logout()
         {
             HttpContext.Session.Clear();
-            return RedirectToAction("Index", "Home");
+            return View("Login");
         }
     }
 }

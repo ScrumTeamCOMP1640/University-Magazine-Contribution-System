@@ -3,12 +3,3 @@
     Layout = "~/Areas/Admin/Views/Shared/_AdminLayout.cshtml";
     var username = Context.Session.GetString("Username");
 }
-
-@if (username != null)
-{
-    <h1>Welcome to Admin Page, @username</h1>
-}
-else
-{
-    <h1>This is Admin Home Page</h1>
-}
