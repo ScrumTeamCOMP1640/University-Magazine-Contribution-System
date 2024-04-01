@@ -42,7 +42,12 @@
             </div>
         </div>
     </div>
-
+    @if (TempData["LoginError"] != null)
+    {
+        <div class="error-message">
+            <p>@TempData["LoginError"]</p>
+        </div>
+    })
     <script src="~/login/js/script.js"></script>
 </body>
 

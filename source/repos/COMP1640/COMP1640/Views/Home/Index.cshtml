@@ -1,12 +1,112 @@
 ﻿@{
     ViewData["Title"] = "Home Page";
+    Layout = "~/Views/Shared/_Layout.cshtml";
 	var username = Context.Session.GetString("Username");
 }
-@if(username != null)
-{
-    <h1>Welcome to Home Page, @username</h1>
-}
-else
-{
-    <h1>This is Home Page</h1>
-}
+
+@model X.PagedList.IPagedList<COMP1640.Models.Article>
+
+<div class="main__container">
+    <img src="~/img/gre.png" class="background">
+    <div class="grid wide">
+        <div class="row sm-gutter main__content">
+            <div class="col l-3">
+                <table class="category">
+                    <tbody>
+                        <tr>
+                            <th colspan="2">Faculty</th>
+                        </tr>
+                        <tr class="fac-name">
+                            <td>Name</td>
+                            <td>IT</td>
+                        </tr>
+                        <tr>
+                            <td>Status</td>
+                            <td>
+                                <p class="status">Active</p>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <th>Term</th>
+                            <td class="term-name">
+                                <select name="" id="">
+                                    <option value="" selected>Spring</option>
+                                    <option value="">Summer</option>
+                                    <option value="">Fall</option>
+                                    <option value="">Winter</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr class="date">
+                            <td>Start Date</td>
+                            <td>19-Feb-2024</td>
+                        </tr>
+                        <tr class="date">
+                            <td>End Date</td>
+                            <td>25-Apr-2024</td>
+                        </tr>
+                        <tr>
+                            <td>Status</td>
+                            <td>
+                                <p class="status">Active</p>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+                <div class="col l-9">
+                <div class="home-item-list">
+                    <div class="row sm-gutter">
+                    @foreach (var article in Model)
+                    {
+                        <div class="col l-4">
+                            <a asp-controller="Home" asp-action="ContributeDetail" asp-route-id="@article.ArticleId" class="home-item">
+                                <div class="home-item__img"
+                                         style="background-image: url('@Url.Content("~/UploadedFiles/" + article.ImagePath)');">
+                                </div>
+                                <h3 class="home-item__title">@article.Title</h3>
+                                <h4 class="home-item__description">Plus: A brief history of art on the moon</h4>
+                                <div class="home-item__detail">
+                                    <div class="author__img-container">
+                                        <img src="~/img/user_avatar.png">
+                                    </div>
+                                    <ul class="author__profile">
+                                        @foreach (var user in ViewBag.Users)
+                                        {
+                                            if (user.UserId == article.UserId)
+                                            {                                              
+                                                <li class="author__name">@user.Username</li>
+                                            }
+                                        }
+                                        
+                                        <li class="home-item__date">@String.Format("{0:D}", @article.SubmissionDate)</li>
+                                    </ul>
+                                </div>
+                                <div class="home-item__status">
+                                    @if (article.Status == "Pending")
+                                    {
+                                        <i class="fa-solid fa-spinner"></i>
+                                        <span class="pending">@article.Status</span>
+                                    }
+                                    else if (article.Status == "Denied")
+                                    {
+                                        <i class="fa-solid fa-xmark"></i>
+                                        <span class="rejected">@article.Status</span>
+                                    }
+                                    else if (article.Status == "Approved")
+                                    {
+                                        <i class="fa-solid fa-check"></i>
+                                        <span class="approved">@article.Status</span>
+                                    }
+                                </div>
+                            </a>
+                        </div>
+                    }
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

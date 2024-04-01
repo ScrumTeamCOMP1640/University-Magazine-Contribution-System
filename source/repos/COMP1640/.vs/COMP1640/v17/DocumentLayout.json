@@ -3,56 +3,53 @@
   "WorkspaceRootPath": "C:\\Users\\PC\\source\\repos\\University-Magazine-Contribution-System\\source\\repos\\COMP1640\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{CF23E180-1CA1-40BC-830A-C1B50256F947}|COMP1640\\COMP1640.csproj|c:\\users\\pc\\source\\repos\\university-magazine-contribution-system\\source\\repos\\comp1640\\comp1640\\areas\\admin\\views\\shared\\_adminlayout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{CF23E180-1CA1-40BC-830A-C1B50256F947}|COMP1640\\COMP1640.csproj|solutionrelative:comp1640\\areas\\admin\\views\\shared\\_adminlayout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{CF23E180-1CA1-40BC-830A-C1B50256F947}|COMP1640\\COMP1640.csproj|c:\\users\\pc\\source\\repos\\university-magazine-contribution-system\\source\\repos\\comp1640\\comp1640\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{CF23E180-1CA1-40BC-830A-C1B50256F947}|COMP1640\\COMP1640.csproj|solutionrelative:comp1640\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{CF23E180-1CA1-40BC-830A-C1B50256F947}|COMP1640\\COMP1640.csproj|c:\\users\\pc\\source\\repos\\university-magazine-contribution-system\\source\\repos\\comp1640\\comp1640\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{CF23E180-1CA1-40BC-830A-C1B50256F947}|COMP1640\\COMP1640.csproj|solutionrelative:comp1640\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{CF23E180-1CA1-40BC-830A-C1B50256F947}|COMP1640\\COMP1640.csproj|c:\\users\\pc\\source\\repos\\university-magazine-contribution-system\\source\\repos\\comp1640\\comp1640\\areas\\admin\\controllers\\rolecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CF23E180-1CA1-40BC-830A-C1B50256F947}|COMP1640\\COMP1640.csproj|solutionrelative:comp1640\\areas\\admin\\controllers\\rolecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{CF23E180-1CA1-40BC-830A-C1B50256F947}|COMP1640\\COMP1640.csproj|c:\\users\\pc\\source\\repos\\university-magazine-contribution-system\\source\\repos\\comp1640\\comp1640\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CF23E180-1CA1-40BC-830A-C1B50256F947}|COMP1640\\COMP1640.csproj|solutionrelative:comp1640\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{CF23E180-1CA1-40BC-830A-C1B50256F947}|COMP1640\\COMP1640.csproj|c:\\users\\pc\\source\\repos\\university-magazine-contribution-system\\source\\repos\\comp1640\\comp1640\\areas\\admin\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CF23E180-1CA1-40BC-830A-C1B50256F947}|COMP1640\\COMP1640.csproj|solutionrelative:comp1640\\areas\\admin\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{CF23E180-1CA1-40BC-830A-C1B50256F947}|COMP1640\\COMP1640.csproj|c:\\users\\pc\\source\\repos\\university-magazine-contribution-system\\source\\repos\\comp1640\\comp1640\\models\\article.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CF23E180-1CA1-40BC-830A-C1B50256F947}|COMP1640\\COMP1640.csproj|solutionrelative:comp1640\\models\\article.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{CF23E180-1CA1-40BC-830A-C1B50256F947}|COMP1640\\COMP1640.csproj|c:\\users\\pc\\source\\repos\\university-magazine-contribution-system\\source\\repos\\comp1640\\comp1640\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{CF23E180-1CA1-40BC-830A-C1B50256F947}|COMP1640\\COMP1640.csproj|solutionrelative:comp1640\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{CF23E180-1CA1-40BC-830A-C1B50256F947}|COMP1640\\COMP1640.csproj|c:\\users\\pc\\source\\repos\\university-magazine-contribution-system\\source\\repos\\comp1640\\comp1640\\services\\fileservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CF23E180-1CA1-40BC-830A-C1B50256F947}|COMP1640\\COMP1640.csproj|solutionrelative:comp1640\\services\\fileservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CF23E180-1CA1-40BC-830A-C1B50256F947}|COMP1640\\COMP1640.csproj|c:\\users\\pc\\source\\repos\\university-magazine-contribution-system\\source\\repos\\comp1640\\comp1640\\controllers\\filecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CF23E180-1CA1-40BC-830A-C1B50256F947}|COMP1640\\COMP1640.csproj|solutionrelative:comp1640\\controllers\\filecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CF23E180-1CA1-40BC-830A-C1B50256F947}|COMP1640\\COMP1640.csproj|c:\\users\\pc\\source\\repos\\university-magazine-contribution-system\\source\\repos\\comp1640\\comp1640\\views\\home\\submission.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{CF23E180-1CA1-40BC-830A-C1B50256F947}|COMP1640\\COMP1640.csproj|solutionrelative:comp1640\\views\\home\\submission.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CF23E180-1CA1-40BC-830A-C1B50256F947}|COMP1640\\COMP1640.csproj|c:\\users\\pc\\source\\repos\\university-magazine-contribution-system\\source\\repos\\comp1640\\comp1640\\views\\home\\contributedetail.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{CF23E180-1CA1-40BC-830A-C1B50256F947}|COMP1640\\COMP1640.csproj|solutionrelative:comp1640\\views\\home\\contributedetail.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|ViewDataWindow_MSSQL__/MSI_SQLEXPRESS/UMCS/True/SqlTable/dbo.Users.sql||{0058A1F7-65F3-4DB9-B3D0-CA7E64DD73CD}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|ViewDataWindow_MSSQL__/MSI_SQLEXPRESS/UMCS/True/SqlTable/dbo.FaU.sql||{0058A1F7-65F3-4DB9-B3D0-CA7E64DD73CD}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|ViewDataWindow_MSSQL__/MSI_SQLEXPRESS/UMCS/True/SqlTable/dbo.Articles.sql||{0058A1F7-65F3-4DB9-B3D0-CA7E64DD73CD}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CF23E180-1CA1-40BC-830A-C1B50256F947}|COMP1640\\COMP1640.csproj|c:\\users\\pc\\source\\repos\\university-magazine-contribution-system\\source\\repos\\comp1640\\comp1640\\controllers\\mailcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CF23E180-1CA1-40BC-830A-C1B50256F947}|COMP1640\\COMP1640.csproj|solutionrelative:comp1640\\controllers\\mailcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{CF23E180-1CA1-40BC-830A-C1B50256F947}|COMP1640\\COMP1640.csproj|c:\\users\\pc\\source\\repos\\university-magazine-contribution-system\\source\\repos\\comp1640\\comp1640\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{CF23E180-1CA1-40BC-830A-C1B50256F947}|COMP1640\\COMP1640.csproj|solutionrelative:comp1640\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CF23E180-1CA1-40BC-830A-C1B50256F947}|COMP1640\\COMP1640.csproj|c:\\users\\pc\\source\\repos\\university-magazine-contribution-system\\source\\repos\\comp1640\\comp1640\\areas\\admin\\views\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{CF23E180-1CA1-40BC-830A-C1B50256F947}|COMP1640\\COMP1640.csproj|solutionrelative:comp1640\\areas\\admin\\views\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CF23E180-1CA1-40BC-830A-C1B50256F947}|COMP1640\\COMP1640.csproj|c:\\users\\pc\\source\\repos\\university-magazine-contribution-system\\source\\repos\\comp1640\\comp1640\\areas\\admin\\views\\role\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{CF23E180-1CA1-40BC-830A-C1B50256F947}|COMP1640\\COMP1640.csproj|solutionrelative:comp1640\\areas\\admin\\views\\role\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CF23E180-1CA1-40BC-830A-C1B50256F947}|COMP1640\\COMP1640.csproj|c:\\users\\pc\\source\\repos\\university-magazine-contribution-system\\source\\repos\\comp1640\\comp1640\\areas\\admin\\views\\role\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{CF23E180-1CA1-40BC-830A-C1B50256F947}|COMP1640\\COMP1640.csproj|solutionrelative:comp1640\\areas\\admin\\views\\role\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CF23E180-1CA1-40BC-830A-C1B50256F947}|COMP1640\\COMP1640.csproj|c:\\users\\pc\\source\\repos\\university-magazine-contribution-system\\source\\repos\\comp1640\\comp1640\\areas\\admin\\views\\user\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{CF23E180-1CA1-40BC-830A-C1B50256F947}|COMP1640\\COMP1640.csproj|solutionrelative:comp1640\\areas\\admin\\views\\user\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CF23E180-1CA1-40BC-830A-C1B50256F947}|COMP1640\\COMP1640.csproj|c:\\users\\pc\\source\\repos\\university-magazine-contribution-system\\source\\repos\\comp1640\\comp1640\\areas\\admin\\views\\role\\add.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{CF23E180-1CA1-40BC-830A-C1B50256F947}|COMP1640\\COMP1640.csproj|solutionrelative:comp1640\\areas\\admin\\views\\role\\add.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CF23E180-1CA1-40BC-830A-C1B50256F947}|COMP1640\\COMP1640.csproj|c:\\users\\pc\\source\\repos\\university-magazine-contribution-system\\source\\repos\\comp1640\\comp1640\\areas\\admin\\views\\user\\add.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{CF23E180-1CA1-40BC-830A-C1B50256F947}|COMP1640\\COMP1640.csproj|solutionrelative:comp1640\\areas\\admin\\views\\user\\add.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CF23E180-1CA1-40BC-830A-C1B50256F947}|COMP1640\\COMP1640.csproj|c:\\users\\pc\\source\\repos\\university-magazine-contribution-system\\source\\repos\\comp1640\\comp1640\\areas\\admin\\views\\user\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{CF23E180-1CA1-40BC-830A-C1B50256F947}|COMP1640\\COMP1640.csproj|solutionrelative:comp1640\\areas\\admin\\views\\user\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
   ],
   "DocumentGroupContainers": [
@@ -62,7 +59,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 11,
+          "SelectedChildIndex": 12,
           "Children": [
             {
               "$type": "Bookmark",
@@ -92,166 +89,151 @@
               "RelativeDocumentMoniker": "COMP1640\\Controllers\\AccountController.cs",
               "ToolTip": "C:\\Users\\PC\\source\\repos\\University-Magazine-Contribution-System\\source\\repos\\COMP1640\\COMP1640\\Controllers\\AccountController.cs",
               "RelativeToolTip": "COMP1640\\Controllers\\AccountController.cs",
-              "ViewState": "AQIAACIAAAAAAAAAAAAjwBkAAAAIAAAA",
+              "ViewState": "AQIAAIEAAAAAAAAAAAAtwIMAAAAYAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-20T17:37:52.97Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "Edit.cshtml",
-              "DocumentMoniker": "C:\\Users\\PC\\source\\repos\\University-Magazine-Contribution-System\\source\\repos\\COMP1640\\COMP1640\\Areas\\Admin\\Views\\Role\\Edit.cshtml",
-              "RelativeDocumentMoniker": "COMP1640\\Areas\\Admin\\Views\\Role\\Edit.cshtml",
-              "ToolTip": "C:\\Users\\PC\\source\\repos\\University-Magazine-Contribution-System\\source\\repos\\COMP1640\\COMP1640\\Areas\\Admin\\Views\\Role\\Edit.cshtml",
-              "RelativeToolTip": "COMP1640\\Areas\\Admin\\Views\\Role\\Edit.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAA3AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-03-20T17:31:06.729Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "Add.cshtml",
-              "DocumentMoniker": "C:\\Users\\PC\\source\\repos\\University-Magazine-Contribution-System\\source\\repos\\COMP1640\\COMP1640\\Areas\\Admin\\Views\\Role\\Add.cshtml",
-              "RelativeDocumentMoniker": "COMP1640\\Areas\\Admin\\Views\\Role\\Add.cshtml",
-              "ToolTip": "C:\\Users\\PC\\source\\repos\\University-Magazine-Contribution-System\\source\\repos\\COMP1640\\COMP1640\\Areas\\Admin\\Views\\Role\\Add.cshtml",
-              "RelativeToolTip": "COMP1640\\Areas\\Admin\\Views\\Role\\Add.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAAvAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-03-20T17:28:59.815Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "RoleController.cs",
-              "DocumentMoniker": "C:\\Users\\PC\\source\\repos\\University-Magazine-Contribution-System\\source\\repos\\COMP1640\\COMP1640\\Areas\\Admin\\Controllers\\RoleController.cs",
-              "RelativeDocumentMoniker": "COMP1640\\Areas\\Admin\\Controllers\\RoleController.cs",
-              "ToolTip": "C:\\Users\\PC\\source\\repos\\University-Magazine-Contribution-System\\source\\repos\\COMP1640\\COMP1640\\Areas\\Admin\\Controllers\\RoleController.cs",
-              "RelativeToolTip": "COMP1640\\Areas\\Admin\\Controllers\\RoleController.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAIAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-20T17:24:39.729Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\PC\\source\\repos\\University-Magazine-Contribution-System\\source\\repos\\COMP1640\\COMP1640\\Areas\\Admin\\Views\\Role\\Index.cshtml",
-              "RelativeDocumentMoniker": "COMP1640\\Areas\\Admin\\Views\\Role\\Index.cshtml",
-              "ToolTip": "C:\\Users\\PC\\source\\repos\\University-Magazine-Contribution-System\\source\\repos\\COMP1640\\COMP1640\\Areas\\Admin\\Views\\Role\\Index.cshtml",
-              "RelativeToolTip": "COMP1640\\Areas\\Admin\\Views\\Role\\Index.cshtml",
-              "ViewState": "AQIAABUAAAAAAAAAAAAAACgAAAAdAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-03-20T17:21:49.566Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "Add.cshtml",
-              "DocumentMoniker": "C:\\Users\\PC\\source\\repos\\University-Magazine-Contribution-System\\source\\repos\\COMP1640\\COMP1640\\Areas\\Admin\\Views\\User\\Add.cshtml",
-              "RelativeDocumentMoniker": "COMP1640\\Areas\\Admin\\Views\\User\\Add.cshtml",
-              "ToolTip": "C:\\Users\\PC\\source\\repos\\University-Magazine-Contribution-System\\source\\repos\\COMP1640\\COMP1640\\Areas\\Admin\\Views\\User\\Add.cshtml",
-              "RelativeToolTip": "COMP1640\\Areas\\Admin\\Views\\User\\Add.cshtml",
-              "ViewState": "AQIAAAsAAAAAAAAAAAAkwCQAAAAGAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-03-20T14:47:08.423Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "_AdminLayout.cshtml",
-              "DocumentMoniker": "C:\\Users\\PC\\source\\repos\\University-Magazine-Contribution-System\\source\\repos\\COMP1640\\COMP1640\\Areas\\Admin\\Views\\Shared\\_AdminLayout.cshtml",
-              "RelativeDocumentMoniker": "COMP1640\\Areas\\Admin\\Views\\Shared\\_AdminLayout.cshtml",
-              "ToolTip": "C:\\Users\\PC\\source\\repos\\University-Magazine-Contribution-System\\source\\repos\\COMP1640\\COMP1640\\Areas\\Admin\\Views\\Shared\\_AdminLayout.cshtml",
-              "RelativeToolTip": "COMP1640\\Areas\\Admin\\Views\\Shared\\_AdminLayout.cshtml",
-              "ViewState": "AQIAACoAAAAAAAAAAAAAAD0AAAA+AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-03-20T13:42:08.652Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "UserController.cs",
-              "DocumentMoniker": "C:\\Users\\PC\\source\\repos\\University-Magazine-Contribution-System\\source\\repos\\COMP1640\\COMP1640\\Areas\\Admin\\Controllers\\UserController.cs",
-              "RelativeDocumentMoniker": "COMP1640\\Areas\\Admin\\Controllers\\UserController.cs",
-              "ToolTip": "C:\\Users\\PC\\source\\repos\\University-Magazine-Contribution-System\\source\\repos\\COMP1640\\COMP1640\\Areas\\Admin\\Controllers\\UserController.cs",
-              "RelativeToolTip": "COMP1640\\Areas\\Admin\\Controllers\\UserController.cs",
-              "ViewState": "AQIAAAMAAAAAAAAAAAAewBgAAAAIAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-20T14:18:27.582Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "_ViewImports.cshtml",
-              "DocumentMoniker": "C:\\Users\\PC\\source\\repos\\University-Magazine-Contribution-System\\source\\repos\\COMP1640\\COMP1640\\Areas\\Admin\\Views\\_ViewImports.cshtml",
-              "RelativeDocumentMoniker": "COMP1640\\Areas\\Admin\\Views\\_ViewImports.cshtml",
-              "ToolTip": "C:\\Users\\PC\\source\\repos\\University-Magazine-Contribution-System\\source\\repos\\COMP1640\\COMP1640\\Areas\\Admin\\Views\\_ViewImports.cshtml",
-              "RelativeToolTip": "COMP1640\\Areas\\Admin\\Views\\_ViewImports.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-03-20T17:37:08.917Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\PC\\source\\repos\\University-Magazine-Contribution-System\\source\\repos\\COMP1640\\COMP1640\\Views\\Home\\Index.cshtml",
-              "RelativeDocumentMoniker": "COMP1640\\Views\\Home\\Index.cshtml",
-              "ToolTip": "C:\\Users\\PC\\source\\repos\\University-Magazine-Contribution-System\\source\\repos\\COMP1640\\COMP1640\\Views\\Home\\Index.cshtml",
-              "RelativeToolTip": "COMP1640\\Views\\Home\\Index.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-03-20T17:42:04.265Z",
+              "WhenOpened": "2024-04-01T07:53:51.343Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 5,
-              "Title": "_Layout.cshtml",
-              "DocumentMoniker": "C:\\Users\\PC\\source\\repos\\University-Magazine-Contribution-System\\source\\repos\\COMP1640\\COMP1640\\Views\\Shared\\_Layout.cshtml",
-              "RelativeDocumentMoniker": "COMP1640\\Views\\Shared\\_Layout.cshtml",
-              "ToolTip": "C:\\Users\\PC\\source\\repos\\University-Magazine-Contribution-System\\source\\repos\\COMP1640\\COMP1640\\Views\\Shared\\_Layout.cshtml",
-              "RelativeToolTip": "COMP1640\\Views\\Shared\\_Layout.cshtml",
-              "ViewState": "AQIAABIAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-03-20T17:39:05.707Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\PC\\source\\repos\\University-Magazine-Contribution-System\\source\\repos\\COMP1640\\COMP1640\\Areas\\Admin\\Views\\User\\Index.cshtml",
-              "RelativeDocumentMoniker": "COMP1640\\Areas\\Admin\\Views\\User\\Index.cshtml",
-              "ToolTip": "C:\\Users\\PC\\source\\repos\\University-Magazine-Contribution-System\\source\\repos\\COMP1640\\COMP1640\\Areas\\Admin\\Views\\User\\Index.cshtml",
-              "RelativeToolTip": "COMP1640\\Areas\\Admin\\Views\\User\\Index.cshtml",
-              "ViewState": "AQIAABoAAAAAAAAAAAAIwDQAAAAGAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-03-20T10:02:09.738Z",
+              "Title": "FileController.cs",
+              "DocumentMoniker": "C:\\Users\\PC\\source\\repos\\University-Magazine-Contribution-System\\source\\repos\\COMP1640\\COMP1640\\Controllers\\FileController.cs",
+              "RelativeDocumentMoniker": "COMP1640\\Controllers\\FileController.cs",
+              "ToolTip": "C:\\Users\\PC\\source\\repos\\University-Magazine-Contribution-System\\source\\repos\\COMP1640\\COMP1640\\Controllers\\FileController.cs",
+              "RelativeToolTip": "COMP1640\\Controllers\\FileController.cs",
+              "ViewState": "AQIAAAcAAAAAAAAAAAAuwDEAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-01T07:48:27.449Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 9,
-              "Title": "Edit.cshtml",
-              "DocumentMoniker": "C:\\Users\\PC\\source\\repos\\University-Magazine-Contribution-System\\source\\repos\\COMP1640\\COMP1640\\Areas\\Admin\\Views\\User\\Edit.cshtml",
-              "RelativeDocumentMoniker": "COMP1640\\Areas\\Admin\\Views\\User\\Edit.cshtml",
-              "ToolTip": "C:\\Users\\PC\\source\\repos\\University-Magazine-Contribution-System\\source\\repos\\COMP1640\\COMP1640\\Areas\\Admin\\Views\\User\\Edit.cshtml",
-              "RelativeToolTip": "COMP1640\\Areas\\Admin\\Views\\User\\Edit.cshtml",
-              "ViewState": "AQIAAA4AAAAAAAAAAAAkwCcAAAAGAAAA",
+              "Title": "dbo.FaU [Data]",
+              "DocumentMoniker": "ViewDataWindow_MSSQL__/MSI_SQLEXPRESS/UMCS/True/SqlTable/dbo.FaU.sql",
+              "ToolTip": "dbo.FaU [Data]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
+              "WhenOpened": "2024-03-31T17:38:35.491Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "MailController.cs",
+              "DocumentMoniker": "C:\\Users\\PC\\source\\repos\\University-Magazine-Contribution-System\\source\\repos\\COMP1640\\COMP1640\\Controllers\\MailController.cs",
+              "RelativeDocumentMoniker": "COMP1640\\Controllers\\MailController.cs",
+              "ToolTip": "C:\\Users\\PC\\source\\repos\\University-Magazine-Contribution-System\\source\\repos\\COMP1640\\COMP1640\\Controllers\\MailController.cs",
+              "RelativeToolTip": "COMP1640\\Controllers\\MailController.cs",
+              "ViewState": "AQIAAAoAAAAAAAAAAAAQwBUAAAAMAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-31T17:31:48.16Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "C:\\Users\\PC\\source\\repos\\University-Magazine-Contribution-System\\source\\repos\\COMP1640\\COMP1640\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "COMP1640\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\Users\\PC\\source\\repos\\University-Magazine-Contribution-System\\source\\repos\\COMP1640\\COMP1640\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "COMP1640\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AQIAADcAAAAAAAAAAAAAAEAAAABBAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-03-20T10:02:57.675Z",
+              "WhenOpened": "2024-03-31T17:29:49.284Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "ContributeDetail.cshtml",
+              "DocumentMoniker": "C:\\Users\\PC\\source\\repos\\University-Magazine-Contribution-System\\source\\repos\\COMP1640\\COMP1640\\Views\\Home\\ContributeDetail.cshtml",
+              "RelativeDocumentMoniker": "COMP1640\\Views\\Home\\ContributeDetail.cshtml",
+              "ToolTip": "C:\\Users\\PC\\source\\repos\\University-Magazine-Contribution-System\\source\\repos\\COMP1640\\COMP1640\\Views\\Home\\ContributeDetail.cshtml",
+              "RelativeToolTip": "COMP1640\\Views\\Home\\ContributeDetail.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAACwAAAAZAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-03-31T16:58:22.054Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "dbo.Articles [Data]",
+              "DocumentMoniker": "ViewDataWindow_MSSQL__/MSI_SQLEXPRESS/UMCS/True/SqlTable/dbo.Articles.sql",
+              "ToolTip": "dbo.Articles [Data]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
+              "WhenOpened": "2024-03-31T16:40:23.549Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\PC\\source\\repos\\University-Magazine-Contribution-System\\source\\repos\\COMP1640\\COMP1640\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "COMP1640\\Views\\Home\\Index.cshtml",
+              "ToolTip": "C:\\Users\\PC\\source\\repos\\University-Magazine-Contribution-System\\source\\repos\\COMP1640\\COMP1640\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "COMP1640\\Views\\Home\\Index.cshtml",
+              "ViewState": "AQIAAGAAAAAAAAAAAAAAAGwAAAASAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-03-31T16:31:47.997Z",
               "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "FileService.cs",
+              "DocumentMoniker": "C:\\Users\\PC\\source\\repos\\University-Magazine-Contribution-System\\source\\repos\\COMP1640\\COMP1640\\Services\\FileService.cs",
+              "RelativeDocumentMoniker": "COMP1640\\Services\\FileService.cs",
+              "ToolTip": "C:\\Users\\PC\\source\\repos\\University-Magazine-Contribution-System\\source\\repos\\COMP1640\\COMP1640\\Services\\FileService.cs",
+              "RelativeToolTip": "COMP1640\\Services\\FileService.cs",
+              "ViewState": "AQIAAAQAAAAAAAAAAAAqwAoAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-31T16:13:00.124Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Article.cs",
+              "DocumentMoniker": "C:\\Users\\PC\\source\\repos\\University-Magazine-Contribution-System\\source\\repos\\COMP1640\\COMP1640\\Models\\Article.cs",
+              "RelativeDocumentMoniker": "COMP1640\\Models\\Article.cs",
+              "ToolTip": "C:\\Users\\PC\\source\\repos\\University-Magazine-Contribution-System\\source\\repos\\COMP1640\\COMP1640\\Models\\Article.cs",
+              "RelativeToolTip": "COMP1640\\Models\\Article.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAcAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-31T16:06:40.873Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "C:\\Users\\PC\\source\\repos\\University-Magazine-Contribution-System\\source\\repos\\COMP1640\\COMP1640\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "COMP1640\\Controllers\\HomeController.cs",
+              "ToolTip": "C:\\Users\\PC\\source\\repos\\University-Magazine-Contribution-System\\source\\repos\\COMP1640\\COMP1640\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "COMP1640\\Controllers\\HomeController.cs",
+              "ViewState": "AQIAAHIAAAAAAAAAAAAAAHkAAAA2AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-31T15:52:38.812Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Submission.cshtml",
+              "DocumentMoniker": "C:\\Users\\PC\\source\\repos\\University-Magazine-Contribution-System\\source\\repos\\COMP1640\\COMP1640\\Views\\Home\\Submission.cshtml",
+              "RelativeDocumentMoniker": "COMP1640\\Views\\Home\\Submission.cshtml",
+              "ToolTip": "C:\\Users\\PC\\source\\repos\\University-Magazine-Contribution-System\\source\\repos\\COMP1640\\COMP1640\\Views\\Home\\Submission.cshtml",
+              "RelativeToolTip": "COMP1640\\Views\\Home\\Submission.cshtml",
+              "ViewState": "AQIAAAwAAAAAAAAAAAAAABYAAABfAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-03-31T15:52:20.188Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "dbo.Users [Data]",
+              "DocumentMoniker": "ViewDataWindow_MSSQL__/MSI_SQLEXPRESS/UMCS/True/SqlTable/dbo.Users.sql",
+              "ToolTip": "dbo.Users [Data]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
+              "WhenOpened": "2024-03-31T18:00:41.585Z"
             }
           ]
         }

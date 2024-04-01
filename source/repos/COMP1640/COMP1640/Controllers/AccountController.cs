@@ -1,5 +1,7 @@
 ﻿using COMP1640.Models;
+using iText.Layout.Splitting;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using System.Web.Helpers;
 
 namespace COMP1640.Controllers
@@ -45,6 +47,11 @@ namespace COMP1640.Controllers
                         HttpContext.Session.SetString("Email", customer.Email);
                     }
 
+                    if (customer.Avatar != null)
+                    {
+                        HttpContext.Session.SetString("Avatar", customer.Avatar);
+                    }
+
                     switch (customer.RoleId)
                     {
                         case 1:
@@ -75,5 +82,62 @@ namespace COMP1640.Controllers
             HttpContext.Session.Clear();
             return View("Login");
         }
+
+        public IActionResult UpdateInfo()
+        {
+            var email = HttpContext.Session.GetString("Email");
+            var user = _umcs.Users.FirstOrDefault(u => u.Email == email);
+            return View(user);
+        }
+
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public IActionResult UpdateInfo(User user)
+        {
+            if (ModelState.IsValid)
+            {
+                if (user != null)
+                {
+                    _umcs.Entry(user).State = EntityState.Modified;
+                    _umcs.SaveChanges();
+                    return RedirectToAction("Index", "Home");
+                }
+            }
+            return View(user);
+        }
+
+        public IActionResult UpdatePass()
+        {
+            var email = HttpContext.Session.GetString("Email");
+            var user = _umcs.Users.FirstOrDefault(u => u.Email == email);
+            return View(user);
+        }
+
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public IActionResult UpdatePass(string password, string newPass, string confirmNewPass)
+        {
+            var email = HttpContext.Session.GetString("Email");
+            var user = _umcs.Users.FirstOrDefault(u => u.Email == email);
+            if(user != null)
+            {
+                if (Crypto.VerifyHashedPassword(user.Password, password))
+                {
+                    if (newPass == confirmNewPass)
+                    {
+                        user.Password = Crypto.HashPassword(newPass);
+                        _umcs.SaveChanges();
+                        
+                    }
+                    else
+                    {
+                        TempData["UpdatePassError"] = "Old password is incorrect.";
+                        return View();
+                    }
+                }
+            }
+            return Logout();
+        }
+
     }
 }

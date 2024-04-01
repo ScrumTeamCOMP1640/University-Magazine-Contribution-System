@@ -15,17 +15,15 @@ public partial class Article
 
     public DateTime? SubmissionDate { get; set; }
 
-    public int? FacultyId { get; set; }
-
     public int? UserId { get; set; }
 
     public string? Status { get; set; }
 
     public virtual ICollection<Comment> Comments { get; set; } = new List<Comment>();
 
-    public virtual Faculty? Faculty { get; set; }
-
     public virtual ICollection<SelectedArticle> SelectedArticles { get; set; } = new List<SelectedArticle>();
+
+    public virtual ICollection<Semester> Semesters { get; set; } = new List<Semester>();
 
     public virtual User? User { get; set; }
 }

@@ -3,20 +3,25 @@
     Layout = "~/Areas/Admin/Views/Shared/_AdminLayout.cshtml";
 }
 
+@model COMP1640.Models.User
+
 <div class="section__body">
     <div class="container">
         <div class="title">Add User</div>
         <div class="content">
             <form asp-area="Admin" asp-controller="User" asp-action="Add" method="post">
                 <div class="form-details">
+
                     <div class="input-box">
                         <span class="details">Username</span>
                         <input type="text" id="Username" name="username" placeholder="Enter username">
                     </div>
+
                     <div class="input-box">
                         <span class="details">Email</span>
                         <input type="email" id="Email" name="email" placeholder="Enter email">
                     </div>
+
                     <div class="input-box">
                         <span class="details">Role</span>
                         <select name="RoleId" id="role">
@@ -24,9 +29,15 @@
                             <option value="2">Marketing Manager</option>
                             <option value="3">Marketing Coordinator</option>
                             <option value="4">Student</option>
+                            <option value="10">Guest</option>
                         </select>
                     </div>
                 </div>
+
+                <div class="input-box">
+                    <input type="hidden" id="Password" name="Password" value="1">
+                </div>
+
                 <div class="button__container">
                     <button type="submit" class="button primary">Create</button>
                     <a asp-area="Admin" asp-controller="User" asp-action="Index" class="button cancel">Cancel</a>

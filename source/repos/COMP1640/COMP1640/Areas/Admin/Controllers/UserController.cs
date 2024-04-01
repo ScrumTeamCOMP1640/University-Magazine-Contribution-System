@@ -19,8 +19,9 @@ namespace COMP1640.Areas.Admin.Controllers
         {
             int pageSize = 10;
             int pageNumber = page == null || page < 0 ? 1 : page.Value ;
-            var lstUser = _umcs.Users.AsNoTracking().OrderBy(_umcs => _umcs.UserId);
+            var lstUser = _umcs.Users.AsNoTracking().OrderBy(_umcs => _umcs.RoleId);
             PagedList<User> model = new PagedList<User>(lstUser, pageNumber, pageSize);
+            ViewBag.Roles = _umcs.Roles.ToList();
             return View(model);
         }
 

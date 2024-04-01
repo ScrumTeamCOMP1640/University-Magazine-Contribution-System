@@ -5,6 +5,30 @@
       "PackagePath": "staticwebassets\\COMP1640.bundle.scp.css"
     },
     {
+      "Id": "C:\\Users\\PC\\source\\repos\\University-Magazine-Contribution-System\\source\\repos\\COMP1640\\COMP1640\\wwwroot\\UploadedFiles\\File_PDF_1MB.pdf",
+      "PackagePath": "staticwebassets\\UploadedFiles\\File_PDF_1MB.pdf"
+    },
+    {
+      "Id": "C:\\Users\\PC\\source\\repos\\University-Magazine-Contribution-System\\source\\repos\\COMP1640\\COMP1640\\wwwroot\\UploadedFiles\\File_PDF_5MB.pdf",
+      "PackagePath": "staticwebassets\\UploadedFiles\\File_PDF_5MB.pdf"
+    },
+    {
+      "Id": "C:\\Users\\PC\\source\\repos\\University-Magazine-Contribution-System\\source\\repos\\COMP1640\\COMP1640\\wwwroot\\UploadedFiles\\IMG_ONE.png",
+      "PackagePath": "staticwebassets\\UploadedFiles\\IMG_ONE.png"
+    },
+    {
+      "Id": "C:\\Users\\PC\\source\\repos\\University-Magazine-Contribution-System\\source\\repos\\COMP1640\\COMP1640\\wwwroot\\UploadedFiles\\Simple_IMG.png",
+      "PackagePath": "staticwebassets\\UploadedFiles\\Simple_IMG.png"
+    },
+    {
+      "Id": "C:\\Users\\PC\\source\\repos\\University-Magazine-Contribution-System\\source\\repos\\COMP1640\\COMP1640\\wwwroot\\UploadedFiles\\download.jpg",
+      "PackagePath": "staticwebassets\\UploadedFiles\\download.jpg"
+    },
+    {
+      "Id": "C:\\Users\\PC\\source\\repos\\University-Magazine-Contribution-System\\source\\repos\\COMP1640\\COMP1640\\wwwroot\\UploadedFiles\\file-sample_1MB.doc",
+      "PackagePath": "staticwebassets\\UploadedFiles\\file-sample_1MB.doc"
+    },
+    {
       "Id": "C:\\Users\\PC\\source\\repos\\University-Magazine-Contribution-System\\source\\repos\\COMP1640\\COMP1640\\wwwroot\\admin\\css\\style.css",
       "PackagePath": "staticwebassets\\admin\\css\\style.css"
     },
@@ -21,16 +45,12 @@
       "PackagePath": "staticwebassets\\css\\base.css"
     },
     {
-      "Id": "C:\\Users\\PC\\source\\repos\\University-Magazine-Contribution-System\\source\\repos\\COMP1640\\COMP1640\\wwwroot\\css\\bg.jpg",
-      "PackagePath": "staticwebassets\\css\\bg.jpg"
-    },
-    {
       "Id": "C:\\Users\\PC\\source\\repos\\University-Magazine-Contribution-System\\source\\repos\\COMP1640\\COMP1640\\wwwroot\\css\\grid.css",
       "PackagePath": "staticwebassets\\css\\grid.css"
     },
     {
-      "Id": "C:\\Users\\PC\\source\\repos\\University-Magazine-Contribution-System\\source\\repos\\COMP1640\\COMP1640\\wwwroot\\css\\site.css",
-      "PackagePath": "staticwebassets\\css\\site.css"
+      "Id": "C:\\Users\\PC\\source\\repos\\University-Magazine-Contribution-System\\source\\repos\\COMP1640\\COMP1640\\wwwroot\\css\\responsive.css",
+      "PackagePath": "staticwebassets\\css\\responsive.css"
     },
     {
       "Id": "C:\\Users\\PC\\source\\repos\\University-Magazine-Contribution-System\\source\\repos\\COMP1640\\COMP1640\\wwwroot\\css\\style.css",
@@ -39,6 +59,22 @@
     {
       "Id": "C:\\Users\\PC\\source\\repos\\University-Magazine-Contribution-System\\source\\repos\\COMP1640\\COMP1640\\wwwroot\\favicon.ico",
       "PackagePath": "staticwebassets\\favicon.ico"
+    },
+    {
+      "Id": "C:\\Users\\PC\\source\\repos\\University-Magazine-Contribution-System\\source\\repos\\COMP1640\\COMP1640\\wwwroot\\img\\graphic_design.png",
+      "PackagePath": "staticwebassets\\img\\graphic_design.png"
+    },
+    {
+      "Id": "C:\\Users\\PC\\source\\repos\\University-Magazine-Contribution-System\\source\\repos\\COMP1640\\COMP1640\\wwwroot\\img\\gre.png",
+      "PackagePath": "staticwebassets\\img\\gre.png"
+    },
+    {
+      "Id": "C:\\Users\\PC\\source\\repos\\University-Magazine-Contribution-System\\source\\repos\\COMP1640\\COMP1640\\wwwroot\\img\\logo.svg",
+      "PackagePath": "staticwebassets\\img\\logo.svg"
+    },
+    {
+      "Id": "C:\\Users\\PC\\source\\repos\\University-Magazine-Contribution-System\\source\\repos\\COMP1640\\COMP1640\\wwwroot\\img\\user_avatar.png",
+      "PackagePath": "staticwebassets\\img\\user_avatar.png"
     },
     {
       "Id": "C:\\Users\\PC\\source\\repos\\University-Magazine-Contribution-System\\source\\repos\\COMP1640\\COMP1640\\wwwroot\\js\\script.js",
