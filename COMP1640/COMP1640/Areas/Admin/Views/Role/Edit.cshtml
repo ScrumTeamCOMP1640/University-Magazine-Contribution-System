@@ -1,0 +1,26 @@
+﻿﻿@{
+    ViewData["Title"] = "Edit Role";
+    Layout = "~/Areas/Admin/Views/Shared/_AdminLayout.cshtml";
+}
+@model COMP1640.Models.Role
+
+<div class="section__body">
+    <div class="container">
+        <div class="title">Edit User</div>
+        <div class="content">
+            <form asp-area="Admin" asp-controller="Role" asp-action="Edit" method="post">
+                <div class="form-details">
+                    @Html.HiddenFor(m => m.RoleId)
+                    <div class="input-box">
+                        <span class="details">Username</span>
+                        <input type="text" id="username" name="RoleName" value="@Model.RoleName">
+                    </div>
+                </div>
+                <div class="button__container">
+                    <button type="submit" class="button primary">Save</button>
+                    <a asp-area="Admin" asp-controller="Role" asp-action="Index" class="button cancel">Cancel</a>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

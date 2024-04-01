@@ -1,0 +1,83 @@
+﻿@{
+    ViewData["Title"] = "Faculty";
+    Layout = "~/Areas/Admin/Views/Shared/_AdminLayout.cshtml";
+}
+
+@model X.PagedList.IPagedList<COMP1640.Models.Faculty>
+
+<div class="section__body">
+    <h1>Faculties</h1>
+    <div class="main-content">
+        <a asp-area="Admin" asp-controller="Faculty" asp-action="Add" class="btn add">
+            <i class="fa-solid fa-plus"></i>
+            Faculty
+        </a>
+        <table class="content-table">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Faculty name</th>
+                    <th>Coordinator</th>
+                    <th>Guest account</th>
+                    <th>Edit</th>
+                    <th>Delete</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var faculty in Model)
+                {
+                    <tr>
+                        <td data-title="ID">@faculty.FacultyId</td>
+                        <td data-title="Username">@faculty.FacultyName</td>
+                        <td data-title="Coordinator">
+                            @foreach (var faus in ViewBag.FaUs)
+                            {
+                                @if (faculty.FacultyId == faus.FacultyId)
+                                {
+                                    @foreach (var user in ViewBag.User)
+                                    {
+                                        @if (faus.UserId == user.UserId && user.RoleId == 3)
+                                        {
+                                            <span>@user.Username</span>
+                                        }
+                                    }
+                                }
+                            }
+                        </td>
+                        <td data-title="Guest account">
+                            @foreach (var faus in ViewBag.FaUs)
+                            {
+                                @if (faculty.FacultyId == faus.FacultyId)
+                                {
+                                    @foreach (var user in ViewBag.User)
+                                    {
+                                        @if (faus.UserId == user.UserId && user.RoleId == 10)
+                                        {
+                                            <span>@user.Username</span>
+                                        }
+                                    }
+                                }
+                            }
+                        </td>
+                        <td data-title="Edit">
+                            <a asp-area="Admin" asp-controller="Faculty" asp-action="Edit" asp-route-id="@faculty.FacultyId" class="btn edit">
+                                <i class="fa-solid fa-pen-to-square"></i>
+                                Edit
+                            </a>
+                        </td>
+                        <td data-title="Delete">
+                            <a asp-area="Admin" asp-controller="Faculty" asp-action="Delete" asp-route-id="@faculty.FacultyId" class="btn delete" onclick="confirmation(event)">
+                                <i class="fa-solid fa-trash"></i>
+                                Delete
+                            </a>
+                        </td>
+                    </tr>
+                }
+                <!-- <tr>
+                    <td colspan="5" style="text-align: center;">There are no data</td>
+                </tr> -->
+            </tbody>
+        </table>
+        <!-- pagination -->
+    </div>
+</div>

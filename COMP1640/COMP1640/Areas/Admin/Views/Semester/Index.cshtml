@@ -1,0 +1,61 @@
+﻿@{
+    ViewData["Title"] = "Semester";
+    Layout = "~/Areas/Admin/Views/Shared/_AdminLayout.cshtml";
+    var count = 0;
+}
+
+@model X.PagedList.IPagedList<COMP1640.Models.Semester>
+
+@foreach (var semester in Model)
+{
+    count++;
+}
+
+<div class="section__body">
+    <h1>Semesters</h1>
+    <div class="main-content">
+        <a asp-area="Admin" asp-controller="Semester" asp-action="Add" class="btn add">
+            <i class="fa-solid fa-plus"></i>
+            Semester
+        </a>
+        <table class="content-table">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Semester year</th>
+                    <th>Closure date</th>
+                    <th>Number of article</th>
+                    <th>Edit</th>
+                    <th>Delete</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var semester in Model)
+                {
+                    <tr>
+                        <td data-title="ID">@semester.SemesterId</td>
+                        <td data-title="Semester year">@semester.SemesterYear</td>
+                        <td data-title="Closure date">@semester.ClosureDate</td>
+                        <td data-title="Number of article">@count</td>
+                        <td data-title="Edit">
+                            <a asp-area="Admin" asp-controller="Role" asp-action="Edit" asp-route-id="@semester.SemesterId" class="btn edit">
+                                <i class="fa-solid fa-pen-to-square"></i>
+                                Edit
+                            </a>
+                        </td>
+                        <td data-title="Delete">
+                            <a asp-area="Admin" asp-controller="Role" asp-action="Delete" asp-route-id="@semester.SemesterId" class="btn delete" onclick="confirmation(event)">
+                                <i class="fa-solid fa-trash"></i>
+                                Delete
+                            </a>
+                        </td>
+                    </tr>
+                }
+                <!-- <tr>
+                    <td colspan="5" style="text-align: center;">There are no data</td>
+                </tr> -->
+            </tbody>
+        </table>
+        <!-- pagination -->
+    </div>
+</div>

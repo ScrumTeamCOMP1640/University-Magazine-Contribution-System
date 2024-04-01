@@ -1,0 +1,122 @@
+﻿@{
+    ViewData["Title"] = "Update Info";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@model COMP1640.Models.User
+
+<div class="main__container">
+    <div class="grid wide">
+        <div class="row main__content">
+            <div class="col l-8 l-o-2">
+                @using (Html.BeginForm("UpdateInfo", "Account", FormMethod.Post, new { @class = "form-controll" }))
+                {
+                    <div class="profile">
+                        <ul class="profile-sidebar">
+                            <li class="profile-sidebar__item">
+                                <a asp-controller="Account" asp-action="UpdateInfo" class="profile-sidebar__item--link active">Account</a>
+                            </li>
+                            <li class="profile-sidebar__item">
+                                <a asp-controller="Account" asp-action="UpdatePass" class="profile-sidebar__item--link">Password</a>
+                            </li>
+                        </ul>
+                        <div class="profile-info">
+                            <h1>Account Settings</h1>
+                            <div class="profile-image">
+                                <img src="~/img/user_avatar.png">
+                            </div>
+                            <table width="100%" class="profile-details">
+
+                                <tr>
+                                    <td>
+                                        <div class="profile__group">
+                                            @Html.HiddenFor(temp => temp.UserId)
+                                        </div>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td>
+                                        <div class="profile__group">
+                                            @Html.HiddenFor(temp => temp.Email)
+                                        </div>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td>
+                                        <div class="profile__group">
+                                            @Html.HiddenFor(temp => temp.Password)
+                                        </div>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td>
+                                        <div class="profile__group">
+                                            @Html.HiddenFor(temp => temp.RoleId)
+                                        </div>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td>
+                                        <div class="profile__group">
+                                            @Html.HiddenFor(temp => temp.Avatar)
+                                        </div>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td class="title"><strong>Username</strong></td>
+                                    <td>
+                                        <div class="profile__group">
+                                            <input asp-for="Username" value="@Model.Username" class="profile__input">
+                                            <span class="text-danger">
+                                                @Html.ValidationMessageFor(temp => temp.Username)
+                                            </span>
+                                        </div>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td class="title"><strong>Phone</strong></td>
+                                    <td>
+                                        <div class="profile__group">
+                                            <input type="text" asp-for="Phone" class="profile__input"
+                                                   placeholder="Enter your phone number">
+                                            <span class="text-danger">
+                                                @Html.ValidationMessageFor(temp => temp.Phone)
+                                            </span>
+                                        </div>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td class="title"><strong>Address</strong></td>
+                                    <td>
+                                        <div class="profile__group">
+                                            <textarea rows="3" asp-for="Address"
+                                                      class="profile__textarea"></textarea>
+                                            <span class="text-danger">
+                                                @Html.ValidationMessageFor(temp => temp.Address)
+                                            </span>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </table>
+                            <div class="profile-actions">
+                                <button type="submit" class="btn primary">
+                                    Save Changes
+                                </button>
+                                <a asp-controller="Home" asp-action="Index" class="btn secondary">
+                                    Cancel
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                }
+            </div>
+        </div>
+    </div>
+</div>

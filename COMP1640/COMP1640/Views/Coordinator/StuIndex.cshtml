@@ -1,0 +1,40 @@
+﻿@{
+    ViewData["Title"] = "Student";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@model X.PagedList.PagedList<COMP1640.Models.User>
+
+<div class="section__body">
+    <h1>Students</h1>
+    <div class="main-content">
+        <a asp-controller="Home" asp-action="AddStudent" class="btn add">
+            <i class="fa-solid fa-plus"></i>
+            Student
+        </a>
+        <table class="content-table">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>User name</th>
+                    <th>Delete</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var user in Model)
+                {
+                    <tr>
+                        <td data-title="ID">@user.UserId</td>
+                        <td data-title="Username">@user.Username</td>
+                        <td data-title="Delete">
+                            <a asp-controller="Coordinator" asp-action="Delete" asp-route-id="@user.UserId" class="btn delete" onclick="confirmation(event)">
+                                <i class="fa-solid fa-trash"></i>
+                                Delete
+                            </a>
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+</div>
