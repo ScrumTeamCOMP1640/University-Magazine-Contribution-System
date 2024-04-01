@@ -1,0 +1,41 @@
+﻿@{
+    ViewData["Title"] = "Add Faculty";
+    Layout = "~/Areas/Admin/Views/Shared/_AdminLayout.cshtml";
+}
+
+@model COMP1640.Models.Faculty
+
+<div class="section__body">
+    <div class="container">
+        <div class="title">Add faculty</div>
+        <div class="content">
+            <form asp-area="Admin" asp-controller="Faculty" asp-action="Add" method="post">
+
+                <div class="form-details">
+                    <div class="input-box">
+                        <span class="details">Faculty name</span>
+                        <input type="text" id="FacultyName" name="FacultyName" placeholder="Enter faculty name">
+                    </div>
+                </div>
+                
+                <div class="form-details">
+                    <div class="input-box">
+                        <span class="details">Coordinator</span>
+                        @* <input type="text" id="RoleName" name="RoleName" placeholder="Enter role name"> *@
+                        <select id="userId" name="userId">
+                            @foreach (var user in ViewBag.Coordinator)
+                            {
+                                <option value="@user.UserId">@user.Username</option>
+                            }
+                        </select>
+                    </div>
+                </div>
+
+                <div class="button__container">
+                    <button type="submit" class="button primary">Create</button>
+                    <a asp-area="Admin" asp-controller="Faculty" asp-action="Index" class="button cancel">Cancel</a>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

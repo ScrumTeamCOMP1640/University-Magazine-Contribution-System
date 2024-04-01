@@ -1,0 +1,159 @@
+﻿@{
+    var username = Context.Session.GetString("Username");
+    var avatar = Context.Session.GetString("Avatar");
+    var role = Context.Session.GetString("Role");
+}
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homepage</title>
+    <link rel="stylesheet" href="~/css/base.css">
+    <link rel="stylesheet" href="~/css/grid.css">
+    <link rel="stylesheet" href="~/css/style.css">
+    <link rel="stylesheet" href="~/css/responsive.css">
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+
+<body>
+    <div class="main">
+        <!-- Header -->
+        <header class="header">
+            <div class="grid wide">
+                <div class="header__navbar">
+                    <div class="header-left">
+                        <div class="logo-wrap">
+                            <a asp-controller="Home" asp-action="Index" class="logo">
+                                <div class="logo__img" style="background-image: url('@Url.Content("~/img/logo.svg")');"></div>
+                            </a>
+                        </div>
+
+                        <form method="" class="header__search">
+                            <i class="bx bx-search"></i>
+                            <div class="header__search-input-wrap">
+                                <input name="search" placeholder="Search">
+                            </div>
+                        </form>
+                    </div>
+
+                    <div class="header-right">
+                        <input type="checkbox" id="check">
+                        <label for="check" class="icons">
+                            <i class="bx bx-menu" id="menu-icon"></i>
+                            <i class="bx bx-x" id="close-icon"></i>
+                        </label>
+
+                        <ul class="navbar">
+                            
+                            @switch (role)
+                            {
+                                case "Marketing Manager":
+                                    <li class="navbar-item">
+                                        <a asp-controller="Home" asp-action="Submission" class="write" style="--i:0">
+                                            <i class="bx bx-edit"></i>
+                                            <p>Download all</p>
+                                        </a>
+                                    </li>
+                                    <li class="navbar-item">
+                                        <a asp-controller="Home" asp-action="Submission" class="write" style="--i:0">
+                                            <i class="bx bx-edit"></i>
+                                            <p>New contribute</p>
+                                        </a>
+                                    </li>
+                                    break;
+                                case "Marketing Coordinator":
+                                    <li class="navbar-item">
+                                        <a asp-controller="Coordinator" asp-action="StuIndex" class="write" style="--i:0">
+                                            <i class="bx bx-edit"></i>
+                                            <p>Manage faculty</p>
+                                        </a>
+                                    </li>
+                                    break;
+                                case "Student":
+                                    <li class="navbar-item">
+                                        <a asp-controller="Home" asp-action="Submission" class="write" style="--i:0">
+                                            <i class="bx bx-edit"></i>
+                                            <p>Submission</p>
+                                        </a>
+                                    </li>
+                                    break;
+                                case "Guest":
+                                    @*<li class="navbar-item">
+                                        <a asp-controller="Home" asp-action="Submission" class="write" style="--i:0">
+                                            <i class="bx bx-edit"></i>
+                                            <p>Submission</p>
+                                        </a>
+                                    </li> *@
+                                    break;
+                                default:
+                                    @* <li class="navbar-item">
+                                        <a asp-controller="Home" asp-action="Submission" class="write" style="--i:0">
+                                            <i class="bx bx-edit"></i>
+                                            <p>Submission</p>
+                                        </a>
+                                    </li> *@
+                                    break;
+                            }
+                            
+                            <li class="navbar-item">
+                                <div class="profile-dropdown">
+                                    <input type="checkbox" id="check-profile">
+                                    <label for="check-profile" class="profile-dropdown-btn">
+                                        <div class="profile-img" style="background-image: url('@Url.Content("~/img/user_avatar.png")');">
+                                            <i class="fa-solid fa-circle"></i>
+                                        </div>
+
+                                        <span>
+                                            <p>Victor</p>
+                                            <i class="fa-solid fa-angle-down"></i>
+                                        </span>
+                                    </label>
+
+                                    <ul class="profile-dropdown-list">
+                                        <li class="profile-dropdown-list-item">
+                                            <a asp-controller="Account" asp-action="UpdateInfo">
+                                                <i class="fa-regular fa-user"></i>
+                                                Edit Profile
+                                            </a>
+                                        </li>
+
+                                        <li class="profile-dropdown-list-item">
+                                            <a href="#">
+                                                <i class="fa-regular fa-envelope"></i>
+                                                Inbox
+                                            </a>
+                                        </li>
+                                        <hr />
+
+                                        <li class="profile-dropdown-list-item">
+                                            <a asp-controller="Account" asp-action="Logout">
+                                                <i class="fa-solid fa-arrow-right-from-bracket"></i>
+                                                Log out
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </header>
+
+        <!-- Content -->
+        
+        @RenderBody()
+
+        <!-- Footer -->
+
+
+    </div>
+</body>
+
+</html>

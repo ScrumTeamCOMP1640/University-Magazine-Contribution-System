@@ -1,0 +1,63 @@
+﻿﻿@{
+    ViewData["Title"] = "User";
+    Layout = "~/Areas/Admin/Views/Shared/_AdminLayout.cshtml";
+}
+
+@model X.PagedList.IPagedList<COMP1640.Models.User>
+
+<div class="section__body">
+    <h1>Users</h1>
+    <div class="main-content">
+        <a asp-area="Admin" asp-controller="User" asp-action="Add" class="btn add">
+            <i class="fa-solid fa-plus"></i>
+            User
+        </a>
+        <table class="content-table">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Username</th>
+                    <th>Email</th>
+                    <th>Role</th>
+                    <th>Edit</th>
+                    <th>Delete</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var user in Model)
+                {
+                    <tr>
+                        <td data-title="ID">@user.UserId</td>
+                        <td data-title="Username">@user.Username</td>
+                        <td data-title="Email">@user.Email</td>
+                        <td data-title="Role">
+                            @foreach (var role in ViewBag.Roles)
+                            {
+                                if (role.RoleId == user.RoleId)
+                                {
+                                    <span>@role.RoleName</span>
+                                }
+                            }
+                        </td>
+                        <td data-title="Edit">
+                            <a asp-area="Admin" asp-controller="User" asp-action="Edit" asp-route-id="@user.UserId" class="btn edit">
+                                <i class="fa-solid fa-pen-to-square"></i>
+                                Edit
+                            </a>
+                        </td>
+                        <td data-title="Delete">
+                            <a asp-area="Admin" asp-controller="User" asp-action="Delete" asp-route-id="@user.UserId" class="btn delete" onclick="confirmation(event)">
+                                <i class="fa-solid fa-trash"></i>
+                                Delete
+                            </a>
+                        </td>
+                    </tr>
+                }
+                <!-- <tr>
+                    <td colspan="5" style="text-align: center;">There are no data</td>
+                </tr> -->
+            </tbody>
+        </table>
+        <!-- pagination -->
+    </div>
+</div>
