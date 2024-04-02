@@ -1,19 +1,24 @@
 ﻿using COMP1640.Interfaces;
+using COMP1640.Models;
+using Microsoft.AspNetCore.Http.HttpResults;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.StaticFiles;
+using System.IO.Compression;
 
 namespace COMP1640.Services
 {
     public class FileService : IFile
     {
-        public async Task<bool> UploadFile(IFormFile file)
+        UmcsContext _context = new UmcsContext();
+        public async Task<bool> UploadFile(IFormFile file, string folderName)
         {
-            var path = string.Empty;
-
             try
             {
-                if (file != null && file.Length <= 5242880 /*&& (file.ContentType.Equals("application/msword") || file.ContentType.Equals("image/*"))*/)
+                var path = string.Empty;
+
+                if (file != null && file.Length <= 5242880)
                 {
-                    path = Path.GetFullPath(Path.Combine(Environment.CurrentDirectory, "wwwroot" ,"UploadedFiles"));
+                    path = Path.GetFullPath(Path.Combine(Environment.CurrentDirectory, "wwwroot" ,"UploadedFiles", folderName.Replace(" ", "_")));
 
                     if (!Directory.Exists(path))
                     {
@@ -34,29 +39,82 @@ namespace COMP1640.Services
             }
         }
 
-        public async Task<(byte[], string, string)> DownloadFile(string fileName)
+        public async Task<(byte[], string, string)> DownloadFile(string folder, int? id)
         {
             try
             {
-                var path = Path.GetFullPath(Path.Combine(Environment.CurrentDirectory, "UploadedFiles", fileName));
-                var provider = new FileExtensionContentTypeProvider();
-
-                if (!File.Exists(path))
+                var article = _context.Articles.FirstOrDefault(x => x.ArticleId == id);
+                var path = Path.GetFullPath(Path.Combine(Environment.CurrentDirectory, "wwwroot", "UploadedFiles", article.Title.Replace(" ", "_")));
+                var files = Directory.GetFiles(path);
+                using (var memoryStream = new MemoryStream())
                 {
-                    throw new Exception("File not found.");
-                }
+                    using (var zipArchive = new ZipArchive(memoryStream, ZipArchiveMode.Create, true))
+                    {
+                        foreach (var file in files)
+                        {
+                            var fileInfo = new FileInfo(file);
+                            var entry = zipArchive.CreateEntry(article.Title.Replace(" ", "_") + "/" + fileInfo.Name);
 
-                if (!provider.TryGetContentType(path, out var contentType))
-                {
-                    contentType = "application/octet-stream";
-                }
+                            using (var entryStream = entry.Open())
+                            {
+                                using (var fileStream = new FileStream(file, FileMode.Open, FileAccess.Read))
+                                {
+                                    await fileStream.CopyToAsync(entryStream);
+                                }
+                            }
+                        }
+                    }
 
-                var readAllBytes = await File.ReadAllBytesAsync(path);
-                return (readAllBytes, contentType, Path.GetFileName(path));
+                    memoryStream.Seek(0, SeekOrigin.Begin);
+                    return (memoryStream.ToArray(), "application/zip", article.Title.Replace(" ", "_") + ".zip");
+                }
             }
             catch (Exception ex)
             {
                 throw new Exception(ex.Message);
+            }
+        }
+
+        [HttpGet]
+        public async Task<(byte[], string, string)> DownloadAll()
+        {
+            try
+            {
+                var path = Path.GetFullPath(Path.Combine(Environment.CurrentDirectory, "wwwroot", "UploadedFiles"));
+
+                var folders = Directory.GetDirectories(path);
+
+                using (var memoryStream = new MemoryStream())
+                {
+                    using (var zipArchive = new ZipArchive(memoryStream, ZipArchiveMode.Create, true))
+                    {
+                        foreach (var folder in folders)
+                        {
+                            var files = Directory.GetFiles(folder);
+                            var folderInfo = new DirectoryInfo(folder);
+                            foreach (var file in files)
+                            {
+                                var fileInfo = new FileInfo(file);
+                                var entry = zipArchive.CreateEntry(folderInfo.Name + "/" + fileInfo.Name);
+
+                                using (var entryStream = entry.Open())
+                                {
+                                    using (var fileStream = new FileStream(file, FileMode.Open, FileAccess.Read))
+                                    {
+                                        await fileStream.CopyToAsync(entryStream);
+                                    }
+                                }
+                            }
+                        }
+                    }
+
+                    memoryStream.Seek(0, SeekOrigin.Begin);
+                    return (memoryStream.ToArray(), "application/zip", "Download.zip");
+                }
+            }
+            catch (Exception e)
+            {
+                throw new Exception(e.Message);
             }
         }
     }

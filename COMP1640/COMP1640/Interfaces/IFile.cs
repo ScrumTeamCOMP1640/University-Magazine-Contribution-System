@@ -2,8 +2,10 @@
 {
     public interface IFile
     {
-        Task<bool> UploadFile (IFormFile file);
+        Task<bool> UploadFile (IFormFile file,  string folderName);
 
-        Task<(byte[], string, string)> DownloadFile (string fileName);
+        Task<(byte[], string, string)> DownloadFile (string folder, int? id);
+        
+        Task<(byte[], string, string)> DownloadAll ();
     }
 }
