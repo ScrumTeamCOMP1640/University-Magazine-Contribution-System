@@ -64,7 +64,7 @@
                         <div class="col l-4">
                             <a asp-controller="Home" asp-action="ContributeDetail" asp-route-id="@article.ArticleId" class="home-item">
                                 <div class="home-item__img"
-                                         style="background-image: url('@Url.Content("~/UploadedFiles/" + article.ImagePath)');">
+                                         style="background-image: url('@Url.Content("~/UploadedFiles/" + article.Title.Replace(" ", "_") + "/" + article.ImagePath)');">
                                 </div>
                                 <h3 class="home-item__title">@article.Title</h3>
                                 <h4 class="home-item__description">Plus: A brief history of art on the moon</h4>

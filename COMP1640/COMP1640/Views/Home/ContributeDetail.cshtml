@@ -12,7 +12,7 @@
 
             <div class="col l-8 l-o-2">
                 <div class="item__detail">
-                    <div class="item__bg" style="background-image: url('@Url.Content("~/UploadedFiles/" + Model.ImagePath)');"></div>
+                    <div class="item__bg" style="background-image: url('@Url.Content("~/UploadedFiles/" + Model.Title.Replace(" ", "_") + "/" + Model.ImagePath)');"></div>
                     <h1 class="item__title">@Model.Title</h1>
                     <h2 class="item__description">Plus: A brief history of art on the moon</h2>
                     <div class="author__detail">
@@ -38,7 +38,7 @@
                     {
                         @if (role.Equals("Marketing Manager"))
                         {
-                            <a href="./code.png" download="image" class="btn download-btn">
+                            <a asp-controller="Home" asp-action="DownloadFile" asp-route-id="@Model.ArticleId" class="btn download-btn">
                                 Download
                                 <i class="fa-solid fa-download"></i>
                             </a>
