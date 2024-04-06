@@ -29,6 +29,7 @@ namespace COMP1640.Areas.Admin.Controllers
         public IActionResult Add()
         {
             ViewBag.Roles = _umcs.Roles.ToList();
+            ViewBag.Faculties = _umcs.Faculties.ToList();
             return View();
         }
 
@@ -65,7 +66,7 @@ namespace COMP1640.Areas.Admin.Controllers
             }
 
             ViewBag.Roles = _umcs.Roles.ToList();
-            
+            ViewBag.Faculties = _umcs.Faculties.ToList();
             return View(user);
         }
 

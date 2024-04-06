@@ -25,11 +25,21 @@
                     <div class="input-box">
                         <span class="details">Role</span>
                         <select name="RoleId" id="role">
-                            <option value="1">Administrator</option>
-                            <option value="2">Marketing Manager</option>
-                            <option value="3">Marketing Coordinator</option>
-                            <option value="4">Student</option>
-                            <option value="10">Guest</option>
+                            <option value="">--Select role--</option>
+                            @foreach (var role in ViewBag.Roles)
+                            {
+                                <option value="@role.RoleId">@role.RoleName</option>
+                            }
+                        </select>
+                    </div>
+                    <div class="input-box">
+                        <span class="details">Faculty</span>
+                        <select name="FacultyId" id="faculty">
+                            <option>--Select faculty--</option>
+                            @foreach (var faculty in ViewBag.Faculties)
+                            {
+                                <option value="@faculty.FacultyId">@faculty.FacultyName</option>
+                            }
                         </select>
                     </div>
                 </div>
@@ -39,8 +49,8 @@
                 </div>
 
                 <div class="button__container">
-                    <button type="submit" class="button primary">Create</button>
-                    <a asp-area="Admin" asp-controller="User" asp-action="Index" class="button cancel">Cancel</a>
+                    <button type="submit" class="btn primary">Create</button>
+                    <a asp-area="Admin" asp-controller="User" asp-action="Index" class="btn secondary">Cancel</a>
                 </div>
             </form>
         </div>

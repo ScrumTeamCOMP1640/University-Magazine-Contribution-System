@@ -19,15 +19,11 @@ public partial class UmcsContext : DbContext
 
     public virtual DbSet<Comment> Comments { get; set; }
 
-    public virtual DbSet<FaU> FaUs { get; set; }
-
     public virtual DbSet<Faculty> Faculties { get; set; }
 
     public virtual DbSet<Role> Roles { get; set; }
 
-    public virtual DbSet<SelectedArticle> SelectedArticles { get; set; }
-
-    public virtual DbSet<Semester> Semesters { get; set; }
+    public virtual DbSet<Term> Terms { get; set; }
 
     public virtual DbSet<TermsAndCondition> TermsAndConditions { get; set; }
 
@@ -51,10 +47,15 @@ public partial class UmcsContext : DbContext
                 .HasMaxLength(50)
                 .IsUnicode(false);
             entity.Property(e => e.SubmissionDate).HasColumnType("datetime");
+            entity.Property(e => e.TermId).HasColumnName("TermID");
             entity.Property(e => e.Title)
                 .HasMaxLength(255)
                 .IsUnicode(false);
             entity.Property(e => e.UserId).HasColumnName("UserID");
+
+            entity.HasOne(d => d.Term).WithMany(p => p.Articles)
+                .HasForeignKey(d => d.TermId)
+                .HasConstraintName("FK_Articles_Terms");
 
             entity.HasOne(d => d.User).WithMany(p => p.Articles)
                 .HasForeignKey(d => d.UserId)
@@ -80,27 +81,6 @@ public partial class UmcsContext : DbContext
                 .HasConstraintName("FK__Comments__UserID__59063A47");
         });
 
-        modelBuilder.Entity<FaU>(entity =>
-        {
-            entity.HasKey(e => e.FauId).HasName("PK__FaU__95570A4EBC1DFAD8");
-
-            entity.ToTable("FaU");
-
-            entity.Property(e => e.FauId).HasColumnName("FauID");
-            entity.Property(e => e.FacultyId).HasColumnName("FacultyID");
-            entity.Property(e => e.UserId).HasColumnName("UserID");
-
-            entity.HasOne(d => d.Faculty).WithMany(p => p.FaUs)
-                .HasForeignKey(d => d.FacultyId)
-                .OnDelete(DeleteBehavior.ClientSetNull)
-                .HasConstraintName("FK_FaU_Faculties");
-
-            entity.HasOne(d => d.User).WithMany(p => p.FaUs)
-                .HasForeignKey(d => d.UserId)
-                .OnDelete(DeleteBehavior.ClientSetNull)
-                .HasConstraintName("FK_FaU_Users");
-        });
-
         modelBuilder.Entity<Faculty>(entity =>
         {
             entity.HasKey(e => e.FacultyId).HasName("PK__Facultie__306F636E93990DAB");
@@ -123,34 +103,16 @@ public partial class UmcsContext : DbContext
                 .IsUnicode(false);
         });
 
-        modelBuilder.Entity<SelectedArticle>(entity =>
+        modelBuilder.Entity<Term>(entity =>
         {
-            entity.HasKey(e => e.SelectedArticleId).HasName("PK__Selected__80A5E4B48DB88ADB");
+            entity.HasKey(e => e.TermId).HasName("PK__Terms__410A2E4569822C28");
 
-            entity.Property(e => e.SelectedArticleId).HasColumnName("SelectedArticleID");
-            entity.Property(e => e.ArticleId).HasColumnName("ArticleID");
-
-            entity.HasOne(d => d.Article).WithMany(p => p.SelectedArticles)
-                .HasForeignKey(d => d.ArticleId)
-                .HasConstraintName("FK__SelectedA__Artic__60A75C0F");
-        });
-
-        modelBuilder.Entity<Semester>(entity =>
-        {
-            entity.HasKey(e => e.SemesterId).HasName("PK__Semester__043301BDB0BC499F");
-
-            entity.ToTable("Semester");
-
-            entity.Property(e => e.SemesterId).HasColumnName("SemesterID");
-            entity.Property(e => e.ArticleId).HasColumnName("ArticleID");
-            entity.Property(e => e.ClosureDate).HasColumnType("datetime");
-            entity.Property(e => e.SemesterYear)
-                .HasMaxLength(20)
+            entity.Property(e => e.TermId).HasColumnName("TermID");
+            entity.Property(e => e.EndDate).HasColumnType("datetime");
+            entity.Property(e => e.StartDate).HasColumnType("datetime");
+            entity.Property(e => e.TermName)
+                .HasMaxLength(50)
                 .IsUnicode(false);
-
-            entity.HasOne(d => d.Article).WithMany(p => p.Semesters)
-                .HasForeignKey(d => d.ArticleId)
-                .HasConstraintName("FK_Semester_Articles");
         });
 
         modelBuilder.Entity<TermsAndCondition>(entity =>
@@ -178,6 +140,7 @@ public partial class UmcsContext : DbContext
             entity.Property(e => e.Email)
                 .HasMaxLength(100)
                 .IsUnicode(false);
+            entity.Property(e => e.FacultyId).HasColumnName("FacultyID");
             entity.Property(e => e.Password)
                 .HasMaxLength(255)
                 .IsUnicode(false);
@@ -185,6 +148,10 @@ public partial class UmcsContext : DbContext
             entity.Property(e => e.Username)
                 .HasMaxLength(50)
                 .IsUnicode(false);
+
+            entity.HasOne(d => d.Faculty).WithMany(p => p.Users)
+                .HasForeignKey(d => d.FacultyId)
+                .HasConstraintName("FK_Users_Faculties");
 
             entity.HasOne(d => d.Role).WithMany(p => p.Users)
                 .HasForeignKey(d => d.RoleId)

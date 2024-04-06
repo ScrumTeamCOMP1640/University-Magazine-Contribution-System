@@ -1,0 +1,40 @@
+﻿@{
+    ViewData["Title"] = "Submission";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="main__container">
+    <div class="grid wide">
+        <div class="row main__content">
+            <div class="col l-10 l-o-1">
+                <h1 style="font-size: 2.2rem;">Add new contribution</h1>
+                <form asp-controller="Submission" asp-action="Submission" method="post" enctype="multipart/form-data">
+                    <div class="form-content">
+                        <div class="input-box">
+                            <label for="title">Title</label>
+                            <input type="text" id="Title" name="Title" />
+                        </div>
+                        <div class="input-box">
+                            <label for="bg-img">Background Image</label>
+                            <input type="file" id="img" name="img" accept="image/*"/>
+                        </div>
+                        <div class="input-box">
+                            <label for="file">File</label>
+                            <input type="file" id="file" name="file" accept="application/msword" />
+                        </div>
+                    </div>
+
+                    <div class="form-actions">
+                        <button type="submit" class="btn primary">
+                            Submit
+                        </button>
+                        <a asp-controller="Home" asp-action="Index" class="btn secondary">
+                            Cancel
+                        </a>
+                    </div>
+                </form>
+            </div>
+
+        </div>
+    </div>
+</div>

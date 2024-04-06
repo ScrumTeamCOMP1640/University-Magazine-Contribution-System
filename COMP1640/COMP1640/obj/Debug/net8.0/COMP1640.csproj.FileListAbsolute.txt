@@ -421,18 +421,6 @@ C:\Users\PC\source\repos\University-Magazine-Contribution-System\COMP1640\COMP16
 C:\Users\PC\source\repos\University-Magazine-Contribution-System\COMP1640\COMP1640\bin\Debug\net8.0\Azure.Core.dll
 C:\Users\PC\source\repos\University-Magazine-Contribution-System\COMP1640\COMP1640\bin\Debug\net8.0\Azure.Identity.dll
 C:\Users\PC\source\repos\University-Magazine-Contribution-System\COMP1640\COMP1640\bin\Debug\net8.0\Humanizer.dll
-C:\Users\PC\source\repos\University-Magazine-Contribution-System\COMP1640\COMP1640\bin\Debug\net8.0\itext.barcodes.dll
-C:\Users\PC\source\repos\University-Magazine-Contribution-System\COMP1640\COMP1640\bin\Debug\net8.0\itext.bouncy-castle-connector.dll
-C:\Users\PC\source\repos\University-Magazine-Contribution-System\COMP1640\COMP1640\bin\Debug\net8.0\itext.forms.dll
-C:\Users\PC\source\repos\University-Magazine-Contribution-System\COMP1640\COMP1640\bin\Debug\net8.0\itext.io.dll
-C:\Users\PC\source\repos\University-Magazine-Contribution-System\COMP1640\COMP1640\bin\Debug\net8.0\itext.kernel.dll
-C:\Users\PC\source\repos\University-Magazine-Contribution-System\COMP1640\COMP1640\bin\Debug\net8.0\itext.layout.dll
-C:\Users\PC\source\repos\University-Magazine-Contribution-System\COMP1640\COMP1640\bin\Debug\net8.0\itext.pdfa.dll
-C:\Users\PC\source\repos\University-Magazine-Contribution-System\COMP1640\COMP1640\bin\Debug\net8.0\itext.pdfua.dll
-C:\Users\PC\source\repos\University-Magazine-Contribution-System\COMP1640\COMP1640\bin\Debug\net8.0\itext.sign.dll
-C:\Users\PC\source\repos\University-Magazine-Contribution-System\COMP1640\COMP1640\bin\Debug\net8.0\itext.styledxmlparser.dll
-C:\Users\PC\source\repos\University-Magazine-Contribution-System\COMP1640\COMP1640\bin\Debug\net8.0\itext.svg.dll
-C:\Users\PC\source\repos\University-Magazine-Contribution-System\COMP1640\COMP1640\bin\Debug\net8.0\itext.commons.dll
 C:\Users\PC\source\repos\University-Magazine-Contribution-System\COMP1640\COMP1640\bin\Debug\net8.0\System.Web.Razor.dll
 C:\Users\PC\source\repos\University-Magazine-Contribution-System\COMP1640\COMP1640\bin\Debug\net8.0\System.Web.Helpers.dll
 C:\Users\PC\source\repos\University-Magazine-Contribution-System\COMP1640\COMP1640\bin\Debug\net8.0\System.Web.WebPages.Deployment.dll
@@ -454,7 +442,6 @@ C:\Users\PC\source\repos\University-Magazine-Contribution-System\COMP1640\COMP16
 C:\Users\PC\source\repos\University-Magazine-Contribution-System\COMP1640\COMP1640\bin\Debug\net8.0\Microsoft.CodeAnalysis.Workspaces.dll
 C:\Users\PC\source\repos\University-Magazine-Contribution-System\COMP1640\COMP1640\bin\Debug\net8.0\Microsoft.Data.SqlClient.dll
 C:\Users\PC\source\repos\University-Magazine-Contribution-System\COMP1640\COMP1640\bin\Debug\net8.0\Microsoft.DiaSymReader.dll
-C:\Users\PC\source\repos\University-Magazine-Contribution-System\COMP1640\COMP1640\bin\Debug\net8.0\Microsoft.DotNet.PlatformAbstractions.dll
 C:\Users\PC\source\repos\University-Magazine-Contribution-System\COMP1640\COMP1640\bin\Debug\net8.0\Microsoft.DotNet.Scaffolding.Shared.dll
 C:\Users\PC\source\repos\University-Magazine-Contribution-System\COMP1640\COMP1640\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.dll
 C:\Users\PC\source\repos\University-Magazine-Contribution-System\COMP1640\COMP1640\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Abstractions.dll
@@ -660,6 +647,8 @@ C:\Users\PC\source\repos\University-Magazine-Contribution-System\COMP1640\COMP16
 C:\Users\PC\source\repos\University-Magazine-Contribution-System\COMP1640\COMP1640\bin\Debug\net8.0\runtimes\win\lib\net7.0\System.Security.Cryptography.ProtectedData.dll
 C:\Users\PC\source\repos\University-Magazine-Contribution-System\COMP1640\COMP1640\bin\Debug\net8.0\runtimes\win\lib\net7.0\System.Windows.Extensions.dll
 C:\Users\PC\source\repos\University-Magazine-Contribution-System\COMP1640\COMP1640\obj\Debug\net8.0\COMP1640.csproj.AssemblyReference.cache
+C:\Users\PC\source\repos\University-Magazine-Contribution-System\COMP1640\COMP1640\obj\Debug\net8.0\Interop.Microsoft.Office.Interop.Word.dll
+C:\Users\PC\source\repos\University-Magazine-Contribution-System\COMP1640\COMP1640\obj\Debug\net8.0\COMP1640.csproj.ResolveComReference.cache
 C:\Users\PC\source\repos\University-Magazine-Contribution-System\COMP1640\COMP1640\obj\Debug\net8.0\COMP1640.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\PC\source\repos\University-Magazine-Contribution-System\COMP1640\COMP1640\obj\Debug\net8.0\COMP1640.AssemblyInfoInputs.cache
 C:\Users\PC\source\repos\University-Magazine-Contribution-System\COMP1640\COMP1640\obj\Debug\net8.0\COMP1640.AssemblyInfo.cs

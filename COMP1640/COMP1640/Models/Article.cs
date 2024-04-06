@@ -19,11 +19,11 @@ public partial class Article
 
     public string? Status { get; set; }
 
+    public int? TermId { get; set; }
+
     public virtual ICollection<Comment> Comments { get; set; } = new List<Comment>();
 
-    public virtual ICollection<SelectedArticle> SelectedArticles { get; set; } = new List<SelectedArticle>();
-
-    public virtual ICollection<Semester> Semesters { get; set; } = new List<Semester>();
+    public virtual Term? Term { get; set; }
 
     public virtual User? User { get; set; }
 }

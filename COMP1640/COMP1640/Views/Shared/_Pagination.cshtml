@@ -1,0 +1,34 @@
+﻿@using X.PagedList.Mvc.Core;
+
+@{
+    var currentArea = ViewContext.RouteData.Values["area"]?.ToString();
+    var currentController = ViewContext.RouteData.Values["controller"]?.ToString();
+    var pagination = Model.GetMetaData();
+}
+
+<ul class="pagination home-product__pagination">
+    @if (pagination.HasPreviousPage)
+    {
+        <li class="pagination-item">
+            <a class="pagination-item__link" href="@Url.Action("Index", new { area = currentArea, controller = currentController, page = pagination.PageNumber - 1 })" aria-label="« Previous">
+                <i class="pagination-item__icon fa-solid fa-angle-down fa-rotate-90"></i>
+            </a>
+        </li>
+    }
+
+    @for (int i = 1; i <= pagination.PageCount; i++)
+    {
+        <li class="pagination-item @(i == pagination.PageNumber ? "active" : "")">
+            <a href="@Url.Action("Index", new { area = currentArea, controller = currentController, page = i })" class="pagination-item__link">@i</a>
+        </li>
+    }
+
+    @if (pagination.HasNextPage)
+    {
+        <li class="pagination-item">
+            <a class="pagination-item__link" href="@Url.Action("Index", new { area = currentArea, controller = currentController, page = pagination.PageNumber + 1 })" rel="next" aria-label="Next »">
+                <i class="pagination-item__icon fa-solid fa-angle-down fa-rotate-270"></i>
+            </a>
+        </li>
+    }
+</ul>
