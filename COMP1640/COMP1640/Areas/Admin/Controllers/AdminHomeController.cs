@@ -8,9 +8,18 @@ namespace COMP1640.Areas.Admin.Controllers
     [Route("Admin/AdminHome")]
     public class AdminHomeController : Controller
     {
+        private readonly UmcsContext _context;
+
+        public AdminHomeController(UmcsContext context)
+        {
+            _context = context;
+        }
+
         public IActionResult Index()
         {
-            return View();
+            var article = _context.Articles.ToList();
+            ViewBag.Faculty = _context.Faculties.ToList();
+            return View(article);
         }
     }
 }

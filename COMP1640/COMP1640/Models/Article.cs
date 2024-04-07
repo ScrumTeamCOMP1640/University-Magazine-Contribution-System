@@ -21,7 +21,11 @@ public partial class Article
 
     public int? TermId { get; set; }
 
+    public int? FacultyId { get; set; }
+
     public virtual ICollection<Comment> Comments { get; set; } = new List<Comment>();
+
+    public virtual Faculty? Faculty { get; set; }
 
     public virtual Term? Term { get; set; }
 

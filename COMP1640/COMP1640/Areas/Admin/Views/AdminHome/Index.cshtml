@@ -1,7 +1,29 @@
 ﻿@{
     ViewData["Title"] = "Dashboard";
     Layout = "~/Areas/Admin/Views/Shared/_AdminLayout.cshtml";
+
+    var fCom = 0;
+    var fBus = 0;
+    var fMar = 0;
+
+    foreach (var item in Model)
+    {
+        switch (item.FacultyId)
+        {
+            case 11:
+                fCom++;
+                break;
+            case 12:
+                fBus++;
+                break;
+            case 13:
+                fMar++;
+                break;
+        }
+    }
 }
+
+@model List<COMP1640.Models.Article>
 
 <div class="section__body">
     <h1>Dashboard</h1>
@@ -19,8 +41,8 @@
 <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 <script>
     const facultyData = {
-        labels: ['Faculty A', 'Faculty B', 'Faculty C', 'Faculty D'],
-        data: [25, 40, 30, 35],
+        labels: ['Computing', 'Business', 'Digital Marketing'],
+        data: [@fCom, @fBus, @fMar],
         backgroundColor: [
             'rgba(255, 99, 132, 0.5)',
             'rgba(54, 162, 235, 0.5)',

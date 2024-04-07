@@ -55,6 +55,7 @@ namespace COMP1640.Controllers
                 article.UserId = student.UserId;
                 article.SubmissionDate = DateTime.Now;
                 article.TermId = term.TermId;
+                article.FacultyId = student.FacultyId;
                 article.Status = "Pending";
                 context.Add(article);
                 await context.SaveChangesAsync();

@@ -65,26 +65,25 @@
                                                 <li class="author__name">@user.Username</li>
                                             }
                                         }
-                                        
                                         <li class="home-item__date">@String.Format("{0:D}", @article.SubmissionDate)</li>
                                     </ul>
                                 </div>
                                 <div class="home-item__status">
-                                    @if (article.Status == "Pending")
+                                    @switch (article.Status)
                                     {
-                                        <i class="fa-solid fa-spinner"></i>
-                                        <span class="pending">@article.Status</span>
-                                    }
-                                    else if (article.Status == "Denied")
-                                    {
-                                        <i class="fa-solid fa-xmark"></i>
-                                        <span class="rejected">@article.Status</span>
-                                    }
-                                    else if (article.Status == "Approved")
-                                    {
-                                        <i class="fa-solid fa-check"></i>
-                                        <span class="approved">@article.Status</span>
-                                    }
+                                        case "Pending":
+                                            <i class="fa-solid fa-spinner"></i>
+                                            <span class="pending">@article.Status</span>
+                                            break;
+                                        case "Published":
+                                            <i class="fa-solid fa-check"></i>
+                                            <span class="rejected">@article.Status</span>
+                                            break;
+                                        case "Rejected":
+                                            <i class="fa-solid fa-xmark"></i>
+                                            <span class="rejected">@article.Status</span>
+                                            break;
+                                        }
                                 </div>
                             </a>
                         </div>

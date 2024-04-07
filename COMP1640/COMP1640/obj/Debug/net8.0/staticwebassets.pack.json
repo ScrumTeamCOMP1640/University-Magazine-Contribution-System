@@ -13,12 +13,28 @@
       "PackagePath": "staticwebassets\\UploadedFiles\\1\\file-sample_1MB.doc"
     },
     {
-      "Id": "C:\\Users\\PC\\source\\repos\\University-Magazine-Contribution-System\\COMP1640\\COMP1640\\wwwroot\\UploadedFiles\\One\\IMG_ONE.png",
-      "PackagePath": "staticwebassets\\UploadedFiles\\One\\IMG_ONE.png"
+      "Id": "C:\\Users\\PC\\source\\repos\\University-Magazine-Contribution-System\\COMP1640\\COMP1640\\wwwroot\\UploadedFiles\\2\\IMG_ONE.png",
+      "PackagePath": "staticwebassets\\UploadedFiles\\2\\IMG_ONE.png"
     },
     {
-      "Id": "C:\\Users\\PC\\source\\repos\\University-Magazine-Contribution-System\\COMP1640\\COMP1640\\wwwroot\\UploadedFiles\\One\\file-sample_1MB.doc",
-      "PackagePath": "staticwebassets\\UploadedFiles\\One\\file-sample_1MB.doc"
+      "Id": "C:\\Users\\PC\\source\\repos\\University-Magazine-Contribution-System\\COMP1640\\COMP1640\\wwwroot\\UploadedFiles\\2\\file-sample_1MB.doc",
+      "PackagePath": "staticwebassets\\UploadedFiles\\2\\file-sample_1MB.doc"
+    },
+    {
+      "Id": "C:\\Users\\PC\\source\\repos\\University-Magazine-Contribution-System\\COMP1640\\COMP1640\\wwwroot\\UploadedFiles\\3\\IMG_ONE.png",
+      "PackagePath": "staticwebassets\\UploadedFiles\\3\\IMG_ONE.png"
+    },
+    {
+      "Id": "C:\\Users\\PC\\source\\repos\\University-Magazine-Contribution-System\\COMP1640\\COMP1640\\wwwroot\\UploadedFiles\\3\\file-sample_1MB.doc",
+      "PackagePath": "staticwebassets\\UploadedFiles\\3\\file-sample_1MB.doc"
+    },
+    {
+      "Id": "C:\\Users\\PC\\source\\repos\\University-Magazine-Contribution-System\\COMP1640\\COMP1640\\wwwroot\\UploadedFiles\\4\\IMG_ONE.png",
+      "PackagePath": "staticwebassets\\UploadedFiles\\4\\IMG_ONE.png"
+    },
+    {
+      "Id": "C:\\Users\\PC\\source\\repos\\University-Magazine-Contribution-System\\COMP1640\\COMP1640\\wwwroot\\UploadedFiles\\4\\file-sample_1MB.doc",
+      "PackagePath": "staticwebassets\\UploadedFiles\\4\\file-sample_1MB.doc"
     },
     {
       "Id": "C:\\Users\\PC\\source\\repos\\University-Magazine-Contribution-System\\COMP1640\\COMP1640\\wwwroot\\admin\\css\\style.css",
