@@ -30,3 +30,10 @@ The University **Magazine Contribution System (UMCS)** is a web-based platform d
 |                                    Marketing Coordinator                                 | The ones who will recive email when student submit contribution and need to comment the contribution within 14 days|
 |                                          Student                                         | The ones who can submit their contribution and recive Coordinator comment                                          |
 |                                           Guest                                          | The ones who can view the contribution                                                                             |
+
+## Setup
+### Database
+- Create new database name UMCS
+- Run UMCS.sql
+- Open VS
+- Open UmcsContext and change the Data Source into your
