@@ -1,0 +1,35 @@
+﻿@{
+    ViewData["Title"] = "Edit Term";
+    Layout = "~/Areas/Admin/Views/Shared/_AdminLayout.cshtml";
+}
+
+@model COMP1640.Models.Term
+
+<div class="section__body">
+    <div class="container">
+        <div class="title">Edit Term</div>
+        <div class="content">
+            <form asp-area="Admin" asp-controller="Term" asp-action="Edit" method="post">
+                <div class="form-details">
+                    @Html.HiddenFor(x => x.TermId)
+                    <div class="input-box">
+                        <span class="details">Term Name</span>
+                        <input type="text" id="term-name" name="TermName" value="@Model.TermName">
+                    </div>
+                    <div class="input-box">
+                        <span class="details">Start Date</span>
+                        <input type="date" id="start-date" name="StartDate" value="@Model.StartDate">
+                    </div>
+                    <div class="input-box">
+                        <span class="details">End Date</span>
+                        <input type="date" id="end-date" name="EndDate" value="@Model.EndDate">
+                    </div>
+                </div>
+                <div class="button__container">
+                    <button type="submit" class="btn primary">Save</button>
+                    <a asp-area="Admin" asp-controller="Term" asp-action="Index" class="btn secondary">Cancel</a>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

@@ -1,50 +1,42 @@
 ﻿@{
-    ViewData["Title"] = "Semester";
+    ViewData["Title"] = "Term List";
     Layout = "~/Areas/Admin/Views/Shared/_AdminLayout.cshtml";
-    var count = 0;
 }
 
-@model X.PagedList.IPagedList<COMP1640.Models.Semester>
-
-@foreach (var semester in Model)
-{
-    count++;
-}
+@model X.PagedList.IPagedList<COMP1640.Models.Term>
 
 <div class="section__body">
-    <h1>Semesters</h1>
+    <h1>Terms</h1>
     <div class="main-content">
-        <a asp-area="Admin" asp-controller="Semester" asp-action="Add" class="btn add">
+        <a asp-area="Admin" asp-controller="Term" asp-action="Add" class="btn primary">
             <i class="fa-solid fa-plus"></i>
-            Semester
+            New
         </a>
         <table class="content-table">
             <thead>
                 <tr>
-                    <th>ID</th>
-                    <th>Semester year</th>
-                    <th>Closure date</th>
-                    <th>Number of article</th>
+                    <th>Term</th>
+                    <th>Start Date</th>
+                    <th>End Date</th>
                     <th>Edit</th>
                     <th>Delete</th>
                 </tr>
             </thead>
             <tbody>
-                @foreach (var semester in Model)
+                @foreach (var term in Model)
                 {
                     <tr>
-                        <td data-title="ID">@semester.SemesterId</td>
-                        <td data-title="Semester year">@semester.SemesterYear</td>
-                        <td data-title="Closure date">@semester.ClosureDate</td>
-                        <td data-title="Number of article">@count</td>
+                        <td data-title="Term">@term.TermName</td>
+                        <td data-title="Start Date">@String.Format("{0:MMMM/dd/yy}", term.StartDate)</td>
+                        <td data-title="End Date">@String.Format("{0:MMMM/dd/yy}", term.EndDate)</td>
                         <td data-title="Edit">
-                            <a asp-area="Admin" asp-controller="Role" asp-action="Edit" asp-route-id="@semester.SemesterId" class="btn edit">
+                            <a asp-area="Admin" asp-controller="Term" asp-action="Edit" asp-route-id="@term.TermId" class="btn edit">
                                 <i class="fa-solid fa-pen-to-square"></i>
                                 Edit
                             </a>
                         </td>
                         <td data-title="Delete">
-                            <a asp-area="Admin" asp-controller="Role" asp-action="Delete" asp-route-id="@semester.SemesterId" class="btn delete" onclick="confirmation(event)">
+                            <a asp-area="Admin" asp-controller="Term" asp-action="Delete" asp-route-id="@term.TermId" class="btn delete" onclick="confirmation(event)">
                                 <i class="fa-solid fa-trash"></i>
                                 Delete
                             </a>
@@ -57,5 +49,6 @@
             </tbody>
         </table>
         <!-- pagination -->
+        @await Html.PartialAsync("_Pagination", Model)
     </div>
 </div>

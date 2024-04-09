@@ -18,11 +18,11 @@
                     </div>
                 </div>
                 
-                <div class="form-details">
+                @* <div class="form-details">
                     <div class="input-box">
                         <span class="details">Coordinator</span>
-                        @* <input type="text" id="RoleName" name="RoleName" placeholder="Enter role name"> *@
-                        <select id="userId" name="userId">
+                        <select id="coorId" name="coorId">
+                            <option value="">--Select coordinator--</option>
                             @foreach (var user in ViewBag.Coordinator)
                             {
                                 <option value="@user.UserId">@user.Username</option>
@@ -30,10 +30,23 @@
                         </select>
                     </div>
                 </div>
+                
+                <div class="form-details">
+                    <div class="input-box">
+                        <span class="details">Guest account</span>
+                        <select id="guestId" name="guestId">
+                            <option value="">--Select guest account--</option>
+                            @foreach (var user in ViewBag.Guest)
+                            {
+                                <option value="@user.UserId">@user.Username</option>
+                            }
+                        </select>
+                    </div>
+                </div> *@
 
                 <div class="button__container">
-                    <button type="submit" class="button primary">Create</button>
-                    <a asp-area="Admin" asp-controller="Faculty" asp-action="Index" class="button cancel">Cancel</a>
+                    <button type="submit" class="btn primary">Create</button>
+                    <a asp-area="Admin" asp-controller="Faculty" asp-action="Index" class="btn secondary">Cancel</a>
                 </div>
             </form>
         </div>

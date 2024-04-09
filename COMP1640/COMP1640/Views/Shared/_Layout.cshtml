@@ -54,25 +54,22 @@
                             {
                                 case "Marketing Manager":
                                     <li class="navbar-item">
-                                        <a asp-controller="Home" asp-action="DownloadAll" class="write" style="--i:0">
-                                            <i class="bx bx-edit"></i>
-                                            <p>Download all</p>
+                                        <a asp-controller="Submission" asp-action="DownloadAll" class="write" style="--i:0">
+                                            <p><i class="bx bx-edit"></i> Download all</p>
                                         </a>
                                     </li>
                                     break;
                                 case "Marketing Coordinator":
                                     <li class="navbar-item">
-                                        <a asp-controller="Coordinator" asp-action="StuIndex" class="write" style="--i:0">
-                                            <i class="bx bx-edit"></i>
-                                            <p>Manage faculty</p>
+                                        <a asp-controller="Submission" asp-action="DownloadAll" class="write" style="--i:0">
+                                            <p><i class="bx bx-edit"></i> Download all</p>
                                         </a>
                                     </li>
                                     break;
                                 case "Student":
                                     <li class="navbar-item">
-                                        <a asp-controller="Home" asp-action="Submission" class="write" style="--i:0">
-                                            <i class="bx bx-edit"></i>
-                                            <p>Submission</p>
+                                        <a asp-controller="Submission" asp-action="Submission" class="write" style="--i:0">
+                                            <p><i class="bx bx-edit"></i> Submission</p>
                                         </a>
                                     </li>
                                     break;
@@ -115,15 +112,7 @@
                                                 Edit Profile
                                             </a>
                                         </li>
-
-                                        <li class="profile-dropdown-list-item">
-                                            <a href="#">
-                                                <i class="fa-regular fa-envelope"></i>
-                                                Inbox
-                                            </a>
-                                        </li>
                                         <hr />
-
                                         <li class="profile-dropdown-list-item">
                                             <a asp-controller="Account" asp-action="Logout">
                                                 <i class="fa-solid fa-arrow-right-from-bracket"></i>

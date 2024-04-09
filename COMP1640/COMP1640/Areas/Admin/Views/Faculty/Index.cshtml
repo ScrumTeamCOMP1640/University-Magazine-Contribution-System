@@ -8,7 +8,7 @@
 <div class="section__body">
     <h1>Faculties</h1>
     <div class="main-content">
-        <a asp-area="Admin" asp-controller="Faculty" asp-action="Add" class="btn add">
+        <a asp-area="Admin" asp-controller="Faculty" asp-action="Add" class="btn primary">
             <i class="fa-solid fa-plus"></i>
             Faculty
         </a>
@@ -30,32 +30,20 @@
                         <td data-title="ID">@faculty.FacultyId</td>
                         <td data-title="Username">@faculty.FacultyName</td>
                         <td data-title="Coordinator">
-                            @foreach (var faus in ViewBag.FaUs)
+                            @foreach (var user in ViewBag.Users)
                             {
-                                @if (faculty.FacultyId == faus.FacultyId)
+                                if (user.FacultyId == faculty.FacultyId && user.RoleId == 3)
                                 {
-                                    @foreach (var user in ViewBag.User)
-                                    {
-                                        @if (faus.UserId == user.UserId && user.RoleId == 3)
-                                        {
-                                            <span>@user.Username</span>
-                                        }
-                                    }
+                                    @user.Username
                                 }
                             }
                         </td>
                         <td data-title="Guest account">
-                            @foreach (var faus in ViewBag.FaUs)
+                            @foreach (var user in ViewBag.Users)
                             {
-                                @if (faculty.FacultyId == faus.FacultyId)
+                                if (user.FacultyId == faculty.FacultyId && user.RoleId == 10)
                                 {
-                                    @foreach (var user in ViewBag.User)
-                                    {
-                                        @if (faus.UserId == user.UserId && user.RoleId == 10)
-                                        {
-                                            <span>@user.Username</span>
-                                        }
-                                    }
+                                    @user.Username
                                 }
                             }
                         </td>

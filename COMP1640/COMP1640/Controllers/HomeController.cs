@@ -3,6 +3,7 @@ using COMP1640.Interfaces;
 using COMP1640.Models;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.Office.Interop.Word;
 using X.PagedList;
 
 namespace COMP1640.Controllers
@@ -24,108 +25,53 @@ namespace COMP1640.Controllers
 
         public IActionResult Index(int? page)
         {
+            var user = FindUser();
+
             int pageSize = 8;
             int pageNumber = page == null || page < 0 ? 1 : page.Value;
-            var lstSubmission = _umcs.Articles.AsNoTracking().OrderBy(_umcs => _umcs.ArticleId);
+            var lstSubmission = ArticlesView();
             PagedList<Article> model = new PagedList<Article>(lstSubmission, pageNumber, pageSize);
+
+            var curr = new Term();
+            foreach (var term in _umcs.Terms.ToList())
+            {
+                if (term.EndDate > DateTime.Now && term.StartDate < DateTime.Now)
+                {
+                    curr = term;
+                    ViewBag.CurrTerms = term;
+                }
+            }
+            ViewBag.PreTerms = _umcs.Terms.Where(x => x.EndDate.AddDays(1) == curr.StartDate).FirstOrDefault();
+            HttpContext.Session.SetString("Term", curr.TermName);
             ViewBag.Users = _umcs.Users.ToList();
             return View(model);
-        }
+        } 
 
-        public IActionResult Submission()
+        private IOrderedQueryable<Article> ArticlesView ()
         {
-            return View();
-        }
+            var user = FindUser();
 
-        [HttpPost]
-        [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Submission(Article article, IFormFile file, IFormFile img)
-        {
-            var session = HttpContext.Session.GetString("Username");
-            var student = _umcs.Users.FirstOrDefault(u => u.Username == session);
-
-            if (student == null)
+            switch (user.RoleId)
             {
-                return NotFound();
+                case 3:
+                    return _umcs.Articles.AsNoTracking().Where(x => x.FacultyId == user.FacultyId).OrderBy(x => x.Title);
+                case 4:
+                    return _umcs.Articles.AsNoTracking().Where(x => x.UserId == user.UserId).OrderBy(x => x.Title);
+                case 2:
+                    return _umcs.Articles.AsNoTracking().Where(x => x.Status.Equals("Published")).OrderBy(x => x.Title);
+                default:
+                    return _umcs.Articles.AsNoTracking().Where(x => x.Status.Equals("Published") && x.FacultyId == user.FacultyId).OrderBy(x => x.Title);
             }
+        }
 
-            var FaUs = _umcs.FaUs.ToList();
-            var Coordinator = _umcs.Users.Where(u => u.RoleId == 3).ToList();
-            var coordinator = new User();
-
-            foreach (var faus in FaUs)
+        private User FindUser ()
+        {
+            var user = _umcs.Users.Where(x => x.Username.Equals(HttpContext.Session.GetString("Username"))).FirstOrDefault();
+            if (user == null)
             {
-                if (faus.UserId == student.UserId)
-                {
-                    var tempFaUs = FaUs.Where(f => f.FacultyId == faus.FacultyId).ToList();
-                    foreach (var tempfaus in tempFaUs)
-                    {
-                        foreach (var co in Coordinator)
-                        {
-                            if (tempfaus.UserId == co.UserId)
-                            {
-                                coordinator = _umcs.Users.FirstOrDefault(u => u.UserId == co.UserId);
-                                break;
-                            }
-                        }
-                    }
-                }
+                throw new Exception();
             }
-
-            if (ModelState.IsValid)
-            {
-                article.Content = await Upload(file, article.Title);
-                article.ImagePath = await Upload(img, article.Title);
-                article.UserId = student.UserId;
-                article.SubmissionDate = DateTime.Now;
-                article.Status = "Pending";
-                _umcs.Add(article);
-                await _umcs.SaveChangesAsync();
-
-                if (coordinator != null)
-                {
-                    await SendMail(coordinator);
-                }
-
-                return RedirectToAction("Index");
-            }
-            return View(article);
-        }
-
-        public IActionResult ContributeDetail(int? id)
-        {
-            var article = _umcs.Articles.FirstOrDefault(a => a.ArticleId == id);
-            ViewBag.Users = _umcs.Users.ToList();
-            return View(article);
-        }
-
-        public async Task SendMail(User user)
-        {
-            var email = "id22052003@gmail.com";
-            var subject = "Contribute announce";
-            var message = user.Email;
-            await _email.SendEmailAsync(email, subject, message);
-        }
-
-        public async Task<string> Upload(IFormFile file, string folder)
-        {
-            if (await _file.UploadFile(file, folder))
-                return file.FileName;
-            throw new Exception("Error");
-        }
-
-        [HttpGet]
-        public async Task<IActionResult> DownloadFile(string folder, int? id)
-        {
-            var file = await _file.DownloadFile(folder, id);
-            return File(file.Item1, file.Item2, file.Item3);
-        }
-        
-        [HttpGet]
-        public async Task<IActionResult> DownloadAll()
-        {
-            var file = await _file.DownloadAll();
-            return File(file.Item1, file.Item2, file.Item3);
+            return user;
         }
     }
 }

@@ -1,5 +1,4 @@
 ﻿using COMP1640.Models;
-using iText.Layout.Splitting;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using System.Web.Helpers;
@@ -66,7 +65,7 @@ namespace COMP1640.Controllers
                         case 4:
                             HttpContext.Session.SetString("Role", "Student");
                             return RedirectToAction("Index", "Home");
-                        case 5:
+                        case 10:
                             HttpContext.Session.SetString("Role", "Guest");
                             return RedirectToAction("Index", "Home");
                     }

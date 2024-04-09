@@ -21,11 +21,13 @@ public partial class User
 
     public string? Address { get; set; }
 
+    public int? FacultyId { get; set; }
+
     public virtual ICollection<Article> Articles { get; set; } = new List<Article>();
 
     public virtual ICollection<Comment> Comments { get; set; } = new List<Comment>();
 
-    public virtual ICollection<FaU> FaUs { get; set; } = new List<FaU>();
+    public virtual Faculty? Faculty { get; set; }
 
     public virtual Role? Role { get; set; }
 }

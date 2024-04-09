@@ -1,0 +1,32 @@
+﻿@{
+    ViewData["Title"] = "Add Term";
+    Layout = "~/Areas/Admin/Views/Shared/_AdminLayout.cshtml";
+}
+
+<div class="section__body">
+    <div class="container">
+        <div class="title">Add Term</div>
+        <div class="content">
+            <form asp-area="Admin" asp-controller="Term" asp-action="Add" method="post">
+                <div class="form-details">
+                    <div class="input-box">
+                        <span class="details">Term Name</span>
+                        <input type="text" id="term-name" name="TermName" placeholder="Enter term name">
+                    </div>
+                    <div class="input-box">
+                        <span class="details">Start Date</span>
+                        <input type="date" id="start-date" name="StartDate" placeholder="Enter start date">
+                    </div>
+                    <div class="input-box">
+                        <span class="details">End Date</span>
+                        <input type="date" id="end-date" name="EndDate" placeholder="Enter end date">
+                    </div>
+                </div>
+                <div class="button__container">
+                    <button type="submit" class="btn primary">Create</button>
+                    <a asp-area="Admin" asp-controller="Term" asp-action="Index" class="btn secondary">Cancel</a>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

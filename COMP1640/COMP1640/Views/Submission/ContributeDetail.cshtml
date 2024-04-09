@@ -1,0 +1,131 @@
+﻿@{
+    ViewData["Title"] = "Contribute Detail";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    var role = Context.Session.GetString("Role");
+}
+
+@model COMP1640.Models.Article
+
+<div class="main__container">
+    <div class="grid wide">
+        <div class="row sm-gutter main__content">
+
+            <div class="col l-8 l-o-2">
+                <div class="item__detail">
+                    <div class="item__bg" style="background-image: url('@Url.Content("~/UploadedFiles/" + Model.Title.Replace(" ", "_") + "/" + Model.ImagePath)');"></div>
+                    <h1 class="item__title">@Model.Title</h1>
+                    <form class="comment-form">
+                        <div class="comment-box">
+                            <textarea name="comment" id="comment" rows="10" readonly>@ViewBag.WordHtml</textarea>
+                        </div>
+                    </form>
+                    <div class="author__detail">
+                        <div class="author__avatar">
+                            <img src="~/img/user_avatar.png">
+                        </div>
+                        <div class="author__info">
+                            <div class="author-name">
+                                @foreach (var user in ViewBag.Users)
+                                {
+                                    if (user.UserId == Model.UserId)
+                                    {
+                                        <p>@user.Username</p>
+                                    }
+                                }
+                            </div>
+                            <div class="update-time">
+                                <p>@String.Format("{0:D}", @Model.SubmissionDate)</p>
+                            </div>
+                        </div>
+                    </div>
+                    @if (role != null)
+                    {
+                        switch (role)
+                        {
+                            case "Marketing Manager":
+                                <form action="" method="post" class="comment-form">
+                                    <div class="status-wrap">
+                                        @* <div class="status-box">
+                                            <label for="status">Status</label>
+                                            <select name="" id="" disabled>
+                                                <option value="">Pending</option>
+                                                <option value="">Published</option>
+                                                <option value="">Rejected</option>
+                                            </select>
+                                        </div> *@
+                                        <a asp-controller="Home" asp-action="DownloadFile" asp-route-id="@Model.ArticleId" class="btn download-btn">
+                                            Download
+                                            <i class="fa-solid fa-download"></i>
+                                        </a>
+                                    </div>
+                                    @* <div class="comment-box">
+                                        <label for="comment">Comment</label>
+                                        <textarea name="comment" id="comment" rows="4" readonly></textarea>
+                                    </div> *@
+                                    <div class="form-actions">
+                                        @* <button type="submit" class="btn primary">
+                                            Submit
+                                        </button> *@
+                                        <a asp-controller="Home" asp-action="Index" class="btn secondary">
+                                            Cancel
+                                        </a>
+                                    </div>
+                                </form>
+                                break;
+
+                            case "Marketing Coordinator":
+                                <form asp-controller="Coordinator" asp-action="Comment" asp-route-id="@Model.ArticleId" method="post" class="comment-form">
+                                    <div class="status-wrap">
+                                        <div class="status-box">
+                                            <label for="status">Status</label>
+                                            <select name="status" id="status">
+                                                <option value="Pending">Pending</option>
+                                                <option value="Published">Published</option>
+                                                <option value="Rejected">Rejected</option>
+                                            </select>
+                                        </div>
+                                        <a asp-controller="Home" asp-action="DownloadFile" asp-route-id="@Model.ArticleId" class="btn download-btn">
+                                            Download
+                                            <i class="fa-solid fa-download"></i>
+                                        </a>
+                                    </div>
+                                    <div class="comment-box">
+                                        <label for="comment">Comment</label>
+                                        <textarea name="comment" id="comment" rows="4"></textarea>
+                                    </div>
+                                    <div class="form-actions">
+                                        <button type="submit" class="btn primary">
+                                            Submit
+                                        </button>
+                                        <a asp-controller="Home" asp-action="Index" class="btn secondary">
+                                            Cancel
+                                        </a>
+                                    </div>
+                                </form>
+                                break;
+
+                            case "Student":
+                                <form action="" method="post" class="comment-form">
+                                    <div class="comment-box">
+                                        <label for="comment">Comment</label>
+                                        <textarea name="comment" id="comment" rows="4"></textarea>
+                                    </div>
+                                </form>
+                                <div class="detail-actions">
+                                    <a asp-controller="Home" asp-action="EditSubmission" class="btn primary">
+                                        Edit Submission
+                                    </a>
+                                    <a asp-controller="Home" asp-action="Index" class="btn secondary">
+                                        Cancel
+                                    </a>
+                                </div>
+                                break;
+                        }
+                    }
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+</div>
