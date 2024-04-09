@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "UvdnkXPUhLReV/s3xMxtu+vrT4zio0cDqWvhaKsSkVc=",
+  "Hash": "Lg6t1ghkiEbabrzf+TxIlVCaV1XLy5aIhZdvg0G4mY8=",
   "Source": "COMP1640",
   "BasePath": "_content/COMP1640",
   "Mode": "Default",
@@ -1480,6 +1480,25 @@
       "OriginalItemSpec": "wwwroot\\login\\js\\script.js"
     },
     {
+      "Identity": "C:\\Users\\PC\\source\\repos\\University-Magazine-Contribution-System\\COMP1640\\COMP1640\\wwwroot\\OutPut\\file-sample_1MB.pdf",
+      "SourceId": "COMP1640",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\PC\\source\\repos\\University-Magazine-Contribution-System\\COMP1640\\COMP1640\\wwwroot\\",
+      "BasePath": "_content/COMP1640",
+      "RelativePath": "OutPut/file-sample_1MB.pdf",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\OutPut\\file-sample_1MB.pdf"
+    },
+    {
       "Identity": "C:\\Users\\PC\\source\\repos\\University-Magazine-Contribution-System\\COMP1640\\COMP1640\\wwwroot\\UploadedFiles\\1\\file-sample_1MB.doc",
       "SourceId": "COMP1640",
       "SourceType": "Discovered",
@@ -1630,6 +1649,44 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\UploadedFiles\\4\\IMG_ONE.png"
+    },
+    {
+      "Identity": "C:\\Users\\PC\\source\\repos\\University-Magazine-Contribution-System\\COMP1640\\COMP1640\\wwwroot\\UploadedFiles\\5\\file-sample_1MB.doc",
+      "SourceId": "COMP1640",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\PC\\source\\repos\\University-Magazine-Contribution-System\\COMP1640\\COMP1640\\wwwroot\\",
+      "BasePath": "_content/COMP1640",
+      "RelativePath": "UploadedFiles/5/file-sample_1MB.doc",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\UploadedFiles\\5\\file-sample_1MB.doc"
+    },
+    {
+      "Identity": "C:\\Users\\PC\\source\\repos\\University-Magazine-Contribution-System\\COMP1640\\COMP1640\\wwwroot\\UploadedFiles\\5\\IMG_ONE.png",
+      "SourceId": "COMP1640",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\PC\\source\\repos\\University-Magazine-Contribution-System\\COMP1640\\COMP1640\\wwwroot\\",
+      "BasePath": "_content/COMP1640",
+      "RelativePath": "UploadedFiles/5/IMG_ONE.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\UploadedFiles\\5\\IMG_ONE.png"
     }
   ]
 }

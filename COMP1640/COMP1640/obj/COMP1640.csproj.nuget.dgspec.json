@@ -49,6 +49,10 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "dependencies": {
+            "GroupDocs.Viewer": {
+              "target": "Package",
+              "version": "[24.3.0, )"
+            },
             "Microsoft.AspNet.WebPages": {
               "target": "Package",
               "version": "[3.3.0, )"

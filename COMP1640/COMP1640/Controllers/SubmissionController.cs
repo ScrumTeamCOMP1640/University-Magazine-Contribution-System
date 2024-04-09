@@ -1,8 +1,11 @@
 ﻿using COMP1640.Interfaces;
 using COMP1640.Models;
+using GroupDocs.Viewer;
+using GroupDocs.Viewer.Options;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Office.Interop.Word;
 using System.Text.RegularExpressions;
+using System.Web.WebPages;
 
 namespace COMP1640.Controllers
 {
@@ -75,7 +78,7 @@ namespace COMP1640.Controllers
                 return NotFound();
             }
 
-            ViewBag.WordHtml = ReadFile(article);
+            ViewBag.Comments = context.Comments.ToList();
             ViewBag.Users = context.Users.ToList();
             return View(article);
         }
@@ -109,27 +112,53 @@ namespace COMP1640.Controllers
             return File(file.Item1, file.Item2, file.Item3);
         }
 
-        public string ReadFile(Article article)
+        public Article Article (int? id)
         {
-            var path = Path.GetFullPath(Path.Combine(Environment.CurrentDirectory, "wwwroot", "UploadedFiles", article.Title.Replace(" ", "_")));
-            var files = Directory.GetFiles(path).Where(x => x.EndsWith(".doc"));
-            foreach (var file in files)
+            var article = context.Articles.Where(x => x.ArticleId == id).FirstOrDefault();
+            if (article == null)
             {
-                using (var fs = new FileStream(file, FileMode.Open, FileAccess.Read, FileShare.Read))
-                {
-                    object readOnly = true;
-                    Application application = new Application();
-                    Document document = new Document();
-
-                    document = application.Documents.Open(file, readOnly);
-
-                    string content = document.Content.Text;
-                    document.Close();
-                    application.Quit();
-                    return content;
-                }
+                throw new Exception();
             }
-            return "null";
+            return article;
+        }
+
+        public string ContentPath ()
+        {
+            var path = Path.GetFullPath(Path.Combine(Environment.CurrentDirectory, "wwwroot", "UploadedFiles"));
+            return path;
+        }
+
+        public string OutPath()
+        {
+            var path = Path.GetFullPath(Path.Combine(Environment.CurrentDirectory, "wwwroot", "OutPut"));
+            if(!Directory.Exists(path))
+            {
+                Directory.CreateDirectory(path);
+            }
+            return path;
+        }
+
+        public IActionResult ViewDocument()
+        {
+            string fileName = Request.Form["fileName"].ToString();
+            var  id = 0;
+            foreach (var item in context.Articles.ToList())
+                if(item.Content == fileName)
+                    id = item.ArticleId;
+
+            Article article = Article(id);
+            string filePath = Path.Combine(ContentPath(), article.Title.Replace(" ", "_"), fileName);
+            string outFilePath = Path.Combine(OutPath(), fileName.Split(".")[0] + ".pdf");
+
+            using (Viewer viewer = new Viewer(filePath))
+            {
+                PdfViewOptions options = new PdfViewOptions(outFilePath);
+                viewer.View(options);
+            }
+
+            FileStream fs = new FileStream(outFilePath, FileMode.Open, FileAccess.Read);
+            FileStreamResult fsr = new FileStreamResult(fs, "application/pdf");
+            return fsr;
         }
     }
 }

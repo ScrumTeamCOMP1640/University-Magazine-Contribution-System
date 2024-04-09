@@ -14,10 +14,11 @@
                 <div class="item__detail">
                     <div class="item__bg" style="background-image: url('@Url.Content("~/UploadedFiles/" + Model.Title.Replace(" ", "_") + "/" + Model.ImagePath)');"></div>
                     <h1 class="item__title">@Model.Title</h1>
-                    <form class="comment-form">
+                    <form asp-action="ViewDocument" method="post" class="comment-form">
                         <div class="comment-box">
-                            <textarea name="comment" id="comment" rows="10" readonly>@ViewBag.WordHtml</textarea>
+                            <textarea name="fileName" id="comment" rows="10" readonly>@Model.Content</textarea>
                         </div>
+                        <button type="submit" class="btn primary">View document</button>
                     </form>
                     <div class="author__detail">
                         <div class="author__avatar">
@@ -45,27 +46,12 @@
                             case "Marketing Manager":
                                 <form action="" method="post" class="comment-form">
                                     <div class="status-wrap">
-                                        @* <div class="status-box">
-                                            <label for="status">Status</label>
-                                            <select name="" id="" disabled>
-                                                <option value="">Pending</option>
-                                                <option value="">Published</option>
-                                                <option value="">Rejected</option>
-                                            </select>
-                                        </div> *@
                                         <a asp-controller="Home" asp-action="DownloadFile" asp-route-id="@Model.ArticleId" class="btn download-btn">
                                             Download
                                             <i class="fa-solid fa-download"></i>
                                         </a>
                                     </div>
-                                    @* <div class="comment-box">
-                                        <label for="comment">Comment</label>
-                                        <textarea name="comment" id="comment" rows="4" readonly></textarea>
-                                    </div> *@
                                     <div class="form-actions">
-                                        @* <button type="submit" class="btn primary">
-                                            Submit
-                                        </button> *@
                                         <a asp-controller="Home" asp-action="Index" class="btn secondary">
                                             Cancel
                                         </a>
@@ -108,7 +94,15 @@
                                 <form action="" method="post" class="comment-form">
                                     <div class="comment-box">
                                         <label for="comment">Comment</label>
-                                        <textarea name="comment" id="comment" rows="4"></textarea>
+                                        <textarea name="comment" id="comment" rows="4">
+                                            @foreach (var item in ViewBag.Comments)
+                                            {
+                                                if (item.ArticleId == Model.ArticleId)
+                                                {
+                                                    @item.CommentContent
+                                                }
+                                            }
+                                        </textarea>
                                     </div>
                                 </form>
                                 <div class="detail-actions">
