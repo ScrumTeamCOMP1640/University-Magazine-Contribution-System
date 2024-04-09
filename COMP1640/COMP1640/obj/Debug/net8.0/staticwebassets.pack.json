@@ -5,6 +5,10 @@
       "PackagePath": "staticwebassets\\COMP1640.bundle.scp.css"
     },
     {
+      "Id": "C:\\Users\\PC\\source\\repos\\University-Magazine-Contribution-System\\COMP1640\\COMP1640\\wwwroot\\OutPut\\file-sample_1MB.pdf",
+      "PackagePath": "staticwebassets\\OutPut\\file-sample_1MB.pdf"
+    },
+    {
       "Id": "C:\\Users\\PC\\source\\repos\\University-Magazine-Contribution-System\\COMP1640\\COMP1640\\wwwroot\\UploadedFiles\\1\\IMG_ONE.png",
       "PackagePath": "staticwebassets\\UploadedFiles\\1\\IMG_ONE.png"
     },
@@ -35,6 +39,14 @@
     {
       "Id": "C:\\Users\\PC\\source\\repos\\University-Magazine-Contribution-System\\COMP1640\\COMP1640\\wwwroot\\UploadedFiles\\4\\file-sample_1MB.doc",
       "PackagePath": "staticwebassets\\UploadedFiles\\4\\file-sample_1MB.doc"
+    },
+    {
+      "Id": "C:\\Users\\PC\\source\\repos\\University-Magazine-Contribution-System\\COMP1640\\COMP1640\\wwwroot\\UploadedFiles\\5\\IMG_ONE.png",
+      "PackagePath": "staticwebassets\\UploadedFiles\\5\\IMG_ONE.png"
+    },
+    {
+      "Id": "C:\\Users\\PC\\source\\repos\\University-Magazine-Contribution-System\\COMP1640\\COMP1640\\wwwroot\\UploadedFiles\\5\\file-sample_1MB.doc",
+      "PackagePath": "staticwebassets\\UploadedFiles\\5\\file-sample_1MB.doc"
     },
     {
       "Id": "C:\\Users\\PC\\source\\repos\\University-Magazine-Contribution-System\\COMP1640\\COMP1640\\wwwroot\\admin\\css\\style.css",

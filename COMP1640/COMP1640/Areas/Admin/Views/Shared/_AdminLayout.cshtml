@@ -1,5 +1,5 @@
 ﻿@{
-    var username = Context.Session.GetString("UserName");
+    var username = Context.Session.GetString("Username");
 }﻿
 <!DOCTYPE html>
 <html lang="en">
@@ -53,14 +53,7 @@
 
                 <div class="admin-account">
                     <span class="avatar" style="background-image: url(@Url.Content("~/admin/img/admin.png"));"></span>
-                    @if (!string.IsNullOrEmpty(username))
-                    {
-                        <span class="admin-name">@username</span>
-                    }
-                    else
-                    {
-                        <span class="admin-name">Administrator</span>
-                    }
+                    <span class="admin-name">@username</span>
                 </div>
             </div>
         </header>
