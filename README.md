@@ -34,6 +34,30 @@ The University **Magazine Contribution System (UMCS)** is a web-based platform d
 ## Setup
 ### Database
 - Create new database name UMCS
-- Run UMCS.sql
-- Open VS
-- Open UmcsContext and change the Data Source into your
+- Open UMCS.sql in database directory
+- Exceute the script
+### Config VS
+- Run COMP1640.sln
+- Open UmcsContext.cs
+- Change the Data Source into your own
+#### Notice
+- If you not know your data source or add database into VS, pls watch this video: https://youtu.be/7SgVx1owKJQ?si=bKynmyGA2giVVp-r
+
+
+## Account in database
+|                                            Role                                          |                                       Account                                         |      Password       |
+|:----------------------------------------------------------------------------------------:|:-------------------------------------------------------------------------------------:|:-------------------:|
+|                                        Administrator                                     | administrator@gmail.com                                                               |          1          |
+|                                      Marketing Manager                                   | marketingmanager@gmail.com                                                            |          1          |
+|                                    Marketing Coordinator                                 | computingcoordinator@gmail.com                                                        |          1          |
+|                                                                                          | businesscoordinator@gmail.com                                                         |          1          |
+|                                                                                          | digitalmarketingcoordinator@gmaill.com                                                |          1          |
+|                                          Student                                         | computingstudent@gmail.com                                                            |          1          |
+|                                                                                          | businessstudent@gmail.com                                                             |          1          |
+|                                                                                          | digitalmarketingstudent@gmaill.com                                                    |          1          |
+|                                           Guest                                          | computingguest@gmail.com                                                              |          1          |
+|                                                                                          | businessguest@gmail.com                                                               |          1          |
+|                                                                                          | digitalmarketingguest@gmaill.com                                                      |          1          |
+
+#### Notice : 
+- If 1 is incorect you can try 2 insted
