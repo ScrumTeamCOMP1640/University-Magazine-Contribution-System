@@ -647,8 +647,6 @@ C:\Users\PC\source\repos\University-Magazine-Contribution-System\COMP1640\COMP16
 C:\Users\PC\source\repos\University-Magazine-Contribution-System\COMP1640\COMP1640\bin\Debug\net8.0\runtimes\win\lib\net7.0\System.Security.Cryptography.ProtectedData.dll
 C:\Users\PC\source\repos\University-Magazine-Contribution-System\COMP1640\COMP1640\bin\Debug\net8.0\runtimes\win\lib\net7.0\System.Windows.Extensions.dll
 C:\Users\PC\source\repos\University-Magazine-Contribution-System\COMP1640\COMP1640\obj\Debug\net8.0\COMP1640.csproj.AssemblyReference.cache
-C:\Users\PC\source\repos\University-Magazine-Contribution-System\COMP1640\COMP1640\obj\Debug\net8.0\Interop.Microsoft.Office.Interop.Word.dll
-C:\Users\PC\source\repos\University-Magazine-Contribution-System\COMP1640\COMP1640\obj\Debug\net8.0\COMP1640.csproj.ResolveComReference.cache
 C:\Users\PC\source\repos\University-Magazine-Contribution-System\COMP1640\COMP1640\obj\Debug\net8.0\COMP1640.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\PC\source\repos\University-Magazine-Contribution-System\COMP1640\COMP1640\obj\Debug\net8.0\COMP1640.AssemblyInfoInputs.cache
 C:\Users\PC\source\repos\University-Magazine-Contribution-System\COMP1640\COMP1640\obj\Debug\net8.0\COMP1640.AssemblyInfo.cs

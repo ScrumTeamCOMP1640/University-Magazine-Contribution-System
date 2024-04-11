@@ -3,7 +3,6 @@ using COMP1640.Models;
 using GroupDocs.Viewer;
 using GroupDocs.Viewer.Options;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.Office.Interop.Word;
 using System.Text.RegularExpressions;
 using System.Web.WebPages;
 
@@ -83,7 +82,7 @@ namespace COMP1640.Controllers
             return View(article);
         }
 
-        public async System.Threading.Tasks.Task SendMail(User user)
+        public async Task SendMail(User user)
         {
             var email = "id22052003@gmail.com";
             var subject = "Contribute announce";
@@ -140,15 +139,18 @@ namespace COMP1640.Controllers
 
         public IActionResult ViewDocument()
         {
-            string fileName = Request.Form["fileName"].ToString();
-            var  id = 0;
+            string fileName = "file-sample_1MB.doc";
+            var id = 0;
             foreach (var item in context.Articles.ToList())
-                if(item.Content == fileName)
+                if (item.Content == fileName)
                     id = item.ArticleId;
 
             Article article = Article(id);
-            string filePath = Path.Combine(ContentPath(), article.Title.Replace(" ", "_"), fileName);
-            string outFilePath = Path.Combine(OutPath(), fileName.Split(".")[0] + ".pdf");
+            if (article.Content == null)
+                throw new Exception();
+
+            string filePath = Path.Combine(ContentPath(), article.Title.Replace(" ", "_"), article.Content);
+            string outFilePath = Path.Combine(OutPath(), article.Content.Split(".")[0] + ".pdf");
 
             using (Viewer viewer = new Viewer(filePath))
             {
@@ -158,7 +160,7 @@ namespace COMP1640.Controllers
 
             FileStream fs = new FileStream(outFilePath, FileMode.Open, FileAccess.Read);
             FileStreamResult fsr = new FileStreamResult(fs, "application/pdf");
-            return fsr;
+            return fsr  ;
         }
     }
 }
