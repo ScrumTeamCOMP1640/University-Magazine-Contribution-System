@@ -3,7 +3,6 @@ using COMP1640.Interfaces;
 using COMP1640.Models;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
-using Microsoft.Office.Interop.Word;
 using X.PagedList;
 
 namespace COMP1640.Controllers
