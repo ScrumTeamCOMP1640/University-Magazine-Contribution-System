@@ -222,7 +222,6 @@ body {
 }
 
 .header__left {
-    width: 240px;
     display: flex;
     justify-content: space-between;
     align-items: center;

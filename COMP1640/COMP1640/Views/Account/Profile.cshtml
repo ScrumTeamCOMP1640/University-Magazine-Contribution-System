@@ -1,0 +1,69 @@
+﻿@{
+    ViewData["Title"] = "Update Info";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@model COMP1640.ViewModels.ProfileViewModel
+
+<div class="main__container">
+    <div class="grid wide">
+        <div class="row main__content">
+            <div class="col l-10 l-o-1">
+                <form asp-controller="Account" asp-action="UpdateInfo" method="post">
+                    <div class="profile">
+                        <ul class="profile-sidebar">
+                            <li class="profile-sidebar__item">
+                                <a asp-controller="Account" asp-action="Profile" class="profile-sidebar__item--link active">Account</a>
+                            </li>
+                            <li class="profile-sidebar__item">
+                                <a asp-controller="Account" asp-action="Pass" class="profile-sidebar__item--link">Password</a>
+                            </li>
+                        </ul>
+                        <div class="profile-info">
+                            <h1>Account Settings</h1>
+                            <div class="profile-image">
+                                <img src="~/img/user_avatar.png">
+                            </div>
+                            <table width="100%" class="profile-details">
+                                <tr>
+                                    <td class="title"><strong>Username</strong></td>
+                                    <td>
+                                        <div class="profile__group">
+                                            <input type="text" asp-for="Username" class="profile__input">
+                                        </div>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td class="title"><strong>Phone</strong></td>
+                                    <td>
+                                        <div class="profile__group">
+                                            <input type="text" asp-for="Phone" class="profile__input" placeholder="Enter your phone number">
+                                        </div>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td class="title"><strong>Address</strong></td>
+                                    <td>
+                                        <div class="profile__group">
+                                            <textarea rows="3" asp-for="Address" class="profile__textarea"></textarea>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </table>
+                            <div class="profile-actions">
+                                <button type="submit" class="btn primary">
+                                    Save Changes
+                                </button>
+                                <a asp-controller="Home" asp-action="Index" class="btn secondary">
+                                    Cancel
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

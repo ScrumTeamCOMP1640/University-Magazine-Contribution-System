@@ -10,7 +10,7 @@
     <div class="main-content">
         <a asp-area="Admin" asp-controller="Role" asp-action="Add" class="btn primary">
             <i class="fa-solid fa-plus"></i>
-            Role
+            New
         </a>
         <table class="content-table">
             <thead>
@@ -47,5 +47,6 @@
             </tbody>
         </table>
         <!-- pagination -->
+        @await Html.PartialAsync("_Pagination", Model)
     </div>
 </div>

@@ -1,10 +1,10 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using COMP1640.Models;
 using System.Web.Helpers;
-using Microsoft.AspNetCore.Mvc.Rendering;
-using NuGet.Protocol;
 using Microsoft.EntityFrameworkCore;
 using X.PagedList;
+using NToastNotify;
+using Microsoft.AspNetCore.Mvc.Rendering;
 
 namespace COMP1640.Areas.Admin.Controllers
 {
@@ -12,25 +12,31 @@ namespace COMP1640.Areas.Admin.Controllers
     [Route("Admin/User")]
     public class UserController : Controller
     {
-        UmcsContext _umcs = new UmcsContext();
+        private readonly UmcsContext _db;
+        private readonly IToastNotification _toast;
 
-        [Route("")]
+        public UserController(UmcsContext db, IToastNotification toast)
+        {
+            _db = db;
+            _toast = toast;
+        }
+
         public IActionResult Index(int? page)
         {
-            int pageSize = 10;
-            int pageNumber = page == null || page < 0 ? 1 : page.Value ;
-            var lstUser = _umcs.Users.AsNoTracking().OrderBy(_umcs => _umcs.RoleId);
-            PagedList<User> model = new PagedList<User>(lstUser, pageNumber, pageSize);
-            ViewBag.Roles = _umcs.Roles.ToList();
-            return View(model);
+            var users = _db.Users.OrderBy(u => u.UserId);
+            int pageSize = 8;
+            int pageNumber = page ?? 1;
+            IPagedList<User> pagedList = users.ToPagedList(pageNumber, pageSize);
+            ViewBag.Roles = _db.Roles.ToList();
+            return View(pagedList);
         }
 
         [Route("Add")]
         public IActionResult Add()
         {
-            ViewBag.Roles = _umcs.Roles.ToList();
-            ViewBag.Faculties = _umcs.Faculties.ToList();
-            return View();
+			ViewBag.RoleName = new SelectList(_db.Roles.OrderBy(r => r.RoleId).ToList(), "RoleId", "RoleName");
+			ViewBag.FacultyName = new SelectList(_db.Faculties.OrderBy(f => f.FacultyId).ToList(), "FacultyId", "FacultyName");
+			return View();
         }
 
         [Route("Add")]
@@ -41,61 +47,87 @@ namespace COMP1640.Areas.Admin.Controllers
             if (ModelState.IsValid)
             {
                 user.Password = Crypto.HashPassword("1");
-                user.Avatar = "avatar1.jpg";
-                _umcs.Users.Add(user);
-                _umcs.SaveChanges();
+                user.Avatar = "user_avatar.png";
+                _db.Users.Add(user);
+                _db.SaveChanges();
+                _toast.AddSuccessToastMessage("User created successfully!");
                 return RedirectToAction("Index");
             }
             return View(user);
         }
 
-        [Route("Edit")]
-        [HttpGet]
+        [Route("Edit/{id}")]
         public IActionResult Edit(int? id)
-        {  
+        {
             if (id == null)
             {
+                _toast.AddErrorToastMessage("User ID not provided!");
                 return NotFound();
             }
 
-            var user = _umcs.Users.Find(id);
+            var user = _db.Users.Include(u => u.Role).Include(u => u.Faculty).FirstOrDefault(u => u.UserId == id);
 
             if (user == null)
             {
+                _toast.AddErrorToastMessage("User not found!");
                 return NotFound();
             }
 
-            ViewBag.Roles = _umcs.Roles.ToList();
-            ViewBag.Faculties = _umcs.Faculties.ToList();
+            ViewBag.RoleName = new SelectList(_db.Roles.OrderBy(r => r.RoleId).ToList(), "RoleId", "RoleName");
+            ViewBag.FacultyName = new SelectList(_db.Faculties.OrderBy(f => f.FacultyId).ToList(), "FacultyId", "FacultyName");
             return View(user);
+
         }
 
-        [Route("Edit")]
+        [Route("Edit/{id}")]
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public IActionResult Edit(User user)
+        public IActionResult Edit(int id, [Bind("UserId, Username, Password, Email, Avatar, RoleId, FacultyId")] User user)
         {
-            if(ModelState.IsValid)
+            if (id != user.UserId)
             {
-                _umcs.Entry(user).State = EntityState.Modified;
-                _umcs.SaveChanges();
-                return RedirectToAction("Index");
+                _toast.AddErrorToastMessage("Invalid user ID!");
+                return NotFound();
+            }
+
+            if (ModelState.IsValid)
+            {
+                try
+                {
+                    _db.Entry(user).State = EntityState.Modified;
+                    _db.SaveChanges();
+                    _toast.AddSuccessToastMessage("User updated successfully!");
+                    return RedirectToAction("Index");
+                }
+                catch (DbUpdateConcurrencyException)
+                {
+                    _toast.AddErrorToastMessage("Failed to update user!");
+                    throw;
+                }
             }
             return View(user);
         }
 
-        [Route("Delete")] 
+        [Route("Delete/{id}")] 
         public IActionResult Delete(int id)
         {
-            var user = _umcs.Users.FirstOrDefault(m => m.UserId.Equals(id));
-
+            var user = _db.Users.Find(id);
             if (user == null)
             {
+                _toast.AddErrorToastMessage("User not found!");
                 return NotFound();
             }
 
-            _umcs.Users.Remove(user);
-            _umcs.SaveChanges();
+            var hasArticles = _db.Articles.Any(a => a.UserId == user.UserId);
+            if (hasArticles)
+            {
+                _toast.AddErrorToastMessage("Articles are associated with this user!");
+                return RedirectToAction("Index");
+            }
+
+            _db.Users.Remove(user);
+            _db.SaveChanges();
+            _toast.AddSuccessToastMessage("User deleted successfully!");
             return RedirectToAction("Index");
         }
     }

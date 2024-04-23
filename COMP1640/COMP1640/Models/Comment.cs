@@ -7,11 +7,11 @@ public partial class Comment
 {
     public int CommentId { get; set; }
 
-    public int? ArticleId { get; set; }
-
     public string? CommentContent { get; set; }
 
     public DateTime? CommentDate { get; set; }
+
+    public int? ArticleId { get; set; }
 
     public int? UserId { get; set; }
 

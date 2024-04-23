@@ -1,15 +1,22 @@
-﻿using COMP1640.Interfaces;
+﻿using AspNetCore;
+using COMP1640.Interfaces;
 using COMP1640.Models;
 using Microsoft.AspNetCore.Http.HttpResults;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.StaticFiles;
+using Microsoft.CodeAnalysis.CSharp.Syntax;
 using System.IO.Compression;
 
 namespace COMP1640.Services
 {
     public class FileService : IFile
     {
-        UmcsContext _context = new UmcsContext();
+        private readonly UmcsContext _context;
+
+        public FileService(UmcsContext context)
+        {
+            _context = context;
+        }
         public async Task<bool> UploadFile(IFormFile file, string folderName)
         {
             try
@@ -18,13 +25,13 @@ namespace COMP1640.Services
 
                 if (file != null && file.Length <= 5242880)
                 {
-                    path = Path.GetFullPath(Path.Combine(Environment.CurrentDirectory, "wwwroot" ,"UploadedFiles", folderName.Replace(" ", "_")));
+                    path = Path.GetFullPath(Path.Combine(Environment.CurrentDirectory, "wwwroot", "UploadedFiles", folderName.Replace(" ", "_")));
 
                     if (!Directory.Exists(path))
                     {
                         Directory.CreateDirectory(path);
                     }
-                        
+
                     using (var fs = new FileStream(Path.Combine(path, file.FileName), FileMode.Create))
                     {
                         await file.CopyToAsync(fs);
@@ -39,35 +46,25 @@ namespace COMP1640.Services
             }
         }
 
+        [HttpGet]
         public async Task<(byte[], string, string)> DownloadFile(string folder, int? id)
         {
             try
             {
                 var article = _context.Articles.FirstOrDefault(x => x.ArticleId == id);
-                var path = Path.GetFullPath(Path.Combine(Environment.CurrentDirectory, "wwwroot", "UploadedFiles", article.Title.Replace(" ", "_")));
-                var files = Directory.GetFiles(path);
-                using (var memoryStream = new MemoryStream())
+                var path = Path.GetFullPath(Path.Combine(Environment.CurrentDirectory, "wwwroot", "UploadedFiles", article.Title.Replace(" ", "_"), article.Content));
+
+                var provider = new FileExtensionContentTypeProvider();
+                if (provider.TryGetContentType(path, out var contentType))
                 {
-                    using (var zipArchive = new ZipArchive(memoryStream, ZipArchiveMode.Create, true))
-                    {
-                        foreach (var file in files)
-                        {
-                            var fileInfo = new FileInfo(file);
-                            var entry = zipArchive.CreateEntry(article.Title.Replace(" ", "_") + "/" + fileInfo.Name);
-
-                            using (var entryStream = entry.Open())
-                            {
-                                using (var fileStream = new FileStream(file, FileMode.Open, FileAccess.Read))
-                                {
-                                    await fileStream.CopyToAsync(entryStream);
-                                }
-                            }
-                        }
-                    }
-
-                    memoryStream.Seek(0, SeekOrigin.Begin);
-                    return (memoryStream.ToArray(), "application/zip", article.Title.Replace(" ", "_") + ".zip");
+                    contentType = "application/octet-stream";
                 }
+
+                var readAllByte = await File.ReadAllBytesAsync(path);
+
+#pragma warning disable CS8619 // Nullability of reference types in value doesn't match target type.
+                return (readAllByte, contentType, Path.GetFileName(path));
+#pragma warning restore CS8619 // Nullability of reference types in value doesn't match target type.
             }
             catch (Exception ex)
             {
@@ -75,7 +72,6 @@ namespace COMP1640.Services
             }
         }
 
-        [HttpGet]
         public async Task<(byte[], string, string)> DownloadAll()
         {
             try
@@ -83,6 +79,12 @@ namespace COMP1640.Services
                 var path = Path.GetFullPath(Path.Combine(Environment.CurrentDirectory, "wwwroot", "UploadedFiles"));
 
                 var folders = Directory.GetDirectories(path);
+
+                var article = _context.Articles.Where(x => x.Status != null && x.Status.Equals("Published")).ToList();
+                if (article.Count() == 0)
+                {
+                    throw new Exception("No file found");
+                }
 
                 using (var memoryStream = new MemoryStream())
                 {
@@ -92,16 +94,22 @@ namespace COMP1640.Services
                         {
                             var files = Directory.GetFiles(folder);
                             var folderInfo = new DirectoryInfo(folder);
-                            foreach (var file in files)
+                            foreach (var pub in article)
                             {
-                                var fileInfo = new FileInfo(file);
-                                var entry = zipArchive.CreateEntry(folderInfo.Name + "/" + fileInfo.Name);
-
-                                using (var entryStream = entry.Open())
+                                if (folderInfo.Name.Equals(pub.Title.Replace(" ", "_")))
                                 {
-                                    using (var fileStream = new FileStream(file, FileMode.Open, FileAccess.Read))
+                                    foreach (var file in files)
                                     {
-                                        await fileStream.CopyToAsync(entryStream);
+                                        var fileInfo = new FileInfo(file);
+                                        var entry = zipArchive.CreateEntry(folderInfo.Name + "/" + fileInfo.Name);
+
+                                        using (var entryStream = entry.Open())
+                                        {
+                                            using (var fileStream = new FileStream(file, FileMode.Open, FileAccess.Read))
+                                            {
+                                                await fileStream.CopyToAsync(entryStream);
+                                            }
+                                        }
                                     }
                                 }
                             }
@@ -116,6 +124,7 @@ namespace COMP1640.Services
             {
                 throw new Exception(e.Message);
             }
+
         }
     }
 }

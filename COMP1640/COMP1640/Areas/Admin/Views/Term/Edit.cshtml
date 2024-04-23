@@ -14,15 +14,15 @@
                     @Html.HiddenFor(x => x.TermId)
                     <div class="input-box">
                         <span class="details">Term Name</span>
-                        <input type="text" id="term-name" name="TermName" value="@Model.TermName">
+                        <input type="text" id="term-name" asp-for="TermName" value="@Model.TermName">
                     </div>
                     <div class="input-box">
                         <span class="details">Start Date</span>
-                        <input type="date" id="start-date" name="StartDate" value="@Model.StartDate">
+                        <input type="date" id="startDate" asp-for="StartDate" value="@String.Format("{0:yyyy-MM-dd}", Model.StartDate)">
                     </div>
                     <div class="input-box">
                         <span class="details">End Date</span>
-                        <input type="date" id="end-date" name="EndDate" value="@Model.EndDate">
+                        <input type="date" id="endDate" asp-for="EndDate" value="@String.Format("{0:yyyy-MM-dd}", Model.EndDate)">
                     </div>
                 </div>
                 <div class="button__container">

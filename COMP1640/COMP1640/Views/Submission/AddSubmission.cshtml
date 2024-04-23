@@ -1,0 +1,65 @@
+﻿@{
+    ViewData["Title"] = "Submission";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+
+    var term = ViewBag.Term;
+}
+
+<div class="main__container">
+    <div class="grid wide">
+        <div class="row main__content">
+            <div class="col l-8 l-o-2">
+                <h1 style="font-size: 2.2rem;">New Contribution</h1>
+                <form asp-controller="Submission" asp-action="AddSubmission" method="post" id="add-form" enctype="multipart/form-data">
+                    <div class="form-content">
+                        <div class="input-box">
+                            <label>Title</label>
+                            <input type="text" id="title" name="Title" required>
+                        </div>
+                        <div class="input-box">
+                            <label>Faculty</label>
+                            <input type="text" id="faculty" name="faculty" placeholder="@ViewBag.Faculty" disabled>
+                        </div>
+                        <div class="input-box">
+                            <label>Term</label>
+                            <input type="text" id="term" name="term" placeholder="@term.TermName (From @term.StartDate.ToString("dd/MM/yyyy") to @term.EndDate.ToString("dd/MM/yyyy"))" disabled>
+                        </div>
+                        <div class="input-box">
+                            <div id="image-upload-wrapper">
+                                <label>Image Uploader</label>
+                                <input type="file" id="image-upload" name="img" accept="image/*" hidden>
+                                <label for="image-upload" class="img-upload-label" id="img-view">
+                                    <span><i class="fas fa-cloud-upload-alt"></i></span>
+                                    <p>Click to Upload</p>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="input-box">
+                            <div id="file-upload-wrapper">
+                                <label>File Uploader</label>
+                                <input type="file" id="file-upload" name="file" accept=".doc,.docx,.pdf" hidden>
+                                <label for="file-upload" class="upload-label">
+                                    <span><i class="fas fa-cloud-upload-alt"></i></span>
+                                    <p>Browse File to Upload</p>
+                                </label>
+                                <div id="file-wrapper"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-actions">
+                        <button type="submit" class="btn primary">
+                            Submit
+                        </button>
+                        <a asp-controller="Home" asp-action="Index" class="btn secondary">
+                            Cancel
+                        </a>
+                    </div>
+                </form>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<script src="~/js/upload.js"></script>

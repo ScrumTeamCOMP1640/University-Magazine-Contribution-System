@@ -1,11 +1,16 @@
 /* BREAKPOINTS */
-@media (max-width: 992px) {
+@media (max-width: 1023px) {
     .header {
-        padding: 2em 5%;
+        padding: 0 12px;
     }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 739px) {
+    .header__search {
+        display: none;
+    }
+
+    .search-icon-wrap,
     .icons {
         display: inline-flex;
     }
@@ -22,35 +27,86 @@
         display: block;
     }
 
+    .header-mobile__search,
     .navbar {
         position: absolute;
         top: 100%;
         left: 0;
         width: 100%;
-        height: 0;
-        flex-direction: column;
+        max-height: 0;
+        display: block;
         background: linear-gradient(to bottom, #4f60ff 0%, #4f60ff 100%);
         box-shadow: 0 0.8em 1.6em rgba(0, 0, 0, 0.1);
-        transition: 0.3s ease;
         overflow: hidden;
     }
 
+    .header-mobile__search {
+        padding: 0 12px;
+        transition: 0.3s ease;
+    }
+
+    .mobile__search {
+        display: flex;
+        align-items: center;
+        background-color: #fff;
+        width: 100%;
+        height: 40px;
+        padding: 4px 12px;
+        border-radius: 20px;
+        margin: 12px 0;
+    }
+
+    .mobile__search i {
+        font-size: 24px;
+        color: #757575;
+        padding-right: 12px;
+    }
+
+    .mobile__search-input-wrap {
+        flex: 1;
+    }
+
+    .mobile__search-input {
+        font-size: 16px;
+        width: 100%;
+        border: none;
+        outline: none;
+    }
+
+    .navbar {
+        padding-left: calc((100% - 180px) / 2);
+    }
+
+    #mobile-search-checkbox:checked~.header-mobile__search,
     #check:checked~.navbar {
-        height: fit-content;
+        max-height: 500px;
     }
 
     .navbar-item {
         margin: 1em 0;
     }
 
-    .navbar a {
+    .navbar-item.show-on-mobile {
+        display: block;
+    }
+
+    .navbar-item.hide-on-mobile {
+        display: none;
+    }
+
+    .navbar .navbar-item__link {
         font-size: 1.6em;
         opacity: 0;
         transform: translateY(-50px);
         transition: 0.3s ease;
     }
 
-    #check:checked~.navbar a {
+    .navbar .navbar-item__link i {
+        font-size: 26px;
+        margin-right: 16px;
+    }
+
+    #check:checked~.navbar .navbar-item__link {
         opacity: 1;
         transform: translateY(0);
         transition-delay: calc(0.15s * var(--i));

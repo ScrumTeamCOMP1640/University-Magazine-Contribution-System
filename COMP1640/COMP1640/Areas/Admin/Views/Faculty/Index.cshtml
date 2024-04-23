@@ -10,15 +10,13 @@
     <div class="main-content">
         <a asp-area="Admin" asp-controller="Faculty" asp-action="Add" class="btn primary">
             <i class="fa-solid fa-plus"></i>
-            Faculty
+            New
         </a>
         <table class="content-table">
             <thead>
                 <tr>
                     <th>ID</th>
                     <th>Faculty name</th>
-                    <th>Coordinator</th>
-                    <th>Guest account</th>
                     <th>Edit</th>
                     <th>Delete</th>
                 </tr>
@@ -29,24 +27,6 @@
                     <tr>
                         <td data-title="ID">@faculty.FacultyId</td>
                         <td data-title="Username">@faculty.FacultyName</td>
-                        <td data-title="Coordinator">
-                            @foreach (var user in ViewBag.Users)
-                            {
-                                if (user.FacultyId == faculty.FacultyId && user.RoleId == 3)
-                                {
-                                    @user.Username
-                                }
-                            }
-                        </td>
-                        <td data-title="Guest account">
-                            @foreach (var user in ViewBag.Users)
-                            {
-                                if (user.FacultyId == faculty.FacultyId && user.RoleId == 10)
-                                {
-                                    @user.Username
-                                }
-                            }
-                        </td>
                         <td data-title="Edit">
                             <a asp-area="Admin" asp-controller="Faculty" asp-action="Edit" asp-route-id="@faculty.FacultyId" class="btn edit">
                                 <i class="fa-solid fa-pen-to-square"></i>
@@ -67,5 +47,6 @@
             </tbody>
         </table>
         <!-- pagination -->
+        @await Html.PartialAsync("_Pagination", Model)
     </div>
 </div>

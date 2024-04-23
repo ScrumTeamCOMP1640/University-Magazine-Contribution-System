@@ -24,22 +24,15 @@
 
                     <div class="input-box">
                         <span class="details">Role</span>
-                        <select name="RoleId" id="role">
-                            <option value="">--Select role--</option>
-                            @foreach (var role in ViewBag.Roles)
-                            {
-                                <option value="@role.RoleId">@role.RoleName</option>
-                            }
+                        <select asp-for="RoleId" asp-items="@ViewBag.RoleName">
+                            <option value="" disabled selected>Please choose a role</option>
                         </select>
                     </div>
+
                     <div class="input-box">
                         <span class="details">Faculty</span>
-                        <select name="FacultyId" id="faculty">
-                            <option>--Select faculty--</option>
-                            @foreach (var faculty in ViewBag.Faculties)
-                            {
-                                <option value="@faculty.FacultyId">@faculty.FacultyName</option>
-                            }
+                        <select asp-for="FacultyId" asp-items="@ViewBag.FacultyName">
+                            <option value="" disabled selected>Please choose a faculty</option>
                         </select>
                     </div>
                 </div>

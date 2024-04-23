@@ -29,6 +29,12 @@ html {
     --header-sort-bar-height: 46px;
 }
 
+.text-danger {
+    font-size: 1.4rem;
+    line-height: 1.8rem;
+    color: red;
+}
+
 /* Button */
 .btn {
     width: 150px;
@@ -57,6 +63,45 @@ html {
 }
 
 /* Pagination */
+/* .pagination {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+}
+
+.pagination-item {
+    margin: 0 8px;
+}
+
+.pagination-item__link:hover {
+    color: var(--primary-color);
+}
+
+.active .pagination-item__link {
+    color: var(--white-color);
+    background-color: var(--primary-color);
+}
+
+.disabled .pagination-item__link {
+    cursor: default;
+    color: #939393;
+    opacity: 0.5;
+}
+
+.pagination-item__link {
+    --height: 30px;
+    display: block;
+    text-decoration: none;
+    font-size: 2rem;
+    color: #939393;
+    border-radius: 2px;
+    min-width: 40px;
+    height: var(--height);
+    line-height: var(--height);
+    text-align: center;
+} */
+
 .pagination {
     display: flex;
     align-items: center;

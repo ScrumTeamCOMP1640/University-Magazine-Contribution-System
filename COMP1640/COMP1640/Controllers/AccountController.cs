@@ -1,19 +1,28 @@
 ﻿using COMP1640.Models;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.EntityFrameworkCore;
 using System.Web.Helpers;
+using NToastNotify;
+using COMP1640.ViewModels;
 
 namespace COMP1640.Controllers
 {
     public class AccountController : Controller
     {
-        UmcsContext _umcs = new UmcsContext();
+        private readonly UmcsContext _db;
+        private readonly IToastNotification _toast;
+
+        public AccountController(UmcsContext db, IToastNotification toast)
+        {
+            _db = db;
+            _toast = toast;
+        }
+
         public IActionResult Login()
         {
             if (HttpContext.Session.GetString("Email") == null)
             {
-                ViewBag.Role = _umcs.Roles.ToList();
-                return View();
+                var loginVM = new LoginViewModel();
+                return View(loginVM);
             }
             else
             {
@@ -23,120 +32,163 @@ namespace COMP1640.Controllers
 
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public IActionResult Login(User user1)
+        public IActionResult Login(LoginViewModel loginVM)
         {
             if (HttpContext.Session.GetString("Email") != null)
             {
                 return RedirectToAction("Index", "Home");
             }
 
-            var customer = _umcs.Users.FirstOrDefault(u => u.Email == user1.Email);
-
-            if (customer != null)
+            if (!ModelState.IsValid)
             {
-                if (user1.Password != null && Crypto.VerifyHashedPassword(customer.Password, user1.Password))
+                return View(loginVM);
+            }
+
+            var client = _db.Users.FirstOrDefault(c => c.Email == loginVM.Email);
+
+            if (client != null)
+            {
+                if (loginVM.Password != null && Crypto.VerifyHashedPassword(client.Password, loginVM.Password))
                 {
-                    if (customer.Username != null)
-                    {
-                        HttpContext.Session.SetString("Username", customer.Username);
-                    }
+                    HttpContext.Session.SetString("Username", client.Username);
+                    HttpContext.Session.SetString("Email", client.Email);
+                    HttpContext.Session.SetString("Avatar", client.Avatar ?? "");
 
-                    if (customer.Email != null)
-                    {
-                        HttpContext.Session.SetString("Email", customer.Email);
-                    }
-
-                    if (customer.Avatar != null)
-                    {
-                        HttpContext.Session.SetString("Avatar", customer.Avatar);
-                    }
-
-                    switch (customer.RoleId)
+                    string role = "";
+                    switch (client.RoleId)
                     {
                         case 1:
-                            HttpContext.Session.SetString("Role", "Administrator");
-                            return RedirectToAction("Index", "AdminHome", new { area = "Admin" });
+                            role = "Administrator";
+                            return RedirectToAction("Index", "Home", new { area = "Admin" });
                         case 2:
-                            HttpContext.Session.SetString("Role", "Marketing Manager");
-                            return RedirectToAction("Index", "Home");
+                            role = "Marketing Manager";
+                            break;
                         case 3:
-                            HttpContext.Session.SetString("Role", "Marketing Coordinator");
-                            return RedirectToAction("Index", "Home");
+                            role = "Marketing Coordinator";
+                            break;
                         case 4:
-                            HttpContext.Session.SetString("Role", "Student");
-                            return RedirectToAction("Index", "Home");
-                        case 10:
-                            HttpContext.Session.SetString("Role", "Guest");
-                            return RedirectToAction("Index", "Home");
+                            role = "Student";
+                            break;
+                        case 5:
+                            role = "Guest";
+                            break;
                     }
+                    HttpContext.Session.SetString("Role", role);
+                    return RedirectToAction("Index", "Home");
                 }
             }
 
-            TempData["LoginError"] = "Invalid email or password.";
-            return View();
+            _toast.AddErrorToastMessage("Invalid email or password!");
+            return View(loginVM);
         }
 
         public IActionResult Logout()
         {
             HttpContext.Session.Clear();
-            return View("Login");
+            return RedirectToAction("Login");
         }
 
-        public IActionResult UpdateInfo()
+        public IActionResult Profile()
         {
-            var email = HttpContext.Session.GetString("Email");
-            var user = _umcs.Users.FirstOrDefault(u => u.Email == email);
-            return View(user);
-        }
+            var userEmail = HttpContext.Session.GetString("Email");
 
-        [HttpPost]
-        [ValidateAntiForgeryToken]
-        public IActionResult UpdateInfo(User user)
-        {
-            if (ModelState.IsValid)
+            var user = _db.Users.FirstOrDefault(u => u.Email == userEmail);
+            if (user == null)
             {
-                if (user != null)
-                {
-                    _umcs.Entry(user).State = EntityState.Modified;
-                    _umcs.SaveChanges();
-                    return RedirectToAction("Index", "Home");
-                }
+                return RedirectToAction("Login");
             }
-            return View(user);
-        }
 
-        public IActionResult UpdatePass()
-        {
-            var email = HttpContext.Session.GetString("Email");
-            var user = _umcs.Users.FirstOrDefault(u => u.Email == email);
-            return View(user);
+            var profileViewModel = new ProfileViewModel
+            {
+                Username = user.Username,
+                Phone = user.Phone,
+                Address = user.Address
+            };
+
+            return View(profileViewModel);
         }
 
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public IActionResult UpdatePass(string password, string newPass, string confirmNewPass)
+        public IActionResult UpdateInfo(ProfileViewModel profile)
+        {
+            var userEmail = HttpContext.Session.GetString("Email");
+
+            var originalUser = _db.Users.FirstOrDefault(u => u.Email == userEmail);
+            if (originalUser == null)
+            {
+                return RedirectToAction("Login");
+            }
+
+            if (!ModelState.IsValid)
+            {
+                _toast.AddErrorToastMessage("Failed to update information!");
+                return View("Profile", profile);
+            }
+
+            originalUser.Username = profile.Username;
+            originalUser.Phone = profile.Phone;
+            originalUser.Address = profile.Address;
+
+            HttpContext.Session.SetString("Username", profile.Username);
+            _db.SaveChanges();
+            _toast.AddSuccessToastMessage("Information updated successfully!");
+            return RedirectToAction("Profile");
+        }
+
+        public IActionResult Pass()
+        {
+            var userEmail = HttpContext.Session.GetString("Email");
+
+            var user = _db.Users.FirstOrDefault(u => u.Email == userEmail);
+            if (user == null)
+            {
+                return RedirectToAction("Login");
+            }
+
+            var profileViewModel = new ProfileViewModel
+            {
+                Username = user.Username,
+                Phone = user.Phone,
+                Address = user.Address
+            };
+
+            return View(profileViewModel);
+        }
+
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public IActionResult UpdatePass(ProfileViewModel profile)
         {
             var email = HttpContext.Session.GetString("Email");
-            var user = _umcs.Users.FirstOrDefault(u => u.Email == email);
-            if(user != null)
+            var user = _db.Users.FirstOrDefault(u => u.Email == email);
+            if (user != null)
             {
-                if (Crypto.VerifyHashedPassword(user.Password, password))
+                if (Crypto.VerifyHashedPassword(user.Password, profile.OldPassword))
                 {
-                    if (newPass == confirmNewPass)
+                    if (profile.NewPassword == profile.ConfirmPassword)
                     {
-                        user.Password = Crypto.HashPassword(newPass);
-                        _umcs.SaveChanges();
-                        
+                        user.Password = Crypto.HashPassword(profile.NewPassword);
+                        _db.SaveChanges();
+                        _toast.AddSuccessToastMessage("Password updated successfully!");
+                        return RedirectToAction("Logout");
                     }
                     else
                     {
-                        TempData["UpdatePassError"] = "Old password is incorrect.";
-                        return View();
+                        _toast.AddErrorToastMessage("New password and confirm password do not match.");
                     }
                 }
+                else
+                {
+                    _toast.AddErrorToastMessage("Incorrect old password.");
+                }
             }
-            return Logout();
+            else
+            {
+                _toast.AddErrorToastMessage("User not found.");
+                return NotFound();
+            }
+            return RedirectToAction("Pass");
         }
-
     }
 }

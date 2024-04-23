@@ -1,6 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using Microsoft.EntityFrameworkCore;
+﻿using Microsoft.EntityFrameworkCore;
 
 namespace COMP1640.Models;
 
@@ -25,17 +23,17 @@ public partial class UmcsContext : DbContext
 
     public virtual DbSet<Term> Terms { get; set; }
 
-    public virtual DbSet<TermsAndCondition> TermsAndConditions { get; set; }
-
     public virtual DbSet<User> Users { get; set; }
 
-    protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder) => optionsBuilder.UseSqlServer("Data Source=MSI\\SQLEXPRESS;Initial Catalog=UMCS;Integrated Security=True;Connect Timeout=30;Encrypt=False;Trust Server Certificate=False;Application Intent=ReadWrite;Multi Subnet Failover=False");
+    protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
+//#warning To protect potentially sensitive information in your connection string, you should move it out of source code. You can avoid scaffolding the connection string by using the Name= syntax to read it from configuration - see https://go.microsoft.com/fwlink/?linkid=2131148. For more guidance on storing connection strings, see https://go.microsoft.com/fwlink/?LinkId=723263.
+        => optionsBuilder.UseSqlServer("Data Source=LAPTOP-8496M4SK\\SQLEXPRESS;Initial Catalog=UMCS;Integrated Security=True;Connect Timeout=30;Encrypt=False;Trust Server Certificate=False;Application Intent=ReadWrite;Multi Subnet Failover=False");
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
         modelBuilder.Entity<Article>(entity =>
         {
-            entity.HasKey(e => e.ArticleId).HasName("PK__Articles__9C6270C8C9C53520");
+            entity.HasKey(e => e.ArticleId).HasName("PK__Articles__9C6270C8D575E34F");
 
             entity.Property(e => e.ArticleId).HasColumnName("ArticleID");
             entity.Property(e => e.Content).HasColumnType("text");
@@ -63,14 +61,16 @@ public partial class UmcsContext : DbContext
 
             entity.HasOne(d => d.User).WithMany(p => p.Articles)
                 .HasForeignKey(d => d.UserId)
-                .HasConstraintName("FK__Articles__UserID__5535A963");
+                .HasConstraintName("FK_Articles_Users");
         });
 
         modelBuilder.Entity<Comment>(entity =>
         {
-            entity.HasKey(e => e.CommentId).HasName("PK__Comments__C3B4DFAA2F21338E");
+            entity.HasKey(e => e.CommentId).HasName("PK__Comments__C3B4DFAA885485D3");
 
-            entity.Property(e => e.CommentId).HasColumnName("CommentID");
+            entity.Property(e => e.CommentId)
+                .ValueGeneratedNever()
+                .HasColumnName("CommentID");
             entity.Property(e => e.ArticleId).HasColumnName("ArticleID");
             entity.Property(e => e.CommentContent).HasColumnType("text");
             entity.Property(e => e.CommentDate).HasColumnType("datetime");
@@ -78,16 +78,18 @@ public partial class UmcsContext : DbContext
 
             entity.HasOne(d => d.Article).WithMany(p => p.Comments)
                 .HasForeignKey(d => d.ArticleId)
-                .HasConstraintName("FK__Comments__Articl__5812160E");
+                .HasConstraintName("FK_Comments_Articles");
 
             entity.HasOne(d => d.User).WithMany(p => p.Comments)
                 .HasForeignKey(d => d.UserId)
-                .HasConstraintName("FK__Comments__UserID__59063A47");
+                .HasConstraintName("FK_Comments_Users");
         });
 
         modelBuilder.Entity<Faculty>(entity =>
         {
-            entity.HasKey(e => e.FacultyId).HasName("PK__Facultie__306F636E93990DAB");
+            entity.HasKey(e => e.FacultyId).HasName("PK__Facultie__306F636E91EA5212");
+
+            entity.HasIndex(e => e.FacultyName, "UQ__Facultie__BFD889E1366BBFDD").IsUnique();
 
             entity.Property(e => e.FacultyId).HasColumnName("FacultyID");
             entity.Property(e => e.FacultyName)
@@ -97,9 +99,9 @@ public partial class UmcsContext : DbContext
 
         modelBuilder.Entity<Role>(entity =>
         {
-            entity.HasKey(e => e.RoleId).HasName("PK__Roles__8AFACE3A09690D87");
+            entity.HasKey(e => e.RoleId).HasName("PK__Roles__8AFACE3AB8080F73");
 
-            entity.HasIndex(e => e.RoleName, "UQ__Roles__8A2B616039DDC28F").IsUnique();
+            entity.HasIndex(e => e.RoleName, "UQ__Roles__8A2B6160F7F654CE").IsUnique();
 
             entity.Property(e => e.RoleId).HasColumnName("RoleID");
             entity.Property(e => e.RoleName)
@@ -109,30 +111,22 @@ public partial class UmcsContext : DbContext
 
         modelBuilder.Entity<Term>(entity =>
         {
-            entity.HasKey(e => e.TermId).HasName("PK__Terms__410A2E4569822C28");
+            entity.HasKey(e => e.TermId).HasName("PK__Terms__410A2E45FDBABC50");
 
             entity.Property(e => e.TermId).HasColumnName("TermID");
             entity.Property(e => e.EndDate).HasColumnType("datetime");
             entity.Property(e => e.StartDate).HasColumnType("datetime");
-            entity.Property(e => e.TermName)
+            entity.Property(e => e.Status)
                 .HasMaxLength(50)
                 .IsUnicode(false);
-        });
-
-        modelBuilder.Entity<TermsAndCondition>(entity =>
-        {
-            entity.HasKey(e => e.TermsAndConditionsId).HasName("PK__TermsAnd__65787321F7CE0CA3");
-
-            entity.Property(e => e.TermsAndConditionsId).HasColumnName("TermsAndConditionsID");
-            entity.Property(e => e.Content).HasColumnType("text");
-            entity.Property(e => e.Version)
+            entity.Property(e => e.TermName)
                 .HasMaxLength(50)
                 .IsUnicode(false);
         });
 
         modelBuilder.Entity<User>(entity =>
         {
-            entity.HasKey(e => e.UserId).HasName("PK__Users__1788CCAC540AAE9E");
+            entity.HasKey(e => e.UserId).HasName("PK__Users__1788CCAC26A10FB9");
 
             entity.Property(e => e.UserId).HasColumnName("UserID");
             entity.Property(e => e.Address)
@@ -148,6 +142,9 @@ public partial class UmcsContext : DbContext
             entity.Property(e => e.Password)
                 .HasMaxLength(255)
                 .IsUnicode(false);
+            entity.Property(e => e.Phone)
+                .HasMaxLength(30)
+                .IsUnicode(false);
             entity.Property(e => e.RoleId).HasColumnName("RoleID");
             entity.Property(e => e.Username)
                 .HasMaxLength(50)
@@ -159,7 +156,7 @@ public partial class UmcsContext : DbContext
 
             entity.HasOne(d => d.Role).WithMany(p => p.Users)
                 .HasForeignKey(d => d.RoleId)
-                .HasConstraintName("FK__Users__RoleID__4E88ABD4");
+                .HasConstraintName("FK_Users_Roles");
         });
 
         OnModelCreatingPartial(modelBuilder);

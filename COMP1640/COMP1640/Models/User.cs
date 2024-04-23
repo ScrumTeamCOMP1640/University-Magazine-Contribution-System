@@ -15,13 +15,13 @@ public partial class User
 
     public int? RoleId { get; set; }
 
+    public int? FacultyId { get; set; }
+
     public string? Avatar { get; set; }
 
-    public int? Phone { get; set; }
+    public string? Phone { get; set; }
 
     public string? Address { get; set; }
-
-    public int? FacultyId { get; set; }
 
     public virtual ICollection<Article> Articles { get; set; } = new List<Article>();
 

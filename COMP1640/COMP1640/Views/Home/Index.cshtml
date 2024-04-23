@@ -1,97 +1,168 @@
 ﻿@{
-    ViewData["Title"] = "Home Page";
-    Layout = "~/Views/Shared/_Layout.cshtml";
-    var username = Context.Session.GetString("Username");
-    var currTerm = ViewBag.CurrTerms;
-    var preTerm = ViewBag.PreTerms;
+	ViewData["Title"] = "Home Page";
+	Layout = "~/Views/Shared/_Layout.cshtml";
+	var username = Context.Session.GetString("Username");
+	var role = Context.Session.GetString("Role");
 }
 
-@model X.PagedList.IPagedList<COMP1640.Models.Article>
+@model X.PagedList.IPagedList<Article>
 
 <div class="main__container">
-    <img src="~/img/gre.png" class="background">
-    <div class="grid wide">
-        <div class="row sm-gutter main__content">
-            <div class="col l-3">
-                <table class="category">
-                    <tbody>
-                        <tr>
-                            <th colspan="2">@preTerm.TermName</th>
-                        </tr>
-                        <tr class="date">
-                            <td>Start Date</td>
-                            <td>@String.Format("{0:MMMM/dd/yy}", preTerm.StartDate)</td>
-                        </tr>
-                        <tr class="date">
-                            <td>End Date</td>
-                            <td>@String.Format("{0:MMMM/dd/yy}", preTerm.EndDate)</td>
-                        </tr>
-                        <tr>
-                            <th colspan="2">@currTerm.TermName</th>
-                        </tr>
+	@switch (role)
+	{
+		case "Student":
+			<img src="~/img/gre.png" class="background">
+			break;
+		case "Guest":
+			<img src="~/img/gre.png" class="background">
+			break;
+		default:
+			break;
+	}
+	<div class="grid wide">
+		<div class="row sm-gutter main__content">
+			<div class="col l-3 m-0 c-0">
+				<table class="category">
+					<tbody>
+						<tr>
+							<th>Faculty</th>
+						</tr>
+						<tr class="fac">
+							<td>Name</td>
+							<td class="faculty-name">
+								<select name="facultyId" id="facultySelect" @(role != null && role.Contains("Manager") ? "" : "disabled")>
+									@foreach (var item in ViewBag.Faculties)
+									{
+										<option value="@item.FacultyId">@item.FacultyName</option>
+									}
+								</select>
+							</td>
+						</tr>
+						<tr>
+							<td>Status</td>
+							<td>
+								<p class="status active">Active</p>
+							</td>
+						</tr>
 
-                        <tr class="date">
-                            <td>Start Date</td>
-                            <td>@String.Format("{0:MMMM/dd/yy}", currTerm.StartDate)</td>
-                        </tr>
-                        <tr class="date">
-                            <td>End Date</td>
-                            <td>@String.Format("{0:MMMM/dd/yy}", currTerm.EndDate)</td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
+						<tr>
+							<th>Term</th>
+							<td class="term-name">
+								<select id="termSelect" name="termId">
+									@foreach (var item in ViewBag.Terms)
+									{
+										<option value="@item.TermId">@item.TermName</option>
+									}
+								</select>
+							</td>
+						</tr>
+						<tr class="date">
+							<td>Start Date</td>
+							<td id="startDate"></td>
+						</tr>
+						<tr class="date">
+							<td>End Date</td>
+							<td id="endDate"></td>
+						</tr>
+						<tr>
+						<tr>
+							<td>Status</td>
+							<td>
+								<p id="termStatus" class="status"></p>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
 
-                <div class="col l-9">
-                <div class="home-item-list">
-                    <div class="row sm-gutter">
-                    @foreach (var article in Model)
-                    {
-                        <div class="col l-4">
-                                <a asp-controller="Submission" asp-action="ContributeDetail" asp-route-id="@article.ArticleId" class="home-item">
-                                <div class="home-item__img"
-                                         style="background-image: url('@Url.Content("~/UploadedFiles/" + article.Title.Replace(" ", "_") + "/" + article.ImagePath)');">
-                                </div>
-                                <h3 class="home-item__title">@article.Title</h3>
-                                <div class="home-item__detail">
-                                    <div class="author__img-container">
-                                        <img src="~/img/user_avatar.png">
-                                    </div>
-                                    <ul class="author__profile">
-                                        @foreach (var user in ViewBag.Users)
-                                        {
-                                            if (user.UserId == article.UserId)
-                                            {                                              
-                                                <li class="author__name">@user.Username</li>
-                                            }
-                                        }
-                                        <li class="home-item__date">@String.Format("{0:D}", @article.SubmissionDate)</li>
-                                    </ul>
-                                </div>
-                                <div class="home-item__status">
-                                    @switch (article.Status)
-                                    {
-                                        case "Pending":
-                                            <i class="fa-solid fa-spinner"></i>
-                                            <span class="pending">@article.Status</span>
-                                            break;
-                                        case "Published":
-                                            <i class="fa-solid fa-check"></i>
-                                            <span class="rejected">@article.Status</span>
-                                            break;
-                                        case "Rejected":
-                                            <i class="fa-solid fa-xmark"></i>
-                                            <span class="rejected">@article.Status</span>
-                                            break;
-                                        }
-                                </div>
-                            </a>
-                        </div>
-                    }
-                    </div>
-                </div>
-                @await Html.PartialAsync("_Pagination", Model)
-            </div>
-        </div>
-    </div>
+			<div class="col l-9 m-12 c-12">
+				<div class="home-item-list">
+					<div id="loading" style="display: none;">Loading...</div>
+					<div id="articleList" class="row sm-gutter">
+					</div>
+				</div>
+				<div id="pagination">
+					@await Html.PartialAsync("_Pagination", Model)
+				</div>
+				
+			</div>
+		</div>
+	</div>
 </div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script>
+	$(document).ready(function () {
+		function updateTermDates(termId) {
+			$.ajax({
+				url: '@Url.Action("GetTermDates", "Home")',
+				type: 'GET',
+				data: { termId: termId },
+				success: function (data) {
+					$('#startDate').text(data.startDate);
+					$('#endDate').text(data.endDate);
+					$('#termStatus').text(data.status);
+					var statusClass = data.status.toLowerCase();
+					$('#termStatus').removeClass().addClass('status').addClass(statusClass);
+				},
+				error: function (xhr, status, error) {
+					console.error(xhr.responseText);
+				}
+			});
+		}
+
+		function fetchArticles(facultyId, termId, searchQuery) {
+			$.ajax({
+				url: '@Url.Action("GetArticles", "Home")',
+				type: 'GET',
+				data: { facultyId: facultyId, termId: termId, searchQuery: searchQuery },
+				beforeSend: function () {
+					$('#loading').show();
+				},
+				success: function (data) {
+					if (data.trim().length === 0) {
+						$('#articleList').html('<div class="col l-12 m-12 c-12"><div class="no-results"><div class="no-results__img" style="background-image: url(@Url.Content("~/img/no_data.svg"))"></div><h2>No data found</h2></div></div>');
+						$('#pagination').hide();
+					} else {
+						$('#articleList').html(data);
+						$('#pagination').show();
+					}
+				},
+				complete: function () {
+					$('#loading').hide();
+				},
+				error: function (xhr, status, error) {
+					console.error(xhr.responseText);
+				}
+			});
+		}
+
+		var defaultTermId = $('#termSelect').val();
+		var defaultFacultyId = $('#facultySelect').val();
+		var defaultSearchQuery = $('#searchInput').val();
+		updateTermDates(defaultTermId);
+		fetchArticles(defaultFacultyId, defaultTermId, defaultSearchQuery);
+
+		$('#facultySelect').change(function () {
+			var facultyId = $(this).val();
+			var termId = $('#termSelect').val();
+			var searchQuery = $('#searchInput').val();
+			fetchArticles(facultyId, termId, searchQuery);
+		});
+
+		$('#termSelect').change(function () {
+			var termId = $(this).val();
+			var facultyId = $('#facultySelect').val();
+			var searchQuery = $('#searchInput').val();
+			updateTermDates(termId);
+			fetchArticles(facultyId, termId, searchQuery);
+		});
+
+		$('#searchInput').on('input', function () {
+			var facultyId = $('#facultySelect').val();
+			var termId = $('#termSelect').val();
+			var searchQuery = $(this).val();
+			fetchArticles(facultyId, termId, searchQuery);
+		});
+	});
+</script>

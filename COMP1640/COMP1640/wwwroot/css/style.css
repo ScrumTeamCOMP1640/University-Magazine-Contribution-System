@@ -114,7 +114,7 @@
     position: relative;
     font-size: 1.8em;
     font-weight: 500;
-    margin-left: 2.5em;
+    margin-left: 1.5em;
 }
 
 .navbar-item.show-on-mobile {
@@ -283,7 +283,7 @@
 
 .category th,
 .category td {
-    padding: 12px;
+    padding: 8px;
     text-align: left;
     color: #333;
 }
@@ -295,13 +295,24 @@
 
 .category .status {
     width: fit-content;
-    padding: 2px 6px;
-    background-color: #00ea10;
+    padding: 3px 6px;
     color: #fff;
     border-radius: 2px;
 }
 
-.category .fac-name select,
+.category .status.active {
+    background-color: #00ea10;
+}
+
+.category .status.inactive {
+    background-color: #ed4337;
+}
+
+.category .status.upcoming {
+    background-color: #0dc8e9;
+}
+
+.category .faculty-name select,
 .category .term-name select {
     width: 100%;
     height: 36px;
@@ -312,7 +323,7 @@
     transition: 0.3s ease;
 }
 
-.category .fac-name select:focus,
+.category .faculty-name select:focus,
 .category .term-name select:focus {
     border-color: #4050e6;
 }
@@ -320,6 +331,7 @@
 /* Item List */
 .main__container {
     margin-top: var(--header-height);
+    height: 100%;
 }
 
 .main__container .background {
@@ -332,6 +344,27 @@
 
 .home-item-list {
     margin-bottom: 12px;
+}
+
+.home-item-list .no-results {
+        width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.no-results h2 {
+    margin: 20px 0;
+    font-size: 26px;
+    font-weight: 500;
+}
+
+.no-results__img {
+    width: 100%;
+    height: 300px;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
 }
 
 .home-item {
@@ -361,10 +394,9 @@
     border-top-right-radius: 2px;
 }
 
-.home-item__title {
+.home-item__title,
+.home-item__description {
     font-weight: 400;
-    font-size: 2em;
-    font-weight: 600;
     line-height: 1.4em;
     color: var(--text-color);
     margin: 6px 12px;
@@ -373,6 +405,15 @@
     display: -webkit-box;
     -webkit-box-orient: vertical;
     -webkit-line-clamp: 2;
+}
+
+.home-item__title {
+    font-size: 2em;
+    font-weight: 600;
+}
+
+.home-item__description {
+    font-size: 1.6em;
 }
 
 .home-item__detail {
@@ -415,15 +456,28 @@
     position: absolute;
     top: 0;
     left: -4px;
-    color: #00ea10;
+    display: flex;
+    align-items: center;
     background-color: currentColor;
     font-size: 1.4rem;
     font-weight: 500;
-    line-height: 2rem;
-    padding-right: 6px;
+    line-height: 1.8rem;
+    padding: 2px 6px 2px 0;
     border-top-left-radius: 2px;
     border-top-right-radius: 2px;
     border-bottom-right-radius: 2px;
+}
+
+.home-item__status.pending {
+    color: #808080;
+}
+
+.home-item__status.published {
+    color: #00ea10;    
+}
+
+.home-item__status.rejected {
+    color: #fa113d;
 }
 
 .home-item__status::after {
@@ -442,8 +496,8 @@
 
 .home-item__status i {
     color: var(--white-color);
-    font-size: 1rem;
-    margin: 0 2px 0 6px;
+    font-size: 1.2rem;
+    margin: 0 5px 0;
 }
 
 /* Item Detail */
@@ -497,7 +551,7 @@
 }
 
 .item__detail .author-name {
-    font-size: 16px;
+    font-size: 20px;
     color: #242424;
 }
 
@@ -583,12 +637,6 @@ table.profile-details td {
     text-align: left;
 }
 
-.profile__group .text-danger {
-    font-size: 1.4rem;
-    line-height: 1.8rem;
-    color: red;
-}
-
 .profile__input,
 .profile__textarea {
     width: 100%;
@@ -602,6 +650,7 @@ table.profile-details td {
 
 .profile__textarea {
     height: auto;
+    padding: 8px 12px;
 }
 
 .profile-details p {
@@ -622,20 +671,20 @@ table.profile-details td {
 }
 
 /* Add form */
-form .form-content {
+#add-form .form-content {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     margin-top: 12px;
 }
 
-form .input-box {
+#add-form .input-box {
     margin-bottom: 12px;
-    width: calc(100% / 2 - 20px);
+    width: 100%;
     font-size: 1.8rem;
 }
 
-form .input-box label {
+#add-form .input-box label {
     display: block;
     font-weight: 500;
     margin-bottom: 5px;
@@ -673,7 +722,7 @@ form .input-box label {
 .form-actions {
     display: flex;
     align-items: center;
-    margin-top: 12px;
+    margin: 12px 0;
 }
 
 .form-actions .btn.primary,
@@ -681,6 +730,90 @@ form .input-box label {
     margin-right: 16px;
     padding: 0 12px;
     font-weight: 500;
+}
+
+/* File Upload Form */
+#image-upload-wrapper #img-view,
+#file-upload-wrapper label.upload-label {
+    width: 100%;
+    min-height: 100px;
+    background-color: #4050e60d;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 3px dashed #4050e682;
+    border-radius: 3px;
+    cursor: pointer;
+    padding-bottom: 10px;
+}
+
+.img-upload-label span,
+.upload-label span {
+    font-size: 70px;
+    color: var(--primary-color);
+}
+
+.img-upload-label p,
+.upload-label p {
+    font-size: 20px;
+    color: var(--primary-color);
+    font-weight: 800;
+    font-family: cursive;
+}
+
+#img-view {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.show-file-box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 10px 0;
+    padding: 10px 15px;
+    box-shadow: #0000000d 0 0 0 1px,
+    #d1d5db3d 0 0 0 1px inset;
+}
+
+.show-file-box .left {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.show-file-box .left h3 {
+    font-weight: 600;
+    font-size: 18px;
+    color: #292f42;
+}
+
+.show-file-box .right span {
+    --size: 26px;
+    background-color: var(--primary-color);
+    color: #fff;
+    width: var(--size);
+    height: var(--size);
+    line-height: var(--size);
+    font-size: calc(var(--size) - 10px);
+    font-weight: 700;
+    display: inline-block;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+.file-type {
+    background-color: var(--primary-color);
+    color: #fff;
+    padding: 5px 15px;
+    font-size: 20px;
+    text-transform: capitalize;
+    font-weight: 700;
+    border-radius: 3px;    
 }
 
 /* Comment */
@@ -733,14 +866,16 @@ form .input-box label {
     display: flex;
     align-items: center;
     justify-content: center;
+    margin: 24px 0 12px;
 }
 
 .detail-actions .btn {
-    margin: 24px 12px 0;
+    margin: 0 12px;
 }
 
 /* Footer */
 .footer {
+    background-color: #fff;
     border-top: 4px solid var(--primary-color);
 }
 

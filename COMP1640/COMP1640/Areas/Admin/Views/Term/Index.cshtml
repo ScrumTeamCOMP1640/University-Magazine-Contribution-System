@@ -27,8 +27,8 @@
                 {
                     <tr>
                         <td data-title="Term">@term.TermName</td>
-                        <td data-title="Start Date">@String.Format("{0:MMMM/dd/yy}", term.StartDate)</td>
-                        <td data-title="End Date">@String.Format("{0:MMMM/dd/yy}", term.EndDate)</td>
+                        <td data-title="Start Date">@String.Format("{0:MM/dd/yyyy}", term.StartDate)</td>
+                        <td data-title="End Date">@String.Format("{0:MM/dd/yyyy}", term.EndDate)</td>
                         <td data-title="Edit">
                             <a asp-area="Admin" asp-controller="Term" asp-action="Edit" asp-route-id="@term.TermId" class="btn edit">
                                 <i class="fa-solid fa-pen-to-square"></i>

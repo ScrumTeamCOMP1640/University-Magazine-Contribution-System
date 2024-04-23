@@ -15,9 +15,9 @@ public partial class Article
 
     public DateTime? SubmissionDate { get; set; }
 
-    public int? UserId { get; set; }
-
     public string? Status { get; set; }
+
+    public int? UserId { get; set; }
 
     public int? TermId { get; set; }
 

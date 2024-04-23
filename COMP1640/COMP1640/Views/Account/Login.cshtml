@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="stylesheet" href="~/login/css/style.css" />
     <title>Sign In</title>
+    @await Component.InvokeAsync("NToastNotify")
 </head>
 
 <body>
@@ -20,7 +21,7 @@
                 <form asp-controller="Account" asp-action="Login" method="post" class="sign-in-form">
                     <h2 class="title">Sign in</h2>
                     <div class="input-field">
-                        <i class="fa-solid fa-user"></i>
+                        <i class="fa-solid fa-envelope"></i>
                         <input type="email" name="Email" placeholder="Email" />
                     </div>
                     <div class="input-field">
@@ -28,6 +29,12 @@
                         <input type="password" id="password" name="Password" placeholder="Password" />
                         <i class="fa-solid fa-eye-slash eye-icon" id="show-password"></i>
                     </div>
+                    @if (TempData["LoginError"] != null)
+                    {
+                        <span class="text-danger">
+                            @TempData["LoginError"]
+                        </span>
+                    }
                     <input type="submit" value="Login" class="btn solid" />
                 </form>
             </div>
@@ -36,18 +43,13 @@
         <div class="panels-container">
             <div class="panel left-panel">
                 <div class="logo-wrapper">
-                    <img src="~/login/img/logo.svg" class="logo" alt="" />
+                    <img src="~/login/img/logo.svg" class="logo"/>
                 </div>
-                <img src="~/login/img/login.svg" class="image" alt="" />
+                <img src="~/login/img/login.svg" class="image"/>
             </div>
         </div>
     </div>
-    @if (TempData["LoginError"] != null)
-    {
-        <div class="error-message">
-            <p>@TempData["LoginError"]</p>
-        </div>
-    })
+    
     <script src="~/login/js/script.js"></script>
 </body>
 
