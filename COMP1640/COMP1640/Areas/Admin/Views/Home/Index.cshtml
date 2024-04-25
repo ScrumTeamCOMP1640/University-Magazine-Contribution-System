@@ -1,109 +1,11 @@
 ﻿@{
-    ViewData["Title"] = "Dashboard";
-    Layout = "~/Areas/Admin/Views/Shared/_AdminLayout.cshtml";
-
-    var fCom = 0;
-    var fBus = 0;
-    var fMar = 0;
-
-    foreach (var item in Model)
-    {
-        switch (item.FacultyId)
-        {
-            case 11:
-                fCom++;
-                break;
-            case 12:
-                fBus++;
-                break;
-            case 13:
-                fMar++;
-                break;
-        }
-    }
+	ViewData["Title"] = "Dashboard";
+	Layout = "~/Areas/Admin/Views/Shared/_AdminLayout.cshtml";
 }
 
-@model List<COMP1640.Models.Article>
-
 <div class="section__body">
-    <h1>Dashboard</h1>
-    <div class="main-content">
-        <div style="width: 100%; height: 400px;">
-            <canvas id="myBarChart"></canvas>
-        </div>
-        <hr>
-        <div style="width: 100%; height: 400px; margin-top: 48px;">
-            <canvas id="myPieChart"></canvas>
-        </div>
-    </div>
+	<h1>Dashboard</h1>
+	<div class="main-content">
+		
+	</div>
 </div>
-
-<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-<script>
-    const facultyData = {
-        labels: ['Computing', 'Business', 'Digital Marketing'],
-        data: [@fCom, @fBus, @fMar],
-        backgroundColor: [
-            'rgba(255, 99, 132, 0.5)',
-            'rgba(54, 162, 235, 0.5)',
-            'rgba(255, 206, 86, 0.5)',
-            'rgba(75, 192, 192, 0.5)'
-        ],
-        borderColor: [
-            'rgba(255, 99, 132, 1)',
-            'rgba(54, 162, 235, 1)',
-            'rgba(255, 206, 86, 1)',
-            'rgba(75, 192, 192, 1)'
-        ],
-        borderWidth: 1
-    };
-
-    const barChart = document.getElementById('myBarChart');
-    const pieChart = document.getElementById('myPieChart');
-
-    const myBarChart = new Chart(barChart, {
-        type: 'bar',
-        data: {
-            labels: facultyData.labels,
-            datasets: [{
-                label: 'Number of Contributions',
-                data: facultyData.data,
-                backgroundColor: facultyData.backgroundColor,
-                borderColor: facultyData.borderColor,
-                borderWidth: facultyData.borderWidth
-            }]
-        },
-        options: {
-            responsive: true,
-            maintainAspectRatio: false,
-            scales: {
-                y: {
-                    beginAtZero: true
-                }
-            }
-        }
-    });
-
-    const myPieChart = new Chart(pieChart, {
-        type: 'pie',
-        data: {
-            labels: facultyData.labels,
-            datasets: [{
-                label: 'Number of Contributions',
-                data: facultyData.data,
-                backgroundColor: facultyData.backgroundColor,
-                borderColor: facultyData.borderColor,
-                borderWidth: facultyData.borderWidth
-            }]
-        },
-        options: {
-            responsive: true,
-            maintainAspectRatio: false,
-            scales: {
-                y: {
-                    beginAtZero: true
-                }
-            }
-        }
-    });
-</script>

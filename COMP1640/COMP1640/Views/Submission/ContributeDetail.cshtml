@@ -1,0 +1,177 @@
+﻿@{
+	ViewData["Title"] = "Contribute Detail";
+	Layout = "~/Views/Shared/_Layout.cshtml";
+
+	var role = Context.Session.GetString("Role");
+	var username = Context.Session.GetString("Username");
+	var avatar = Context.Session.GetString("Avatar");
+}
+
+@model COMP1640.Models.Article
+
+<div class="main__container">
+	<div class="grid wide">
+		<div class="row sm-gutter main__content">
+
+			<div class="col l-8 l-o-2">
+				<div class="item__detail">
+					<div class="item__bg" style="background-image: url('@Url.Content("~/UploadedFiles/" + Model.ArticleId + "/" + Model.ImagePath)');"></div>
+					<h1 class="item__title">@Model.Title</h1>
+					<form class="comment-form">
+						<iframe src="@Url.Action("ViewDocument", "Submission")" name="ifm" width="100%" height="1000px"></iframe>
+					</form>
+					<div class="author__detail">
+						<div class="author__avatar">
+							<img src="~/img/@Model.User?.Avatar">
+						</div>
+						<div class="author__info">
+							<div class="author-name">
+								@if (Model.User != null)
+								{
+									@Model.User.Username
+								}
+							</div>
+							<div class="update-time">
+								<p>Updated on @String.Format("{0:MMMM dd, yyyy 'at' h:mm tt}", Model.SubmissionDate)</p>
+							</div>
+						</div>
+					</div>
+
+					<form asp-controller="Submission" asp-action="Comment" asp-route-id="@Model.ArticleId" method="post" class="comment-form">
+						<div class="status-wrap">
+							<div class="status-box">
+								<label>Status</label>
+								@if (role != null && role.Contains("Coordinator"))
+								{
+									<select name="status" id="status">
+										@switch (Model.Status)
+										{
+											case "Pending":
+												<option value="Pending" selected>Pending</option>
+												<option value="Approved">Approved</option>
+												<option value="Rejected">Rejected</option>
+												break;
+											case "Approved":
+												<option value="Pending">Pending</option>
+												<option value="Approved" selected>Approved</option>
+												<option value="Rejected">Rejected</option>
+												break;
+											case "Rejected":
+												<option value="Pending">Pending</option>
+												<option value="Approved">Approved</option>
+												<option value="Rejected" selected>Rejected</option>
+												break;
+										}
+									</select>
+								}
+								else
+								{
+									<select name="status" id="status" disabled>
+										<option value="@Model.Status">@Model.Status</option>
+									</select>
+								}
+							</div>
+							@if (role != null && role.Contains("Coordinator"))
+							{
+								<a asp-controller="Submission" asp-action="DownloadFile" asp-route-id="@Model.ArticleId" class="btn download-btn">
+									Download
+									<i class="fa-solid fa-download"></i>
+								</a>
+							}
+						</div>
+
+						@if (role != null && role.Contains("Coordinator"))
+						{
+							<div class="comment-box">
+								<label for="comment">Comments</label>
+								<div class="user-comment">
+									<div class="avatar-box">
+										<img src="~/img/@avatar">
+									</div>
+									<div class="user-comment__info">
+										<div class="user-comment__name">
+											<p>@username</p>
+										</div>
+										@if (ViewBag.Comment != null)
+										{
+											<div class="comment-time">
+												<p>@String.Format("{0:MMMM dd, yyyy 'at' h:mm tt}", ViewBag.CommentDate)</p>
+											</div>
+										}
+
+									</div>
+								</div>
+								<textarea name="comment" id="comment" rows="4">@ViewBag.Comment</textarea>
+							</div>
+						}
+						else
+						{
+							@if (ViewBag.Comment != null)
+							{
+								<div class="comment-box">
+									<label for="comment">Comments</label>
+									<div class="user-comment">
+										<div class="avatar-box">
+											<img src="~/img/@ViewBag.Avatar">
+										</div>
+										<div class="user-comment__info">
+											<div class="user-comment__name">
+												<p>@ViewBag.Coordinator</p>
+											</div>
+											<div class="comment-time">
+												<p>@String.Format("{0:MMMM dd, yyyy}", ViewBag.CommentDate)</p>
+											</div>
+										</div>
+									</div>
+									<div class="comment-content">
+										<p class="content">@ViewBag.Comment</p>
+										<p class="time">@String.Format("{0:h:mm tt}", ViewBag.CommentDate)</p>
+									</div>
+								</div>
+							}
+						}
+
+						<div class="form-actions">
+							@if (role != null)
+							{
+								switch (role)
+								{
+									case "Marketing Manager":
+										<a asp-controller="Submission" asp-action="DownloadFile" asp-route-id="@Model.ArticleId" class="btn primary">
+											Download
+										</a>
+										<a asp-controller="Home" asp-action="Index" class="btn secondary">
+											Cancel
+										</a>
+										break;
+									case "Marketing Coordinator":
+										<button type="submit" class="btn primary">
+											Save
+										</button>
+										<a asp-controller="Home" asp-action="Index" class="btn secondary">
+											Cancel
+										</a>
+										break;
+									case "Student":
+										<a asp-controller="Submission" asp-action="EditSubmission" asp-route-id="@Model.ArticleId" class="btn primary">
+											Edit
+										</a>
+										<a asp-controller="Home" asp-action="Index" class="btn secondary">
+											Cancel
+										</a>
+										break;
+									default:
+										break;
+								}
+
+							}
+						</div>
+					</form>
+
+				</div>
+
+			</div>
+
+		</div>
+	</div>
+</div>

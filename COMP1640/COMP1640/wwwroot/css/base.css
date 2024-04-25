@@ -24,15 +24,10 @@ html {
     --border-color: #dbdbdb;
 
     --header-height: 60px;
+    --footer-height: 40px;
     --header-navbar-height: 30px;
     --header-with-search-height: calc(var(--header-height) - var(--header-navbar-height));
     --header-sort-bar-height: 46px;
-}
-
-.text-danger {
-    font-size: 1.4rem;
-    line-height: 1.8rem;
-    color: red;
 }
 
 /* Button */

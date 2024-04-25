@@ -15,7 +15,6 @@
         <table class="content-table">
             <thead>
                 <tr>
-                    <th>ID</th>
                     <th>Username</th>
                     <th>Email</th>
                     <th>Role</th>
@@ -27,18 +26,12 @@
                 @foreach (var user in Model)
                 {
                     <tr>
-                        <td data-title="ID">@user.UserId</td>
                         <td data-title="Username">@user.Username</td>
                         <td data-title="Email">@user.Email</td>
-                        <td data-title="Role">
-                            @foreach (var role in ViewBag.Roles)
-                            {
-                                if (role.RoleId == user.RoleId)
-                                {
-                                    <span>@role.RoleName</span>
-                                }
-                            }
-                        </td>
+                        @if (user.Role != null)
+                        {
+                            <td data-title="Role">@user.Role.RoleName</td>                            
+                        }
                         <td data-title="Edit">
                             <a asp-area="Admin" asp-controller="User" asp-action="Edit" asp-route-id="@user.UserId" class="btn edit">
                                 <i class="fa-solid fa-pen-to-square"></i>

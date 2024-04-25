@@ -1,4 +1,6 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using System;
+using System.Collections.Generic;
+using Microsoft.EntityFrameworkCore;
 
 namespace COMP1640.Models;
 
@@ -66,11 +68,9 @@ public partial class UmcsContext : DbContext
 
         modelBuilder.Entity<Comment>(entity =>
         {
-            entity.HasKey(e => e.CommentId).HasName("PK__Comments__C3B4DFAA885485D3");
+            entity.HasKey(e => e.CommentId).HasName("PK__Comments__C3B4DFAAF50CAF71");
 
-            entity.Property(e => e.CommentId)
-                .ValueGeneratedNever()
-                .HasColumnName("CommentID");
+            entity.Property(e => e.CommentId).HasColumnName("CommentID");
             entity.Property(e => e.ArticleId).HasColumnName("ArticleID");
             entity.Property(e => e.CommentContent).HasColumnType("text");
             entity.Property(e => e.CommentDate).HasColumnType("datetime");

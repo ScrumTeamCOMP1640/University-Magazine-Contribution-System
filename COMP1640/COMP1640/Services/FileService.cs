@@ -1,10 +1,7 @@
-﻿using AspNetCore;
-using COMP1640.Interfaces;
+﻿using COMP1640.Interfaces;
 using COMP1640.Models;
-using Microsoft.AspNetCore.Http.HttpResults;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.StaticFiles;
-using Microsoft.CodeAnalysis.CSharp.Syntax;
 using System.IO.Compression;
 
 namespace COMP1640.Services
@@ -17,42 +14,54 @@ namespace COMP1640.Services
         {
             _context = context;
         }
-        public async Task<bool> UploadFile(IFormFile file, string folderName)
-        {
-            try
-            {
-                var path = string.Empty;
 
-                if (file != null && file.Length <= 5242880)
-                {
-                    path = Path.GetFullPath(Path.Combine(Environment.CurrentDirectory, "wwwroot", "UploadedFiles", folderName.Replace(" ", "_")));
+		public async Task<bool> UploadFile(IFormFile file, string folderName)
+		{
+			try
+			{
+				var path = string.Empty;
 
-                    if (!Directory.Exists(path))
-                    {
-                        Directory.CreateDirectory(path);
-                    }
+				if (file != null && file.Length <= 5242880)
+				{
+					path = Path.GetFullPath(Path.Combine(Environment.CurrentDirectory, "wwwroot", "UploadedFiles", folderName));
 
-                    using (var fs = new FileStream(Path.Combine(path, file.FileName), FileMode.Create))
-                    {
-                        await file.CopyToAsync(fs);
-                    }
-                    return true;
-                }
-                return false;
-            }
-            catch (Exception ex)
-            {
-                throw new Exception(ex.Message);
-            }
-        }
+					if (!Directory.Exists(path))
+					{
+						Directory.CreateDirectory(path);
+					}
 
-        [HttpGet]
+					using (var fs = new FileStream(Path.Combine(path, file.FileName), FileMode.Create))
+					{
+						await file.CopyToAsync(fs);
+					}
+					return true;
+				}
+				return false;
+			}
+			catch (Exception ex)
+			{
+				throw new Exception(ex.Message);
+			}
+		}
+
+		[HttpGet]
         public async Task<(byte[], string, string)> DownloadFile(string folder, int? id)
         {
             try
             {
                 var article = _context.Articles.FirstOrDefault(x => x.ArticleId == id);
-                var path = Path.GetFullPath(Path.Combine(Environment.CurrentDirectory, "wwwroot", "UploadedFiles", article.Title.Replace(" ", "_"), article.Content));
+                if (article == null)
+                {
+                    throw new ArgumentException("Article not found.");
+                }
+
+                var content = article.Content;
+                if (content == null)
+                {
+                    throw new ArgumentException("Article not found.");
+				}
+
+				var path = Path.GetFullPath(Path.Combine(Environment.CurrentDirectory, "wwwroot", "UploadedFiles", article.ArticleId.ToString(), content));
 
                 var provider = new FileExtensionContentTypeProvider();
                 if (provider.TryGetContentType(path, out var contentType))
@@ -68,7 +77,7 @@ namespace COMP1640.Services
             }
             catch (Exception ex)
             {
-                throw new Exception(ex.Message);
+                throw new Exception("Error downloading file: " + ex.Message);
             }
         }
 
@@ -80,7 +89,7 @@ namespace COMP1640.Services
 
                 var folders = Directory.GetDirectories(path);
 
-                var article = _context.Articles.Where(x => x.Status != null && x.Status.Equals("Published")).ToList();
+                var article = _context.Articles.Where(x => x.Status != null && x.Status.Equals("Approved")).ToList();
                 if (article.Count() == 0)
                 {
                     throw new Exception("No file found");
@@ -96,7 +105,7 @@ namespace COMP1640.Services
                             var folderInfo = new DirectoryInfo(folder);
                             foreach (var pub in article)
                             {
-                                if (folderInfo.Name.Equals(pub.Title.Replace(" ", "_")))
+                                if (folderInfo.Name.Equals(pub.ArticleId.ToString()))
                                 {
                                     foreach (var file in files)
                                     {

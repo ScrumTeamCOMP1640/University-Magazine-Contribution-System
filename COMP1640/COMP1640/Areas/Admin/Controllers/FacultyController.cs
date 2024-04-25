@@ -21,7 +21,7 @@ namespace COMP1640.Areas.Admin.Controllers
 
         public IActionResult Index(int? page)
         {
-            var faculties = _db.Faculties.OrderBy(f => f.FacultyId);
+            var faculties = _db.Faculties.Where(f => f.FacultyId != 1).OrderBy(f => f.FacultyId);
             int pageSize = 8;
             int pageNumber = page ?? 1;
             IPagedList<Faculty> pagedList = faculties.ToPagedList(pageNumber, pageSize);

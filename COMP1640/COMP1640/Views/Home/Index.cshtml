@@ -1,18 +1,16 @@
-﻿@{
+﻿@model X.PagedList.IPagedList<Article>
+
+@{
 	ViewData["Title"] = "Home Page";
 	Layout = "~/Views/Shared/_Layout.cshtml";
 	var username = Context.Session.GetString("Username");
 	var role = Context.Session.GetString("Role");
 }
 
-@model X.PagedList.IPagedList<Article>
-
 <div class="main__container">
 	@switch (role)
 	{
 		case "Student":
-			<img src="~/img/gre.png" class="background">
-			break;
 		case "Guest":
 			<img src="~/img/gre.png" class="background">
 			break;

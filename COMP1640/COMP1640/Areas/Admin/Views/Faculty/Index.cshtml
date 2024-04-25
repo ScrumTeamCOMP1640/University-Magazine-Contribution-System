@@ -15,8 +15,7 @@
         <table class="content-table">
             <thead>
                 <tr>
-                    <th>ID</th>
-                    <th>Faculty name</th>
+                    <th>Faculty</th>
                     <th>Edit</th>
                     <th>Delete</th>
                 </tr>
@@ -25,8 +24,7 @@
                 @foreach (var faculty in Model)
                 {
                     <tr>
-                        <td data-title="ID">@faculty.FacultyId</td>
-                        <td data-title="Username">@faculty.FacultyName</td>
+                        <td data-title="Faculty">@faculty.FacultyName</td>
                         <td data-title="Edit">
                             <a asp-area="Admin" asp-controller="Faculty" asp-action="Edit" asp-route-id="@faculty.FacultyId" class="btn edit">
                                 <i class="fa-solid fa-pen-to-square"></i>

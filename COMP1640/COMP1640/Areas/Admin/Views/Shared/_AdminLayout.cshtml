@@ -48,14 +48,40 @@
             </div>
 
             <div class="header__left">
-                @* <div class="notification">
-                    <i class="fa-solid fa-bell"></i>
-                </div> *@
+                <ul class="navbar">
+                    <li class="navbar-item">
+                        <div class="profile-dropdown">
+                    <input type="checkbox" id="check-profile">
+                    <label for="check-profile" class="profile-dropdown-btn">
+                        <div class="profile-img" style="background-image: url('@Url.Content("~/admin/img/admin.png")');">
+                            <i class="fa-solid fa-circle"></i>
+                        </div>
 
-                <div class="admin-account">
-                    <span class="avatar" style="background-image: url(@Url.Content("~/admin/img/admin.png"));"></span>
-                    <span class="admin-name">@username</span>
+                        <span>
+                            <p>@username</p>
+                            <i class="fa-solid fa-angle-down"></i>
+                        </span>
+                    </label>
+
+                    <ul class="profile-dropdown-list">
+                        <li class="profile-dropdown-list-item">
+                            <a asp-area="Admin" asp-controller="Home" asp-action="Profile">
+                                <i class="fa-regular fa-user"></i>
+                                Profile
+                            </a>
+                        </li>
+                        <hr />
+
+                        <li class="profile-dropdown-list-item">
+                            <a asp-controller="Account" asp-action="Logout">
+                                <i class="fa-solid fa-arrow-right-from-bracket fa-rotate-180"></i>
+                                Log out
+                            </a>
+                        </li>
+                    </ul>
                 </div>
+                    </li>
+                </ul>
             </div>
         </header>
         <nav class="sidebar">
@@ -94,13 +120,6 @@
                             <a asp-area="Admin" asp-controller="Term" asp-action="Index">
                                 <i class="bx bxs-calendar-event icon"></i>
                                 <span class="text nav-text">Term</span>
-                            </a>
-                        </li>
-
-                        <li class="nav-link">
-                            <a asp-controller="Account" asp-action="Logout">
-                                <i class="bx bx-log-out icon"></i>
-                                <span class="text nav-text">Logout</span>
                             </a>
                         </li>
                     </ul>

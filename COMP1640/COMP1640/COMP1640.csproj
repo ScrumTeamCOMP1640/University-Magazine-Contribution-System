@@ -9,16 +9,12 @@
   <ItemGroup>
     <Compile Remove="Areas\Admin\Data\**" />
     <Compile Remove="Areas\Admin\Models\**" />
-    <Compile Remove="wwwroot\UploadedFiles\1\**" />
     <Content Remove="Areas\Admin\Data\**" />
     <Content Remove="Areas\Admin\Models\**" />
-    <Content Remove="wwwroot\UploadedFiles\1\**" />
     <EmbeddedResource Remove="Areas\Admin\Data\**" />
     <EmbeddedResource Remove="Areas\Admin\Models\**" />
-    <EmbeddedResource Remove="wwwroot\UploadedFiles\1\**" />
     <None Remove="Areas\Admin\Data\**" />
     <None Remove="Areas\Admin\Models\**" />
-    <None Remove="wwwroot\UploadedFiles\1\**" />
   </ItemGroup>
 
   <ItemGroup>
@@ -43,7 +39,6 @@
 
   <ItemGroup>
     <Folder Include="wwwroot\OutPut\" />
-    <Folder Include="wwwroot\UploadedFiles\" />
   </ItemGroup>
 
   <ItemGroup>

@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "kMp4HaHbbSCih+ilcDCTjzq3H6nnyHs/K4uVox/fyiQ=",
+  "Hash": "ogQpkbowHxvIZJUbylMhjugVfzU3a/1qOL+6CDaI/ok=",
   "Source": "COMP1640",
   "BasePath": "_content/COMP1640",
   "Mode": "Default",
@@ -243,6 +243,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\favicon.ico"
+    },
+    {
+      "Identity": "C:\\Users\\Admin\\Downloads\\GitClone\\University-Magazine-Contribution-System\\COMP1640\\COMP1640\\wwwroot\\img\\admin.png",
+      "SourceId": "COMP1640",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Admin\\Downloads\\GitClone\\University-Magazine-Contribution-System\\COMP1640\\COMP1640\\wwwroot\\",
+      "BasePath": "_content/COMP1640",
+      "RelativePath": "img/admin.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\admin.png"
     },
     {
       "Identity": "C:\\Users\\Admin\\Downloads\\GitClone\\University-Magazine-Contribution-System\\COMP1640\\COMP1640\\wwwroot\\img\\graphic_design.png",
@@ -1613,12 +1632,12 @@
       "OriginalItemSpec": "wwwroot\\OutPut\\file-sample.pdf"
     },
     {
-      "Identity": "C:\\Users\\Admin\\Downloads\\GitClone\\University-Magazine-Contribution-System\\COMP1640\\COMP1640\\wwwroot\\UploadedFiles\\AI\\AI.png",
+      "Identity": "C:\\Users\\Admin\\Downloads\\GitClone\\University-Magazine-Contribution-System\\COMP1640\\COMP1640\\wwwroot\\UploadedFiles\\1\\AI.png",
       "SourceId": "COMP1640",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\Admin\\Downloads\\GitClone\\University-Magazine-Contribution-System\\COMP1640\\COMP1640\\wwwroot\\",
       "BasePath": "_content/COMP1640",
-      "RelativePath": "UploadedFiles/AI/AI.png",
+      "RelativePath": "UploadedFiles/1/AI.png",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -1629,15 +1648,15 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\UploadedFiles\\AI\\AI.png"
+      "OriginalItemSpec": "wwwroot\\UploadedFiles\\1\\AI.png"
     },
     {
-      "Identity": "C:\\Users\\Admin\\Downloads\\GitClone\\University-Magazine-Contribution-System\\COMP1640\\COMP1640\\wwwroot\\UploadedFiles\\AI\\file-sample.docx",
+      "Identity": "C:\\Users\\Admin\\Downloads\\GitClone\\University-Magazine-Contribution-System\\COMP1640\\COMP1640\\wwwroot\\UploadedFiles\\1\\file-sample.docx",
       "SourceId": "COMP1640",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\Admin\\Downloads\\GitClone\\University-Magazine-Contribution-System\\COMP1640\\COMP1640\\wwwroot\\",
       "BasePath": "_content/COMP1640",
-      "RelativePath": "UploadedFiles/AI/file-sample.docx",
+      "RelativePath": "UploadedFiles/1/file-sample.docx",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -1648,15 +1667,15 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\UploadedFiles\\AI\\file-sample.docx"
+      "OriginalItemSpec": "wwwroot\\UploadedFiles\\1\\file-sample.docx"
     },
     {
-      "Identity": "C:\\Users\\Admin\\Downloads\\GitClone\\University-Magazine-Contribution-System\\COMP1640\\COMP1640\\wwwroot\\UploadedFiles\\Artificial_Intelligence\\AI.png",
+      "Identity": "C:\\Users\\Admin\\Downloads\\GitClone\\University-Magazine-Contribution-System\\COMP1640\\COMP1640\\wwwroot\\UploadedFiles\\2\\cybersecurity.png",
       "SourceId": "COMP1640",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\Admin\\Downloads\\GitClone\\University-Magazine-Contribution-System\\COMP1640\\COMP1640\\wwwroot\\",
       "BasePath": "_content/COMP1640",
-      "RelativePath": "UploadedFiles/Artificial_Intelligence/AI.png",
+      "RelativePath": "UploadedFiles/2/cybersecurity.png",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -1667,15 +1686,15 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\UploadedFiles\\Artificial_Intelligence\\AI.png"
+      "OriginalItemSpec": "wwwroot\\UploadedFiles\\2\\cybersecurity.png"
     },
     {
-      "Identity": "C:\\Users\\Admin\\Downloads\\GitClone\\University-Magazine-Contribution-System\\COMP1640\\COMP1640\\wwwroot\\UploadedFiles\\Artificial_Intelligence\\file-sample.docx",
+      "Identity": "C:\\Users\\Admin\\Downloads\\GitClone\\University-Magazine-Contribution-System\\COMP1640\\COMP1640\\wwwroot\\UploadedFiles\\2\\file-sample.docx",
       "SourceId": "COMP1640",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\Admin\\Downloads\\GitClone\\University-Magazine-Contribution-System\\COMP1640\\COMP1640\\wwwroot\\",
       "BasePath": "_content/COMP1640",
-      "RelativePath": "UploadedFiles/Artificial_Intelligence/file-sample.docx",
+      "RelativePath": "UploadedFiles/2/file-sample.docx",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -1686,15 +1705,15 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\UploadedFiles\\Artificial_Intelligence\\file-sample.docx"
+      "OriginalItemSpec": "wwwroot\\UploadedFiles\\2\\file-sample.docx"
     },
     {
-      "Identity": "C:\\Users\\Admin\\Downloads\\GitClone\\University-Magazine-Contribution-System\\COMP1640\\COMP1640\\wwwroot\\UploadedFiles\\Cybersecurity_Threats_in_a_Digital_Age\\cybersecurity.png",
+      "Identity": "C:\\Users\\Admin\\Downloads\\GitClone\\University-Magazine-Contribution-System\\COMP1640\\COMP1640\\wwwroot\\UploadedFiles\\3\\cybersecurity.png",
       "SourceId": "COMP1640",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\Admin\\Downloads\\GitClone\\University-Magazine-Contribution-System\\COMP1640\\COMP1640\\wwwroot\\",
       "BasePath": "_content/COMP1640",
-      "RelativePath": "UploadedFiles/Cybersecurity_Threats_in_a_Digital_Age/cybersecurity.png",
+      "RelativePath": "UploadedFiles/3/cybersecurity.png",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -1705,15 +1724,15 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\UploadedFiles\\Cybersecurity_Threats_in_a_Digital_Age\\cybersecurity.png"
+      "OriginalItemSpec": "wwwroot\\UploadedFiles\\3\\cybersecurity.png"
     },
     {
-      "Identity": "C:\\Users\\Admin\\Downloads\\GitClone\\University-Magazine-Contribution-System\\COMP1640\\COMP1640\\wwwroot\\UploadedFiles\\Cybersecurity_Threats_in_a_Digital_Age\\file-sample.docx",
+      "Identity": "C:\\Users\\Admin\\Downloads\\GitClone\\University-Magazine-Contribution-System\\COMP1640\\COMP1640\\wwwroot\\UploadedFiles\\3\\file-sample.docx",
       "SourceId": "COMP1640",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\Admin\\Downloads\\GitClone\\University-Magazine-Contribution-System\\COMP1640\\COMP1640\\wwwroot\\",
       "BasePath": "_content/COMP1640",
-      "RelativePath": "UploadedFiles/Cybersecurity_Threats_in_a_Digital_Age/file-sample.docx",
+      "RelativePath": "UploadedFiles/3/file-sample.docx",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -1724,15 +1743,15 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\UploadedFiles\\Cybersecurity_Threats_in_a_Digital_Age\\file-sample.docx"
+      "OriginalItemSpec": "wwwroot\\UploadedFiles\\3\\file-sample.docx"
     },
     {
-      "Identity": "C:\\Users\\Admin\\Downloads\\GitClone\\University-Magazine-Contribution-System\\COMP1640\\COMP1640\\wwwroot\\UploadedFiles\\Graphic\\COMP1640_CW.docx",
+      "Identity": "C:\\Users\\Admin\\Downloads\\GitClone\\University-Magazine-Contribution-System\\COMP1640\\COMP1640\\wwwroot\\UploadedFiles\\4\\COMP1640_CW.docx",
       "SourceId": "COMP1640",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\Admin\\Downloads\\GitClone\\University-Magazine-Contribution-System\\COMP1640\\COMP1640\\wwwroot\\",
       "BasePath": "_content/COMP1640",
-      "RelativePath": "UploadedFiles/Graphic/COMP1640_CW.docx",
+      "RelativePath": "UploadedFiles/4/COMP1640_CW.docx",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -1743,15 +1762,15 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\UploadedFiles\\Graphic\\COMP1640_CW.docx"
+      "OriginalItemSpec": "wwwroot\\UploadedFiles\\4\\COMP1640_CW.docx"
     },
     {
-      "Identity": "C:\\Users\\Admin\\Downloads\\GitClone\\University-Magazine-Contribution-System\\COMP1640\\COMP1640\\wwwroot\\UploadedFiles\\Graphic\\file-sample.docx",
+      "Identity": "C:\\Users\\Admin\\Downloads\\GitClone\\University-Magazine-Contribution-System\\COMP1640\\COMP1640\\wwwroot\\UploadedFiles\\4\\file-sample.docx",
       "SourceId": "COMP1640",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\Admin\\Downloads\\GitClone\\University-Magazine-Contribution-System\\COMP1640\\COMP1640\\wwwroot\\",
       "BasePath": "_content/COMP1640",
-      "RelativePath": "UploadedFiles/Graphic/file-sample.docx",
+      "RelativePath": "UploadedFiles/4/file-sample.docx",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -1762,15 +1781,15 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\UploadedFiles\\Graphic\\file-sample.docx"
+      "OriginalItemSpec": "wwwroot\\UploadedFiles\\4\\file-sample.docx"
     },
     {
-      "Identity": "C:\\Users\\Admin\\Downloads\\GitClone\\University-Magazine-Contribution-System\\COMP1640\\COMP1640\\wwwroot\\UploadedFiles\\Graphic\\graphic_design.png",
+      "Identity": "C:\\Users\\Admin\\Downloads\\GitClone\\University-Magazine-Contribution-System\\COMP1640\\COMP1640\\wwwroot\\UploadedFiles\\4\\graphic_design.png",
       "SourceId": "COMP1640",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\Admin\\Downloads\\GitClone\\University-Magazine-Contribution-System\\COMP1640\\COMP1640\\wwwroot\\",
       "BasePath": "_content/COMP1640",
-      "RelativePath": "UploadedFiles/Graphic/graphic_design.png",
+      "RelativePath": "UploadedFiles/4/graphic_design.png",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -1781,15 +1800,15 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\UploadedFiles\\Graphic\\graphic_design.png"
+      "OriginalItemSpec": "wwwroot\\UploadedFiles\\4\\graphic_design.png"
     },
     {
-      "Identity": "C:\\Users\\Admin\\Downloads\\GitClone\\University-Magazine-Contribution-System\\COMP1640\\COMP1640\\wwwroot\\UploadedFiles\\Test\\AI.png",
+      "Identity": "C:\\Users\\Admin\\Downloads\\GitClone\\University-Magazine-Contribution-System\\COMP1640\\COMP1640\\wwwroot\\UploadedFiles\\5\\cybersecurity.png",
       "SourceId": "COMP1640",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\Admin\\Downloads\\GitClone\\University-Magazine-Contribution-System\\COMP1640\\COMP1640\\wwwroot\\",
       "BasePath": "_content/COMP1640",
-      "RelativePath": "UploadedFiles/Test/AI.png",
+      "RelativePath": "UploadedFiles/5/cybersecurity.png",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -1800,15 +1819,15 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\UploadedFiles\\Test\\AI.png"
+      "OriginalItemSpec": "wwwroot\\UploadedFiles\\5\\cybersecurity.png"
     },
     {
-      "Identity": "C:\\Users\\Admin\\Downloads\\GitClone\\University-Magazine-Contribution-System\\COMP1640\\COMP1640\\wwwroot\\UploadedFiles\\Test\\file-sample.docx",
+      "Identity": "C:\\Users\\Admin\\Downloads\\GitClone\\University-Magazine-Contribution-System\\COMP1640\\COMP1640\\wwwroot\\UploadedFiles\\5\\file-sample.docx",
       "SourceId": "COMP1640",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\Admin\\Downloads\\GitClone\\University-Magazine-Contribution-System\\COMP1640\\COMP1640\\wwwroot\\",
       "BasePath": "_content/COMP1640",
-      "RelativePath": "UploadedFiles/Test/file-sample.docx",
+      "RelativePath": "UploadedFiles/5/file-sample.docx",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -1819,7 +1838,83 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\UploadedFiles\\Test\\file-sample.docx"
+      "OriginalItemSpec": "wwwroot\\UploadedFiles\\5\\file-sample.docx"
+    },
+    {
+      "Identity": "C:\\Users\\Admin\\Downloads\\GitClone\\University-Magazine-Contribution-System\\COMP1640\\COMP1640\\wwwroot\\UploadedFiles\\6\\business.jpg",
+      "SourceId": "COMP1640",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Admin\\Downloads\\GitClone\\University-Magazine-Contribution-System\\COMP1640\\COMP1640\\wwwroot\\",
+      "BasePath": "_content/COMP1640",
+      "RelativePath": "UploadedFiles/6/business.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\UploadedFiles\\6\\business.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\Admin\\Downloads\\GitClone\\University-Magazine-Contribution-System\\COMP1640\\COMP1640\\wwwroot\\UploadedFiles\\6\\file-sample.docx",
+      "SourceId": "COMP1640",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Admin\\Downloads\\GitClone\\University-Magazine-Contribution-System\\COMP1640\\COMP1640\\wwwroot\\",
+      "BasePath": "_content/COMP1640",
+      "RelativePath": "UploadedFiles/6/file-sample.docx",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\UploadedFiles\\6\\file-sample.docx"
+    },
+    {
+      "Identity": "C:\\Users\\Admin\\Downloads\\GitClone\\University-Magazine-Contribution-System\\COMP1640\\COMP1640\\wwwroot\\UploadedFiles\\7\\AI.png",
+      "SourceId": "COMP1640",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Admin\\Downloads\\GitClone\\University-Magazine-Contribution-System\\COMP1640\\COMP1640\\wwwroot\\",
+      "BasePath": "_content/COMP1640",
+      "RelativePath": "UploadedFiles/7/AI.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\UploadedFiles\\7\\AI.png"
+    },
+    {
+      "Identity": "C:\\Users\\Admin\\Downloads\\GitClone\\University-Magazine-Contribution-System\\COMP1640\\COMP1640\\wwwroot\\UploadedFiles\\7\\file-sample.docx",
+      "SourceId": "COMP1640",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Admin\\Downloads\\GitClone\\University-Magazine-Contribution-System\\COMP1640\\COMP1640\\wwwroot\\",
+      "BasePath": "_content/COMP1640",
+      "RelativePath": "UploadedFiles/7/file-sample.docx",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\UploadedFiles\\7\\file-sample.docx"
     }
   ]
 }

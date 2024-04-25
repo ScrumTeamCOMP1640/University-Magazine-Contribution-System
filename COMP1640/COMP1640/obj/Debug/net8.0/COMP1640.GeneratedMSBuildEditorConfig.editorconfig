@@ -42,6 +42,14 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/Admin/Downloads/GitClone/University-Magazine-Contribution-System/COMP1640/COMP1640/Areas/Admin/Views/Home/Pass.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcSG9tZVxQYXNzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Admin/Downloads/GitClone/University-Magazine-Contribution-System/COMP1640/COMP1640/Areas/Admin/Views/Home/Profile.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcSG9tZVxQcm9maWxlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/Admin/Downloads/GitClone/University-Magazine-Contribution-System/COMP1640/COMP1640/Areas/Admin/Views/Role/Add.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcUm9sZVxBZGQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
@@ -98,8 +106,8 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxQcm9maWxlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Admin/Downloads/GitClone/University-Magazine-Contribution-System/COMP1640/COMP1640/Views/Home/ContributeDetail.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxDb250cmlidXRlRGV0YWlsLmNzaHRtbA==
+[C:/Users/Admin/Downloads/GitClone/University-Magazine-Contribution-System/COMP1640/COMP1640/Views/Home/Chart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxDaGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/Admin/Downloads/GitClone/University-Magazine-Contribution-System/COMP1640/COMP1640/Views/Home/Index.cshtml]
@@ -128,6 +136,10 @@ build_metadata.AdditionalFiles.CssScope =
 
 [C:/Users/Admin/Downloads/GitClone/University-Magazine-Contribution-System/COMP1640/COMP1640/Views/Submission/AddSubmission.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3VibWlzc2lvblxBZGRTdWJtaXNzaW9uLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Admin/Downloads/GitClone/University-Magazine-Contribution-System/COMP1640/COMP1640/Views/Submission/ContributeDetail.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3VibWlzc2lvblxDb250cmlidXRlRGV0YWlsLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/Admin/Downloads/GitClone/University-Magazine-Contribution-System/COMP1640/COMP1640/Views/Submission/EditSubmission.cshtml]

@@ -1,216 +1,191 @@
 ﻿@{
-    var username = Context.Session.GetString("Username");
-    var avatar = Context.Session.GetString("Avatar");
-    var role = Context.Session.GetString("Role");
-    var action = ViewContext.RouteData.Values["Action"]?.ToString();
+	var username = Context.Session.GetString("Username");
+	var avatar = Context.Session.GetString("Avatar");
+	var role = Context.Session.GetString("Role");
+	var action = ViewContext.RouteData.Values["Action"]?.ToString();
 }
 
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Homepage</title>
-    <link rel="stylesheet" href="~/css/base.css">
-    <link rel="stylesheet" href="~/css/grid.css">
-    <link rel="stylesheet" href="~/css/style.css">
-    <link rel="stylesheet" href="~/css/responsive.css">
-    <link rel="stylesheet" href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-    @await Component.InvokeAsync("NToastNotify")
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Homepage</title>
+	<link rel="stylesheet" href="~/css/base.css">
+	<link rel="stylesheet" href="~/css/grid.css">
+	<link rel="stylesheet" href="~/css/style.css">
+	<link rel="stylesheet" href="~/css/responsive.css">
+	<link rel="stylesheet" href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+	@await Component.InvokeAsync("NToastNotify")
 </head>
 
 <body>
-    <div class="main">
-        <!-- Header -->
-        <header class="header">
-            <div class="grid wide">
-                <div class="header__navbar">
-                    <div class="header-left">
-                        <div class="logo-wrap">
-                            <a asp-controller="Home" asp-action="Index" class="logo">
-                                <div class="logo__img" style="background-image: url('@Url.Content("~/img/logo.svg")');"></div>
-                            </a>
-                        </div>
+	<div class="main">
+		<!-- Header -->
+		<header class="header">
+			<div class="grid wide">
+				<div class="header__navbar">
+					<div class="header-left">
+						<div class="logo-wrap">
+							<a asp-controller="Home" asp-action="Index" class="logo">
+								<div class="logo__img" style="background-image: url('@Url.Content("~/img/logo.svg")');"></div>
+							</a>
+						</div>
 
-                        @if (action == "Index")
-                        {
-                            <form asp-controller="Home" asp-action="Search" class="header__search">
-                                <i class="bx bx-search"></i>
-                                <div class="header__search-input-wrap">
-                                    <input id="searchInput" name="searchQuery" value="@ViewBag.SearchQuery" placeholder="Search">
-                                </div>
-                            </form>                            
-                        }
-                    </div>
+						@if (action == "Index")
+						{
+							<form asp-controller="Home" asp-action="Search" class="header__search">
+								<i class="bx bx-search"></i>
+								<div class="header__search-input-wrap">
+									<input id="searchInput" name="searchQuery" value="@ViewBag.SearchQuery" placeholder="Search">
+								</div>
+							</form>
+						}
+					</div>
 
-                    <div class="header-right">
-                        <input type="checkbox" id="mobile-search-checkbox">
-                        <label for="mobile-search-checkbox" class="search-icon-wrap">
-                            <i class="bx bx-search" id="search-icon"></i>
-                        </label>
+					<div class="header-right">
+						<input type="checkbox" id="mobile-search-checkbox">
+						<label for="mobile-search-checkbox" class="search-icon-wrap">
+							<i class="bx bx-search" id="search-icon"></i>
+						</label>
 
-                        @if (action == "Index")
-                        {
-                            <div class="header-mobile__search">
-                                <form asp-controller="Home" asp-action="Search" class="mobile__search">
-                                    <i class="mobile__search-btn-icon bx bx-search"></i>
-                                    <div class="mobile__search-input-wrap">
-                                        <input id="searchInput" name="searchQuery" value="@ViewBag.SearchQuery" class="mobile__search-input" placeholder="Search">
-                                    </div>
-                                </form>
-                            </div>
-                        }
+						@if (action == "Index")
+						{
+							<div class="header-mobile__search">
+								<form asp-controller="Home" asp-action="Search" class="mobile__search">
+									<i class="mobile__search-btn-icon bx bx-search"></i>
+									<div class="mobile__search-input-wrap">
+										<input id="searchInput" name="searchQuery" value="@ViewBag.SearchQuery" class="mobile__search-input" placeholder="Search">
+									</div>
+								</form>
+							</div>
+						}
 
-                        <input type="checkbox" id="check">
-                        <label for="check" class="icons">
-                            <i class="bx bx-menu" id="menu-icon"></i>
-                            <i class="bx bx-x" id="close-icon"></i>
-                        </label>
+						<input type="checkbox" id="check">
+						<label for="check" class="icons">
+							<i class="bx bx-menu" id="menu-icon"></i>
+							<i class="bx bx-x" id="close-icon"></i>
+						</label>
 
-                        <ul class="navbar">
-                            @switch (role)
-                            {
-                                case "Marketing Manager":
-                                    if (action == "Index")
-                                    {
-                                        <li class="navbar-item">
-                                            <a asp-controller="Submission" asp-action="DownloadAll" class="navbar-item__link" style="--i:0">
-                                                <i class="fa-regular fa-circle-down"></i>
-                                                <p>Download All</p>
-                                            </a>
-                                        </li>
-                                    }
-                                    break;
-                                case "Marketing Coordinator":
-                                    if (action == "Index")
-                                    {
-                                        <li class="navbar-item">
-                                            <a asp-controller="Submission" asp-action="DownloadAll" class="navbar-item__link" style="--i:0">
-                                                <i class="fa-regular fa-circle-down"></i>
-                                                <p>Download All</p>
-                                            </a>
-                                        </li>                                        
-                                    }
-                                    break;
-                                case "Student":
-                                    <li class="navbar-item">
-                                        <a asp-controller="Submission" asp-action="AddSubmission" class="navbar-item__link" style="--i:0">
-                                            <i class="fa-regular fa-pen-to-square"></i>
-                                            <p>Submission</p>
-                                        </a>
-                                    </li>
-                                    break;
-                                default:                                    
-                                    break;
-                            }
+						<ul class="navbar">
+							@switch (role)
+							{
+								case "Marketing Manager":
+									if (action == "Index")
+									{
+										@* <li class="navbar-item">
+											<a asp-controller="Submission" asp-action="DownloadAll" class="navbar-item__link" style="--i:0">
+												<i class="fa-regular fa-circle-down"></i>
+												<p>Download All</p>
+											</a>
+										</li> *@
 
-                            <li class="navbar-item show-on-mobile">
-                                <a asp-controller="Account" asp-action="Profile" class="navbar-item__link" style="--i:1">
-                                    <i class="fa-regular fa-user"></i>
-                                    <p>Edit Profile</p>
-                                </a>
-                            </li>
-                            <li class="navbar-item show-on-mobile">
-                                <a asp-controller="Account" asp-action="Logout" class="navbar-item__link" style="--i:2">
-                                    <i class="fa-solid fa-arrow-right-from-bracket fa-rotate-180"></i>
-                                    <p>Logout</p>
-                                </a>
-                            </li>
+										<li class="navbar-item">
+											<a asp-controller="Home" asp-action="Chart" class="navbar-item__link" style="--i:0">
+												<i class="fa-solid fa-chart-simple"></i>
+												<p>Charts</p>
+											</a>
+										</li>
+									}
+									break;
+								case "Marketing Coordinator":
+									if (action == "Index")
+									{
+										<li class="navbar-item">
+											<a asp-controller="Submission" asp-action="DownloadAll" class="navbar-item__link" style="--i:0">
+												<i class="fa-regular fa-circle-down"></i>
+												<p>Download All</p>
+											</a>
+										</li>
+									}
+									break;
+								case "Student":
+									if (action == "Index")
+									{
+										<li class="navbar-item">
+											<a asp-controller="Submission" asp-action="AddSubmission" class="navbar-item__link" style="--i:0">
+												<i class="fa-regular fa-pen-to-square"></i>
+												<p>Submission</p>
+											</a>
+										</li>
+									}
+									break;
+								default:
+									break;
+							}
 
-                            <li class="navbar-item hide-on-mobile">
-                                <div class="profile-dropdown">
-                                    <input type="checkbox" id="check-profile">
-                                    <label for="check-profile" class="profile-dropdown-btn">
-                                        <div class="profile-img" style="background-image: url('@Url.Content("~/img/user_avatar.png")');">
-                                            <i class="fa-solid fa-circle"></i>
-                                        </div>
+							<li class="navbar-item show-on-mobile">
+								<a asp-controller="Account" asp-action="Profile" class="navbar-item__link" style="--i:1">
+									<i class="fa-regular fa-user"></i>
+									<p>Profile</p>
+								</a>
+							</li>
+							<li class="navbar-item show-on-mobile">
+								<a asp-controller="Account" asp-action="Logout" class="navbar-item__link" style="--i:2">
+									<i class="fa-solid fa-arrow-right-from-bracket fa-rotate-180"></i>
+									<p>Logout</p>
+								</a>
+							</li>
 
-                                        <span>
-                                            <p>@username</p>
-                                            <i class="fa-solid fa-angle-down"></i>
-                                        </span>
-                                    </label>
+							<li class="navbar-item hide-on-mobile">
+								<div class="profile-dropdown">
+									<input type="checkbox" id="check-profile">
+									<label for="check-profile" class="profile-dropdown-btn">
+										<div class="profile-img" style="background-image: url('@Url.Content("~/img/" + avatar)');">
+											<i class="fa-solid fa-circle"></i>
+										</div>
 
-                                    <ul class="profile-dropdown-list">
-                                        <li class="profile-dropdown-list-item">
-                                            <a asp-controller="Account" asp-action="Profile">
-                                                <i class="fa-regular fa-user"></i>
-                                                Edit Profile
-                                            </a>
-                                        </li>
-                                        <hr />
+										<span>
+											<p>@username</p>
+											<i class="fa-solid fa-angle-down"></i>
+										</span>
+									</label>
 
-                                        <li class="profile-dropdown-list-item">
-                                            <a asp-controller="Account" asp-action="Logout">
-                                                <i class="fa-solid fa-arrow-right-from-bracket fa-rotate-180"></i>
-                                                Log out
-                                            </a>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </li>
-                        </ul>
-                        
-                    </div>
+									<ul class="profile-dropdown-list">
+										<li class="profile-dropdown-list-item">
+											<a asp-controller="Account" asp-action="Profile">
+												<i class="fa-regular fa-user"></i>
+												Profile
+											</a>
+										</li>
+										<hr />
 
-                </div>
-            </div>
-        </header>
+										<li class="profile-dropdown-list-item">
+											<a asp-controller="Account" asp-action="Logout">
+												<i class="fa-solid fa-arrow-right-from-bracket fa-rotate-180"></i>
+												Log out
+											</a>
+										</li>
+									</ul>
+								</div>
+							</li>
+						</ul>
 
-        <!-- Content -->        
-        @RenderBody()
+					</div>
 
-        <!-- Footer -->
-        <footer class="footer">
-            <div class="footer__bottom">
-                <div class="grid wide">
-                    <p class="footer__text">&copy; 2024 University of Greenwich. All rights reserved.</p>
-                </div>
-            </div>
-        </footer>
+				</div>
+			</div>
+		</header>
 
-    </div>
+		<!-- Content -->
+		@RenderBody()
 
-    <script src="~/lib/jquery.unobtrusive-ajax.js"></script>
-    @Html.RenderUnobtrusiveAjaxScript()
+		<!-- Footer -->
+		<footer class="footer">
+			<div class="footer__bottom">
+				<div class="grid wide">
+					<p class="footer__text">&copy; 2024 University of Greenwich. All rights reserved.</p>
+				</div>
+			</div>
+		</footer>
 
-    @* <script>
-        $(document).ready(function () {
-            function fetchArticlesBySearch(searchQuery) {
-                $.ajax({
-                    url: '@Url.Action("Search", "Home")',
-                    type: 'GET',
-                    data: { searchQuery: searchQuery },
-                    beforeSend: function () {
-                        $('#loading').show();
-                    },
-                    success: function (data) {
-                        if (data.trim().length === 0) {
-                            $('#articleList').html('<div class="no-results"><div class="no-results__img" style="background-image: url(@Url.Content("~/img/no_data.svg"))"></div><h2>No data found</h2></div>');
-                            $('#pagination').hide();
-                        } else {
-                            $('#articleList').html(data);
-                            $('#pagination').show();
-                        }
-                    },
-                    complete: function () {
-                        $('#loading').hide();
-                    },
-                    error: function (xhr, status, error) {
-                        console.error(xhr.responseText);
-                    }
-                });
-            }
+	</div>
 
-            $('#searchBar').keyup(function () {
-                var searchQuery = $(this).val();
-                fetchArticlesBySearch(searchQuery);
-            });
+	@* <script src="~/lib/jquery.unobtrusive-ajax.js"></script>
+	@Html.RenderUnobtrusiveAjaxScript() *@
 
-        });
-    </script> *@
 </body>
 
 </html>

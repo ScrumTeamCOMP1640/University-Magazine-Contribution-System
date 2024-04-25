@@ -15,8 +15,7 @@
         <table class="content-table">
             <thead>
                 <tr>
-                    <th>ID</th>
-                    <th>Role name</th>
+                    <th>Role</th>
                     <th>Edit</th>
                     <th>Delete</th>
                 </tr>
@@ -25,8 +24,7 @@
                 @foreach (var role in Model)
                 {
                     <tr>
-                        <td data-title="ID">@role.RoleId</td>
-                        <td data-title="Username">@role.RoleName</td>
+                        <td data-title="Role">@role.RoleName</td>
                         <td data-title="Edit">
                             <a asp-area="Admin" asp-controller="Role" asp-action="Edit" asp-route-id="@role.RoleId" class="btn edit">
                                 <i class="fa-solid fa-pen-to-square"></i>

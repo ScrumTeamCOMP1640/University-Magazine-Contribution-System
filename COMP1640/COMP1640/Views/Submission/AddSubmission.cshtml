@@ -1,8 +1,8 @@
-﻿@{
+﻿@model COMP1640.Models.Article
+
+@{
     ViewData["Title"] = "Submission";
     Layout = "~/Views/Shared/_Layout.cshtml";
-
-    var term = ViewBag.Term;
 }
 
 <div class="main__container">
@@ -14,7 +14,7 @@
                     <div class="form-content">
                         <div class="input-box">
                             <label>Title</label>
-                            <input type="text" id="title" name="Title" required>
+                            <input type="text" id="title" asp-for="Title" required>
                         </div>
                         <div class="input-box">
                             <label>Faculty</label>
@@ -22,7 +22,7 @@
                         </div>
                         <div class="input-box">
                             <label>Term</label>
-                            <input type="text" id="term" name="term" placeholder="@term.TermName (From @term.StartDate.ToString("dd/MM/yyyy") to @term.EndDate.ToString("dd/MM/yyyy"))" disabled>
+                            <input type="text" id="term" name="term" placeholder="@ViewBag.Term" disabled>
                         </div>
                         <div class="input-box">
                             <div id="image-upload-wrapper">

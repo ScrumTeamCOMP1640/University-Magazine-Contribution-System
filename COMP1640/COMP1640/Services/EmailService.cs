@@ -10,13 +10,19 @@ namespace COMP1640.Services
         {
             var mail = "plsdontreply5@gmail.com";
             var password = "lagz zlfw iull btyq";
+
+            var mailMessage = new MailMessage(from: mail, to: email, subject, message);
+            mailMessage.SubjectEncoding = System.Text.Encoding.UTF8;
+            mailMessage.BodyEncoding = System.Text.Encoding.UTF8;
+            mailMessage.IsBodyHtml = true;
+
             var client = new SmtpClient("smtp.gmail.com", 587)
             {
                 EnableSsl = true,
-                Credentials = new NetworkCredential(mail, password)
+                Credentials = new NetworkCredential(mail, password),
             };
 
-            return client.SendMailAsync(new MailMessage(from: mail,to: email, subject, message));
+            return client.SendMailAsync(mailMessage);
         }
     }
 }
