@@ -2,6 +2,7 @@
 using COMP1640.Models;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.StaticFiles;
+using Microsoft.EntityFrameworkCore;
 using System.IO.Compression;
 
 namespace COMP1640.Services
@@ -89,8 +90,11 @@ namespace COMP1640.Services
 
                 var folders = Directory.GetDirectories(path);
 
-                var article = _context.Articles.Where(x => x.Status != null && x.Status.Equals("Approved")).ToList();
-                if (article.Count() == 0)
+                var article = _context.Articles
+                    //.Where(x => x.Status != null && x.Status.Equals("Approved") && x.TermId == termId && x.FacultyId == facultyId)
+                    .Where(x => x.Status != null && x.Status.Equals("Approved"))
+                    .ToList();
+                if (article.Count == 0)
                 {
                     throw new Exception("No file found");
                 }

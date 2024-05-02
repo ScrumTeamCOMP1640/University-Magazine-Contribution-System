@@ -1,51 +1,75 @@
-﻿﻿@{
-    ViewData["Title"] = "Add User";
-    Layout = "~/Areas/Admin/Views/Shared/_AdminLayout.cshtml";
+﻿@model COMP1640.Models.User
+
+﻿@{
+	ViewData["Title"] = "Add User";
+	Layout = "~/Areas/Admin/Views/Shared/_AdminLayout.cshtml";
 }
 
-@model COMP1640.Models.User
-
 <div class="section__body">
-    <div class="container">
-        <div class="title">Add User</div>
-        <div class="content">
-            <form asp-area="Admin" asp-controller="User" asp-action="Add" method="post">
-                <div class="form-details">
+	<div class="container">
+		<div class="title">Add User</div>
+		<div class="content">
+			<form asp-area="Admin" asp-controller="User" asp-action="Add" method="post">
+				<div class="form-details">
 
-                    <div class="input-box">
-                        <span class="details">Username</span>
-                        <input type="text" id="Username" name="username" placeholder="Enter username">
-                    </div>
+					<div class="input-box">
+						<span class="details">Username</span>
+						<input type="text" id="Username" name="username" placeholder="Enter username">
+					</div>
 
-                    <div class="input-box">
-                        <span class="details">Email</span>
-                        <input type="email" id="Email" name="email" placeholder="Enter email">
-                    </div>
+					<div class="input-box">
+						<span class="details">Email</span>
+						<input type="email" id="Email" name="email" placeholder="Enter email">
+					</div>
 
-                    <div class="input-box">
-                        <span class="details">Role</span>
-                        <select asp-for="RoleId" asp-items="@ViewBag.RoleName">
-                            <option value="" disabled selected>Please choose a role</option>
-                        </select>
-                    </div>
+					<div class="input-box">
+						<span class="details">Role</span>
+						<select asp-for="RoleId" asp-items="@ViewBag.RoleName" id="roleSelect">
+							<option value="" disabled selected>Please choose a role</option>
+						</select>
+					</div>
 
-                    <div class="input-box">
-                        <span class="details">Faculty</span>
-                        <select asp-for="FacultyId" asp-items="@ViewBag.FacultyName">
-                            <option value="" disabled selected>Please choose a faculty</option>
-                        </select>
-                    </div>
-                </div>
+					<div class="input-box" id="facultyBox">
+						<span class="details">Faculty</span>
+						<select asp-for="FacultyId" asp-items="@ViewBag.FacultyName" id="facultySelect">
+							<option value="" disabled selected>Please choose a faculty</option>
+						</select>
+					</div>
+				</div>
 
-                <div class="input-box">
-                    <input type="hidden" id="Password" name="Password" value="1">
-                </div>
+				<div class="input-box">
+					<input type="hidden" id="Password" name="Password" value="1">
+				</div>
 
-                <div class="button__container">
-                    <button type="submit" class="btn primary">Create</button>
-                    <a asp-area="Admin" asp-controller="User" asp-action="Index" class="btn secondary">Cancel</a>
-                </div>
-            </form>
-        </div>
-    </div>
+				<div class="button__container">
+					<button type="submit" class="btn primary">Create</button>
+					<a asp-area="Admin" asp-controller="User" asp-action="Index" class="btn secondary">Cancel</a>
+				</div>
+			</form>
+		</div>
+	</div>
 </div>
+
+@section ScriptsFaculty {
+	<script>
+		$(document).ready(function () {
+			var $roleSelect = $('#roleSelect');
+			var $facultyBox = $('#facultyBox');
+
+			function toggleFacultyBox() {
+				var roleId = $roleSelect.val();
+				if (roleId === "1" || roleId === "2") {
+					$facultyBox.hide();
+				} else {
+					$facultyBox.show();
+				}
+			}
+
+			toggleFacultyBox();
+
+			$roleSelect.change(function () {
+				toggleFacultyBox();
+			});
+		});
+	</script>
+}

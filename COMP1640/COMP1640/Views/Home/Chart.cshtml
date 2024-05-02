@@ -15,215 +15,188 @@
 							<tr>
 								<td>
 									<span>Academic Year</span>
-									<select name="" id="">
-										<option value="">2023</option>
-										<option value="" selected>2024</option>
-										<option value="">2025</option>
-									</select>
+                                    <select id="academicYearSelect" name="academicYear">
+                                        @foreach (var year in ViewBag.AcademicYears)
+                                        {
+                                            <option value="@year">@year</option>
+                                        }
+                                    </select>
 								</td>
 								<td>
 									<span>Term</span>
-									<select id="termSelect" name="termId">
-                                        @foreach (var item in ViewBag.Terms)
-                                        {
-                                            <option value="@item.TermId">@item.TermName</option>
-                                        }
-									</select>
+                                    <select id="termSelect" name="termId"></select>
 								</td>
 							</tr>
 						</tbody>
 					</table>
 				</div>
 
-				@* <div style="width: 100%; height: 400px;">
-				<canvas id="myBarChart"></canvas>
-				</div>
-				<hr>
-				<div style="width: 100%; height: 400px; margin-top: 48px;">
-				<canvas id="myPieChart"></canvas>
-				</div> *@
-                <div id="chartContainer">
-                    <canvas id="myBarChart"></canvas>
-                    <canvas id="myPieChart"></canvas>
+                <div id="loading">
+                    <div class="spinner"></div>
                 </div>
+                <div id="chartContainer"></div>
 
 			</div>
 		</div>
 	</div>
 </div>
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-<script>
-    $(document).ready(function () {
-        function updateContributionsChart(termId) {
-            $.ajax({
-                url: '@Url.Action("GetContributorsByFacultyForTerm", "Home")',
-                type: 'GET',
-                data: { termId: termId },
-                success: function (data) {
-                    if (data.faculties.length === 0 && data.contributorCounts.length === 0) {
-                        $('#chartContainer').html('<div class="col l-12 m-12 c-12"><div class="no-results"><div class="no-results__img" style="background-image: url(@Url.Content("~/img/no_data.svg"))"></div><h2>No data available</h2></div></div>');
-                    } else {
-                        //$('#chartContainer').html(data);
-                        const contributorsData = {
-                            labels: data.faculties,
-                            data: data.contributorCounts,
-                            backgroundColor: [
-                                'rgba(255, 99, 132, 0.5)',
-                                'rgba(54, 162, 235, 0.5)',
-                                'rgba(255, 206, 86, 0.5)',
-                                'rgba(75, 192, 192, 0.5)',
-                                'rgba(153, 102, 255, 0.5)'
-                            ],
-                            borderColor: [
-                                'rgba(255, 99, 132, 1)',
-                                'rgba(54, 162, 235, 1)',
-                                'rgba(255, 206, 86, 1)',
-                                'rgba(75, 192, 192, 1)',
-                                'rgba(153, 102, 255, 1)'
-                            ],
-                            borderWidth: 1
-                        };
-
-                        const barChart = document.getElementById('myBarChart');
-                        const pieChart = document.getElementById('myPieChart');
-
-                        const myBarChart = new Chart(barChart, {
-                            type: 'bar',
-                            data: {
-                                labels: contributorsData.labels,
-                                datasets: [{
-                                    label: 'Number of Contributors',
-                                    data: contributorsData.data,
-                                    backgroundColor: contributorsData.backgroundColor,
-                                    borderColor: contributorsData.borderColor,
-                                    borderWidth: contributorsData.borderWidth
-                                }]
-                            },
-                            options: {
-                                responsive: true,
-                                maintainAspectRatio: false,
-                                scales: {
-                                    y: {
-                                        beginAtZero: true
-                                    }
-                                }
-                            }
-                        });
-
-                        const myPieChart = new Chart(pieChart, {
-                            type: 'pie',
-                            data: {
-                                labels: contributorsData.labels,
-                                datasets: [{
-                                    label: 'Number of Contributors',
-                                    data: contributorsData.data,
-                                    backgroundColor: contributorsData.backgroundColor,
-                                    borderColor: contributorsData.borderColor,
-                                    borderWidth: contributorsData.borderWidth
-                                }]
-                            },
-                            options: {
-                                responsive: true,
-                                maintainAspectRatio: false,
-                                scales: {
-                                    y: {
-                                        beginAtZero: true
-                                    }
-                                }
-                            }
-                        });
-                    }
-                },
-                error: function (xhr, status, error) {
-                    console.error(xhr.responseText);
-                }
-            });
-        }
-
-        var defaultTermId = $('#termSelect').val();
-        updateContributionsChart(defaultTermId);
-
-        $('#termSelect').change(function () {
-            var termId = $(this).val();
-            updateContributionsChart(termId);
-        });
-    });
-</script>
-
-
-@* <script>
-    async function fetchData() {
-        return fetch('@Url.Action("GetContributionsData", "Home")')
-            .then(response => response.json());
-    }
-
-    // Function to generate random RGBA color
-    function getRandomRGBA() {
-        var r = Math.floor(Math.random() * 256);
-        var g = Math.floor(Math.random() * 256);
-        var b = Math.floor(Math.random() * 256);
-        var a = Math.random().toFixed(1);
-        return 'rgba(' + r + ', ' + g + ', ' + b + ', ' + a + ')';
-    }
-
-    // Function to generate random background colors for each faculty
-    function getBackgroundColors(numColors) {
-        var colors = [];
-        for (var i = 0; i < numColors; i++) {
-            colors.push(getRandomRGBA());
-        }
-        return colors;
-    }
-
-    // Function to generate random border colors for each faculty
-    function getBorderColors(numColors) {
-        var colors = [];
-        for (var i = 0; i < numColors; i++) {
-            colors.push(getRandomRGBA());
-        }
-        return colors;
-    }
-
-    // Function to process and render the chart
-    async function renderChart() {
-        const data = await fetchData();
-        const terms = data.terms;
-        const faculties = data.faculties;
-        const contributions = data.contributions;
-
-        const datasets = faculties.map(faculty => {
-            const facultyContributions = contributions.map(contribution => contribution[faculty]);
-            return {
-                label: faculty,
-                data: facultyContributions,
-                backgroundColor: getBackgroundColors(terms.length),
-                borderColor: getBorderColors(terms.length),
-                borderWidth: 1
-            };
-        });
-
-        // Create the chart
-        const ctx = document.getElementById('contributionsChart').getContext('2d');
-        new Chart(ctx, {
-            type: 'bar',
-            data: {
-                labels: terms,
-                datasets: datasets
-            },
-            options: {
-                scales: {
-                    yAxes: [{
-                        ticks: {
-                            beginAtZero: true
-                        }
-                    }]
-                }
+@section ScriptsChart {
+    <script>
+        $(document).ready(function () {
+            function showLoading() {
+                $('#loading').fadeIn(500);
+                $('#pagination').hide();
             }
-        });
-    }
 
-    // Call the renderChart function to display the chart
-    renderChart();
-</script> *@
+            function hideLoading() {
+                $('#loading').fadeOut(500);
+                $('#articleList').fadeIn(1000);
+            }
+
+            function updateTermOptions(academicYear) {
+                $.ajax({
+                    url: '@Url.Action("GetTermsByYear", "Home")',
+                    type: 'GET',
+                    data: { academicYear: academicYear },
+                    success: function (data) {
+                        $('#termSelect').empty();
+                        $.each(data, function (index, row) {
+                            var option = new Option(row.termName, row.termId);
+                            $('#termSelect').append(option);
+                        });
+                        var termId = $('#termSelect').val();
+                        updateContributionsChart(termId);
+                    },
+                    error: function (xhr, status, error) {
+                        console.error(xhr.responseText);
+                    }
+                });
+            }
+
+            var defaultAcademicYear = $('#academicYearSelect').val();
+            updateTermOptions(defaultAcademicYear);
+
+            $('#academicYearSelect').change(function () {
+                var selectedYear = $(this).val();
+                updateTermOptions(selectedYear);
+            });
+
+            function updateContributionsChart(termId) {
+                $.ajax({
+                    url: '@Url.Action("GetContributorsByFacultyForTerm", "Home")',
+                    type: 'GET',
+                    data: { termId: termId },
+                    beforeSend: function () {
+                        showLoading();
+                    },
+                    success: function (data) {
+                        $('#chartContainer').empty();
+                        setTimeout(function () {
+                            if (data.faculties.length === 0 && data.contributorCounts.length === 0) {
+                                $('#chartContainer').html('<div class="col l-12 m-12 c-12"><div class="no-results"><div class="no-results__img" style="background-image: url(@Url.Content("~/img/no_data.svg"))"></div><h2>No data available</h2></div></div>');
+                            } else {
+                                $('#chartContainer').html('<canvas id="myBarChart"></canvas><canvas id="myPieChart"></canvas>');
+                                const contributorsData = {
+                                    labels: data.faculties,
+                                    data: data.contributorCounts,
+                                    backgroundColor: [
+                                        'rgba(255, 99, 132, 0.5)',
+                                        'rgba(54, 162, 235, 0.5)',
+                                        'rgba(255, 206, 86, 0.5)',
+                                        'rgba(75, 192, 192, 0.5)',
+                                        'rgba(153, 102, 255, 0.5)'
+                                    ],
+                                    borderColor: [
+                                        'rgba(255, 99, 132, 1)',
+                                        'rgba(54, 162, 235, 1)',
+                                        'rgba(255, 206, 86, 1)',
+                                        'rgba(75, 192, 192, 1)',
+                                        'rgba(153, 102, 255, 1)'
+                                    ],
+                                    borderWidth: 1
+                                };
+
+                                const barChart = document.getElementById('myBarChart');
+                                const pieChart = document.getElementById('myPieChart');
+
+                                const myBarChart = new Chart(barChart, {
+                                    type: 'bar',
+                                    data: {
+                                        labels: contributorsData.labels,
+                                        datasets: [{
+                                            label: 'Number of Contributors',
+                                            data: contributorsData.data,
+                                            backgroundColor: contributorsData.backgroundColor,
+                                            borderColor: contributorsData.borderColor,
+                                            borderWidth: contributorsData.borderWidth
+                                        }]
+                                    },
+                                    options: {
+                                        responsive: true,
+                                        maintainAspectRatio: false,
+                                        plugins: {
+                                            legend: {
+                                                display: true,
+                                                position: 'bottom',
+                                                labels: {
+                                                    padding: 20
+                                                }
+                                            }
+                                        },
+                                        scales: {
+                                            y: {
+                                                beginAtZero: true
+                                            }
+                                        }
+                                    }
+                                });
+
+                                const totalContributions = contributorsData.data.reduce((a, b) => a + b, 0);
+
+                                const percentages = contributorsData.data.map(contributions => ((contributions / totalContributions) * 100).toFixed(2));
+
+                                const myPieChart = new Chart(pieChart, {
+                                    type: 'pie',
+                                    data: {
+                                        labels: contributorsData.labels.map((label, index) => `${label} (${percentages[index]}%)`),
+                                        datasets: [{
+                                            label: 'Number of Contributors',
+                                            data: contributorsData.data,
+                                            backgroundColor: contributorsData.backgroundColor,
+                                            borderColor: contributorsData.borderColor,
+                                            borderWidth: contributorsData.borderWidth
+                                        }]
+                                    },
+                                    options: {
+                                        responsive: true,
+                                        maintainAspectRatio: false,
+                                        plugins: {
+                                            legend: {
+                                                display: true,
+                                                position: 'right',
+                                                labels: {
+                                                    usePointStyle: true
+                                                }
+                                            }
+                                        }
+                                    }
+                                });
+                            }
+                        }, 1000);
+                        hideLoading();
+                    },
+                    error: function (xhr, status, error) {
+                        console.error(xhr.responseText);
+                    }
+                });
+            }
+
+            $('#termSelect').change(function () {
+                var termId = $(this).val();
+                updateContributionsChart(termId);
+            });
+        });
+    </script>
+}
+

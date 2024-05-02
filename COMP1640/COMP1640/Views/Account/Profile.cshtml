@@ -22,7 +22,9 @@
                         <div class="profile-info">
                             <h1>Account Settings</h1>
                             <div class="profile-image">
-                                <img src="~/img/user_avatar.png">
+                                <img src="~/img/@Model.Avatar" id="photo">
+                                <input type="file" id="img-file" asp-for="Avatar" accept="image/*" />
+                                <label for="img-file" id="upload-btn"><i class="fas fa-camera"></i></label>
                             </div>
                             <table width="100%" class="profile-details">
                                 <tr>
@@ -76,3 +78,5 @@
         </div>
     </div>
 </div>
+
+<script src="~/js/upload.js"></script>

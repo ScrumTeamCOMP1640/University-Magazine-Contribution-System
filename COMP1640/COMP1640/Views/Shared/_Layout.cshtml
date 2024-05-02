@@ -11,7 +11,7 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Homepage</title>
+	<title>@ViewBag.Title</title>
 	<link rel="stylesheet" href="~/css/base.css">
 	<link rel="stylesheet" href="~/css/grid.css">
 	<link rel="stylesheet" href="~/css/style.css">
@@ -93,12 +93,12 @@
 								case "Marketing Coordinator":
 									if (action == "Index")
 									{
-										<li class="navbar-item">
-											<a asp-controller="Submission" asp-action="DownloadAll" class="navbar-item__link" style="--i:0">
+										@* <li class="navbar-item">
+											<a asp-controller="Submission" asp-action="DownloadAll" id="downloadAll" class="navbar-item__link" style="--i:0">
 												<i class="fa-regular fa-circle-down"></i>
 												<p>Download All</p>
 											</a>
-										</li>
+										</li> *@
 									}
 									break;
 								case "Student":
@@ -183,9 +183,11 @@
 
 	</div>
 
-	@* <script src="~/lib/jquery.unobtrusive-ajax.js"></script>
-	@Html.RenderUnobtrusiveAjaxScript() *@
-
+	<script src="~/lib/jquery/dist/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+	@await RenderSectionAsync("ScriptsFilter", required: false)
+	@await RenderSectionAsync("ScriptsChart", required: false)
 </body>
 
 </html>

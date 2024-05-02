@@ -3,6 +3,7 @@
 @{
 	ViewData["Title"] = "Home Page";
 	Layout = "~/Views/Shared/_Layout.cshtml";
+
 	var username = Context.Session.GetString("Username");
 	var role = Context.Session.GetString("Role");
 }
@@ -75,92 +76,210 @@
 
 			<div class="col l-9 m-12 c-12">
 				<div class="home-item-list">
-					<div id="loading" style="display: none;">Loading...</div>
+					@if (role != null && (role.Contains("Coordinator") || role.Contains("Student")))
+					{
+						<div class="row sm-gutter">
+						<div class="col l-12 m-12 c-12">
+							<div class="filter-bar">
+								<span>Sort by</span>
+								<select name="status" id="statusSelect">
+									<option value="All" selected>All</option>
+									<option value="Approved">Approved</option>
+									<option value="Pending">Pending</option>
+									<option value="Rejected">Rejected</option>
+								</select>
+							</div>
+						</div>
+					</div>
+					}
+					<div id="loading">
+						<div class="spinner"></div>
+					</div>
 					<div id="articleList" class="row sm-gutter">
 					</div>
 				</div>
-				<div id="pagination">
-					@await Html.PartialAsync("_Pagination", Model)
+				<div id="pagination" style="display: none;">
+					<ul class="pagination home-product__pagination">
+					</ul>
 				</div>
-				
+
 			</div>
 		</div>
 	</div>
 </div>
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-<script>
-	$(document).ready(function () {
-		function updateTermDates(termId) {
-			$.ajax({
-				url: '@Url.Action("GetTermDates", "Home")',
-				type: 'GET',
-				data: { termId: termId },
-				success: function (data) {
-					$('#startDate').text(data.startDate);
-					$('#endDate').text(data.endDate);
-					$('#termStatus').text(data.status);
-					var statusClass = data.status.toLowerCase();
-					$('#termStatus').removeClass().addClass('status').addClass(statusClass);
-				},
-				error: function (xhr, status, error) {
-					console.error(xhr.responseText);
-				}
-			});
-		}
+@section ScriptsFilter {
+	<script>
+		$(document).ready(function () {
+			function showLoading() {
+				$('#loading').fadeIn(500);
+				$('#pagination').hide();
+			}
 
-		function fetchArticles(facultyId, termId, searchQuery) {
-			$.ajax({
-				url: '@Url.Action("GetArticles", "Home")',
-				type: 'GET',
-				data: { facultyId: facultyId, termId: termId, searchQuery: searchQuery },
-				beforeSend: function () {
-					$('#loading').show();
-				},
-				success: function (data) {
-					if (data.trim().length === 0) {
-						$('#articleList').html('<div class="col l-12 m-12 c-12"><div class="no-results"><div class="no-results__img" style="background-image: url(@Url.Content("~/img/no_data.svg"))"></div><h2>No data found</h2></div></div>');
-						$('#pagination').hide();
-					} else {
-						$('#articleList').html(data);
-						$('#pagination').show();
+			function hideLoading() {
+				$('#loading').fadeOut(500);
+				$('#articleList').fadeIn(1000);
+			}
+
+			function updateTermDates(termId) {
+				$.ajax({
+					url: '@Url.Action("GetTermDates", "Home")',
+					type: 'GET',
+					data: { termId: termId },
+					success: function (data) {
+						$('#startDate').text(data.startDate);
+						$('#endDate').text(data.endDate);
+						$('#termStatus').text(data.status);
+						var statusClass = data.status.toLowerCase();
+						$('#termStatus').removeClass().addClass('status').addClass(statusClass);
+					},
+					error: function (xhr, status, error) {
+						console.error(xhr.responseText);
 					}
-				},
-				complete: function () {
-					$('#loading').hide();
-				},
-				error: function (xhr, status, error) {
-					console.error(xhr.responseText);
+				});
+			}
+
+			function fetchArticles(page, facultyId, termId, searchQuery, status) {
+				$.ajax({
+					url: '@Url.Action("GetTotalArticleCount", "Home")',
+					type: 'GET',
+					data: {
+						facultyId: facultyId,
+						termId: termId,
+						searchQuery: searchQuery,
+						status: status
+					},
+					success: function (totalCountData) {
+						var total = totalCountData.totalCount;
+						var pageSize = 6;
+						var pageCount = Math.ceil(total / pageSize);
+
+						$.ajax({
+							url: '@Url.Action("GetArticles", "Home")',
+							type: 'GET',
+							data: {
+								page: page,
+								facultyId: facultyId,
+								termId: termId,
+								searchQuery: searchQuery,
+								status: status
+							},
+							beforeSend: function () {
+								showLoading();
+							},
+							success: function (data) {
+								$('#articleList').empty();
+								setTimeout(function () {
+									if (data.trim().length === 0) {
+										$('#articleList').html('<div class="col l-12 m-12 c-12"><div class="no-results"><div class="no-results__img" style="background-image: url(@Url.Content("~/img/no_data.svg"))"></div><h2>No data found</h2></div></div>');
+										$('#pagination').hide();
+									} else {
+										$('#articleList').html(data);
+										$('#pagination').show();
+										updatePagination(page, pageCount);
+									}
+								}, 1000);
+								hideLoading();
+							},
+							error: function (xhr, status, error) {
+								console.error(xhr.responseText);
+								hideLoading();
+							}
+						});
+					},
+					error: function (xhr, status, error) {
+						console.error(xhr.responseText);
+					}
+				});
+			}
+
+			function updatePagination(activePage, totalPages) {
+				$('.pagination-item').remove();
+
+				for (let i = 1; i <= totalPages; i++) {
+					$('#pagination .home-product__pagination').append(
+						$('<li>', { class: 'pagination-item' + (i === parseInt(activePage) ? ' active' : '') }).append(
+							$('<a>', { class: 'pagination-item__link', href: '@Url.Action("Index")?page=' + i }).text(i)
+						)
+					);
 				}
+			}
+
+			var defaultPage = 1;
+			var defaultTermId = $('#termSelect').val();
+			var defaultFacultyId = $('#facultySelect').val();
+			var defaultSearchQuery = $('#searchInput').val();
+			var defaultStatus = $('#statusSelect').val();
+			updateTermDates(defaultTermId);
+			fetchArticles(defaultPage, defaultFacultyId, defaultTermId, defaultSearchQuery, defaultStatus);
+
+			$('#facultySelect').change(function () {
+				var facultyId = $(this).val();
+				var termId = $('#termSelect').val();
+				var searchQuery = $('#searchInput').val();
+				var status = $('#statusSelect').val();
+				fetchArticles(defaultPage, facultyId, termId, searchQuery, status);
 			});
-		}
 
-		var defaultTermId = $('#termSelect').val();
-		var defaultFacultyId = $('#facultySelect').val();
-		var defaultSearchQuery = $('#searchInput').val();
-		updateTermDates(defaultTermId);
-		fetchArticles(defaultFacultyId, defaultTermId, defaultSearchQuery);
+			$('#termSelect').change(function () {
+				var termId = $(this).val();
+				var facultyId = $('#facultySelect').val();
+				var searchQuery = $('#searchInput').val();
+				var status = $('#statusSelect').val();
+				updateTermDates(termId);
+				fetchArticles(defaultPage, facultyId, termId, searchQuery, status);
+			});
 
-		$('#facultySelect').change(function () {
-			var facultyId = $(this).val();
-			var termId = $('#termSelect').val();
-			var searchQuery = $('#searchInput').val();
-			fetchArticles(facultyId, termId, searchQuery);
+			$('#searchInput').on('input', function () {
+				var facultyId = $('#facultySelect').val();
+				var termId = $('#termSelect').val();
+				var searchQuery = $(this).val();
+				var status = $('#statusSelect').val();
+				fetchArticles(defaultPage, facultyId, termId, searchQuery, status);
+			});
+
+			$('#statusSelect').change(function () {
+				var facultyId = $('#facultySelect').val();
+				var termId = $('#termSelect').val();
+				var searchQuery = $('#searchInput').val();
+				var status = $(this).val();
+				fetchArticles(defaultPage, facultyId, termId, searchQuery, status);
+			});
+
+			$(document).on('click', '.pagination-item__link', function (e) {
+				e.preventDefault();
+				var page = $(this).attr('href').split('=')[1];
+				var facultyId = $('#facultySelect').val();
+				var termId = $('#termSelect').val();
+				var searchQuery = $('#searchInput').val();
+				var status = $('#statusSelect').val();
+				fetchArticles(page, facultyId, termId, searchQuery, status);
+			});
+
+			// $('#downloadAll').on('click', function () {
+			// 	var facultyId = $('#facultySelect').val();
+			// 	var termId = $('#termSelect').val();
+
+			// 	downloadAllFile(facultyId, termId);
+			// });
+
+			// function downloadAllFile(facultyId, termId) {
+			// 	$.ajax({
+			// 		url: '@Url.Action("DownloadAll", "Submission")',
+			// 		type: 'GET',
+			// 		data: {
+			// 			facultyId: facultyId,
+			// 			termId: termId
+			// 		},
+			// 		success: function (data) {
+			// 			console.log("Files downloaded successfully!");
+			// 		},
+			// 		error: function (xhr, status, error) {
+			// 			console.error(xhr.responseText);
+			// 		}
+			// 	});
+			// }
+
 		});
-
-		$('#termSelect').change(function () {
-			var termId = $(this).val();
-			var facultyId = $('#facultySelect').val();
-			var searchQuery = $('#searchInput').val();
-			updateTermDates(termId);
-			fetchArticles(facultyId, termId, searchQuery);
-		});
-
-		$('#searchInput').on('input', function () {
-			var facultyId = $('#facultySelect').val();
-			var termId = $('#termSelect').val();
-			var searchQuery = $(this).val();
-			fetchArticles(facultyId, termId, searchQuery);
-		});
-	});
-</script>
+	</script>
+}

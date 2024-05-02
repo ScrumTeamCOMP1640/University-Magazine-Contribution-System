@@ -3,6 +3,7 @@
 	Layout = "~/Views/Shared/_Layout.cshtml";
 
 	var role = Context.Session.GetString("Role");
+	var userId = Context.Session.GetInt32("UserId");
 	var username = Context.Session.GetString("Username");
 	var avatar = Context.Session.GetString("Avatar");
 }
@@ -17,27 +18,34 @@
 				<div class="item__detail">
 					<div class="item__bg" style="background-image: url('@Url.Content("~/UploadedFiles/" + Model.ArticleId + "/" + Model.ImagePath)');"></div>
 					<h1 class="item__title">@Model.Title</h1>
-					<form class="comment-form">
-						<iframe src="@Url.Action("ViewDocument", "Submission")" name="ifm" width="100%" height="1000px"></iframe>
+					<form style="margin-top: 12px;">
+						<iframe src="@Url.Action("ViewDocument", "Submission")" name="ifm" style="width: 100%; height: 1000px;"></iframe>
 					</form>
 					<div class="author__detail">
-						<div class="author__avatar">
-							<img src="~/img/@Model.User?.Avatar">
-						</div>
-						<div class="author__info">
-							<div class="author-name">
-								@if (Model.User != null)
-								{
-									@Model.User.Username
-								}
+						<div class="author__detail-wrapper">
+							<div class="author__avatar">
+								<img loading="lazy" src="~/img/@Model.User?.Avatar">
 							</div>
-							<div class="update-time">
-								<p>Updated on @String.Format("{0:MMMM dd, yyyy 'at' h:mm tt}", Model.SubmissionDate)</p>
+							<div class="author__info">
+								<div class="author-name">
+									@if (Model.User != null)
+									{
+										@Model.User.Username
+									}
+								</div>
+								<div class="update-time">
+									<p>Updated on @String.Format("{0:MMMM dd, yyyy 'at' h:mm tt}", Model.SubmissionDate)</p>
+								</div>
 							</div>
 						</div>
+						<a asp-controller="Submission" asp-action="DownloadFile" asp-route-id="@Model.ArticleId" class="btn download-btn">
+							Download
+							<i class="fa-solid fa-download"></i>
+						</a>
 					</div>
-
-					<form asp-controller="Submission" asp-action="Comment" asp-route-id="@Model.ArticleId" method="post" class="comment-form">
+					@if (ViewBag.TermStatus == "Active" && (Model.UserId == userId || role == "Marketing Coordinator"))
+					{
+						<form asp-controller="Submission" asp-action="Comment" asp-route-id="@Model.ArticleId" method="post" class="comment-form">
 						<div class="status-wrap">
 							<div class="status-box">
 								<label>Status</label>
@@ -71,13 +79,13 @@
 									</select>
 								}
 							</div>
-							@if (role != null && role.Contains("Coordinator"))
+							@* @if (role != null && role.Contains("Coordinator"))
 							{
 								<a asp-controller="Submission" asp-action="DownloadFile" asp-route-id="@Model.ArticleId" class="btn download-btn">
 									Download
 									<i class="fa-solid fa-download"></i>
 								</a>
-							}
+							} *@
 						</div>
 
 						@if (role != null && role.Contains("Coordinator"))
@@ -166,7 +174,8 @@
 
 							}
 						</div>
-					</form>
+					</form>						
+					}
 
 				</div>
 

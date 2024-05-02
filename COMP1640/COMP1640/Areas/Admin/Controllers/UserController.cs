@@ -38,8 +38,11 @@ namespace COMP1640.Areas.Admin.Controllers
         [Route("Add")]
         public IActionResult Add()
         {
-			ViewBag.RoleName = new SelectList(_db.Roles.OrderBy(r => r.RoleId).ToList(), "RoleId", "RoleName");
-			ViewBag.FacultyName = new SelectList(_db.Faculties.OrderBy(f => f.FacultyId).ToList(), "FacultyId", "FacultyName");
+            var roles = _db.Roles.OrderBy(r => r.RoleId).ToList();
+            var faculties = _db.Faculties.Where(f => f.FacultyId != 1).OrderBy(f => f.FacultyId).ToList();
+
+            ViewBag.RoleName = new SelectList(roles, "RoleId", "RoleName");
+			ViewBag.FacultyName = new SelectList(faculties, "FacultyId", "FacultyName");
 			return View();
         }
 
@@ -55,13 +58,15 @@ namespace COMP1640.Areas.Admin.Controllers
 
                 user.Password = Crypto.HashPassword(pass.ToString());
                 user.Avatar = "user_avatar.png";
+                if (user.RoleId == 1 || user.RoleId == 2)
+                {
+                    user.FacultyId = 1;
+                }
+
                 _db.Users.Add(user);
                 await _db.SaveChangesAsync();
 
-                if (user.RoleId == 4)
-                {
-                    await SendMail(user.Email, pass.ToString());
-                }
+                await SendMail(user.Email, pass.ToString());
                 _toast.AddSuccessToastMessage("User created successfully!");
                 return RedirectToAction("Index");
             }
@@ -85,8 +90,11 @@ namespace COMP1640.Areas.Admin.Controllers
                 return NotFound();
             }
 
-            ViewBag.RoleName = new SelectList(_db.Roles.OrderBy(r => r.RoleId).ToList(), "RoleId", "RoleName");
-            ViewBag.FacultyName = new SelectList(_db.Faculties.OrderBy(f => f.FacultyId).ToList(), "FacultyId", "FacultyName");
+            var roles = _db.Roles.OrderBy(r => r.RoleId).ToList();
+            var faculties = _db.Faculties.Where(f => f.FacultyId != 1).OrderBy(f => f.FacultyId).ToList();
+
+            ViewBag.RoleName = new SelectList(roles, "RoleId", "RoleName");
+            ViewBag.FacultyName = new SelectList(faculties, "FacultyId", "FacultyName");
             return View(user);
 
         }
@@ -160,5 +168,20 @@ namespace COMP1640.Areas.Admin.Controllers
                 $"<p>Hoang Thai</p>";
             await _email.SendEmailAsync(email, subject, message);
         }
+
+        //public IActionResult GetFacultyByRole(int roleId)
+        //{
+        //    List<Faculty> faculties;
+
+        //    if (roleId == 2)
+        //    {
+        //        faculties = _db.Faculties.Where(f => f.FacultyId == 1).ToList();
+        //    }
+        //    else
+        //    {
+        //        faculties = _db.Faculties.Where(f => f.FacultyId != 1).ToList();
+        //    }
+        //    return Json(faculties);
+        //}
     }
 }

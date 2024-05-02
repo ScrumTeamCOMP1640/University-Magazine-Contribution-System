@@ -1,48 +1,73 @@
-﻿﻿@{
-    ViewData["Title"] = "Edit User";
-    Layout = "~/Areas/Admin/Views/Shared/_AdminLayout.cshtml";
+﻿@model COMP1640.Models.User
+
+﻿@{
+	ViewData["Title"] = "Edit User";
+	Layout = "~/Areas/Admin/Views/Shared/_AdminLayout.cshtml";
 }
-@model COMP1640.Models.User
 
 <div class="section__body">
-    <div class="container">
-        <div class="title">Edit User</div>
-        <div class="content">
-            <form asp-area="Admin" asp-controller="User" asp-action="Edit" method="post">
-                <div class="form-details">
-                    @Html.HiddenFor(m => m.UserId)
-                    @Html.HiddenFor(m => m.Password)
-                    @Html.HiddenFor(m => m.Avatar)
+	<div class="container">
+		<div class="title">Edit User</div>
+		<div class="content">
+			<form asp-area="Admin" asp-controller="User" asp-action="Edit" method="post">
+				<div class="form-details">
+					@Html.HiddenFor(m => m.UserId)
+					@Html.HiddenFor(m => m.Password)
+					@Html.HiddenFor(m => m.Avatar)
 
-                    <div class="input-box">
-                        <span class="details">Username</span>
-                        <input type="text" id="username" name="Username" value="@Model.Username">
-                    </div>
+					<div class="input-box">
+						<span class="details">Username</span>
+						<input type="text" id="username" name="Username" value="@Model.Username">
+					</div>
 
-                    <div class="input-box">
-                        <span class="details">Email</span>
-                        <input type="email" id="email" name="Email" value="@Model.Email">
-                    </div>
+					<div class="input-box">
+						<span class="details">Email</span>
+						<input type="email" id="email" name="Email" value="@Model.Email">
+					</div>
 
-                    <div class="input-box">
-                        <span class="details">Role</span>
-                        <select asp-for="RoleId" asp-items="@ViewBag.RoleName">
-                            <option value="" disabled selected>Please choose a role</option>
-                        </select>
-                    </div>
+					<div class="input-box">
+						<span class="details">Role</span>
+						<select asp-for="RoleId" asp-items="@ViewBag.RoleName" id="roleSelect">
+							<option value="" disabled selected>Please choose a role</option>
+						</select>
+					</div>
 
-                    <div class="input-box">
-                        <span class="details">Faculty</span>
-                        <select asp-for="FacultyId" asp-items="@ViewBag.FacultyName">
-                            <option value="" disabled selected>Please choose a faculty</option>
-                        </select>
-                    </div>
-                </div>
-                <div class="button__container">
-                    <button type="submit" class="btn primary">Save</button>
-                    <a asp-area="Admin" asp-controller="User" asp-action="Index" class="btn secondary">Cancel</a>
-                </div>
-            </form>
-        </div>
-    </div>
+					<div class="input-box" id="facultyBox">
+						<span class="details">Faculty</span>
+						<select asp-for="FacultyId" asp-items="@ViewBag.FacultyName" id="facultySelect">
+							<option value="" disabled selected>Please choose a faculty</option>
+						</select>
+					</div>
+				</div>
+				<div class="button__container">
+					<button type="submit" class="btn primary">Save</button>
+					<a asp-area="Admin" asp-controller="User" asp-action="Index" class="btn secondary">Cancel</a>
+				</div>
+			</form>
+		</div>
+	</div>
 </div>
+
+@section ScriptsFaculty {
+	<script>
+		$(document).ready(function () {
+			var $roleSelect = $('#roleSelect');
+			var $facultyBox = $('#facultyBox');
+
+			function toggleFacultyBox() {
+				var roleId = $roleSelect.val();
+				if (roleId === "1" || roleId === "2") {
+					$facultyBox.hide();
+				} else {
+					$facultyBox.show();
+				}
+			}
+
+			toggleFacultyBox();
+
+			$roleSelect.change(function () {
+				toggleFacultyBox();
+			});
+		});
+	</script>
+}

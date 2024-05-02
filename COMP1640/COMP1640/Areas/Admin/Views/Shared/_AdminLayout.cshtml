@@ -1,5 +1,6 @@
 ﻿@{
     var username = Context.Session.GetString("Username");
+    var avatar = Context.Session.GetString("Avatar");
 }﻿
 <!DOCTYPE html>
 <html lang="en">
@@ -33,6 +34,11 @@
         }
     </script>
     @await Component.InvokeAsync("NToastNotify")
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    @await RenderSectionAsync("ScriptsFaculty", required: false)
+    @await RenderSectionAsync("ScriptsChart", required: false)
 </head>
 
 <body>
@@ -53,7 +59,7 @@
                         <div class="profile-dropdown">
                     <input type="checkbox" id="check-profile">
                     <label for="check-profile" class="profile-dropdown-btn">
-                        <div class="profile-img" style="background-image: url('@Url.Content("~/admin/img/admin.png")');">
+                        <div class="profile-img" style="background-image: url('@Url.Content("~/img/" + avatar)');">
                             <i class="fa-solid fa-circle"></i>
                         </div>
 

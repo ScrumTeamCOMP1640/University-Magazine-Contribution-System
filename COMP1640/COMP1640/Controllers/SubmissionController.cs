@@ -74,26 +74,26 @@ namespace COMP1640.Controllers
 
 			if (ModelState.IsValid)
 			{
-                article.Content = "";
-                article.ImagePath = "";
-                article.UserId = user.UserId;
-                article.SubmissionDate = DateTime.Now;
-                article.TermId = term.TermId;
-                article.FacultyId = user.FacultyId;
-                article.Status = "Pending";
+				article.Content = "";
+				article.ImagePath = "";
+				article.UserId = user.UserId;
+				article.SubmissionDate = DateTime.Now;
+				article.TermId = term.TermId;
+				article.FacultyId = user.FacultyId;
+				article.Status = "Pending";
 
-                _db.Articles.Add(article);
+				_db.Articles.Add(article);
 
-                await _db.SaveChangesAsync();
+				await _db.SaveChangesAsync();
 
-                article.Content = await Upload(file, article.ArticleId.ToString());
-                article.ImagePath = await Upload(img, article.ArticleId.ToString());
-                _db.Entry(article).State = EntityState.Modified;
+				article.Content = await Upload(file, article.ArticleId.ToString());
+				article.ImagePath = await Upload(img, article.ArticleId.ToString());
+				_db.Entry(article).State = EntityState.Modified;
 
-                await _db.SaveChangesAsync();
+				await _db.SaveChangesAsync();
 
-                await SendMail(coor.Username, user.Username, article.Title, article.ArticleId, article.SubmissionDate);
-                _toast.AddSuccessToastMessage("Article submitted successfully!");
+				await SendMail(coor.Username, user.Username, article.Title, article.ArticleId, article.SubmissionDate);
+				_toast.AddSuccessToastMessage("Article submitted successfully!");
 				return RedirectToAction("Index", "Home");
 			}
 
@@ -172,26 +172,26 @@ namespace COMP1640.Controllers
 				return NotFound("Active term not found.");
 			}
 
-            var existingArticle = await _db.Articles.FindAsync(id);
-            if (existingArticle == null)
-            {
+			var existingArticle = await _db.Articles.FindAsync(id);
+			if (existingArticle == null)
+			{
 				return NotFound("Article not found.");
-            }
+			}
 
-            if (file != null)
-            {
-                existingArticle.Content = await Upload(file, existingArticle.ArticleId.ToString());
-            }
+			if (file != null)
+			{
+				existingArticle.Content = await Upload(file, existingArticle.ArticleId.ToString());
+			}
 
-            if (img != null)
-            {
-                existingArticle.ImagePath = await Upload(img, existingArticle.ArticleId.ToString());
-            }
+			if (img != null)
+			{
+				existingArticle.ImagePath = await Upload(img, existingArticle.ArticleId.ToString());
+			}
 
-            ModelState.Remove(nameof(img));
+			ModelState.Remove(nameof(img));
 			ModelState.Remove(nameof(file));
 
-            if (ModelState.IsValid)
+			if (ModelState.IsValid)
 			{
 				try
 				{
@@ -222,6 +222,7 @@ namespace COMP1640.Controllers
 			HttpContext.Session.SetInt32("id", id);
 
 			var article = _db.Articles.Include(a => a.User)
+									  .Include(a => a.Term)
 									  .Include(a => a.Comments)
 									  .FirstOrDefault(a => a.ArticleId == id);
 			if (article == null)
@@ -243,13 +244,17 @@ namespace COMP1640.Controllers
 				ViewBag.CommentDate = comment.CommentDate;
 
 				var coordinator = _db.Users.FirstOrDefault(x => x.UserId == comment.UserId && x.RoleId == 3);
-				if (coordinator == null)
+				if (coordinator != null)
 				{
-					return NotFound();
+					ViewBag.CoordinatorId = coordinator.UserId;
+					ViewBag.Coordinator = coordinator.Username;
+					ViewBag.Avatar = coordinator.Avatar;
 				}
+			}
 
-				ViewBag.Coordinator = coordinator.Username;
-				ViewBag.Avatar = coordinator.Avatar;
+			if (article.Term != null)
+			{
+				ViewBag.TermStatus = article.Term.Status;
 			}
 
 			return View(article);
@@ -320,26 +325,26 @@ namespace COMP1640.Controllers
 			return RedirectToAction("ContributeDetail", new { id = article.ArticleId });
 		}
 
-        public async Task SendMail(string manager, string name, string title, int id, DateTime? date)
-        {
-            var email = "id22052003@gmail.com";
-            var subject = "Contribute announce";
-            var message =
-                $"<h2>New Submission Received</h2>" +
-                $"<p>Dear {manager},<p>" +
-                $"<p>We have received a new submission from {name}.</p>" +
-                $"<p>Here are the details of the submission:<p>" +
-                $"<ul>" +
-                $"<li style='list-style-type:None'><b>Submission Title:</b>{title}</li>" +
-                $"<li style='list-style-type:None'><b>Submitted On:</b>{date}</li>" +
-                $"</ul>" +
-                $"<p>Please review the submission at your earliest convenience.</p>" +
-                $"<p>If you have any questions, feel free to contact us at thaiphgcs210953@fpt.edu.vn.</p>" +
-                $"<p>Best regards!</p>";
-            await _email.SendEmailAsync(email, subject, message);
-        }
+		public async Task SendMail(string manager, string name, string title, int id, DateTime? date)
+		{
+			var email = "id22052003@gmail.com";
+			var subject = "Contribute announce";
+			var message =
+				$"<h2>New Submission Received</h2>" +
+				$"<p>Dear {manager},<p>" +
+				$"<p>We have received a new submission from {name}.</p>" +
+				$"<p>Here are the details of the submission:<p>" +
+				$"<ul>" +
+				$"<li style='list-style-type:None'><b>Submission Title:</b>{title}</li>" +
+				$"<li style='list-style-type:None'><b>Submitted On:</b>{date}</li>" +
+				$"</ul>" +
+				$"<p>Please review the submission at your earliest convenience.</p>" +
+				$"<p>If you have any questions, feel free to contact us at thaiphgcs210953@fpt.edu.vn.</p>" +
+				$"<p>Best regards!</p>";
+			await _email.SendEmailAsync(email, subject, message);
+		}
 
-        public async Task<string> Upload(IFormFile file, string folder)
+		public async Task<string> Upload(IFormFile file, string folder)
 		{
 			if (await _file.UploadFile(file, folder))
 				return file.FileName;

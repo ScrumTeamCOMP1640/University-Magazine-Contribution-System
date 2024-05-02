@@ -14,77 +14,49 @@ namespace COMP1640.Controllers
             _db = db;
         }
 
-        public IActionResult Index(int? page)
+        public IActionResult Index()
         {
-            var user = GetUser();
-            if (user == null)
-            {
-                return NotFound();
-            }
+			var user = GetUser();
+			var role = GetRole();
 
-            var role = GetRole();
-            if (role == null)
-            {
-                return NotFound();
-            }
+			if (user == null || role == null)
+			{
+				return NotFound();
+			}
 
-            var faculties = GetFaculties(user, role);
+            CheckArticle();
+
+			var faculties = GetFaculties(user, role);
             var terms = _db.Terms.OrderBy(t => t.Status);
-            var articlesQuery = GetFilteredArticlesQuery(user, role);
-
-            int pageSize = 8;
-            int pageNumber = page ?? 1;
-            IPagedList<Article> pagedList = articlesQuery.ToPagedList(pageNumber, pageSize);
 
             ViewBag.Faculties = faculties;
             ViewBag.Terms = terms;
 
-            return View(pagedList);
+            return View();
         }
-
-        /*public IActionResult GetContributionsData()
-        {
-            var data = _db.Articles
-                .Include(a => a.Term)
-                .Include(a => a.Faculty)
-                .Where(a => a.Status == "Approved")
-                .GroupBy(a => new { a.Term.TermName, a.Faculty.FacultyName })
-                .Select(g => new
-                {
-                    Term = g.Key.TermName,
-                    Faculty = g.Key.FacultyName,
-                    Count = g.Count()
-                })
-                .ToList();
-
-            var terms = data.Select(d => d.Term).Distinct().ToList();
-            var faculties = data.Select(d => d.Faculty).Distinct().ToList();
-
-            var contributions = new List<Dictionary<string, int>>();
-            foreach (var term in terms)
-            {
-                var termData = new Dictionary<string, int>();
-                foreach (var faculty in faculties)
-                {
-                    var count = data.FirstOrDefault(d => d.Term == term && d.Faculty == faculty)?.Count ?? 0;
-                    termData.Add(faculty, count);
-                }
-                contributions.Add(termData);
-            }
-
-            return Json(new { terms, faculties, contributions });
-        }*/
 
         public IActionResult Chart()
         {
+            var academicYears = _db.Terms.GroupBy(t => t.StartDate.Year)
+                                  .OrderByDescending(g => g.Key)
+                                  .Select(g => g.Key)
+                                  .ToList();
+            ViewBag.AcademicYears = academicYears;
+
             var terms = _db.Terms.OrderBy(t => t.Status);
             ViewBag.Terms = terms;
+
             return View();
+        }
+
+        public JsonResult GetTermsByYear(int academicYear)
+        {
+            var terms = _db.Terms.Where(t => t.StartDate.Year == academicYear).OrderBy(t => t.Status).ToList();
+            return new JsonResult(terms);
         }
 
         public IActionResult GetContributorsByFacultyForTerm(int termId)
         {
-            // Query the database to get the necessary data
             var contributorsByFaculty = _db.Articles
                 .Where(a => a.TermId == termId && a.Status == "Approved")
                 .GroupBy(a => a.Faculty.FacultyName)
@@ -95,57 +67,57 @@ namespace COMP1640.Controllers
                 })
                 .ToList();
 
-            if (contributorsByFaculty.Any())
+            if (contributorsByFaculty.Count == 0)
+            {
+                return Json(new { faculties = new List<string>(), contributorCounts = new List<int>() });
+            }
+            else
             {
                 var faculties = contributorsByFaculty.Select(item => item.FacultyName).ToList();
                 var contributorCounts = contributorsByFaculty.Select(item => item.ContributorCount).ToList();
 
                 return Json(new { faculties, contributorCounts });
             }
-            else
-            {
-                return Json(new { faculties = new List<string>(), contributorCounts = new List<int>() });
-            }
         }
 
-        public IActionResult GetArticles(int? page, int facultyId, int termId, string searchQuery)
+        public IActionResult GetArticles(int? page, int facultyId, int termId, string searchQuery, string status)
         {
-            var user = GetUser();
-            if (user == null)
-            {
-                return NotFound();
-            }
+			var user = GetUser();
+			var role = GetRole();
 
-            var role = GetRole();
-            if (role == null)
-            {
-                return NotFound();
-            }
+			if (user == null || role == null)
+			{
+				return NotFound();
+			}
 
-            var articlesQuery = GetFilteredArticlesQuery(user, role);
+			var articlesQuery = GetFilteredArticlesQuery(user, role, facultyId, termId, searchQuery, status);
 
-            if (facultyId != 1)
-            {
-                articlesQuery = articlesQuery.Where(a => a.FacultyId == facultyId);
-            }
+			int pageSize = 6;
+			int pageNumber = page ?? 1;
+			IPagedList<Article> pagedList = articlesQuery.ToPagedList(pageNumber, pageSize);
 
-            if (!string.IsNullOrEmpty(searchQuery))
-            {
-                articlesQuery = articlesQuery.Where(a => a.Title.Contains(searchQuery) ||
-                    (a.User != null && a.User.Username != null && a.User.Username.Contains(searchQuery)));
-            }
+			return PartialView("_ArticlesPartial", pagedList);
+		}
 
-            articlesQuery = articlesQuery.Where(a => a.TermId == termId);
+		public IActionResult GetTotalArticleCount(int facultyId, int termId, string searchQuery, string status)
+		{
+			var user = GetUser();
+			var role = GetRole();
 
-            int pageSize = 8;
-            int pageNumber = page ?? 1;
-            IPagedList<Article> pagedList = articlesQuery.ToPagedList(pageNumber, pageSize);
+			if (user == null || role == null)
+			{
+				return NotFound();
+			}
 
-            return PartialView("_ArticlesPartial", pagedList);
-        }
+			var articlesQuery = GetFilteredArticlesQuery(user, role, facultyId, termId, searchQuery, status);
+
+			int totalCount = articlesQuery.Count();
+
+			return Json(new { totalCount });
+		}
 
 
-        public IActionResult GetTermDates(int termId)
+		public IActionResult GetTermDates(int termId)
         {
             var term = _db.Terms.FirstOrDefault(t => t.TermId == termId);
             if (term != null)
@@ -182,29 +154,64 @@ namespace COMP1640.Controllers
             return faculties;
         }
 
-        private IQueryable<Article> GetFilteredArticlesQuery(User user, string role)
-        {
-            IQueryable<Article> articlesQuery = _db.Articles
-                .Include(a => a.User)
-                .OrderByDescending(a => a.SubmissionDate);
+		private IQueryable<Article> GetFilteredArticlesQuery(User user, string role, int facultyId, int termId, string searchQuery, string status)
+		{
+			IQueryable<Article> articlesQuery = _db.Articles
+				.Include(a => a.User)
+				.OrderByDescending(a => a.SubmissionDate);
 
-            switch (role)
-            {
-                case "Marketing Manager":
-                    articlesQuery = articlesQuery.Where(a => a.Status == "Approved");
-                    break;
-                case "Guest":
-                    articlesQuery = articlesQuery.Where(a => a.Status == "Approved" && a.FacultyId == user.FacultyId);
-                    break;
-                case "Marketing Coordinator":
-                    articlesQuery = articlesQuery.Where(a => a.FacultyId == user.FacultyId);
-                    break;
-                case "Student":
-                    articlesQuery = articlesQuery.Where(a => a.UserId == user.UserId || (a.Status == "Approved" && a.FacultyId == user.FacultyId));
-                    break;
-            }
+			switch (role)
+			{
+				case "Marketing Manager":
+					articlesQuery = articlesQuery.Where(a => a.Status == "Approved");
+					break;
+				case "Guest":
+					articlesQuery = articlesQuery.Where(a => a.Status == "Approved" && a.FacultyId == user.FacultyId && a.TermId == termId).Take(3);
+					break;
+				case "Marketing Coordinator":
+					articlesQuery = articlesQuery.Where(a => a.FacultyId == user.FacultyId);
+					break;
+				case "Student":
+					articlesQuery = articlesQuery.Where(a => a.UserId == user.UserId || (a.Status == "Approved" && a.FacultyId == user.FacultyId));
+					break;
+			}
 
-            return articlesQuery;
-        }
-    }
+			if (facultyId > 1)
+			{
+				articlesQuery = articlesQuery.Where(a => a.FacultyId == facultyId);
+			}
+
+			if (termId > 0)
+			{
+				articlesQuery = articlesQuery.Where(a => a.TermId == termId);
+			}
+
+			if (!string.IsNullOrEmpty(searchQuery))
+			{
+				articlesQuery = articlesQuery.Where(a => a.Title.Contains(searchQuery) ||
+					(a.User != null && a.User.Username != null && a.User.Username.Contains(searchQuery)));
+			}
+
+			if (!string.IsNullOrEmpty(status) && status != "All")
+			{
+				articlesQuery = articlesQuery.Where(a => a.Status == status);
+			}
+
+			return articlesQuery;
+		}
+
+		public void CheckArticle()
+		{
+			var article = _db.Articles.Where(x => x.Status != null && x.Status.Equals("Pending")).ToList();
+			foreach (var item in article)
+			{
+				if (item.SubmissionDate != null && item.SubmissionDate.Value.AddDays(14).DayOfYear <= DateTime.Now.DayOfYear)
+				{
+					item.Status = "Rejected";
+					_db.Entry(item).State = EntityState.Modified;
+					_db.SaveChanges();
+				}
+			}
+		}
+	}
 }

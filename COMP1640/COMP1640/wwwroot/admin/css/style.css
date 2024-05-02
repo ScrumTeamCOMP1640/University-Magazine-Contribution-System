@@ -736,13 +736,12 @@ form .input-box span.details {
     flex: 1;
     padding: 8px 24px 0;
     border: 1px solid #4050e6;
-    border-top-right-radius: 5px;
-    border-bottom-right-radius: 5px;
+    border-radius: 4px;
 }
 
-.profile-info h1 {
-    font-size: 2.4rem;
-}
+    .profile-info h1 {
+        font-size: 2.4rem;
+    }
 
 .profile-image {
     display: flex;
@@ -756,11 +755,32 @@ form .input-box span.details {
         border: 1px solid #ccc;
     }
 
-.profile-details {
-    border-collapse: collapse;
-    border-spacing: 0;
-    margin: 12px 0;
-}
+    .profile-image #img-file {
+        display: none;
+    }
+
+    .profile-image #upload-btn {
+        position: absolute;
+        height: 30px;
+        width: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 6px;
+        border-radius: 50%;
+        cursor: pointer;
+        color: #fff;
+        transform: translateX(34px);
+        margin-top: 64px;
+        background-color: rgba(173, 172, 172, 0.8);
+        box-shadow: 2px 4px 4px rgba(0, 0, 0, 0.6);
+    }
+
+    .profile-details {
+        border-collapse: collapse;
+        border-spacing: 0;
+        margin: 12px 0;
+    }
 
 table.profile-details,
 table.profile-details tr,
@@ -830,3 +850,24 @@ table.profile-details td {
             padding: 0 12px;
             font-weight: 500;
         }
+
+/* Loading */
+#loading {
+    display: flex;
+    justify-content: center;
+}
+
+.spinner {
+    height: 120px;
+    width: 120px;
+    border: 6px solid;
+    border-color: var(--primary-color) transparent var(--primary-color) transparent;
+    border-radius: 50%;
+    animation: spin 1s ease-in-out infinite;
+}
+
+@keyframes spin {
+    to {
+        transform: rotate(360deg);
+    }
+}

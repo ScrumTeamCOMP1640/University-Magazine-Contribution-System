@@ -5,7 +5,107 @@
 
 <div class="section__body">
 	<h1>Dashboard</h1>
-	<div class="main-content">
-		
+	<div class="main-content" style="min-height: 350px">
+        <div id="loading">
+            <div class="spinner"></div>
+        </div>
+        <div id="chartContainer"></div>
 	</div>
 </div>
+
+@section ScriptsChart {
+    <script>
+        $(document).ready(function () {
+            function showLoading() {
+                $('#loading').fadeIn(500);
+            }
+
+            function hideLoading() {
+                $('#loading').fadeOut(500);
+            }
+
+            function updateChart() {
+                $.ajax({
+                    url: '@Url.Action("GetUsersByFaculty", "Home")',
+                    type: 'GET',
+                    beforeSend: function () {
+                        showLoading();
+                    },
+                    success: function (data) {
+                        $('#chartContainer').empty();
+                        setTimeout(function () {
+                            if (data.faculties.length === 0 && data.userCounts.length === 0) {
+                                $('#chartContainer').html('<div class="col l-12 m-12 c-12"><div class="no-results"><div class="no-results__img" style="background-image: url(@Url.Content("~/img/no_data.svg"))"></div><h2>No data available</h2></div></div>');
+                            } else {
+                                $('#chartContainer').html('<canvas id="myDoughnutChart"></canvas>');
+                                const usersData = {
+                                    labels: data.faculties,
+                                    data: data.userCounts,
+                                    backgroundColor: [
+                                        'rgba(255, 99, 132, 0.5)',
+                                        'rgba(54, 162, 235, 0.5)',
+                                        'rgba(255, 206, 86, 0.5)',
+                                        'rgba(75, 192, 192, 0.5)',
+                                        'rgba(153, 102, 255, 0.5)'
+                                    ],
+                                    borderColor: [
+                                        'rgba(255, 99, 132, 1)',
+                                        'rgba(54, 162, 235, 1)',
+                                        'rgba(255, 206, 86, 1)',
+                                        'rgba(75, 192, 192, 1)',
+                                        'rgba(153, 102, 255, 1)'
+                                    ],
+                                    borderWidth: 1
+                                };
+
+                                const doughnutChart = document.getElementById('myDoughnutChart');
+
+                                const myDoughnutChart = new Chart(doughnutChart, {
+                                    type: 'doughnut',
+                                    data: {
+                                        labels: usersData.labels,
+                                        datasets: [{
+                                            label: 'Number of Users',
+                                            data: usersData.data,
+                                            backgroundColor: usersData.backgroundColor,
+                                            borderColor: usersData.borderColor,
+                                            borderWidth: usersData.borderWidth
+                                        }]
+                                    },
+                                    options: {
+                                        responsive: true,
+                                        maintainAspectRatio: false,
+                                        plugins: {
+                                            title: {
+                                                display: true,
+                                                text: 'Number of users of each faculty',
+                                                font: {
+                                                    size: 18
+                                                },
+                                                padding: 20
+                                            },
+                                            legend: {
+                                                display: true,
+                                                position: 'bottom',
+                                                labels: {
+                                                    padding: 30,
+                                                    usePointStyle: true
+                                                }
+                                            }
+                                        }
+                                    }
+                                });
+                            }
+                        }, 1000);
+                        hideLoading();
+                    },
+                    error: function (xhr, status, error) {
+                        console.error(xhr.responseText);
+                    }
+                });
+            }
+
+            updateChart();
+        });
+    </script>
+}

@@ -50,8 +50,9 @@ namespace COMP1640.Controllers
             {
                 if (loginVM.Password != null && Crypto.VerifyHashedPassword(client.Password, loginVM.Password))
                 {
+                    HttpContext.Session.SetInt32("UserId", client.UserId);
                     HttpContext.Session.SetString("Username", client.Username);
-                    HttpContext.Session.SetString("Email", client.Email);
+					HttpContext.Session.SetString("Email", client.Email);
                     HttpContext.Session.SetString("Avatar", client.Avatar ?? "");
 
                     string role = "";
@@ -74,6 +75,7 @@ namespace COMP1640.Controllers
                             break;
                     }
                     HttpContext.Session.SetString("Role", role);
+                    _toast.AddSuccessToastMessage("Welcome!");
                     return RedirectToAction("Index", "Home");
                 }
             }
@@ -100,7 +102,9 @@ namespace COMP1640.Controllers
 
             var profileViewModel = new ProfileViewModel
             {
+                Email = user.Email,
                 Username = user.Username,
+                Avatar = user.Avatar,
                 Phone = user.Phone,
                 Address = user.Address
             };
@@ -126,9 +130,16 @@ namespace COMP1640.Controllers
                 return View("Profile", profile);
             }
 
+            originalUser.Email = profile.Email;
             originalUser.Username = profile.Username;
             originalUser.Phone = profile.Phone;
             originalUser.Address = profile.Address;
+
+            if (profile.Avatar != null)
+            {
+                originalUser.Avatar = profile.Avatar;
+                HttpContext.Session.SetString("Avatar", profile.Avatar);
+            }
 
             HttpContext.Session.SetString("Username", profile.Username);
             _db.SaveChanges();
@@ -148,7 +159,9 @@ namespace COMP1640.Controllers
 
             var profileViewModel = new ProfileViewModel
             {
+                Email = user.Email,
                 Username = user.Username,
+                Avatar = user.Avatar,
                 Phone = user.Phone,
                 Address = user.Address
             };

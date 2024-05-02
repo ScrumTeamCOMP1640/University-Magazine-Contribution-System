@@ -13,8 +13,912 @@
       "PackagePath": "staticwebassets\\OutPut\\COMP1640_CW.pdf"
     },
     {
+      "Id": "C:\\Users\\Admin\\Downloads\\GitClone\\University-Magazine-Contribution-System\\COMP1640\\COMP1640\\wwwroot\\OutPut\\Pham Hoang Thai - 001392862 - Individual.pdf",
+      "PackagePath": "staticwebassets\\OutPut\\Pham Hoang Thai - 001392862 - Individual.pdf"
+    },
+    {
       "Id": "C:\\Users\\Admin\\Downloads\\GitClone\\University-Magazine-Contribution-System\\COMP1640\\COMP1640\\wwwroot\\OutPut\\file-sample.pdf",
       "PackagePath": "staticwebassets\\OutPut\\file-sample.pdf"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Downloads\\GitClone\\University-Magazine-Contribution-System\\COMP1640\\COMP1640\\wwwroot\\OutPut\\file-sample_1MB.pdf",
+      "PackagePath": "staticwebassets\\OutPut\\file-sample_1MB.pdf"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Downloads\\GitClone\\University-Magazine-Contribution-System\\COMP1640\\COMP1640\\wwwroot\\UploadedFiles\\100\\AI.png",
+      "PackagePath": "staticwebassets\\UploadedFiles\\100\\AI.png"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Downloads\\GitClone\\University-Magazine-Contribution-System\\COMP1640\\COMP1640\\wwwroot\\UploadedFiles\\100\\file-sample.docx",
+      "PackagePath": "staticwebassets\\UploadedFiles\\100\\file-sample.docx"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Downloads\\GitClone\\University-Magazine-Contribution-System\\COMP1640\\COMP1640\\wwwroot\\UploadedFiles\\101\\AI.png",
+      "PackagePath": "staticwebassets\\UploadedFiles\\101\\AI.png"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Downloads\\GitClone\\University-Magazine-Contribution-System\\COMP1640\\COMP1640\\wwwroot\\UploadedFiles\\101\\file-sample.docx",
+      "PackagePath": "staticwebassets\\UploadedFiles\\101\\file-sample.docx"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Downloads\\GitClone\\University-Magazine-Contribution-System\\COMP1640\\COMP1640\\wwwroot\\UploadedFiles\\102\\AI.png",
+      "PackagePath": "staticwebassets\\UploadedFiles\\102\\AI.png"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Downloads\\GitClone\\University-Magazine-Contribution-System\\COMP1640\\COMP1640\\wwwroot\\UploadedFiles\\102\\file-sample.docx",
+      "PackagePath": "staticwebassets\\UploadedFiles\\102\\file-sample.docx"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Downloads\\GitClone\\University-Magazine-Contribution-System\\COMP1640\\COMP1640\\wwwroot\\UploadedFiles\\103\\AI.png",
+      "PackagePath": "staticwebassets\\UploadedFiles\\103\\AI.png"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Downloads\\GitClone\\University-Magazine-Contribution-System\\COMP1640\\COMP1640\\wwwroot\\UploadedFiles\\103\\file-sample.docx",
+      "PackagePath": "staticwebassets\\UploadedFiles\\103\\file-sample.docx"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Downloads\\GitClone\\University-Magazine-Contribution-System\\COMP1640\\COMP1640\\wwwroot\\UploadedFiles\\104\\AI.png",
+      "PackagePath": "staticwebassets\\UploadedFiles\\104\\AI.png"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Downloads\\GitClone\\University-Magazine-Contribution-System\\COMP1640\\COMP1640\\wwwroot\\UploadedFiles\\104\\file-sample.docx",
+      "PackagePath": "staticwebassets\\UploadedFiles\\104\\file-sample.docx"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Downloads\\GitClone\\University-Magazine-Contribution-System\\COMP1640\\COMP1640\\wwwroot\\UploadedFiles\\105\\AI.png",
+      "PackagePath": "staticwebassets\\UploadedFiles\\105\\AI.png"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Downloads\\GitClone\\University-Magazine-Contribution-System\\COMP1640\\COMP1640\\wwwroot\\UploadedFiles\\105\\file-sample.docx",
+      "PackagePath": "staticwebassets\\UploadedFiles\\105\\file-sample.docx"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Downloads\\GitClone\\University-Magazine-Contribution-System\\COMP1640\\COMP1640\\wwwroot\\UploadedFiles\\106\\AI.png",
+      "PackagePath": "staticwebassets\\UploadedFiles\\106\\AI.png"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Downloads\\GitClone\\University-Magazine-Contribution-System\\COMP1640\\COMP1640\\wwwroot\\UploadedFiles\\106\\file-sample.docx",
+      "PackagePath": "staticwebassets\\UploadedFiles\\106\\file-sample.docx"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Downloads\\GitClone\\University-Magazine-Contribution-System\\COMP1640\\COMP1640\\wwwroot\\UploadedFiles\\107\\AI.png",
+      "PackagePath": "staticwebassets\\UploadedFiles\\107\\AI.png"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Downloads\\GitClone\\University-Magazine-Contribution-System\\COMP1640\\COMP1640\\wwwroot\\UploadedFiles\\107\\file-sample.docx",
+      "PackagePath": "staticwebassets\\UploadedFiles\\107\\file-sample.docx"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Downloads\\GitClone\\University-Magazine-Contribution-System\\COMP1640\\COMP1640\\wwwroot\\UploadedFiles\\108\\AI.png",
+      "PackagePath": "staticwebassets\\UploadedFiles\\108\\AI.png"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Downloads\\GitClone\\University-Magazine-Contribution-System\\COMP1640\\COMP1640\\wwwroot\\UploadedFiles\\108\\file-sample.docx",
+      "PackagePath": "staticwebassets\\UploadedFiles\\108\\file-sample.docx"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Downloads\\GitClone\\University-Magazine-Contribution-System\\COMP1640\\COMP1640\\wwwroot\\UploadedFiles\\109\\AI.png",
+      "PackagePath": "staticwebassets\\UploadedFiles\\109\\AI.png"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Downloads\\GitClone\\University-Magazine-Contribution-System\\COMP1640\\COMP1640\\wwwroot\\UploadedFiles\\109\\file-sample.docx",
+      "PackagePath": "staticwebassets\\UploadedFiles\\109\\file-sample.docx"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Downloads\\GitClone\\University-Magazine-Contribution-System\\COMP1640\\COMP1640\\wwwroot\\UploadedFiles\\10\\AI.png",
+      "PackagePath": "staticwebassets\\UploadedFiles\\10\\AI.png"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Downloads\\GitClone\\University-Magazine-Contribution-System\\COMP1640\\COMP1640\\wwwroot\\UploadedFiles\\10\\file-sample.docx",
+      "PackagePath": "staticwebassets\\UploadedFiles\\10\\file-sample.docx"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Downloads\\GitClone\\University-Magazine-Contribution-System\\COMP1640\\COMP1640\\wwwroot\\UploadedFiles\\110\\AI.png",
+      "PackagePath": "staticwebassets\\UploadedFiles\\110\\AI.png"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Downloads\\GitClone\\University-Magazine-Contribution-System\\COMP1640\\COMP1640\\wwwroot\\UploadedFiles\\110\\file-sample.docx",
+      "PackagePath": "staticwebassets\\UploadedFiles\\110\\file-sample.docx"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Downloads\\GitClone\\University-Magazine-Contribution-System\\COMP1640\\COMP1640\\wwwroot\\UploadedFiles\\111\\AI.png",
+      "PackagePath": "staticwebassets\\UploadedFiles\\111\\AI.png"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Downloads\\GitClone\\University-Magazine-Contribution-System\\COMP1640\\COMP1640\\wwwroot\\UploadedFiles\\111\\file-sample.docx",
+      "PackagePath": "staticwebassets\\UploadedFiles\\111\\file-sample.docx"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Downloads\\GitClone\\University-Magazine-Contribution-System\\COMP1640\\COMP1640\\wwwroot\\UploadedFiles\\112\\AI.png",
+      "PackagePath": "staticwebassets\\UploadedFiles\\112\\AI.png"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Downloads\\GitClone\\University-Magazine-Contribution-System\\COMP1640\\COMP1640\\wwwroot\\UploadedFiles\\112\\file-sample.docx",
+      "PackagePath": "staticwebassets\\UploadedFiles\\112\\file-sample.docx"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Downloads\\GitClone\\University-Magazine-Contribution-System\\COMP1640\\COMP1640\\wwwroot\\UploadedFiles\\113\\AI.png",
+      "PackagePath": "staticwebassets\\UploadedFiles\\113\\AI.png"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Downloads\\GitClone\\University-Magazine-Contribution-System\\COMP1640\\COMP1640\\wwwroot\\UploadedFiles\\113\\file-sample.docx",
+      "PackagePath": "staticwebassets\\UploadedFiles\\113\\file-sample.docx"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Downloads\\GitClone\\University-Magazine-Contribution-System\\COMP1640\\COMP1640\\wwwroot\\UploadedFiles\\114\\AI.png",
+      "PackagePath": "staticwebassets\\UploadedFiles\\114\\AI.png"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Downloads\\GitClone\\University-Magazine-Contribution-System\\COMP1640\\COMP1640\\wwwroot\\UploadedFiles\\114\\file-sample.docx",
+      "PackagePath": "staticwebassets\\UploadedFiles\\114\\file-sample.docx"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Downloads\\GitClone\\University-Magazine-Contribution-System\\COMP1640\\COMP1640\\wwwroot\\UploadedFiles\\115\\AI.png",
+      "PackagePath": "staticwebassets\\UploadedFiles\\115\\AI.png"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Downloads\\GitClone\\University-Magazine-Contribution-System\\COMP1640\\COMP1640\\wwwroot\\UploadedFiles\\115\\file-sample.docx",
+      "PackagePath": "staticwebassets\\UploadedFiles\\115\\file-sample.docx"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Downloads\\GitClone\\University-Magazine-Contribution-System\\COMP1640\\COMP1640\\wwwroot\\UploadedFiles\\116\\AI.png",
+      "PackagePath": "staticwebassets\\UploadedFiles\\116\\AI.png"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Downloads\\GitClone\\University-Magazine-Contribution-System\\COMP1640\\COMP1640\\wwwroot\\UploadedFiles\\116\\file-sample.docx",
+      "PackagePath": "staticwebassets\\UploadedFiles\\116\\file-sample.docx"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Downloads\\GitClone\\University-Magazine-Contribution-System\\COMP1640\\COMP1640\\wwwroot\\UploadedFiles\\117\\AI.png",
+      "PackagePath": "staticwebassets\\UploadedFiles\\117\\AI.png"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Downloads\\GitClone\\University-Magazine-Contribution-System\\COMP1640\\COMP1640\\wwwroot\\UploadedFiles\\117\\file-sample.docx",
+      "PackagePath": "staticwebassets\\UploadedFiles\\117\\file-sample.docx"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Downloads\\GitClone\\University-Magazine-Contribution-System\\COMP1640\\COMP1640\\wwwroot\\UploadedFiles\\118\\AI.png",
+      "PackagePath": "staticwebassets\\UploadedFiles\\118\\AI.png"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Downloads\\GitClone\\University-Magazine-Contribution-System\\COMP1640\\COMP1640\\wwwroot\\UploadedFiles\\118\\file-sample.docx",
+      "PackagePath": "staticwebassets\\UploadedFiles\\118\\file-sample.docx"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Downloads\\GitClone\\University-Magazine-Contribution-System\\COMP1640\\COMP1640\\wwwroot\\UploadedFiles\\119\\AI.png",
+      "PackagePath": "staticwebassets\\UploadedFiles\\119\\AI.png"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Downloads\\GitClone\\University-Magazine-Contribution-System\\COMP1640\\COMP1640\\wwwroot\\UploadedFiles\\119\\file-sample.docx",
+      "PackagePath": "staticwebassets\\UploadedFiles\\119\\file-sample.docx"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Downloads\\GitClone\\University-Magazine-Contribution-System\\COMP1640\\COMP1640\\wwwroot\\UploadedFiles\\11\\AI.png",
+      "PackagePath": "staticwebassets\\UploadedFiles\\11\\AI.png"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Downloads\\GitClone\\University-Magazine-Contribution-System\\COMP1640\\COMP1640\\wwwroot\\UploadedFiles\\11\\file-sample.docx",
+      "PackagePath": "staticwebassets\\UploadedFiles\\11\\file-sample.docx"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Downloads\\GitClone\\University-Magazine-Contribution-System\\COMP1640\\COMP1640\\wwwroot\\UploadedFiles\\120\\AI.png",
+      "PackagePath": "staticwebassets\\UploadedFiles\\120\\AI.png"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Downloads\\GitClone\\University-Magazine-Contribution-System\\COMP1640\\COMP1640\\wwwroot\\UploadedFiles\\120\\file-sample.docx",
+      "PackagePath": "staticwebassets\\UploadedFiles\\120\\file-sample.docx"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Downloads\\GitClone\\University-Magazine-Contribution-System\\COMP1640\\COMP1640\\wwwroot\\UploadedFiles\\121\\AI.png",
+      "PackagePath": "staticwebassets\\UploadedFiles\\121\\AI.png"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Downloads\\GitClone\\University-Magazine-Contribution-System\\COMP1640\\COMP1640\\wwwroot\\UploadedFiles\\121\\file-sample.docx",
+      "PackagePath": "staticwebassets\\UploadedFiles\\121\\file-sample.docx"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Downloads\\GitClone\\University-Magazine-Contribution-System\\COMP1640\\COMP1640\\wwwroot\\UploadedFiles\\122\\AI.png",
+      "PackagePath": "staticwebassets\\UploadedFiles\\122\\AI.png"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Downloads\\GitClone\\University-Magazine-Contribution-System\\COMP1640\\COMP1640\\wwwroot\\UploadedFiles\\122\\file-sample.docx",
+      "PackagePath": "staticwebassets\\UploadedFiles\\122\\file-sample.docx"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Downloads\\GitClone\\University-Magazine-Contribution-System\\COMP1640\\COMP1640\\wwwroot\\UploadedFiles\\123\\AI.png",
+      "PackagePath": "staticwebassets\\UploadedFiles\\123\\AI.png"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Downloads\\GitClone\\University-Magazine-Contribution-System\\COMP1640\\COMP1640\\wwwroot\\UploadedFiles\\123\\file-sample.docx",
+      "PackagePath": "staticwebassets\\UploadedFiles\\123\\file-sample.docx"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Downloads\\GitClone\\University-Magazine-Contribution-System\\COMP1640\\COMP1640\\wwwroot\\UploadedFiles\\124\\AI.png",
+      "PackagePath": "staticwebassets\\UploadedFiles\\124\\AI.png"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Downloads\\GitClone\\University-Magazine-Contribution-System\\COMP1640\\COMP1640\\wwwroot\\UploadedFiles\\124\\file-sample.docx",
+      "PackagePath": "staticwebassets\\UploadedFiles\\124\\file-sample.docx"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Downloads\\GitClone\\University-Magazine-Contribution-System\\COMP1640\\COMP1640\\wwwroot\\UploadedFiles\\125\\AI.png",
+      "PackagePath": "staticwebassets\\UploadedFiles\\125\\AI.png"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Downloads\\GitClone\\University-Magazine-Contribution-System\\COMP1640\\COMP1640\\wwwroot\\UploadedFiles\\125\\file-sample.docx",
+      "PackagePath": "staticwebassets\\UploadedFiles\\125\\file-sample.docx"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Downloads\\GitClone\\University-Magazine-Contribution-System\\COMP1640\\COMP1640\\wwwroot\\UploadedFiles\\126\\AI.png",
+      "PackagePath": "staticwebassets\\UploadedFiles\\126\\AI.png"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Downloads\\GitClone\\University-Magazine-Contribution-System\\COMP1640\\COMP1640\\wwwroot\\UploadedFiles\\126\\file-sample.docx",
+      "PackagePath": "staticwebassets\\UploadedFiles\\126\\file-sample.docx"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Downloads\\GitClone\\University-Magazine-Contribution-System\\COMP1640\\COMP1640\\wwwroot\\UploadedFiles\\127\\AI.png",
+      "PackagePath": "staticwebassets\\UploadedFiles\\127\\AI.png"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Downloads\\GitClone\\University-Magazine-Contribution-System\\COMP1640\\COMP1640\\wwwroot\\UploadedFiles\\127\\file-sample.docx",
+      "PackagePath": "staticwebassets\\UploadedFiles\\127\\file-sample.docx"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Downloads\\GitClone\\University-Magazine-Contribution-System\\COMP1640\\COMP1640\\wwwroot\\UploadedFiles\\128\\AI.png",
+      "PackagePath": "staticwebassets\\UploadedFiles\\128\\AI.png"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Downloads\\GitClone\\University-Magazine-Contribution-System\\COMP1640\\COMP1640\\wwwroot\\UploadedFiles\\128\\file-sample.docx",
+      "PackagePath": "staticwebassets\\UploadedFiles\\128\\file-sample.docx"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Downloads\\GitClone\\University-Magazine-Contribution-System\\COMP1640\\COMP1640\\wwwroot\\UploadedFiles\\129\\IMG_ONE.png",
+      "PackagePath": "staticwebassets\\UploadedFiles\\129\\IMG_ONE.png"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Downloads\\GitClone\\University-Magazine-Contribution-System\\COMP1640\\COMP1640\\wwwroot\\UploadedFiles\\129\\download.jpg",
+      "PackagePath": "staticwebassets\\UploadedFiles\\129\\download.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Downloads\\GitClone\\University-Magazine-Contribution-System\\COMP1640\\COMP1640\\wwwroot\\UploadedFiles\\129\\file-sample_1MB.doc",
+      "PackagePath": "staticwebassets\\UploadedFiles\\129\\file-sample_1MB.doc"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Downloads\\GitClone\\University-Magazine-Contribution-System\\COMP1640\\COMP1640\\wwwroot\\UploadedFiles\\129\\file-sample_1MB.docx",
+      "PackagePath": "staticwebassets\\UploadedFiles\\129\\file-sample_1MB.docx"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Downloads\\GitClone\\University-Magazine-Contribution-System\\COMP1640\\COMP1640\\wwwroot\\UploadedFiles\\12\\AI.png",
+      "PackagePath": "staticwebassets\\UploadedFiles\\12\\AI.png"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Downloads\\GitClone\\University-Magazine-Contribution-System\\COMP1640\\COMP1640\\wwwroot\\UploadedFiles\\12\\file-sample.docx",
+      "PackagePath": "staticwebassets\\UploadedFiles\\12\\file-sample.docx"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Downloads\\GitClone\\University-Magazine-Contribution-System\\COMP1640\\COMP1640\\wwwroot\\UploadedFiles\\130\\IMG_ONE.png",
+      "PackagePath": "staticwebassets\\UploadedFiles\\130\\IMG_ONE.png"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Downloads\\GitClone\\University-Magazine-Contribution-System\\COMP1640\\COMP1640\\wwwroot\\UploadedFiles\\130\\download.jpg",
+      "PackagePath": "staticwebassets\\UploadedFiles\\130\\download.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Downloads\\GitClone\\University-Magazine-Contribution-System\\COMP1640\\COMP1640\\wwwroot\\UploadedFiles\\130\\file-sample_1MB.doc",
+      "PackagePath": "staticwebassets\\UploadedFiles\\130\\file-sample_1MB.doc"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Downloads\\GitClone\\University-Magazine-Contribution-System\\COMP1640\\COMP1640\\wwwroot\\UploadedFiles\\130\\file-sample_1MB.docx",
+      "PackagePath": "staticwebassets\\UploadedFiles\\130\\file-sample_1MB.docx"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Downloads\\GitClone\\University-Magazine-Contribution-System\\COMP1640\\COMP1640\\wwwroot\\UploadedFiles\\131\\Pham Hoang Thai - 001392862 - Individual.docx",
+      "PackagePath": "staticwebassets\\UploadedFiles\\131\\Pham Hoang Thai - 001392862 - Individual.docx"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Downloads\\GitClone\\University-Magazine-Contribution-System\\COMP1640\\COMP1640\\wwwroot\\UploadedFiles\\131\\business.jpg",
+      "PackagePath": "staticwebassets\\UploadedFiles\\131\\business.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Downloads\\GitClone\\University-Magazine-Contribution-System\\COMP1640\\COMP1640\\wwwroot\\UploadedFiles\\132\\Pham Hoang Thai - 001392862 - Individual.docx",
+      "PackagePath": "staticwebassets\\UploadedFiles\\132\\Pham Hoang Thai - 001392862 - Individual.docx"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Downloads\\GitClone\\University-Magazine-Contribution-System\\COMP1640\\COMP1640\\wwwroot\\UploadedFiles\\132\\business.jpg",
+      "PackagePath": "staticwebassets\\UploadedFiles\\132\\business.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Downloads\\GitClone\\University-Magazine-Contribution-System\\COMP1640\\COMP1640\\wwwroot\\UploadedFiles\\133\\Pham Hoang Thai - 001392862 - Individual.docx",
+      "PackagePath": "staticwebassets\\UploadedFiles\\133\\Pham Hoang Thai - 001392862 - Individual.docx"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Downloads\\GitClone\\University-Magazine-Contribution-System\\COMP1640\\COMP1640\\wwwroot\\UploadedFiles\\133\\business.jpg",
+      "PackagePath": "staticwebassets\\UploadedFiles\\133\\business.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Downloads\\GitClone\\University-Magazine-Contribution-System\\COMP1640\\COMP1640\\wwwroot\\UploadedFiles\\134\\Pham Hoang Thai - 001392862 - Individual.docx",
+      "PackagePath": "staticwebassets\\UploadedFiles\\134\\Pham Hoang Thai - 001392862 - Individual.docx"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Downloads\\GitClone\\University-Magazine-Contribution-System\\COMP1640\\COMP1640\\wwwroot\\UploadedFiles\\134\\business.jpg",
+      "PackagePath": "staticwebassets\\UploadedFiles\\134\\business.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Downloads\\GitClone\\University-Magazine-Contribution-System\\COMP1640\\COMP1640\\wwwroot\\UploadedFiles\\135\\Pham Hoang Thai - 001392862 - Individual.docx",
+      "PackagePath": "staticwebassets\\UploadedFiles\\135\\Pham Hoang Thai - 001392862 - Individual.docx"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Downloads\\GitClone\\University-Magazine-Contribution-System\\COMP1640\\COMP1640\\wwwroot\\UploadedFiles\\135\\business.jpg",
+      "PackagePath": "staticwebassets\\UploadedFiles\\135\\business.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Downloads\\GitClone\\University-Magazine-Contribution-System\\COMP1640\\COMP1640\\wwwroot\\UploadedFiles\\136\\Pham Hoang Thai - 001392862 - Individual.docx",
+      "PackagePath": "staticwebassets\\UploadedFiles\\136\\Pham Hoang Thai - 001392862 - Individual.docx"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Downloads\\GitClone\\University-Magazine-Contribution-System\\COMP1640\\COMP1640\\wwwroot\\UploadedFiles\\136\\business.jpg",
+      "PackagePath": "staticwebassets\\UploadedFiles\\136\\business.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Downloads\\GitClone\\University-Magazine-Contribution-System\\COMP1640\\COMP1640\\wwwroot\\UploadedFiles\\137\\Pham Hoang Thai - 001392862 - Individual.docx",
+      "PackagePath": "staticwebassets\\UploadedFiles\\137\\Pham Hoang Thai - 001392862 - Individual.docx"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Downloads\\GitClone\\University-Magazine-Contribution-System\\COMP1640\\COMP1640\\wwwroot\\UploadedFiles\\137\\business.jpg",
+      "PackagePath": "staticwebassets\\UploadedFiles\\137\\business.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Downloads\\GitClone\\University-Magazine-Contribution-System\\COMP1640\\COMP1640\\wwwroot\\UploadedFiles\\138\\Pham Hoang Thai - 001392862 - Individual.docx",
+      "PackagePath": "staticwebassets\\UploadedFiles\\138\\Pham Hoang Thai - 001392862 - Individual.docx"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Downloads\\GitClone\\University-Magazine-Contribution-System\\COMP1640\\COMP1640\\wwwroot\\UploadedFiles\\138\\business.jpg",
+      "PackagePath": "staticwebassets\\UploadedFiles\\138\\business.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Downloads\\GitClone\\University-Magazine-Contribution-System\\COMP1640\\COMP1640\\wwwroot\\UploadedFiles\\139\\Pham Hoang Thai - 001392862 - Individual.docx",
+      "PackagePath": "staticwebassets\\UploadedFiles\\139\\Pham Hoang Thai - 001392862 - Individual.docx"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Downloads\\GitClone\\University-Magazine-Contribution-System\\COMP1640\\COMP1640\\wwwroot\\UploadedFiles\\139\\business.jpg",
+      "PackagePath": "staticwebassets\\UploadedFiles\\139\\business.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Downloads\\GitClone\\University-Magazine-Contribution-System\\COMP1640\\COMP1640\\wwwroot\\UploadedFiles\\13\\AI.png",
+      "PackagePath": "staticwebassets\\UploadedFiles\\13\\AI.png"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Downloads\\GitClone\\University-Magazine-Contribution-System\\COMP1640\\COMP1640\\wwwroot\\UploadedFiles\\13\\file-sample.docx",
+      "PackagePath": "staticwebassets\\UploadedFiles\\13\\file-sample.docx"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Downloads\\GitClone\\University-Magazine-Contribution-System\\COMP1640\\COMP1640\\wwwroot\\UploadedFiles\\140\\Pham Hoang Thai - 001392862 - Individual.docx",
+      "PackagePath": "staticwebassets\\UploadedFiles\\140\\Pham Hoang Thai - 001392862 - Individual.docx"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Downloads\\GitClone\\University-Magazine-Contribution-System\\COMP1640\\COMP1640\\wwwroot\\UploadedFiles\\140\\business.jpg",
+      "PackagePath": "staticwebassets\\UploadedFiles\\140\\business.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Downloads\\GitClone\\University-Magazine-Contribution-System\\COMP1640\\COMP1640\\wwwroot\\UploadedFiles\\141\\Pham Hoang Thai - 001392862 - Individual.docx",
+      "PackagePath": "staticwebassets\\UploadedFiles\\141\\Pham Hoang Thai - 001392862 - Individual.docx"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Downloads\\GitClone\\University-Magazine-Contribution-System\\COMP1640\\COMP1640\\wwwroot\\UploadedFiles\\141\\business.jpg",
+      "PackagePath": "staticwebassets\\UploadedFiles\\141\\business.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Downloads\\GitClone\\University-Magazine-Contribution-System\\COMP1640\\COMP1640\\wwwroot\\UploadedFiles\\142\\Pham Hoang Thai - 001392862 - Individual.docx",
+      "PackagePath": "staticwebassets\\UploadedFiles\\142\\Pham Hoang Thai - 001392862 - Individual.docx"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Downloads\\GitClone\\University-Magazine-Contribution-System\\COMP1640\\COMP1640\\wwwroot\\UploadedFiles\\142\\business.jpg",
+      "PackagePath": "staticwebassets\\UploadedFiles\\142\\business.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Downloads\\GitClone\\University-Magazine-Contribution-System\\COMP1640\\COMP1640\\wwwroot\\UploadedFiles\\143\\Pham Hoang Thai - 001392862 - Individual.docx",
+      "PackagePath": "staticwebassets\\UploadedFiles\\143\\Pham Hoang Thai - 001392862 - Individual.docx"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Downloads\\GitClone\\University-Magazine-Contribution-System\\COMP1640\\COMP1640\\wwwroot\\UploadedFiles\\143\\business.jpg",
+      "PackagePath": "staticwebassets\\UploadedFiles\\143\\business.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Downloads\\GitClone\\University-Magazine-Contribution-System\\COMP1640\\COMP1640\\wwwroot\\UploadedFiles\\144\\Pham Hoang Thai - 001392862 - Individual.docx",
+      "PackagePath": "staticwebassets\\UploadedFiles\\144\\Pham Hoang Thai - 001392862 - Individual.docx"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Downloads\\GitClone\\University-Magazine-Contribution-System\\COMP1640\\COMP1640\\wwwroot\\UploadedFiles\\144\\business.jpg",
+      "PackagePath": "staticwebassets\\UploadedFiles\\144\\business.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Downloads\\GitClone\\University-Magazine-Contribution-System\\COMP1640\\COMP1640\\wwwroot\\UploadedFiles\\145\\Pham Hoang Thai - 001392862 - Individual.docx",
+      "PackagePath": "staticwebassets\\UploadedFiles\\145\\Pham Hoang Thai - 001392862 - Individual.docx"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Downloads\\GitClone\\University-Magazine-Contribution-System\\COMP1640\\COMP1640\\wwwroot\\UploadedFiles\\145\\business.jpg",
+      "PackagePath": "staticwebassets\\UploadedFiles\\145\\business.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Downloads\\GitClone\\University-Magazine-Contribution-System\\COMP1640\\COMP1640\\wwwroot\\UploadedFiles\\146\\Pham Hoang Thai - 001392862 - Individual.docx",
+      "PackagePath": "staticwebassets\\UploadedFiles\\146\\Pham Hoang Thai - 001392862 - Individual.docx"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Downloads\\GitClone\\University-Magazine-Contribution-System\\COMP1640\\COMP1640\\wwwroot\\UploadedFiles\\146\\business.jpg",
+      "PackagePath": "staticwebassets\\UploadedFiles\\146\\business.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Downloads\\GitClone\\University-Magazine-Contribution-System\\COMP1640\\COMP1640\\wwwroot\\UploadedFiles\\147\\Pham Hoang Thai - 001392862 - Individual.docx",
+      "PackagePath": "staticwebassets\\UploadedFiles\\147\\Pham Hoang Thai - 001392862 - Individual.docx"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Downloads\\GitClone\\University-Magazine-Contribution-System\\COMP1640\\COMP1640\\wwwroot\\UploadedFiles\\147\\business.jpg",
+      "PackagePath": "staticwebassets\\UploadedFiles\\147\\business.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Downloads\\GitClone\\University-Magazine-Contribution-System\\COMP1640\\COMP1640\\wwwroot\\UploadedFiles\\148\\Pham Hoang Thai - 001392862 - Individual.docx",
+      "PackagePath": "staticwebassets\\UploadedFiles\\148\\Pham Hoang Thai - 001392862 - Individual.docx"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Downloads\\GitClone\\University-Magazine-Contribution-System\\COMP1640\\COMP1640\\wwwroot\\UploadedFiles\\148\\business.jpg",
+      "PackagePath": "staticwebassets\\UploadedFiles\\148\\business.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Downloads\\GitClone\\University-Magazine-Contribution-System\\COMP1640\\COMP1640\\wwwroot\\UploadedFiles\\149\\Pham Hoang Thai - 001392862 - Individual.docx",
+      "PackagePath": "staticwebassets\\UploadedFiles\\149\\Pham Hoang Thai - 001392862 - Individual.docx"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Downloads\\GitClone\\University-Magazine-Contribution-System\\COMP1640\\COMP1640\\wwwroot\\UploadedFiles\\149\\business.jpg",
+      "PackagePath": "staticwebassets\\UploadedFiles\\149\\business.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Downloads\\GitClone\\University-Magazine-Contribution-System\\COMP1640\\COMP1640\\wwwroot\\UploadedFiles\\14\\AI.png",
+      "PackagePath": "staticwebassets\\UploadedFiles\\14\\AI.png"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Downloads\\GitClone\\University-Magazine-Contribution-System\\COMP1640\\COMP1640\\wwwroot\\UploadedFiles\\14\\file-sample.docx",
+      "PackagePath": "staticwebassets\\UploadedFiles\\14\\file-sample.docx"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Downloads\\GitClone\\University-Magazine-Contribution-System\\COMP1640\\COMP1640\\wwwroot\\UploadedFiles\\150\\Pham Hoang Thai - 001392862 - Individual.docx",
+      "PackagePath": "staticwebassets\\UploadedFiles\\150\\Pham Hoang Thai - 001392862 - Individual.docx"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Downloads\\GitClone\\University-Magazine-Contribution-System\\COMP1640\\COMP1640\\wwwroot\\UploadedFiles\\150\\business.jpg",
+      "PackagePath": "staticwebassets\\UploadedFiles\\150\\business.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Downloads\\GitClone\\University-Magazine-Contribution-System\\COMP1640\\COMP1640\\wwwroot\\UploadedFiles\\151\\Pham Hoang Thai - 001392862 - Individual.docx",
+      "PackagePath": "staticwebassets\\UploadedFiles\\151\\Pham Hoang Thai - 001392862 - Individual.docx"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Downloads\\GitClone\\University-Magazine-Contribution-System\\COMP1640\\COMP1640\\wwwroot\\UploadedFiles\\151\\business.jpg",
+      "PackagePath": "staticwebassets\\UploadedFiles\\151\\business.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Downloads\\GitClone\\University-Magazine-Contribution-System\\COMP1640\\COMP1640\\wwwroot\\UploadedFiles\\152\\Pham Hoang Thai - 001392862 - Individual.docx",
+      "PackagePath": "staticwebassets\\UploadedFiles\\152\\Pham Hoang Thai - 001392862 - Individual.docx"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Downloads\\GitClone\\University-Magazine-Contribution-System\\COMP1640\\COMP1640\\wwwroot\\UploadedFiles\\152\\business.jpg",
+      "PackagePath": "staticwebassets\\UploadedFiles\\152\\business.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Downloads\\GitClone\\University-Magazine-Contribution-System\\COMP1640\\COMP1640\\wwwroot\\UploadedFiles\\153\\Pham Hoang Thai - 001392862 - Individual.docx",
+      "PackagePath": "staticwebassets\\UploadedFiles\\153\\Pham Hoang Thai - 001392862 - Individual.docx"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Downloads\\GitClone\\University-Magazine-Contribution-System\\COMP1640\\COMP1640\\wwwroot\\UploadedFiles\\153\\business.jpg",
+      "PackagePath": "staticwebassets\\UploadedFiles\\153\\business.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Downloads\\GitClone\\University-Magazine-Contribution-System\\COMP1640\\COMP1640\\wwwroot\\UploadedFiles\\154\\Pham Hoang Thai - 001392862 - Individual.docx",
+      "PackagePath": "staticwebassets\\UploadedFiles\\154\\Pham Hoang Thai - 001392862 - Individual.docx"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Downloads\\GitClone\\University-Magazine-Contribution-System\\COMP1640\\COMP1640\\wwwroot\\UploadedFiles\\154\\business.jpg",
+      "PackagePath": "staticwebassets\\UploadedFiles\\154\\business.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Downloads\\GitClone\\University-Magazine-Contribution-System\\COMP1640\\COMP1640\\wwwroot\\UploadedFiles\\155\\Pham Hoang Thai - 001392862 - Individual.docx",
+      "PackagePath": "staticwebassets\\UploadedFiles\\155\\Pham Hoang Thai - 001392862 - Individual.docx"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Downloads\\GitClone\\University-Magazine-Contribution-System\\COMP1640\\COMP1640\\wwwroot\\UploadedFiles\\155\\business.jpg",
+      "PackagePath": "staticwebassets\\UploadedFiles\\155\\business.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Downloads\\GitClone\\University-Magazine-Contribution-System\\COMP1640\\COMP1640\\wwwroot\\UploadedFiles\\156\\Pham Hoang Thai - 001392862 - Individual.docx",
+      "PackagePath": "staticwebassets\\UploadedFiles\\156\\Pham Hoang Thai - 001392862 - Individual.docx"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Downloads\\GitClone\\University-Magazine-Contribution-System\\COMP1640\\COMP1640\\wwwroot\\UploadedFiles\\156\\computing.jpg",
+      "PackagePath": "staticwebassets\\UploadedFiles\\156\\computing.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Downloads\\GitClone\\University-Magazine-Contribution-System\\COMP1640\\COMP1640\\wwwroot\\UploadedFiles\\157\\Pham Hoang Thai - 001392862 - Individual.docx",
+      "PackagePath": "staticwebassets\\UploadedFiles\\157\\Pham Hoang Thai - 001392862 - Individual.docx"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Downloads\\GitClone\\University-Magazine-Contribution-System\\COMP1640\\COMP1640\\wwwroot\\UploadedFiles\\157\\computing.jpg",
+      "PackagePath": "staticwebassets\\UploadedFiles\\157\\computing.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Downloads\\GitClone\\University-Magazine-Contribution-System\\COMP1640\\COMP1640\\wwwroot\\UploadedFiles\\158\\Pham Hoang Thai - 001392862 - Individual.docx",
+      "PackagePath": "staticwebassets\\UploadedFiles\\158\\Pham Hoang Thai - 001392862 - Individual.docx"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Downloads\\GitClone\\University-Magazine-Contribution-System\\COMP1640\\COMP1640\\wwwroot\\UploadedFiles\\158\\computing.jpg",
+      "PackagePath": "staticwebassets\\UploadedFiles\\158\\computing.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Downloads\\GitClone\\University-Magazine-Contribution-System\\COMP1640\\COMP1640\\wwwroot\\UploadedFiles\\159\\Pham Hoang Thai - 001392862 - Individual.docx",
+      "PackagePath": "staticwebassets\\UploadedFiles\\159\\Pham Hoang Thai - 001392862 - Individual.docx"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Downloads\\GitClone\\University-Magazine-Contribution-System\\COMP1640\\COMP1640\\wwwroot\\UploadedFiles\\159\\computing.jpg",
+      "PackagePath": "staticwebassets\\UploadedFiles\\159\\computing.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Downloads\\GitClone\\University-Magazine-Contribution-System\\COMP1640\\COMP1640\\wwwroot\\UploadedFiles\\15\\AI.png",
+      "PackagePath": "staticwebassets\\UploadedFiles\\15\\AI.png"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Downloads\\GitClone\\University-Magazine-Contribution-System\\COMP1640\\COMP1640\\wwwroot\\UploadedFiles\\15\\file-sample.docx",
+      "PackagePath": "staticwebassets\\UploadedFiles\\15\\file-sample.docx"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Downloads\\GitClone\\University-Magazine-Contribution-System\\COMP1640\\COMP1640\\wwwroot\\UploadedFiles\\160\\Pham Hoang Thai - 001392862 - Individual.docx",
+      "PackagePath": "staticwebassets\\UploadedFiles\\160\\Pham Hoang Thai - 001392862 - Individual.docx"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Downloads\\GitClone\\University-Magazine-Contribution-System\\COMP1640\\COMP1640\\wwwroot\\UploadedFiles\\160\\computing.jpg",
+      "PackagePath": "staticwebassets\\UploadedFiles\\160\\computing.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Downloads\\GitClone\\University-Magazine-Contribution-System\\COMP1640\\COMP1640\\wwwroot\\UploadedFiles\\161\\Pham Hoang Thai - 001392862 - Individual.docx",
+      "PackagePath": "staticwebassets\\UploadedFiles\\161\\Pham Hoang Thai - 001392862 - Individual.docx"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Downloads\\GitClone\\University-Magazine-Contribution-System\\COMP1640\\COMP1640\\wwwroot\\UploadedFiles\\161\\computing.jpg",
+      "PackagePath": "staticwebassets\\UploadedFiles\\161\\computing.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Downloads\\GitClone\\University-Magazine-Contribution-System\\COMP1640\\COMP1640\\wwwroot\\UploadedFiles\\162\\Pham Hoang Thai - 001392862 - Individual.docx",
+      "PackagePath": "staticwebassets\\UploadedFiles\\162\\Pham Hoang Thai - 001392862 - Individual.docx"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Downloads\\GitClone\\University-Magazine-Contribution-System\\COMP1640\\COMP1640\\wwwroot\\UploadedFiles\\162\\computing.jpg",
+      "PackagePath": "staticwebassets\\UploadedFiles\\162\\computing.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Downloads\\GitClone\\University-Magazine-Contribution-System\\COMP1640\\COMP1640\\wwwroot\\UploadedFiles\\163\\Pham Hoang Thai - 001392862 - Individual.docx",
+      "PackagePath": "staticwebassets\\UploadedFiles\\163\\Pham Hoang Thai - 001392862 - Individual.docx"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Downloads\\GitClone\\University-Magazine-Contribution-System\\COMP1640\\COMP1640\\wwwroot\\UploadedFiles\\163\\computing.jpg",
+      "PackagePath": "staticwebassets\\UploadedFiles\\163\\computing.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Downloads\\GitClone\\University-Magazine-Contribution-System\\COMP1640\\COMP1640\\wwwroot\\UploadedFiles\\164\\Pham Hoang Thai - 001392862 - Individual.docx",
+      "PackagePath": "staticwebassets\\UploadedFiles\\164\\Pham Hoang Thai - 001392862 - Individual.docx"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Downloads\\GitClone\\University-Magazine-Contribution-System\\COMP1640\\COMP1640\\wwwroot\\UploadedFiles\\164\\computing.jpg",
+      "PackagePath": "staticwebassets\\UploadedFiles\\164\\computing.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Downloads\\GitClone\\University-Magazine-Contribution-System\\COMP1640\\COMP1640\\wwwroot\\UploadedFiles\\165\\Pham Hoang Thai - 001392862 - Individual.docx",
+      "PackagePath": "staticwebassets\\UploadedFiles\\165\\Pham Hoang Thai - 001392862 - Individual.docx"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Downloads\\GitClone\\University-Magazine-Contribution-System\\COMP1640\\COMP1640\\wwwroot\\UploadedFiles\\165\\computing.jpg",
+      "PackagePath": "staticwebassets\\UploadedFiles\\165\\computing.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Downloads\\GitClone\\University-Magazine-Contribution-System\\COMP1640\\COMP1640\\wwwroot\\UploadedFiles\\166\\Pham Hoang Thai - 001392862 - Individual.docx",
+      "PackagePath": "staticwebassets\\UploadedFiles\\166\\Pham Hoang Thai - 001392862 - Individual.docx"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Downloads\\GitClone\\University-Magazine-Contribution-System\\COMP1640\\COMP1640\\wwwroot\\UploadedFiles\\166\\computing.jpg",
+      "PackagePath": "staticwebassets\\UploadedFiles\\166\\computing.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Downloads\\GitClone\\University-Magazine-Contribution-System\\COMP1640\\COMP1640\\wwwroot\\UploadedFiles\\167\\Pham Hoang Thai - 001392862 - Individual.docx",
+      "PackagePath": "staticwebassets\\UploadedFiles\\167\\Pham Hoang Thai - 001392862 - Individual.docx"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Downloads\\GitClone\\University-Magazine-Contribution-System\\COMP1640\\COMP1640\\wwwroot\\UploadedFiles\\167\\computing.jpg",
+      "PackagePath": "staticwebassets\\UploadedFiles\\167\\computing.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Downloads\\GitClone\\University-Magazine-Contribution-System\\COMP1640\\COMP1640\\wwwroot\\UploadedFiles\\168\\Pham Hoang Thai - 001392862 - Individual.docx",
+      "PackagePath": "staticwebassets\\UploadedFiles\\168\\Pham Hoang Thai - 001392862 - Individual.docx"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Downloads\\GitClone\\University-Magazine-Contribution-System\\COMP1640\\COMP1640\\wwwroot\\UploadedFiles\\168\\computing.jpg",
+      "PackagePath": "staticwebassets\\UploadedFiles\\168\\computing.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Downloads\\GitClone\\University-Magazine-Contribution-System\\COMP1640\\COMP1640\\wwwroot\\UploadedFiles\\169\\Pham Hoang Thai - 001392862 - Individual.docx",
+      "PackagePath": "staticwebassets\\UploadedFiles\\169\\Pham Hoang Thai - 001392862 - Individual.docx"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Downloads\\GitClone\\University-Magazine-Contribution-System\\COMP1640\\COMP1640\\wwwroot\\UploadedFiles\\169\\computing.jpg",
+      "PackagePath": "staticwebassets\\UploadedFiles\\169\\computing.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Downloads\\GitClone\\University-Magazine-Contribution-System\\COMP1640\\COMP1640\\wwwroot\\UploadedFiles\\16\\AI.png",
+      "PackagePath": "staticwebassets\\UploadedFiles\\16\\AI.png"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Downloads\\GitClone\\University-Magazine-Contribution-System\\COMP1640\\COMP1640\\wwwroot\\UploadedFiles\\16\\file-sample.docx",
+      "PackagePath": "staticwebassets\\UploadedFiles\\16\\file-sample.docx"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Downloads\\GitClone\\University-Magazine-Contribution-System\\COMP1640\\COMP1640\\wwwroot\\UploadedFiles\\170\\Pham Hoang Thai - 001392862 - Individual.docx",
+      "PackagePath": "staticwebassets\\UploadedFiles\\170\\Pham Hoang Thai - 001392862 - Individual.docx"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Downloads\\GitClone\\University-Magazine-Contribution-System\\COMP1640\\COMP1640\\wwwroot\\UploadedFiles\\170\\computing.jpg",
+      "PackagePath": "staticwebassets\\UploadedFiles\\170\\computing.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Downloads\\GitClone\\University-Magazine-Contribution-System\\COMP1640\\COMP1640\\wwwroot\\UploadedFiles\\171\\Pham Hoang Thai - 001392862 - Individual.docx",
+      "PackagePath": "staticwebassets\\UploadedFiles\\171\\Pham Hoang Thai - 001392862 - Individual.docx"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Downloads\\GitClone\\University-Magazine-Contribution-System\\COMP1640\\COMP1640\\wwwroot\\UploadedFiles\\171\\computing.jpg",
+      "PackagePath": "staticwebassets\\UploadedFiles\\171\\computing.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Downloads\\GitClone\\University-Magazine-Contribution-System\\COMP1640\\COMP1640\\wwwroot\\UploadedFiles\\172\\Pham Hoang Thai - 001392862 - Individual.docx",
+      "PackagePath": "staticwebassets\\UploadedFiles\\172\\Pham Hoang Thai - 001392862 - Individual.docx"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Downloads\\GitClone\\University-Magazine-Contribution-System\\COMP1640\\COMP1640\\wwwroot\\UploadedFiles\\172\\computing.jpg",
+      "PackagePath": "staticwebassets\\UploadedFiles\\172\\computing.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Downloads\\GitClone\\University-Magazine-Contribution-System\\COMP1640\\COMP1640\\wwwroot\\UploadedFiles\\173\\Pham Hoang Thai - 001392862 - Individual.docx",
+      "PackagePath": "staticwebassets\\UploadedFiles\\173\\Pham Hoang Thai - 001392862 - Individual.docx"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Downloads\\GitClone\\University-Magazine-Contribution-System\\COMP1640\\COMP1640\\wwwroot\\UploadedFiles\\173\\computing.jpg",
+      "PackagePath": "staticwebassets\\UploadedFiles\\173\\computing.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Downloads\\GitClone\\University-Magazine-Contribution-System\\COMP1640\\COMP1640\\wwwroot\\UploadedFiles\\174\\Pham Hoang Thai - 001392862 - Individual.docx",
+      "PackagePath": "staticwebassets\\UploadedFiles\\174\\Pham Hoang Thai - 001392862 - Individual.docx"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Downloads\\GitClone\\University-Magazine-Contribution-System\\COMP1640\\COMP1640\\wwwroot\\UploadedFiles\\174\\computing.jpg",
+      "PackagePath": "staticwebassets\\UploadedFiles\\174\\computing.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Downloads\\GitClone\\University-Magazine-Contribution-System\\COMP1640\\COMP1640\\wwwroot\\UploadedFiles\\175\\Pham Hoang Thai - 001392862 - Individual.docx",
+      "PackagePath": "staticwebassets\\UploadedFiles\\175\\Pham Hoang Thai - 001392862 - Individual.docx"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Downloads\\GitClone\\University-Magazine-Contribution-System\\COMP1640\\COMP1640\\wwwroot\\UploadedFiles\\175\\computing.jpg",
+      "PackagePath": "staticwebassets\\UploadedFiles\\175\\computing.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Downloads\\GitClone\\University-Magazine-Contribution-System\\COMP1640\\COMP1640\\wwwroot\\UploadedFiles\\176\\Pham Hoang Thai - 001392862 - Individual.docx",
+      "PackagePath": "staticwebassets\\UploadedFiles\\176\\Pham Hoang Thai - 001392862 - Individual.docx"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Downloads\\GitClone\\University-Magazine-Contribution-System\\COMP1640\\COMP1640\\wwwroot\\UploadedFiles\\176\\computing.jpg",
+      "PackagePath": "staticwebassets\\UploadedFiles\\176\\computing.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Downloads\\GitClone\\University-Magazine-Contribution-System\\COMP1640\\COMP1640\\wwwroot\\UploadedFiles\\177\\Pham Hoang Thai - 001392862 - Individual.docx",
+      "PackagePath": "staticwebassets\\UploadedFiles\\177\\Pham Hoang Thai - 001392862 - Individual.docx"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Downloads\\GitClone\\University-Magazine-Contribution-System\\COMP1640\\COMP1640\\wwwroot\\UploadedFiles\\177\\computing.jpg",
+      "PackagePath": "staticwebassets\\UploadedFiles\\177\\computing.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Downloads\\GitClone\\University-Magazine-Contribution-System\\COMP1640\\COMP1640\\wwwroot\\UploadedFiles\\178\\Pham Hoang Thai - 001392862 - Individual.docx",
+      "PackagePath": "staticwebassets\\UploadedFiles\\178\\Pham Hoang Thai - 001392862 - Individual.docx"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Downloads\\GitClone\\University-Magazine-Contribution-System\\COMP1640\\COMP1640\\wwwroot\\UploadedFiles\\178\\computing.jpg",
+      "PackagePath": "staticwebassets\\UploadedFiles\\178\\computing.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Downloads\\GitClone\\University-Magazine-Contribution-System\\COMP1640\\COMP1640\\wwwroot\\UploadedFiles\\179\\Pham Hoang Thai - 001392862 - Individual.docx",
+      "PackagePath": "staticwebassets\\UploadedFiles\\179\\Pham Hoang Thai - 001392862 - Individual.docx"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Downloads\\GitClone\\University-Magazine-Contribution-System\\COMP1640\\COMP1640\\wwwroot\\UploadedFiles\\179\\computing.jpg",
+      "PackagePath": "staticwebassets\\UploadedFiles\\179\\computing.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Downloads\\GitClone\\University-Magazine-Contribution-System\\COMP1640\\COMP1640\\wwwroot\\UploadedFiles\\17\\AI.png",
+      "PackagePath": "staticwebassets\\UploadedFiles\\17\\AI.png"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Downloads\\GitClone\\University-Magazine-Contribution-System\\COMP1640\\COMP1640\\wwwroot\\UploadedFiles\\17\\file-sample.docx",
+      "PackagePath": "staticwebassets\\UploadedFiles\\17\\file-sample.docx"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Downloads\\GitClone\\University-Magazine-Contribution-System\\COMP1640\\COMP1640\\wwwroot\\UploadedFiles\\180\\Pham Hoang Thai - 001392862 - Individual.docx",
+      "PackagePath": "staticwebassets\\UploadedFiles\\180\\Pham Hoang Thai - 001392862 - Individual.docx"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Downloads\\GitClone\\University-Magazine-Contribution-System\\COMP1640\\COMP1640\\wwwroot\\UploadedFiles\\180\\computing.jpg",
+      "PackagePath": "staticwebassets\\UploadedFiles\\180\\computing.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Downloads\\GitClone\\University-Magazine-Contribution-System\\COMP1640\\COMP1640\\wwwroot\\UploadedFiles\\181\\Graphic-Design.jpg",
+      "PackagePath": "staticwebassets\\UploadedFiles\\181\\Graphic-Design.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Downloads\\GitClone\\University-Magazine-Contribution-System\\COMP1640\\COMP1640\\wwwroot\\UploadedFiles\\181\\Pham Hoang Thai - 001392862 - Individual.docx",
+      "PackagePath": "staticwebassets\\UploadedFiles\\181\\Pham Hoang Thai - 001392862 - Individual.docx"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Downloads\\GitClone\\University-Magazine-Contribution-System\\COMP1640\\COMP1640\\wwwroot\\UploadedFiles\\182\\Graphic-Design.jpg",
+      "PackagePath": "staticwebassets\\UploadedFiles\\182\\Graphic-Design.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Downloads\\GitClone\\University-Magazine-Contribution-System\\COMP1640\\COMP1640\\wwwroot\\UploadedFiles\\182\\Pham Hoang Thai - 001392862 - Individual.docx",
+      "PackagePath": "staticwebassets\\UploadedFiles\\182\\Pham Hoang Thai - 001392862 - Individual.docx"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Downloads\\GitClone\\University-Magazine-Contribution-System\\COMP1640\\COMP1640\\wwwroot\\UploadedFiles\\183\\Graphic-Design.jpg",
+      "PackagePath": "staticwebassets\\UploadedFiles\\183\\Graphic-Design.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Downloads\\GitClone\\University-Magazine-Contribution-System\\COMP1640\\COMP1640\\wwwroot\\UploadedFiles\\183\\Pham Hoang Thai - 001392862 - Individual.docx",
+      "PackagePath": "staticwebassets\\UploadedFiles\\183\\Pham Hoang Thai - 001392862 - Individual.docx"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Downloads\\GitClone\\University-Magazine-Contribution-System\\COMP1640\\COMP1640\\wwwroot\\UploadedFiles\\184\\Graphic-Design.jpg",
+      "PackagePath": "staticwebassets\\UploadedFiles\\184\\Graphic-Design.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Downloads\\GitClone\\University-Magazine-Contribution-System\\COMP1640\\COMP1640\\wwwroot\\UploadedFiles\\184\\Pham Hoang Thai - 001392862 - Individual.docx",
+      "PackagePath": "staticwebassets\\UploadedFiles\\184\\Pham Hoang Thai - 001392862 - Individual.docx"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Downloads\\GitClone\\University-Magazine-Contribution-System\\COMP1640\\COMP1640\\wwwroot\\UploadedFiles\\185\\Graphic-Design.jpg",
+      "PackagePath": "staticwebassets\\UploadedFiles\\185\\Graphic-Design.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Downloads\\GitClone\\University-Magazine-Contribution-System\\COMP1640\\COMP1640\\wwwroot\\UploadedFiles\\185\\Pham Hoang Thai - 001392862 - Individual.docx",
+      "PackagePath": "staticwebassets\\UploadedFiles\\185\\Pham Hoang Thai - 001392862 - Individual.docx"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Downloads\\GitClone\\University-Magazine-Contribution-System\\COMP1640\\COMP1640\\wwwroot\\UploadedFiles\\186\\Graphic-Design.jpg",
+      "PackagePath": "staticwebassets\\UploadedFiles\\186\\Graphic-Design.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Downloads\\GitClone\\University-Magazine-Contribution-System\\COMP1640\\COMP1640\\wwwroot\\UploadedFiles\\186\\Pham Hoang Thai - 001392862 - Individual.docx",
+      "PackagePath": "staticwebassets\\UploadedFiles\\186\\Pham Hoang Thai - 001392862 - Individual.docx"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Downloads\\GitClone\\University-Magazine-Contribution-System\\COMP1640\\COMP1640\\wwwroot\\UploadedFiles\\187\\Graphic-Design.jpg",
+      "PackagePath": "staticwebassets\\UploadedFiles\\187\\Graphic-Design.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Downloads\\GitClone\\University-Magazine-Contribution-System\\COMP1640\\COMP1640\\wwwroot\\UploadedFiles\\187\\Pham Hoang Thai - 001392862 - Individual.docx",
+      "PackagePath": "staticwebassets\\UploadedFiles\\187\\Pham Hoang Thai - 001392862 - Individual.docx"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Downloads\\GitClone\\University-Magazine-Contribution-System\\COMP1640\\COMP1640\\wwwroot\\UploadedFiles\\188\\Graphic-Design.jpg",
+      "PackagePath": "staticwebassets\\UploadedFiles\\188\\Graphic-Design.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Downloads\\GitClone\\University-Magazine-Contribution-System\\COMP1640\\COMP1640\\wwwroot\\UploadedFiles\\188\\Pham Hoang Thai - 001392862 - Individual.docx",
+      "PackagePath": "staticwebassets\\UploadedFiles\\188\\Pham Hoang Thai - 001392862 - Individual.docx"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Downloads\\GitClone\\University-Magazine-Contribution-System\\COMP1640\\COMP1640\\wwwroot\\UploadedFiles\\189\\Graphic-Design.jpg",
+      "PackagePath": "staticwebassets\\UploadedFiles\\189\\Graphic-Design.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Downloads\\GitClone\\University-Magazine-Contribution-System\\COMP1640\\COMP1640\\wwwroot\\UploadedFiles\\189\\Pham Hoang Thai - 001392862 - Individual.docx",
+      "PackagePath": "staticwebassets\\UploadedFiles\\189\\Pham Hoang Thai - 001392862 - Individual.docx"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Downloads\\GitClone\\University-Magazine-Contribution-System\\COMP1640\\COMP1640\\wwwroot\\UploadedFiles\\18\\AI.png",
+      "PackagePath": "staticwebassets\\UploadedFiles\\18\\AI.png"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Downloads\\GitClone\\University-Magazine-Contribution-System\\COMP1640\\COMP1640\\wwwroot\\UploadedFiles\\18\\file-sample.docx",
+      "PackagePath": "staticwebassets\\UploadedFiles\\18\\file-sample.docx"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Downloads\\GitClone\\University-Magazine-Contribution-System\\COMP1640\\COMP1640\\wwwroot\\UploadedFiles\\190\\Graphic-Design.jpg",
+      "PackagePath": "staticwebassets\\UploadedFiles\\190\\Graphic-Design.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Downloads\\GitClone\\University-Magazine-Contribution-System\\COMP1640\\COMP1640\\wwwroot\\UploadedFiles\\190\\Pham Hoang Thai - 001392862 - Individual.docx",
+      "PackagePath": "staticwebassets\\UploadedFiles\\190\\Pham Hoang Thai - 001392862 - Individual.docx"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Downloads\\GitClone\\University-Magazine-Contribution-System\\COMP1640\\COMP1640\\wwwroot\\UploadedFiles\\191\\Graphic-Design.jpg",
+      "PackagePath": "staticwebassets\\UploadedFiles\\191\\Graphic-Design.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Downloads\\GitClone\\University-Magazine-Contribution-System\\COMP1640\\COMP1640\\wwwroot\\UploadedFiles\\191\\Pham Hoang Thai - 001392862 - Individual.docx",
+      "PackagePath": "staticwebassets\\UploadedFiles\\191\\Pham Hoang Thai - 001392862 - Individual.docx"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Downloads\\GitClone\\University-Magazine-Contribution-System\\COMP1640\\COMP1640\\wwwroot\\UploadedFiles\\192\\Graphic-Design.jpg",
+      "PackagePath": "staticwebassets\\UploadedFiles\\192\\Graphic-Design.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Downloads\\GitClone\\University-Magazine-Contribution-System\\COMP1640\\COMP1640\\wwwroot\\UploadedFiles\\192\\Pham Hoang Thai - 001392862 - Individual.docx",
+      "PackagePath": "staticwebassets\\UploadedFiles\\192\\Pham Hoang Thai - 001392862 - Individual.docx"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Downloads\\GitClone\\University-Magazine-Contribution-System\\COMP1640\\COMP1640\\wwwroot\\UploadedFiles\\193\\Graphic-Design.jpg",
+      "PackagePath": "staticwebassets\\UploadedFiles\\193\\Graphic-Design.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Downloads\\GitClone\\University-Magazine-Contribution-System\\COMP1640\\COMP1640\\wwwroot\\UploadedFiles\\193\\Pham Hoang Thai - 001392862 - Individual.docx",
+      "PackagePath": "staticwebassets\\UploadedFiles\\193\\Pham Hoang Thai - 001392862 - Individual.docx"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Downloads\\GitClone\\University-Magazine-Contribution-System\\COMP1640\\COMP1640\\wwwroot\\UploadedFiles\\194\\Graphic-Design.jpg",
+      "PackagePath": "staticwebassets\\UploadedFiles\\194\\Graphic-Design.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Downloads\\GitClone\\University-Magazine-Contribution-System\\COMP1640\\COMP1640\\wwwroot\\UploadedFiles\\194\\Pham Hoang Thai - 001392862 - Individual.docx",
+      "PackagePath": "staticwebassets\\UploadedFiles\\194\\Pham Hoang Thai - 001392862 - Individual.docx"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Downloads\\GitClone\\University-Magazine-Contribution-System\\COMP1640\\COMP1640\\wwwroot\\UploadedFiles\\195\\Graphic-Design.jpg",
+      "PackagePath": "staticwebassets\\UploadedFiles\\195\\Graphic-Design.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Downloads\\GitClone\\University-Magazine-Contribution-System\\COMP1640\\COMP1640\\wwwroot\\UploadedFiles\\195\\Pham Hoang Thai - 001392862 - Individual.docx",
+      "PackagePath": "staticwebassets\\UploadedFiles\\195\\Pham Hoang Thai - 001392862 - Individual.docx"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Downloads\\GitClone\\University-Magazine-Contribution-System\\COMP1640\\COMP1640\\wwwroot\\UploadedFiles\\196\\Graphic-Design.jpg",
+      "PackagePath": "staticwebassets\\UploadedFiles\\196\\Graphic-Design.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Downloads\\GitClone\\University-Magazine-Contribution-System\\COMP1640\\COMP1640\\wwwroot\\UploadedFiles\\196\\Pham Hoang Thai - 001392862 - Individual.docx",
+      "PackagePath": "staticwebassets\\UploadedFiles\\196\\Pham Hoang Thai - 001392862 - Individual.docx"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Downloads\\GitClone\\University-Magazine-Contribution-System\\COMP1640\\COMP1640\\wwwroot\\UploadedFiles\\197\\Graphic-Design.jpg",
+      "PackagePath": "staticwebassets\\UploadedFiles\\197\\Graphic-Design.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Downloads\\GitClone\\University-Magazine-Contribution-System\\COMP1640\\COMP1640\\wwwroot\\UploadedFiles\\197\\Pham Hoang Thai - 001392862 - Individual.docx",
+      "PackagePath": "staticwebassets\\UploadedFiles\\197\\Pham Hoang Thai - 001392862 - Individual.docx"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Downloads\\GitClone\\University-Magazine-Contribution-System\\COMP1640\\COMP1640\\wwwroot\\UploadedFiles\\198\\Graphic-Design.jpg",
+      "PackagePath": "staticwebassets\\UploadedFiles\\198\\Graphic-Design.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Downloads\\GitClone\\University-Magazine-Contribution-System\\COMP1640\\COMP1640\\wwwroot\\UploadedFiles\\198\\Pham Hoang Thai - 001392862 - Individual.docx",
+      "PackagePath": "staticwebassets\\UploadedFiles\\198\\Pham Hoang Thai - 001392862 - Individual.docx"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Downloads\\GitClone\\University-Magazine-Contribution-System\\COMP1640\\COMP1640\\wwwroot\\UploadedFiles\\199\\Graphic-Design.jpg",
+      "PackagePath": "staticwebassets\\UploadedFiles\\199\\Graphic-Design.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Downloads\\GitClone\\University-Magazine-Contribution-System\\COMP1640\\COMP1640\\wwwroot\\UploadedFiles\\199\\Pham Hoang Thai - 001392862 - Individual.docx",
+      "PackagePath": "staticwebassets\\UploadedFiles\\199\\Pham Hoang Thai - 001392862 - Individual.docx"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Downloads\\GitClone\\University-Magazine-Contribution-System\\COMP1640\\COMP1640\\wwwroot\\UploadedFiles\\19\\AI.png",
+      "PackagePath": "staticwebassets\\UploadedFiles\\19\\AI.png"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Downloads\\GitClone\\University-Magazine-Contribution-System\\COMP1640\\COMP1640\\wwwroot\\UploadedFiles\\19\\file-sample.docx",
+      "PackagePath": "staticwebassets\\UploadedFiles\\19\\file-sample.docx"
     },
     {
       "Id": "C:\\Users\\Admin\\Downloads\\GitClone\\University-Magazine-Contribution-System\\COMP1640\\COMP1640\\wwwroot\\UploadedFiles\\1\\AI.png",
@@ -25,6 +929,534 @@
       "PackagePath": "staticwebassets\\UploadedFiles\\1\\file-sample.docx"
     },
     {
+      "Id": "C:\\Users\\Admin\\Downloads\\GitClone\\University-Magazine-Contribution-System\\COMP1640\\COMP1640\\wwwroot\\UploadedFiles\\200\\Graphic-Design.jpg",
+      "PackagePath": "staticwebassets\\UploadedFiles\\200\\Graphic-Design.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Downloads\\GitClone\\University-Magazine-Contribution-System\\COMP1640\\COMP1640\\wwwroot\\UploadedFiles\\200\\Pham Hoang Thai - 001392862 - Individual.docx",
+      "PackagePath": "staticwebassets\\UploadedFiles\\200\\Pham Hoang Thai - 001392862 - Individual.docx"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Downloads\\GitClone\\University-Magazine-Contribution-System\\COMP1640\\COMP1640\\wwwroot\\UploadedFiles\\201\\Graphic-Design.jpg",
+      "PackagePath": "staticwebassets\\UploadedFiles\\201\\Graphic-Design.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Downloads\\GitClone\\University-Magazine-Contribution-System\\COMP1640\\COMP1640\\wwwroot\\UploadedFiles\\201\\Pham Hoang Thai - 001392862 - Individual.docx",
+      "PackagePath": "staticwebassets\\UploadedFiles\\201\\Pham Hoang Thai - 001392862 - Individual.docx"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Downloads\\GitClone\\University-Magazine-Contribution-System\\COMP1640\\COMP1640\\wwwroot\\UploadedFiles\\202\\Graphic-Design.jpg",
+      "PackagePath": "staticwebassets\\UploadedFiles\\202\\Graphic-Design.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Downloads\\GitClone\\University-Magazine-Contribution-System\\COMP1640\\COMP1640\\wwwroot\\UploadedFiles\\202\\Pham Hoang Thai - 001392862 - Individual.docx",
+      "PackagePath": "staticwebassets\\UploadedFiles\\202\\Pham Hoang Thai - 001392862 - Individual.docx"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Downloads\\GitClone\\University-Magazine-Contribution-System\\COMP1640\\COMP1640\\wwwroot\\UploadedFiles\\203\\Graphic-Design.jpg",
+      "PackagePath": "staticwebassets\\UploadedFiles\\203\\Graphic-Design.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Downloads\\GitClone\\University-Magazine-Contribution-System\\COMP1640\\COMP1640\\wwwroot\\UploadedFiles\\203\\Pham Hoang Thai - 001392862 - Individual.docx",
+      "PackagePath": "staticwebassets\\UploadedFiles\\203\\Pham Hoang Thai - 001392862 - Individual.docx"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Downloads\\GitClone\\University-Magazine-Contribution-System\\COMP1640\\COMP1640\\wwwroot\\UploadedFiles\\204\\Graphic-Design.jpg",
+      "PackagePath": "staticwebassets\\UploadedFiles\\204\\Graphic-Design.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Downloads\\GitClone\\University-Magazine-Contribution-System\\COMP1640\\COMP1640\\wwwroot\\UploadedFiles\\204\\Pham Hoang Thai - 001392862 - Individual.docx",
+      "PackagePath": "staticwebassets\\UploadedFiles\\204\\Pham Hoang Thai - 001392862 - Individual.docx"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Downloads\\GitClone\\University-Magazine-Contribution-System\\COMP1640\\COMP1640\\wwwroot\\UploadedFiles\\205\\Graphic-Design.jpg",
+      "PackagePath": "staticwebassets\\UploadedFiles\\205\\Graphic-Design.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Downloads\\GitClone\\University-Magazine-Contribution-System\\COMP1640\\COMP1640\\wwwroot\\UploadedFiles\\205\\Pham Hoang Thai - 001392862 - Individual.docx",
+      "PackagePath": "staticwebassets\\UploadedFiles\\205\\Pham Hoang Thai - 001392862 - Individual.docx"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Downloads\\GitClone\\University-Magazine-Contribution-System\\COMP1640\\COMP1640\\wwwroot\\UploadedFiles\\206\\Pham Hoang Thai - 001392862 - Individual.docx",
+      "PackagePath": "staticwebassets\\UploadedFiles\\206\\Pham Hoang Thai - 001392862 - Individual.docx"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Downloads\\GitClone\\University-Magazine-Contribution-System\\COMP1640\\COMP1640\\wwwroot\\UploadedFiles\\206\\scocial.jpg",
+      "PackagePath": "staticwebassets\\UploadedFiles\\206\\scocial.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Downloads\\GitClone\\University-Magazine-Contribution-System\\COMP1640\\COMP1640\\wwwroot\\UploadedFiles\\207\\Pham Hoang Thai - 001392862 - Individual.docx",
+      "PackagePath": "staticwebassets\\UploadedFiles\\207\\Pham Hoang Thai - 001392862 - Individual.docx"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Downloads\\GitClone\\University-Magazine-Contribution-System\\COMP1640\\COMP1640\\wwwroot\\UploadedFiles\\207\\scocial.jpg",
+      "PackagePath": "staticwebassets\\UploadedFiles\\207\\scocial.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Downloads\\GitClone\\University-Magazine-Contribution-System\\COMP1640\\COMP1640\\wwwroot\\UploadedFiles\\208\\Pham Hoang Thai - 001392862 - Individual.docx",
+      "PackagePath": "staticwebassets\\UploadedFiles\\208\\Pham Hoang Thai - 001392862 - Individual.docx"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Downloads\\GitClone\\University-Magazine-Contribution-System\\COMP1640\\COMP1640\\wwwroot\\UploadedFiles\\208\\scocial.jpg",
+      "PackagePath": "staticwebassets\\UploadedFiles\\208\\scocial.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Downloads\\GitClone\\University-Magazine-Contribution-System\\COMP1640\\COMP1640\\wwwroot\\UploadedFiles\\209\\Pham Hoang Thai - 001392862 - Individual.docx",
+      "PackagePath": "staticwebassets\\UploadedFiles\\209\\Pham Hoang Thai - 001392862 - Individual.docx"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Downloads\\GitClone\\University-Magazine-Contribution-System\\COMP1640\\COMP1640\\wwwroot\\UploadedFiles\\209\\scocial.jpg",
+      "PackagePath": "staticwebassets\\UploadedFiles\\209\\scocial.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Downloads\\GitClone\\University-Magazine-Contribution-System\\COMP1640\\COMP1640\\wwwroot\\UploadedFiles\\20\\AI.png",
+      "PackagePath": "staticwebassets\\UploadedFiles\\20\\AI.png"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Downloads\\GitClone\\University-Magazine-Contribution-System\\COMP1640\\COMP1640\\wwwroot\\UploadedFiles\\20\\file-sample.docx",
+      "PackagePath": "staticwebassets\\UploadedFiles\\20\\file-sample.docx"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Downloads\\GitClone\\University-Magazine-Contribution-System\\COMP1640\\COMP1640\\wwwroot\\UploadedFiles\\210\\Pham Hoang Thai - 001392862 - Individual.docx",
+      "PackagePath": "staticwebassets\\UploadedFiles\\210\\Pham Hoang Thai - 001392862 - Individual.docx"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Downloads\\GitClone\\University-Magazine-Contribution-System\\COMP1640\\COMP1640\\wwwroot\\UploadedFiles\\210\\scocial.jpg",
+      "PackagePath": "staticwebassets\\UploadedFiles\\210\\scocial.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Downloads\\GitClone\\University-Magazine-Contribution-System\\COMP1640\\COMP1640\\wwwroot\\UploadedFiles\\211\\Pham Hoang Thai - 001392862 - Individual.docx",
+      "PackagePath": "staticwebassets\\UploadedFiles\\211\\Pham Hoang Thai - 001392862 - Individual.docx"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Downloads\\GitClone\\University-Magazine-Contribution-System\\COMP1640\\COMP1640\\wwwroot\\UploadedFiles\\211\\scocial.jpg",
+      "PackagePath": "staticwebassets\\UploadedFiles\\211\\scocial.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Downloads\\GitClone\\University-Magazine-Contribution-System\\COMP1640\\COMP1640\\wwwroot\\UploadedFiles\\212\\Pham Hoang Thai - 001392862 - Individual.docx",
+      "PackagePath": "staticwebassets\\UploadedFiles\\212\\Pham Hoang Thai - 001392862 - Individual.docx"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Downloads\\GitClone\\University-Magazine-Contribution-System\\COMP1640\\COMP1640\\wwwroot\\UploadedFiles\\212\\scocial.jpg",
+      "PackagePath": "staticwebassets\\UploadedFiles\\212\\scocial.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Downloads\\GitClone\\University-Magazine-Contribution-System\\COMP1640\\COMP1640\\wwwroot\\UploadedFiles\\213\\Pham Hoang Thai - 001392862 - Individual.docx",
+      "PackagePath": "staticwebassets\\UploadedFiles\\213\\Pham Hoang Thai - 001392862 - Individual.docx"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Downloads\\GitClone\\University-Magazine-Contribution-System\\COMP1640\\COMP1640\\wwwroot\\UploadedFiles\\213\\scocial.jpg",
+      "PackagePath": "staticwebassets\\UploadedFiles\\213\\scocial.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Downloads\\GitClone\\University-Magazine-Contribution-System\\COMP1640\\COMP1640\\wwwroot\\UploadedFiles\\214\\Pham Hoang Thai - 001392862 - Individual.docx",
+      "PackagePath": "staticwebassets\\UploadedFiles\\214\\Pham Hoang Thai - 001392862 - Individual.docx"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Downloads\\GitClone\\University-Magazine-Contribution-System\\COMP1640\\COMP1640\\wwwroot\\UploadedFiles\\214\\scocial.jpg",
+      "PackagePath": "staticwebassets\\UploadedFiles\\214\\scocial.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Downloads\\GitClone\\University-Magazine-Contribution-System\\COMP1640\\COMP1640\\wwwroot\\UploadedFiles\\215\\Pham Hoang Thai - 001392862 - Individual.docx",
+      "PackagePath": "staticwebassets\\UploadedFiles\\215\\Pham Hoang Thai - 001392862 - Individual.docx"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Downloads\\GitClone\\University-Magazine-Contribution-System\\COMP1640\\COMP1640\\wwwroot\\UploadedFiles\\215\\scocial.jpg",
+      "PackagePath": "staticwebassets\\UploadedFiles\\215\\scocial.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Downloads\\GitClone\\University-Magazine-Contribution-System\\COMP1640\\COMP1640\\wwwroot\\UploadedFiles\\216\\Pham Hoang Thai - 001392862 - Individual.docx",
+      "PackagePath": "staticwebassets\\UploadedFiles\\216\\Pham Hoang Thai - 001392862 - Individual.docx"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Downloads\\GitClone\\University-Magazine-Contribution-System\\COMP1640\\COMP1640\\wwwroot\\UploadedFiles\\216\\scocial.jpg",
+      "PackagePath": "staticwebassets\\UploadedFiles\\216\\scocial.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Downloads\\GitClone\\University-Magazine-Contribution-System\\COMP1640\\COMP1640\\wwwroot\\UploadedFiles\\217\\Pham Hoang Thai - 001392862 - Individual.docx",
+      "PackagePath": "staticwebassets\\UploadedFiles\\217\\Pham Hoang Thai - 001392862 - Individual.docx"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Downloads\\GitClone\\University-Magazine-Contribution-System\\COMP1640\\COMP1640\\wwwroot\\UploadedFiles\\217\\scocial.jpg",
+      "PackagePath": "staticwebassets\\UploadedFiles\\217\\scocial.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Downloads\\GitClone\\University-Magazine-Contribution-System\\COMP1640\\COMP1640\\wwwroot\\UploadedFiles\\218\\Pham Hoang Thai - 001392862 - Individual.docx",
+      "PackagePath": "staticwebassets\\UploadedFiles\\218\\Pham Hoang Thai - 001392862 - Individual.docx"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Downloads\\GitClone\\University-Magazine-Contribution-System\\COMP1640\\COMP1640\\wwwroot\\UploadedFiles\\218\\scocial.jpg",
+      "PackagePath": "staticwebassets\\UploadedFiles\\218\\scocial.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Downloads\\GitClone\\University-Magazine-Contribution-System\\COMP1640\\COMP1640\\wwwroot\\UploadedFiles\\219\\Pham Hoang Thai - 001392862 - Individual.docx",
+      "PackagePath": "staticwebassets\\UploadedFiles\\219\\Pham Hoang Thai - 001392862 - Individual.docx"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Downloads\\GitClone\\University-Magazine-Contribution-System\\COMP1640\\COMP1640\\wwwroot\\UploadedFiles\\219\\scocial.jpg",
+      "PackagePath": "staticwebassets\\UploadedFiles\\219\\scocial.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Downloads\\GitClone\\University-Magazine-Contribution-System\\COMP1640\\COMP1640\\wwwroot\\UploadedFiles\\21\\AI.png",
+      "PackagePath": "staticwebassets\\UploadedFiles\\21\\AI.png"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Downloads\\GitClone\\University-Magazine-Contribution-System\\COMP1640\\COMP1640\\wwwroot\\UploadedFiles\\21\\file-sample.docx",
+      "PackagePath": "staticwebassets\\UploadedFiles\\21\\file-sample.docx"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Downloads\\GitClone\\University-Magazine-Contribution-System\\COMP1640\\COMP1640\\wwwroot\\UploadedFiles\\220\\Pham Hoang Thai - 001392862 - Individual.docx",
+      "PackagePath": "staticwebassets\\UploadedFiles\\220\\Pham Hoang Thai - 001392862 - Individual.docx"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Downloads\\GitClone\\University-Magazine-Contribution-System\\COMP1640\\COMP1640\\wwwroot\\UploadedFiles\\220\\scocial.jpg",
+      "PackagePath": "staticwebassets\\UploadedFiles\\220\\scocial.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Downloads\\GitClone\\University-Magazine-Contribution-System\\COMP1640\\COMP1640\\wwwroot\\UploadedFiles\\221\\Pham Hoang Thai - 001392862 - Individual.docx",
+      "PackagePath": "staticwebassets\\UploadedFiles\\221\\Pham Hoang Thai - 001392862 - Individual.docx"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Downloads\\GitClone\\University-Magazine-Contribution-System\\COMP1640\\COMP1640\\wwwroot\\UploadedFiles\\221\\scocial.jpg",
+      "PackagePath": "staticwebassets\\UploadedFiles\\221\\scocial.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Downloads\\GitClone\\University-Magazine-Contribution-System\\COMP1640\\COMP1640\\wwwroot\\UploadedFiles\\222\\Pham Hoang Thai - 001392862 - Individual.docx",
+      "PackagePath": "staticwebassets\\UploadedFiles\\222\\Pham Hoang Thai - 001392862 - Individual.docx"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Downloads\\GitClone\\University-Magazine-Contribution-System\\COMP1640\\COMP1640\\wwwroot\\UploadedFiles\\222\\scocial.jpg",
+      "PackagePath": "staticwebassets\\UploadedFiles\\222\\scocial.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Downloads\\GitClone\\University-Magazine-Contribution-System\\COMP1640\\COMP1640\\wwwroot\\UploadedFiles\\223\\Pham Hoang Thai - 001392862 - Individual.docx",
+      "PackagePath": "staticwebassets\\UploadedFiles\\223\\Pham Hoang Thai - 001392862 - Individual.docx"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Downloads\\GitClone\\University-Magazine-Contribution-System\\COMP1640\\COMP1640\\wwwroot\\UploadedFiles\\223\\scocial.jpg",
+      "PackagePath": "staticwebassets\\UploadedFiles\\223\\scocial.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Downloads\\GitClone\\University-Magazine-Contribution-System\\COMP1640\\COMP1640\\wwwroot\\UploadedFiles\\224\\Pham Hoang Thai - 001392862 - Individual.docx",
+      "PackagePath": "staticwebassets\\UploadedFiles\\224\\Pham Hoang Thai - 001392862 - Individual.docx"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Downloads\\GitClone\\University-Magazine-Contribution-System\\COMP1640\\COMP1640\\wwwroot\\UploadedFiles\\224\\scocial.jpg",
+      "PackagePath": "staticwebassets\\UploadedFiles\\224\\scocial.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Downloads\\GitClone\\University-Magazine-Contribution-System\\COMP1640\\COMP1640\\wwwroot\\UploadedFiles\\225\\Pham Hoang Thai - 001392862 - Individual.docx",
+      "PackagePath": "staticwebassets\\UploadedFiles\\225\\Pham Hoang Thai - 001392862 - Individual.docx"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Downloads\\GitClone\\University-Magazine-Contribution-System\\COMP1640\\COMP1640\\wwwroot\\UploadedFiles\\225\\scocial.jpg",
+      "PackagePath": "staticwebassets\\UploadedFiles\\225\\scocial.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Downloads\\GitClone\\University-Magazine-Contribution-System\\COMP1640\\COMP1640\\wwwroot\\UploadedFiles\\226\\Pham Hoang Thai - 001392862 - Individual.docx",
+      "PackagePath": "staticwebassets\\UploadedFiles\\226\\Pham Hoang Thai - 001392862 - Individual.docx"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Downloads\\GitClone\\University-Magazine-Contribution-System\\COMP1640\\COMP1640\\wwwroot\\UploadedFiles\\226\\scocial.jpg",
+      "PackagePath": "staticwebassets\\UploadedFiles\\226\\scocial.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Downloads\\GitClone\\University-Magazine-Contribution-System\\COMP1640\\COMP1640\\wwwroot\\UploadedFiles\\227\\Pham Hoang Thai - 001392862 - Individual.docx",
+      "PackagePath": "staticwebassets\\UploadedFiles\\227\\Pham Hoang Thai - 001392862 - Individual.docx"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Downloads\\GitClone\\University-Magazine-Contribution-System\\COMP1640\\COMP1640\\wwwroot\\UploadedFiles\\227\\scocial.jpg",
+      "PackagePath": "staticwebassets\\UploadedFiles\\227\\scocial.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Downloads\\GitClone\\University-Magazine-Contribution-System\\COMP1640\\COMP1640\\wwwroot\\UploadedFiles\\228\\Pham Hoang Thai - 001392862 - Individual.docx",
+      "PackagePath": "staticwebassets\\UploadedFiles\\228\\Pham Hoang Thai - 001392862 - Individual.docx"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Downloads\\GitClone\\University-Magazine-Contribution-System\\COMP1640\\COMP1640\\wwwroot\\UploadedFiles\\228\\scocial.jpg",
+      "PackagePath": "staticwebassets\\UploadedFiles\\228\\scocial.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Downloads\\GitClone\\University-Magazine-Contribution-System\\COMP1640\\COMP1640\\wwwroot\\UploadedFiles\\229\\Pham Hoang Thai - 001392862 - Individual.docx",
+      "PackagePath": "staticwebassets\\UploadedFiles\\229\\Pham Hoang Thai - 001392862 - Individual.docx"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Downloads\\GitClone\\University-Magazine-Contribution-System\\COMP1640\\COMP1640\\wwwroot\\UploadedFiles\\229\\scocial.jpg",
+      "PackagePath": "staticwebassets\\UploadedFiles\\229\\scocial.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Downloads\\GitClone\\University-Magazine-Contribution-System\\COMP1640\\COMP1640\\wwwroot\\UploadedFiles\\22\\AI.png",
+      "PackagePath": "staticwebassets\\UploadedFiles\\22\\AI.png"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Downloads\\GitClone\\University-Magazine-Contribution-System\\COMP1640\\COMP1640\\wwwroot\\UploadedFiles\\22\\file-sample.docx",
+      "PackagePath": "staticwebassets\\UploadedFiles\\22\\file-sample.docx"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Downloads\\GitClone\\University-Magazine-Contribution-System\\COMP1640\\COMP1640\\wwwroot\\UploadedFiles\\230\\Pham Hoang Thai - 001392862 - Individual.docx",
+      "PackagePath": "staticwebassets\\UploadedFiles\\230\\Pham Hoang Thai - 001392862 - Individual.docx"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Downloads\\GitClone\\University-Magazine-Contribution-System\\COMP1640\\COMP1640\\wwwroot\\UploadedFiles\\230\\scocial.jpg",
+      "PackagePath": "staticwebassets\\UploadedFiles\\230\\scocial.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Downloads\\GitClone\\University-Magazine-Contribution-System\\COMP1640\\COMP1640\\wwwroot\\UploadedFiles\\231\\Pham Hoang Thai - 001392862 - Individual.docx",
+      "PackagePath": "staticwebassets\\UploadedFiles\\231\\Pham Hoang Thai - 001392862 - Individual.docx"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Downloads\\GitClone\\University-Magazine-Contribution-System\\COMP1640\\COMP1640\\wwwroot\\UploadedFiles\\231\\architechture.jpg",
+      "PackagePath": "staticwebassets\\UploadedFiles\\231\\architechture.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Downloads\\GitClone\\University-Magazine-Contribution-System\\COMP1640\\COMP1640\\wwwroot\\UploadedFiles\\232\\Pham Hoang Thai - 001392862 - Individual.docx",
+      "PackagePath": "staticwebassets\\UploadedFiles\\232\\Pham Hoang Thai - 001392862 - Individual.docx"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Downloads\\GitClone\\University-Magazine-Contribution-System\\COMP1640\\COMP1640\\wwwroot\\UploadedFiles\\232\\architechture.jpg",
+      "PackagePath": "staticwebassets\\UploadedFiles\\232\\architechture.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Downloads\\GitClone\\University-Magazine-Contribution-System\\COMP1640\\COMP1640\\wwwroot\\UploadedFiles\\233\\Pham Hoang Thai - 001392862 - Individual.docx",
+      "PackagePath": "staticwebassets\\UploadedFiles\\233\\Pham Hoang Thai - 001392862 - Individual.docx"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Downloads\\GitClone\\University-Magazine-Contribution-System\\COMP1640\\COMP1640\\wwwroot\\UploadedFiles\\233\\architechture.jpg",
+      "PackagePath": "staticwebassets\\UploadedFiles\\233\\architechture.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Downloads\\GitClone\\University-Magazine-Contribution-System\\COMP1640\\COMP1640\\wwwroot\\UploadedFiles\\234\\Pham Hoang Thai - 001392862 - Individual.docx",
+      "PackagePath": "staticwebassets\\UploadedFiles\\234\\Pham Hoang Thai - 001392862 - Individual.docx"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Downloads\\GitClone\\University-Magazine-Contribution-System\\COMP1640\\COMP1640\\wwwroot\\UploadedFiles\\234\\architechture.jpg",
+      "PackagePath": "staticwebassets\\UploadedFiles\\234\\architechture.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Downloads\\GitClone\\University-Magazine-Contribution-System\\COMP1640\\COMP1640\\wwwroot\\UploadedFiles\\235\\Pham Hoang Thai - 001392862 - Individual.docx",
+      "PackagePath": "staticwebassets\\UploadedFiles\\235\\Pham Hoang Thai - 001392862 - Individual.docx"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Downloads\\GitClone\\University-Magazine-Contribution-System\\COMP1640\\COMP1640\\wwwroot\\UploadedFiles\\235\\architechture.jpg",
+      "PackagePath": "staticwebassets\\UploadedFiles\\235\\architechture.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Downloads\\GitClone\\University-Magazine-Contribution-System\\COMP1640\\COMP1640\\wwwroot\\UploadedFiles\\236\\Pham Hoang Thai - 001392862 - Individual.docx",
+      "PackagePath": "staticwebassets\\UploadedFiles\\236\\Pham Hoang Thai - 001392862 - Individual.docx"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Downloads\\GitClone\\University-Magazine-Contribution-System\\COMP1640\\COMP1640\\wwwroot\\UploadedFiles\\236\\architechture.jpg",
+      "PackagePath": "staticwebassets\\UploadedFiles\\236\\architechture.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Downloads\\GitClone\\University-Magazine-Contribution-System\\COMP1640\\COMP1640\\wwwroot\\UploadedFiles\\237\\Pham Hoang Thai - 001392862 - Individual.docx",
+      "PackagePath": "staticwebassets\\UploadedFiles\\237\\Pham Hoang Thai - 001392862 - Individual.docx"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Downloads\\GitClone\\University-Magazine-Contribution-System\\COMP1640\\COMP1640\\wwwroot\\UploadedFiles\\237\\architechture.jpg",
+      "PackagePath": "staticwebassets\\UploadedFiles\\237\\architechture.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Downloads\\GitClone\\University-Magazine-Contribution-System\\COMP1640\\COMP1640\\wwwroot\\UploadedFiles\\238\\Pham Hoang Thai - 001392862 - Individual.docx",
+      "PackagePath": "staticwebassets\\UploadedFiles\\238\\Pham Hoang Thai - 001392862 - Individual.docx"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Downloads\\GitClone\\University-Magazine-Contribution-System\\COMP1640\\COMP1640\\wwwroot\\UploadedFiles\\238\\architechture.jpg",
+      "PackagePath": "staticwebassets\\UploadedFiles\\238\\architechture.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Downloads\\GitClone\\University-Magazine-Contribution-System\\COMP1640\\COMP1640\\wwwroot\\UploadedFiles\\239\\Pham Hoang Thai - 001392862 - Individual.docx",
+      "PackagePath": "staticwebassets\\UploadedFiles\\239\\Pham Hoang Thai - 001392862 - Individual.docx"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Downloads\\GitClone\\University-Magazine-Contribution-System\\COMP1640\\COMP1640\\wwwroot\\UploadedFiles\\239\\architechture.jpg",
+      "PackagePath": "staticwebassets\\UploadedFiles\\239\\architechture.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Downloads\\GitClone\\University-Magazine-Contribution-System\\COMP1640\\COMP1640\\wwwroot\\UploadedFiles\\23\\AI.png",
+      "PackagePath": "staticwebassets\\UploadedFiles\\23\\AI.png"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Downloads\\GitClone\\University-Magazine-Contribution-System\\COMP1640\\COMP1640\\wwwroot\\UploadedFiles\\23\\file-sample.docx",
+      "PackagePath": "staticwebassets\\UploadedFiles\\23\\file-sample.docx"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Downloads\\GitClone\\University-Magazine-Contribution-System\\COMP1640\\COMP1640\\wwwroot\\UploadedFiles\\240\\Pham Hoang Thai - 001392862 - Individual.docx",
+      "PackagePath": "staticwebassets\\UploadedFiles\\240\\Pham Hoang Thai - 001392862 - Individual.docx"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Downloads\\GitClone\\University-Magazine-Contribution-System\\COMP1640\\COMP1640\\wwwroot\\UploadedFiles\\240\\architechture.jpg",
+      "PackagePath": "staticwebassets\\UploadedFiles\\240\\architechture.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Downloads\\GitClone\\University-Magazine-Contribution-System\\COMP1640\\COMP1640\\wwwroot\\UploadedFiles\\241\\Pham Hoang Thai - 001392862 - Individual.docx",
+      "PackagePath": "staticwebassets\\UploadedFiles\\241\\Pham Hoang Thai - 001392862 - Individual.docx"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Downloads\\GitClone\\University-Magazine-Contribution-System\\COMP1640\\COMP1640\\wwwroot\\UploadedFiles\\241\\architechture.jpg",
+      "PackagePath": "staticwebassets\\UploadedFiles\\241\\architechture.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Downloads\\GitClone\\University-Magazine-Contribution-System\\COMP1640\\COMP1640\\wwwroot\\UploadedFiles\\242\\Pham Hoang Thai - 001392862 - Individual.docx",
+      "PackagePath": "staticwebassets\\UploadedFiles\\242\\Pham Hoang Thai - 001392862 - Individual.docx"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Downloads\\GitClone\\University-Magazine-Contribution-System\\COMP1640\\COMP1640\\wwwroot\\UploadedFiles\\242\\architechture.jpg",
+      "PackagePath": "staticwebassets\\UploadedFiles\\242\\architechture.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Downloads\\GitClone\\University-Magazine-Contribution-System\\COMP1640\\COMP1640\\wwwroot\\UploadedFiles\\243\\Pham Hoang Thai - 001392862 - Individual.docx",
+      "PackagePath": "staticwebassets\\UploadedFiles\\243\\Pham Hoang Thai - 001392862 - Individual.docx"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Downloads\\GitClone\\University-Magazine-Contribution-System\\COMP1640\\COMP1640\\wwwroot\\UploadedFiles\\243\\architechture.jpg",
+      "PackagePath": "staticwebassets\\UploadedFiles\\243\\architechture.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Downloads\\GitClone\\University-Magazine-Contribution-System\\COMP1640\\COMP1640\\wwwroot\\UploadedFiles\\244\\Pham Hoang Thai - 001392862 - Individual.docx",
+      "PackagePath": "staticwebassets\\UploadedFiles\\244\\Pham Hoang Thai - 001392862 - Individual.docx"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Downloads\\GitClone\\University-Magazine-Contribution-System\\COMP1640\\COMP1640\\wwwroot\\UploadedFiles\\244\\architechture.jpg",
+      "PackagePath": "staticwebassets\\UploadedFiles\\244\\architechture.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Downloads\\GitClone\\University-Magazine-Contribution-System\\COMP1640\\COMP1640\\wwwroot\\UploadedFiles\\245\\Pham Hoang Thai - 001392862 - Individual.docx",
+      "PackagePath": "staticwebassets\\UploadedFiles\\245\\Pham Hoang Thai - 001392862 - Individual.docx"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Downloads\\GitClone\\University-Magazine-Contribution-System\\COMP1640\\COMP1640\\wwwroot\\UploadedFiles\\245\\architechture.jpg",
+      "PackagePath": "staticwebassets\\UploadedFiles\\245\\architechture.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Downloads\\GitClone\\University-Magazine-Contribution-System\\COMP1640\\COMP1640\\wwwroot\\UploadedFiles\\246\\Pham Hoang Thai - 001392862 - Individual.docx",
+      "PackagePath": "staticwebassets\\UploadedFiles\\246\\Pham Hoang Thai - 001392862 - Individual.docx"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Downloads\\GitClone\\University-Magazine-Contribution-System\\COMP1640\\COMP1640\\wwwroot\\UploadedFiles\\246\\architechture.jpg",
+      "PackagePath": "staticwebassets\\UploadedFiles\\246\\architechture.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Downloads\\GitClone\\University-Magazine-Contribution-System\\COMP1640\\COMP1640\\wwwroot\\UploadedFiles\\247\\Pham Hoang Thai - 001392862 - Individual.docx",
+      "PackagePath": "staticwebassets\\UploadedFiles\\247\\Pham Hoang Thai - 001392862 - Individual.docx"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Downloads\\GitClone\\University-Magazine-Contribution-System\\COMP1640\\COMP1640\\wwwroot\\UploadedFiles\\247\\architechture.jpg",
+      "PackagePath": "staticwebassets\\UploadedFiles\\247\\architechture.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Downloads\\GitClone\\University-Magazine-Contribution-System\\COMP1640\\COMP1640\\wwwroot\\UploadedFiles\\248\\Pham Hoang Thai - 001392862 - Individual.docx",
+      "PackagePath": "staticwebassets\\UploadedFiles\\248\\Pham Hoang Thai - 001392862 - Individual.docx"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Downloads\\GitClone\\University-Magazine-Contribution-System\\COMP1640\\COMP1640\\wwwroot\\UploadedFiles\\248\\architechture.jpg",
+      "PackagePath": "staticwebassets\\UploadedFiles\\248\\architechture.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Downloads\\GitClone\\University-Magazine-Contribution-System\\COMP1640\\COMP1640\\wwwroot\\UploadedFiles\\249\\Pham Hoang Thai - 001392862 - Individual.docx",
+      "PackagePath": "staticwebassets\\UploadedFiles\\249\\Pham Hoang Thai - 001392862 - Individual.docx"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Downloads\\GitClone\\University-Magazine-Contribution-System\\COMP1640\\COMP1640\\wwwroot\\UploadedFiles\\249\\architechture.jpg",
+      "PackagePath": "staticwebassets\\UploadedFiles\\249\\architechture.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Downloads\\GitClone\\University-Magazine-Contribution-System\\COMP1640\\COMP1640\\wwwroot\\UploadedFiles\\24\\AI.png",
+      "PackagePath": "staticwebassets\\UploadedFiles\\24\\AI.png"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Downloads\\GitClone\\University-Magazine-Contribution-System\\COMP1640\\COMP1640\\wwwroot\\UploadedFiles\\24\\file-sample.docx",
+      "PackagePath": "staticwebassets\\UploadedFiles\\24\\file-sample.docx"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Downloads\\GitClone\\University-Magazine-Contribution-System\\COMP1640\\COMP1640\\wwwroot\\UploadedFiles\\250\\Pham Hoang Thai - 001392862 - Individual.docx",
+      "PackagePath": "staticwebassets\\UploadedFiles\\250\\Pham Hoang Thai - 001392862 - Individual.docx"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Downloads\\GitClone\\University-Magazine-Contribution-System\\COMP1640\\COMP1640\\wwwroot\\UploadedFiles\\250\\architechture.jpg",
+      "PackagePath": "staticwebassets\\UploadedFiles\\250\\architechture.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Downloads\\GitClone\\University-Magazine-Contribution-System\\COMP1640\\COMP1640\\wwwroot\\UploadedFiles\\251\\Pham Hoang Thai - 001392862 - Individual.docx",
+      "PackagePath": "staticwebassets\\UploadedFiles\\251\\Pham Hoang Thai - 001392862 - Individual.docx"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Downloads\\GitClone\\University-Magazine-Contribution-System\\COMP1640\\COMP1640\\wwwroot\\UploadedFiles\\251\\architechture.jpg",
+      "PackagePath": "staticwebassets\\UploadedFiles\\251\\architechture.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Downloads\\GitClone\\University-Magazine-Contribution-System\\COMP1640\\COMP1640\\wwwroot\\UploadedFiles\\252\\Pham Hoang Thai - 001392862 - Individual.docx",
+      "PackagePath": "staticwebassets\\UploadedFiles\\252\\Pham Hoang Thai - 001392862 - Individual.docx"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Downloads\\GitClone\\University-Magazine-Contribution-System\\COMP1640\\COMP1640\\wwwroot\\UploadedFiles\\252\\architechture.jpg",
+      "PackagePath": "staticwebassets\\UploadedFiles\\252\\architechture.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Downloads\\GitClone\\University-Magazine-Contribution-System\\COMP1640\\COMP1640\\wwwroot\\UploadedFiles\\253\\Pham Hoang Thai - 001392862 - Individual.docx",
+      "PackagePath": "staticwebassets\\UploadedFiles\\253\\Pham Hoang Thai - 001392862 - Individual.docx"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Downloads\\GitClone\\University-Magazine-Contribution-System\\COMP1640\\COMP1640\\wwwroot\\UploadedFiles\\253\\architechture.jpg",
+      "PackagePath": "staticwebassets\\UploadedFiles\\253\\architechture.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Downloads\\GitClone\\University-Magazine-Contribution-System\\COMP1640\\COMP1640\\wwwroot\\UploadedFiles\\254\\Pham Hoang Thai - 001392862 - Individual.docx",
+      "PackagePath": "staticwebassets\\UploadedFiles\\254\\Pham Hoang Thai - 001392862 - Individual.docx"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Downloads\\GitClone\\University-Magazine-Contribution-System\\COMP1640\\COMP1640\\wwwroot\\UploadedFiles\\254\\architechture.jpg",
+      "PackagePath": "staticwebassets\\UploadedFiles\\254\\architechture.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Downloads\\GitClone\\University-Magazine-Contribution-System\\COMP1640\\COMP1640\\wwwroot\\UploadedFiles\\255\\Pham Hoang Thai - 001392862 - Individual.docx",
+      "PackagePath": "staticwebassets\\UploadedFiles\\255\\Pham Hoang Thai - 001392862 - Individual.docx"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Downloads\\GitClone\\University-Magazine-Contribution-System\\COMP1640\\COMP1640\\wwwroot\\UploadedFiles\\255\\architechture.jpg",
+      "PackagePath": "staticwebassets\\UploadedFiles\\255\\architechture.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Downloads\\GitClone\\University-Magazine-Contribution-System\\COMP1640\\COMP1640\\wwwroot\\UploadedFiles\\25\\AI.png",
+      "PackagePath": "staticwebassets\\UploadedFiles\\25\\AI.png"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Downloads\\GitClone\\University-Magazine-Contribution-System\\COMP1640\\COMP1640\\wwwroot\\UploadedFiles\\25\\file-sample.docx",
+      "PackagePath": "staticwebassets\\UploadedFiles\\25\\file-sample.docx"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Downloads\\GitClone\\University-Magazine-Contribution-System\\COMP1640\\COMP1640\\wwwroot\\UploadedFiles\\26\\AI.png",
+      "PackagePath": "staticwebassets\\UploadedFiles\\26\\AI.png"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Downloads\\GitClone\\University-Magazine-Contribution-System\\COMP1640\\COMP1640\\wwwroot\\UploadedFiles\\26\\file-sample.docx",
+      "PackagePath": "staticwebassets\\UploadedFiles\\26\\file-sample.docx"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Downloads\\GitClone\\University-Magazine-Contribution-System\\COMP1640\\COMP1640\\wwwroot\\UploadedFiles\\27\\AI.png",
+      "PackagePath": "staticwebassets\\UploadedFiles\\27\\AI.png"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Downloads\\GitClone\\University-Magazine-Contribution-System\\COMP1640\\COMP1640\\wwwroot\\UploadedFiles\\27\\file-sample.docx",
+      "PackagePath": "staticwebassets\\UploadedFiles\\27\\file-sample.docx"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Downloads\\GitClone\\University-Magazine-Contribution-System\\COMP1640\\COMP1640\\wwwroot\\UploadedFiles\\28\\AI.png",
+      "PackagePath": "staticwebassets\\UploadedFiles\\28\\AI.png"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Downloads\\GitClone\\University-Magazine-Contribution-System\\COMP1640\\COMP1640\\wwwroot\\UploadedFiles\\28\\file-sample.docx",
+      "PackagePath": "staticwebassets\\UploadedFiles\\28\\file-sample.docx"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Downloads\\GitClone\\University-Magazine-Contribution-System\\COMP1640\\COMP1640\\wwwroot\\UploadedFiles\\29\\AI.png",
+      "PackagePath": "staticwebassets\\UploadedFiles\\29\\AI.png"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Downloads\\GitClone\\University-Magazine-Contribution-System\\COMP1640\\COMP1640\\wwwroot\\UploadedFiles\\29\\file-sample.docx",
+      "PackagePath": "staticwebassets\\UploadedFiles\\29\\file-sample.docx"
+    },
+    {
       "Id": "C:\\Users\\Admin\\Downloads\\GitClone\\University-Magazine-Contribution-System\\COMP1640\\COMP1640\\wwwroot\\UploadedFiles\\2\\cybersecurity.png",
       "PackagePath": "staticwebassets\\UploadedFiles\\2\\cybersecurity.png"
     },
@@ -33,12 +1465,172 @@
       "PackagePath": "staticwebassets\\UploadedFiles\\2\\file-sample.docx"
     },
     {
+      "Id": "C:\\Users\\Admin\\Downloads\\GitClone\\University-Magazine-Contribution-System\\COMP1640\\COMP1640\\wwwroot\\UploadedFiles\\30\\AI.png",
+      "PackagePath": "staticwebassets\\UploadedFiles\\30\\AI.png"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Downloads\\GitClone\\University-Magazine-Contribution-System\\COMP1640\\COMP1640\\wwwroot\\UploadedFiles\\30\\file-sample.docx",
+      "PackagePath": "staticwebassets\\UploadedFiles\\30\\file-sample.docx"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Downloads\\GitClone\\University-Magazine-Contribution-System\\COMP1640\\COMP1640\\wwwroot\\UploadedFiles\\31\\AI.png",
+      "PackagePath": "staticwebassets\\UploadedFiles\\31\\AI.png"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Downloads\\GitClone\\University-Magazine-Contribution-System\\COMP1640\\COMP1640\\wwwroot\\UploadedFiles\\31\\file-sample.docx",
+      "PackagePath": "staticwebassets\\UploadedFiles\\31\\file-sample.docx"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Downloads\\GitClone\\University-Magazine-Contribution-System\\COMP1640\\COMP1640\\wwwroot\\UploadedFiles\\32\\AI.png",
+      "PackagePath": "staticwebassets\\UploadedFiles\\32\\AI.png"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Downloads\\GitClone\\University-Magazine-Contribution-System\\COMP1640\\COMP1640\\wwwroot\\UploadedFiles\\32\\file-sample.docx",
+      "PackagePath": "staticwebassets\\UploadedFiles\\32\\file-sample.docx"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Downloads\\GitClone\\University-Magazine-Contribution-System\\COMP1640\\COMP1640\\wwwroot\\UploadedFiles\\33\\AI.png",
+      "PackagePath": "staticwebassets\\UploadedFiles\\33\\AI.png"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Downloads\\GitClone\\University-Magazine-Contribution-System\\COMP1640\\COMP1640\\wwwroot\\UploadedFiles\\33\\file-sample.docx",
+      "PackagePath": "staticwebassets\\UploadedFiles\\33\\file-sample.docx"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Downloads\\GitClone\\University-Magazine-Contribution-System\\COMP1640\\COMP1640\\wwwroot\\UploadedFiles\\34\\AI.png",
+      "PackagePath": "staticwebassets\\UploadedFiles\\34\\AI.png"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Downloads\\GitClone\\University-Magazine-Contribution-System\\COMP1640\\COMP1640\\wwwroot\\UploadedFiles\\34\\file-sample.docx",
+      "PackagePath": "staticwebassets\\UploadedFiles\\34\\file-sample.docx"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Downloads\\GitClone\\University-Magazine-Contribution-System\\COMP1640\\COMP1640\\wwwroot\\UploadedFiles\\35\\AI.png",
+      "PackagePath": "staticwebassets\\UploadedFiles\\35\\AI.png"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Downloads\\GitClone\\University-Magazine-Contribution-System\\COMP1640\\COMP1640\\wwwroot\\UploadedFiles\\35\\file-sample.docx",
+      "PackagePath": "staticwebassets\\UploadedFiles\\35\\file-sample.docx"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Downloads\\GitClone\\University-Magazine-Contribution-System\\COMP1640\\COMP1640\\wwwroot\\UploadedFiles\\36\\AI.png",
+      "PackagePath": "staticwebassets\\UploadedFiles\\36\\AI.png"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Downloads\\GitClone\\University-Magazine-Contribution-System\\COMP1640\\COMP1640\\wwwroot\\UploadedFiles\\36\\file-sample.docx",
+      "PackagePath": "staticwebassets\\UploadedFiles\\36\\file-sample.docx"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Downloads\\GitClone\\University-Magazine-Contribution-System\\COMP1640\\COMP1640\\wwwroot\\UploadedFiles\\37\\AI.png",
+      "PackagePath": "staticwebassets\\UploadedFiles\\37\\AI.png"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Downloads\\GitClone\\University-Magazine-Contribution-System\\COMP1640\\COMP1640\\wwwroot\\UploadedFiles\\37\\file-sample.docx",
+      "PackagePath": "staticwebassets\\UploadedFiles\\37\\file-sample.docx"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Downloads\\GitClone\\University-Magazine-Contribution-System\\COMP1640\\COMP1640\\wwwroot\\UploadedFiles\\38\\AI.png",
+      "PackagePath": "staticwebassets\\UploadedFiles\\38\\AI.png"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Downloads\\GitClone\\University-Magazine-Contribution-System\\COMP1640\\COMP1640\\wwwroot\\UploadedFiles\\38\\file-sample.docx",
+      "PackagePath": "staticwebassets\\UploadedFiles\\38\\file-sample.docx"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Downloads\\GitClone\\University-Magazine-Contribution-System\\COMP1640\\COMP1640\\wwwroot\\UploadedFiles\\39\\AI.png",
+      "PackagePath": "staticwebassets\\UploadedFiles\\39\\AI.png"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Downloads\\GitClone\\University-Magazine-Contribution-System\\COMP1640\\COMP1640\\wwwroot\\UploadedFiles\\39\\file-sample.docx",
+      "PackagePath": "staticwebassets\\UploadedFiles\\39\\file-sample.docx"
+    },
+    {
       "Id": "C:\\Users\\Admin\\Downloads\\GitClone\\University-Magazine-Contribution-System\\COMP1640\\COMP1640\\wwwroot\\UploadedFiles\\3\\cybersecurity.png",
       "PackagePath": "staticwebassets\\UploadedFiles\\3\\cybersecurity.png"
     },
     {
       "Id": "C:\\Users\\Admin\\Downloads\\GitClone\\University-Magazine-Contribution-System\\COMP1640\\COMP1640\\wwwroot\\UploadedFiles\\3\\file-sample.docx",
       "PackagePath": "staticwebassets\\UploadedFiles\\3\\file-sample.docx"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Downloads\\GitClone\\University-Magazine-Contribution-System\\COMP1640\\COMP1640\\wwwroot\\UploadedFiles\\40\\AI.png",
+      "PackagePath": "staticwebassets\\UploadedFiles\\40\\AI.png"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Downloads\\GitClone\\University-Magazine-Contribution-System\\COMP1640\\COMP1640\\wwwroot\\UploadedFiles\\40\\file-sample.docx",
+      "PackagePath": "staticwebassets\\UploadedFiles\\40\\file-sample.docx"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Downloads\\GitClone\\University-Magazine-Contribution-System\\COMP1640\\COMP1640\\wwwroot\\UploadedFiles\\41\\AI.png",
+      "PackagePath": "staticwebassets\\UploadedFiles\\41\\AI.png"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Downloads\\GitClone\\University-Magazine-Contribution-System\\COMP1640\\COMP1640\\wwwroot\\UploadedFiles\\41\\file-sample.docx",
+      "PackagePath": "staticwebassets\\UploadedFiles\\41\\file-sample.docx"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Downloads\\GitClone\\University-Magazine-Contribution-System\\COMP1640\\COMP1640\\wwwroot\\UploadedFiles\\42\\AI.png",
+      "PackagePath": "staticwebassets\\UploadedFiles\\42\\AI.png"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Downloads\\GitClone\\University-Magazine-Contribution-System\\COMP1640\\COMP1640\\wwwroot\\UploadedFiles\\42\\file-sample.docx",
+      "PackagePath": "staticwebassets\\UploadedFiles\\42\\file-sample.docx"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Downloads\\GitClone\\University-Magazine-Contribution-System\\COMP1640\\COMP1640\\wwwroot\\UploadedFiles\\43\\AI.png",
+      "PackagePath": "staticwebassets\\UploadedFiles\\43\\AI.png"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Downloads\\GitClone\\University-Magazine-Contribution-System\\COMP1640\\COMP1640\\wwwroot\\UploadedFiles\\43\\file-sample.docx",
+      "PackagePath": "staticwebassets\\UploadedFiles\\43\\file-sample.docx"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Downloads\\GitClone\\University-Magazine-Contribution-System\\COMP1640\\COMP1640\\wwwroot\\UploadedFiles\\44\\AI.png",
+      "PackagePath": "staticwebassets\\UploadedFiles\\44\\AI.png"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Downloads\\GitClone\\University-Magazine-Contribution-System\\COMP1640\\COMP1640\\wwwroot\\UploadedFiles\\44\\file-sample.docx",
+      "PackagePath": "staticwebassets\\UploadedFiles\\44\\file-sample.docx"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Downloads\\GitClone\\University-Magazine-Contribution-System\\COMP1640\\COMP1640\\wwwroot\\UploadedFiles\\45\\AI.png",
+      "PackagePath": "staticwebassets\\UploadedFiles\\45\\AI.png"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Downloads\\GitClone\\University-Magazine-Contribution-System\\COMP1640\\COMP1640\\wwwroot\\UploadedFiles\\45\\file-sample.docx",
+      "PackagePath": "staticwebassets\\UploadedFiles\\45\\file-sample.docx"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Downloads\\GitClone\\University-Magazine-Contribution-System\\COMP1640\\COMP1640\\wwwroot\\UploadedFiles\\46\\AI.png",
+      "PackagePath": "staticwebassets\\UploadedFiles\\46\\AI.png"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Downloads\\GitClone\\University-Magazine-Contribution-System\\COMP1640\\COMP1640\\wwwroot\\UploadedFiles\\46\\file-sample.docx",
+      "PackagePath": "staticwebassets\\UploadedFiles\\46\\file-sample.docx"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Downloads\\GitClone\\University-Magazine-Contribution-System\\COMP1640\\COMP1640\\wwwroot\\UploadedFiles\\47\\AI.png",
+      "PackagePath": "staticwebassets\\UploadedFiles\\47\\AI.png"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Downloads\\GitClone\\University-Magazine-Contribution-System\\COMP1640\\COMP1640\\wwwroot\\UploadedFiles\\47\\file-sample.docx",
+      "PackagePath": "staticwebassets\\UploadedFiles\\47\\file-sample.docx"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Downloads\\GitClone\\University-Magazine-Contribution-System\\COMP1640\\COMP1640\\wwwroot\\UploadedFiles\\48\\AI.png",
+      "PackagePath": "staticwebassets\\UploadedFiles\\48\\AI.png"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Downloads\\GitClone\\University-Magazine-Contribution-System\\COMP1640\\COMP1640\\wwwroot\\UploadedFiles\\48\\file-sample.docx",
+      "PackagePath": "staticwebassets\\UploadedFiles\\48\\file-sample.docx"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Downloads\\GitClone\\University-Magazine-Contribution-System\\COMP1640\\COMP1640\\wwwroot\\UploadedFiles\\49\\AI.png",
+      "PackagePath": "staticwebassets\\UploadedFiles\\49\\AI.png"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Downloads\\GitClone\\University-Magazine-Contribution-System\\COMP1640\\COMP1640\\wwwroot\\UploadedFiles\\49\\file-sample.docx",
+      "PackagePath": "staticwebassets\\UploadedFiles\\49\\file-sample.docx"
     },
     {
       "Id": "C:\\Users\\Admin\\Downloads\\GitClone\\University-Magazine-Contribution-System\\COMP1640\\COMP1640\\wwwroot\\UploadedFiles\\4\\COMP1640_CW.docx",
@@ -53,12 +1645,172 @@
       "PackagePath": "staticwebassets\\UploadedFiles\\4\\graphic_design.png"
     },
     {
+      "Id": "C:\\Users\\Admin\\Downloads\\GitClone\\University-Magazine-Contribution-System\\COMP1640\\COMP1640\\wwwroot\\UploadedFiles\\50\\AI.png",
+      "PackagePath": "staticwebassets\\UploadedFiles\\50\\AI.png"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Downloads\\GitClone\\University-Magazine-Contribution-System\\COMP1640\\COMP1640\\wwwroot\\UploadedFiles\\50\\file-sample.docx",
+      "PackagePath": "staticwebassets\\UploadedFiles\\50\\file-sample.docx"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Downloads\\GitClone\\University-Magazine-Contribution-System\\COMP1640\\COMP1640\\wwwroot\\UploadedFiles\\51\\AI.png",
+      "PackagePath": "staticwebassets\\UploadedFiles\\51\\AI.png"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Downloads\\GitClone\\University-Magazine-Contribution-System\\COMP1640\\COMP1640\\wwwroot\\UploadedFiles\\51\\file-sample.docx",
+      "PackagePath": "staticwebassets\\UploadedFiles\\51\\file-sample.docx"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Downloads\\GitClone\\University-Magazine-Contribution-System\\COMP1640\\COMP1640\\wwwroot\\UploadedFiles\\52\\AI.png",
+      "PackagePath": "staticwebassets\\UploadedFiles\\52\\AI.png"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Downloads\\GitClone\\University-Magazine-Contribution-System\\COMP1640\\COMP1640\\wwwroot\\UploadedFiles\\52\\file-sample.docx",
+      "PackagePath": "staticwebassets\\UploadedFiles\\52\\file-sample.docx"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Downloads\\GitClone\\University-Magazine-Contribution-System\\COMP1640\\COMP1640\\wwwroot\\UploadedFiles\\53\\AI.png",
+      "PackagePath": "staticwebassets\\UploadedFiles\\53\\AI.png"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Downloads\\GitClone\\University-Magazine-Contribution-System\\COMP1640\\COMP1640\\wwwroot\\UploadedFiles\\53\\file-sample.docx",
+      "PackagePath": "staticwebassets\\UploadedFiles\\53\\file-sample.docx"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Downloads\\GitClone\\University-Magazine-Contribution-System\\COMP1640\\COMP1640\\wwwroot\\UploadedFiles\\54\\AI.png",
+      "PackagePath": "staticwebassets\\UploadedFiles\\54\\AI.png"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Downloads\\GitClone\\University-Magazine-Contribution-System\\COMP1640\\COMP1640\\wwwroot\\UploadedFiles\\54\\file-sample.docx",
+      "PackagePath": "staticwebassets\\UploadedFiles\\54\\file-sample.docx"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Downloads\\GitClone\\University-Magazine-Contribution-System\\COMP1640\\COMP1640\\wwwroot\\UploadedFiles\\55\\AI.png",
+      "PackagePath": "staticwebassets\\UploadedFiles\\55\\AI.png"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Downloads\\GitClone\\University-Magazine-Contribution-System\\COMP1640\\COMP1640\\wwwroot\\UploadedFiles\\55\\file-sample.docx",
+      "PackagePath": "staticwebassets\\UploadedFiles\\55\\file-sample.docx"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Downloads\\GitClone\\University-Magazine-Contribution-System\\COMP1640\\COMP1640\\wwwroot\\UploadedFiles\\56\\AI.png",
+      "PackagePath": "staticwebassets\\UploadedFiles\\56\\AI.png"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Downloads\\GitClone\\University-Magazine-Contribution-System\\COMP1640\\COMP1640\\wwwroot\\UploadedFiles\\56\\file-sample.docx",
+      "PackagePath": "staticwebassets\\UploadedFiles\\56\\file-sample.docx"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Downloads\\GitClone\\University-Magazine-Contribution-System\\COMP1640\\COMP1640\\wwwroot\\UploadedFiles\\57\\AI.png",
+      "PackagePath": "staticwebassets\\UploadedFiles\\57\\AI.png"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Downloads\\GitClone\\University-Magazine-Contribution-System\\COMP1640\\COMP1640\\wwwroot\\UploadedFiles\\57\\file-sample.docx",
+      "PackagePath": "staticwebassets\\UploadedFiles\\57\\file-sample.docx"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Downloads\\GitClone\\University-Magazine-Contribution-System\\COMP1640\\COMP1640\\wwwroot\\UploadedFiles\\58\\AI.png",
+      "PackagePath": "staticwebassets\\UploadedFiles\\58\\AI.png"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Downloads\\GitClone\\University-Magazine-Contribution-System\\COMP1640\\COMP1640\\wwwroot\\UploadedFiles\\58\\file-sample.docx",
+      "PackagePath": "staticwebassets\\UploadedFiles\\58\\file-sample.docx"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Downloads\\GitClone\\University-Magazine-Contribution-System\\COMP1640\\COMP1640\\wwwroot\\UploadedFiles\\59\\AI.png",
+      "PackagePath": "staticwebassets\\UploadedFiles\\59\\AI.png"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Downloads\\GitClone\\University-Magazine-Contribution-System\\COMP1640\\COMP1640\\wwwroot\\UploadedFiles\\59\\file-sample.docx",
+      "PackagePath": "staticwebassets\\UploadedFiles\\59\\file-sample.docx"
+    },
+    {
       "Id": "C:\\Users\\Admin\\Downloads\\GitClone\\University-Magazine-Contribution-System\\COMP1640\\COMP1640\\wwwroot\\UploadedFiles\\5\\cybersecurity.png",
       "PackagePath": "staticwebassets\\UploadedFiles\\5\\cybersecurity.png"
     },
     {
       "Id": "C:\\Users\\Admin\\Downloads\\GitClone\\University-Magazine-Contribution-System\\COMP1640\\COMP1640\\wwwroot\\UploadedFiles\\5\\file-sample.docx",
       "PackagePath": "staticwebassets\\UploadedFiles\\5\\file-sample.docx"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Downloads\\GitClone\\University-Magazine-Contribution-System\\COMP1640\\COMP1640\\wwwroot\\UploadedFiles\\60\\AI.png",
+      "PackagePath": "staticwebassets\\UploadedFiles\\60\\AI.png"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Downloads\\GitClone\\University-Magazine-Contribution-System\\COMP1640\\COMP1640\\wwwroot\\UploadedFiles\\60\\file-sample.docx",
+      "PackagePath": "staticwebassets\\UploadedFiles\\60\\file-sample.docx"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Downloads\\GitClone\\University-Magazine-Contribution-System\\COMP1640\\COMP1640\\wwwroot\\UploadedFiles\\61\\AI.png",
+      "PackagePath": "staticwebassets\\UploadedFiles\\61\\AI.png"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Downloads\\GitClone\\University-Magazine-Contribution-System\\COMP1640\\COMP1640\\wwwroot\\UploadedFiles\\61\\file-sample.docx",
+      "PackagePath": "staticwebassets\\UploadedFiles\\61\\file-sample.docx"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Downloads\\GitClone\\University-Magazine-Contribution-System\\COMP1640\\COMP1640\\wwwroot\\UploadedFiles\\62\\AI.png",
+      "PackagePath": "staticwebassets\\UploadedFiles\\62\\AI.png"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Downloads\\GitClone\\University-Magazine-Contribution-System\\COMP1640\\COMP1640\\wwwroot\\UploadedFiles\\62\\file-sample.docx",
+      "PackagePath": "staticwebassets\\UploadedFiles\\62\\file-sample.docx"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Downloads\\GitClone\\University-Magazine-Contribution-System\\COMP1640\\COMP1640\\wwwroot\\UploadedFiles\\63\\AI.png",
+      "PackagePath": "staticwebassets\\UploadedFiles\\63\\AI.png"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Downloads\\GitClone\\University-Magazine-Contribution-System\\COMP1640\\COMP1640\\wwwroot\\UploadedFiles\\63\\file-sample.docx",
+      "PackagePath": "staticwebassets\\UploadedFiles\\63\\file-sample.docx"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Downloads\\GitClone\\University-Magazine-Contribution-System\\COMP1640\\COMP1640\\wwwroot\\UploadedFiles\\64\\AI.png",
+      "PackagePath": "staticwebassets\\UploadedFiles\\64\\AI.png"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Downloads\\GitClone\\University-Magazine-Contribution-System\\COMP1640\\COMP1640\\wwwroot\\UploadedFiles\\64\\file-sample.docx",
+      "PackagePath": "staticwebassets\\UploadedFiles\\64\\file-sample.docx"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Downloads\\GitClone\\University-Magazine-Contribution-System\\COMP1640\\COMP1640\\wwwroot\\UploadedFiles\\65\\AI.png",
+      "PackagePath": "staticwebassets\\UploadedFiles\\65\\AI.png"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Downloads\\GitClone\\University-Magazine-Contribution-System\\COMP1640\\COMP1640\\wwwroot\\UploadedFiles\\65\\file-sample.docx",
+      "PackagePath": "staticwebassets\\UploadedFiles\\65\\file-sample.docx"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Downloads\\GitClone\\University-Magazine-Contribution-System\\COMP1640\\COMP1640\\wwwroot\\UploadedFiles\\66\\AI.png",
+      "PackagePath": "staticwebassets\\UploadedFiles\\66\\AI.png"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Downloads\\GitClone\\University-Magazine-Contribution-System\\COMP1640\\COMP1640\\wwwroot\\UploadedFiles\\66\\file-sample.docx",
+      "PackagePath": "staticwebassets\\UploadedFiles\\66\\file-sample.docx"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Downloads\\GitClone\\University-Magazine-Contribution-System\\COMP1640\\COMP1640\\wwwroot\\UploadedFiles\\67\\AI.png",
+      "PackagePath": "staticwebassets\\UploadedFiles\\67\\AI.png"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Downloads\\GitClone\\University-Magazine-Contribution-System\\COMP1640\\COMP1640\\wwwroot\\UploadedFiles\\67\\file-sample.docx",
+      "PackagePath": "staticwebassets\\UploadedFiles\\67\\file-sample.docx"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Downloads\\GitClone\\University-Magazine-Contribution-System\\COMP1640\\COMP1640\\wwwroot\\UploadedFiles\\68\\AI.png",
+      "PackagePath": "staticwebassets\\UploadedFiles\\68\\AI.png"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Downloads\\GitClone\\University-Magazine-Contribution-System\\COMP1640\\COMP1640\\wwwroot\\UploadedFiles\\68\\file-sample.docx",
+      "PackagePath": "staticwebassets\\UploadedFiles\\68\\file-sample.docx"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Downloads\\GitClone\\University-Magazine-Contribution-System\\COMP1640\\COMP1640\\wwwroot\\UploadedFiles\\69\\AI.png",
+      "PackagePath": "staticwebassets\\UploadedFiles\\69\\AI.png"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Downloads\\GitClone\\University-Magazine-Contribution-System\\COMP1640\\COMP1640\\wwwroot\\UploadedFiles\\69\\file-sample.docx",
+      "PackagePath": "staticwebassets\\UploadedFiles\\69\\file-sample.docx"
     },
     {
       "Id": "C:\\Users\\Admin\\Downloads\\GitClone\\University-Magazine-Contribution-System\\COMP1640\\COMP1640\\wwwroot\\UploadedFiles\\6\\business.jpg",
@@ -69,12 +1821,268 @@
       "PackagePath": "staticwebassets\\UploadedFiles\\6\\file-sample.docx"
     },
     {
+      "Id": "C:\\Users\\Admin\\Downloads\\GitClone\\University-Magazine-Contribution-System\\COMP1640\\COMP1640\\wwwroot\\UploadedFiles\\70\\AI.png",
+      "PackagePath": "staticwebassets\\UploadedFiles\\70\\AI.png"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Downloads\\GitClone\\University-Magazine-Contribution-System\\COMP1640\\COMP1640\\wwwroot\\UploadedFiles\\70\\file-sample.docx",
+      "PackagePath": "staticwebassets\\UploadedFiles\\70\\file-sample.docx"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Downloads\\GitClone\\University-Magazine-Contribution-System\\COMP1640\\COMP1640\\wwwroot\\UploadedFiles\\71\\AI.png",
+      "PackagePath": "staticwebassets\\UploadedFiles\\71\\AI.png"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Downloads\\GitClone\\University-Magazine-Contribution-System\\COMP1640\\COMP1640\\wwwroot\\UploadedFiles\\71\\file-sample.docx",
+      "PackagePath": "staticwebassets\\UploadedFiles\\71\\file-sample.docx"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Downloads\\GitClone\\University-Magazine-Contribution-System\\COMP1640\\COMP1640\\wwwroot\\UploadedFiles\\72\\AI.png",
+      "PackagePath": "staticwebassets\\UploadedFiles\\72\\AI.png"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Downloads\\GitClone\\University-Magazine-Contribution-System\\COMP1640\\COMP1640\\wwwroot\\UploadedFiles\\72\\file-sample.docx",
+      "PackagePath": "staticwebassets\\UploadedFiles\\72\\file-sample.docx"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Downloads\\GitClone\\University-Magazine-Contribution-System\\COMP1640\\COMP1640\\wwwroot\\UploadedFiles\\73\\AI.png",
+      "PackagePath": "staticwebassets\\UploadedFiles\\73\\AI.png"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Downloads\\GitClone\\University-Magazine-Contribution-System\\COMP1640\\COMP1640\\wwwroot\\UploadedFiles\\73\\file-sample.docx",
+      "PackagePath": "staticwebassets\\UploadedFiles\\73\\file-sample.docx"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Downloads\\GitClone\\University-Magazine-Contribution-System\\COMP1640\\COMP1640\\wwwroot\\UploadedFiles\\74\\AI.png",
+      "PackagePath": "staticwebassets\\UploadedFiles\\74\\AI.png"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Downloads\\GitClone\\University-Magazine-Contribution-System\\COMP1640\\COMP1640\\wwwroot\\UploadedFiles\\74\\file-sample.docx",
+      "PackagePath": "staticwebassets\\UploadedFiles\\74\\file-sample.docx"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Downloads\\GitClone\\University-Magazine-Contribution-System\\COMP1640\\COMP1640\\wwwroot\\UploadedFiles\\75\\AI.png",
+      "PackagePath": "staticwebassets\\UploadedFiles\\75\\AI.png"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Downloads\\GitClone\\University-Magazine-Contribution-System\\COMP1640\\COMP1640\\wwwroot\\UploadedFiles\\75\\file-sample.docx",
+      "PackagePath": "staticwebassets\\UploadedFiles\\75\\file-sample.docx"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Downloads\\GitClone\\University-Magazine-Contribution-System\\COMP1640\\COMP1640\\wwwroot\\UploadedFiles\\76\\AI.png",
+      "PackagePath": "staticwebassets\\UploadedFiles\\76\\AI.png"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Downloads\\GitClone\\University-Magazine-Contribution-System\\COMP1640\\COMP1640\\wwwroot\\UploadedFiles\\76\\file-sample.docx",
+      "PackagePath": "staticwebassets\\UploadedFiles\\76\\file-sample.docx"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Downloads\\GitClone\\University-Magazine-Contribution-System\\COMP1640\\COMP1640\\wwwroot\\UploadedFiles\\77\\AI.png",
+      "PackagePath": "staticwebassets\\UploadedFiles\\77\\AI.png"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Downloads\\GitClone\\University-Magazine-Contribution-System\\COMP1640\\COMP1640\\wwwroot\\UploadedFiles\\77\\file-sample.docx",
+      "PackagePath": "staticwebassets\\UploadedFiles\\77\\file-sample.docx"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Downloads\\GitClone\\University-Magazine-Contribution-System\\COMP1640\\COMP1640\\wwwroot\\UploadedFiles\\78\\AI.png",
+      "PackagePath": "staticwebassets\\UploadedFiles\\78\\AI.png"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Downloads\\GitClone\\University-Magazine-Contribution-System\\COMP1640\\COMP1640\\wwwroot\\UploadedFiles\\78\\file-sample.docx",
+      "PackagePath": "staticwebassets\\UploadedFiles\\78\\file-sample.docx"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Downloads\\GitClone\\University-Magazine-Contribution-System\\COMP1640\\COMP1640\\wwwroot\\UploadedFiles\\79\\AI.png",
+      "PackagePath": "staticwebassets\\UploadedFiles\\79\\AI.png"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Downloads\\GitClone\\University-Magazine-Contribution-System\\COMP1640\\COMP1640\\wwwroot\\UploadedFiles\\79\\file-sample.docx",
+      "PackagePath": "staticwebassets\\UploadedFiles\\79\\file-sample.docx"
+    },
+    {
       "Id": "C:\\Users\\Admin\\Downloads\\GitClone\\University-Magazine-Contribution-System\\COMP1640\\COMP1640\\wwwroot\\UploadedFiles\\7\\AI.png",
       "PackagePath": "staticwebassets\\UploadedFiles\\7\\AI.png"
     },
     {
       "Id": "C:\\Users\\Admin\\Downloads\\GitClone\\University-Magazine-Contribution-System\\COMP1640\\COMP1640\\wwwroot\\UploadedFiles\\7\\file-sample.docx",
       "PackagePath": "staticwebassets\\UploadedFiles\\7\\file-sample.docx"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Downloads\\GitClone\\University-Magazine-Contribution-System\\COMP1640\\COMP1640\\wwwroot\\UploadedFiles\\80\\AI.png",
+      "PackagePath": "staticwebassets\\UploadedFiles\\80\\AI.png"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Downloads\\GitClone\\University-Magazine-Contribution-System\\COMP1640\\COMP1640\\wwwroot\\UploadedFiles\\80\\file-sample.docx",
+      "PackagePath": "staticwebassets\\UploadedFiles\\80\\file-sample.docx"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Downloads\\GitClone\\University-Magazine-Contribution-System\\COMP1640\\COMP1640\\wwwroot\\UploadedFiles\\81\\AI.png",
+      "PackagePath": "staticwebassets\\UploadedFiles\\81\\AI.png"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Downloads\\GitClone\\University-Magazine-Contribution-System\\COMP1640\\COMP1640\\wwwroot\\UploadedFiles\\81\\file-sample.docx",
+      "PackagePath": "staticwebassets\\UploadedFiles\\81\\file-sample.docx"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Downloads\\GitClone\\University-Magazine-Contribution-System\\COMP1640\\COMP1640\\wwwroot\\UploadedFiles\\82\\AI.png",
+      "PackagePath": "staticwebassets\\UploadedFiles\\82\\AI.png"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Downloads\\GitClone\\University-Magazine-Contribution-System\\COMP1640\\COMP1640\\wwwroot\\UploadedFiles\\82\\file-sample.docx",
+      "PackagePath": "staticwebassets\\UploadedFiles\\82\\file-sample.docx"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Downloads\\GitClone\\University-Magazine-Contribution-System\\COMP1640\\COMP1640\\wwwroot\\UploadedFiles\\83\\AI.png",
+      "PackagePath": "staticwebassets\\UploadedFiles\\83\\AI.png"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Downloads\\GitClone\\University-Magazine-Contribution-System\\COMP1640\\COMP1640\\wwwroot\\UploadedFiles\\83\\file-sample.docx",
+      "PackagePath": "staticwebassets\\UploadedFiles\\83\\file-sample.docx"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Downloads\\GitClone\\University-Magazine-Contribution-System\\COMP1640\\COMP1640\\wwwroot\\UploadedFiles\\84\\AI.png",
+      "PackagePath": "staticwebassets\\UploadedFiles\\84\\AI.png"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Downloads\\GitClone\\University-Magazine-Contribution-System\\COMP1640\\COMP1640\\wwwroot\\UploadedFiles\\84\\file-sample.docx",
+      "PackagePath": "staticwebassets\\UploadedFiles\\84\\file-sample.docx"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Downloads\\GitClone\\University-Magazine-Contribution-System\\COMP1640\\COMP1640\\wwwroot\\UploadedFiles\\85\\AI.png",
+      "PackagePath": "staticwebassets\\UploadedFiles\\85\\AI.png"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Downloads\\GitClone\\University-Magazine-Contribution-System\\COMP1640\\COMP1640\\wwwroot\\UploadedFiles\\85\\file-sample.docx",
+      "PackagePath": "staticwebassets\\UploadedFiles\\85\\file-sample.docx"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Downloads\\GitClone\\University-Magazine-Contribution-System\\COMP1640\\COMP1640\\wwwroot\\UploadedFiles\\86\\AI.png",
+      "PackagePath": "staticwebassets\\UploadedFiles\\86\\AI.png"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Downloads\\GitClone\\University-Magazine-Contribution-System\\COMP1640\\COMP1640\\wwwroot\\UploadedFiles\\86\\file-sample.docx",
+      "PackagePath": "staticwebassets\\UploadedFiles\\86\\file-sample.docx"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Downloads\\GitClone\\University-Magazine-Contribution-System\\COMP1640\\COMP1640\\wwwroot\\UploadedFiles\\87\\AI.png",
+      "PackagePath": "staticwebassets\\UploadedFiles\\87\\AI.png"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Downloads\\GitClone\\University-Magazine-Contribution-System\\COMP1640\\COMP1640\\wwwroot\\UploadedFiles\\87\\file-sample.docx",
+      "PackagePath": "staticwebassets\\UploadedFiles\\87\\file-sample.docx"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Downloads\\GitClone\\University-Magazine-Contribution-System\\COMP1640\\COMP1640\\wwwroot\\UploadedFiles\\88\\AI.png",
+      "PackagePath": "staticwebassets\\UploadedFiles\\88\\AI.png"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Downloads\\GitClone\\University-Magazine-Contribution-System\\COMP1640\\COMP1640\\wwwroot\\UploadedFiles\\88\\file-sample.docx",
+      "PackagePath": "staticwebassets\\UploadedFiles\\88\\file-sample.docx"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Downloads\\GitClone\\University-Magazine-Contribution-System\\COMP1640\\COMP1640\\wwwroot\\UploadedFiles\\89\\AI.png",
+      "PackagePath": "staticwebassets\\UploadedFiles\\89\\AI.png"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Downloads\\GitClone\\University-Magazine-Contribution-System\\COMP1640\\COMP1640\\wwwroot\\UploadedFiles\\89\\file-sample.docx",
+      "PackagePath": "staticwebassets\\UploadedFiles\\89\\file-sample.docx"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Downloads\\GitClone\\University-Magazine-Contribution-System\\COMP1640\\COMP1640\\wwwroot\\UploadedFiles\\8\\AI.png",
+      "PackagePath": "staticwebassets\\UploadedFiles\\8\\AI.png"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Downloads\\GitClone\\University-Magazine-Contribution-System\\COMP1640\\COMP1640\\wwwroot\\UploadedFiles\\8\\file-sample.docx",
+      "PackagePath": "staticwebassets\\UploadedFiles\\8\\file-sample.docx"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Downloads\\GitClone\\University-Magazine-Contribution-System\\COMP1640\\COMP1640\\wwwroot\\UploadedFiles\\90\\AI.png",
+      "PackagePath": "staticwebassets\\UploadedFiles\\90\\AI.png"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Downloads\\GitClone\\University-Magazine-Contribution-System\\COMP1640\\COMP1640\\wwwroot\\UploadedFiles\\90\\file-sample.docx",
+      "PackagePath": "staticwebassets\\UploadedFiles\\90\\file-sample.docx"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Downloads\\GitClone\\University-Magazine-Contribution-System\\COMP1640\\COMP1640\\wwwroot\\UploadedFiles\\91\\AI.png",
+      "PackagePath": "staticwebassets\\UploadedFiles\\91\\AI.png"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Downloads\\GitClone\\University-Magazine-Contribution-System\\COMP1640\\COMP1640\\wwwroot\\UploadedFiles\\91\\file-sample.docx",
+      "PackagePath": "staticwebassets\\UploadedFiles\\91\\file-sample.docx"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Downloads\\GitClone\\University-Magazine-Contribution-System\\COMP1640\\COMP1640\\wwwroot\\UploadedFiles\\92\\AI.png",
+      "PackagePath": "staticwebassets\\UploadedFiles\\92\\AI.png"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Downloads\\GitClone\\University-Magazine-Contribution-System\\COMP1640\\COMP1640\\wwwroot\\UploadedFiles\\92\\file-sample.docx",
+      "PackagePath": "staticwebassets\\UploadedFiles\\92\\file-sample.docx"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Downloads\\GitClone\\University-Magazine-Contribution-System\\COMP1640\\COMP1640\\wwwroot\\UploadedFiles\\93\\AI.png",
+      "PackagePath": "staticwebassets\\UploadedFiles\\93\\AI.png"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Downloads\\GitClone\\University-Magazine-Contribution-System\\COMP1640\\COMP1640\\wwwroot\\UploadedFiles\\93\\file-sample.docx",
+      "PackagePath": "staticwebassets\\UploadedFiles\\93\\file-sample.docx"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Downloads\\GitClone\\University-Magazine-Contribution-System\\COMP1640\\COMP1640\\wwwroot\\UploadedFiles\\94\\AI.png",
+      "PackagePath": "staticwebassets\\UploadedFiles\\94\\AI.png"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Downloads\\GitClone\\University-Magazine-Contribution-System\\COMP1640\\COMP1640\\wwwroot\\UploadedFiles\\94\\file-sample.docx",
+      "PackagePath": "staticwebassets\\UploadedFiles\\94\\file-sample.docx"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Downloads\\GitClone\\University-Magazine-Contribution-System\\COMP1640\\COMP1640\\wwwroot\\UploadedFiles\\95\\AI.png",
+      "PackagePath": "staticwebassets\\UploadedFiles\\95\\AI.png"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Downloads\\GitClone\\University-Magazine-Contribution-System\\COMP1640\\COMP1640\\wwwroot\\UploadedFiles\\95\\file-sample.docx",
+      "PackagePath": "staticwebassets\\UploadedFiles\\95\\file-sample.docx"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Downloads\\GitClone\\University-Magazine-Contribution-System\\COMP1640\\COMP1640\\wwwroot\\UploadedFiles\\96\\AI.png",
+      "PackagePath": "staticwebassets\\UploadedFiles\\96\\AI.png"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Downloads\\GitClone\\University-Magazine-Contribution-System\\COMP1640\\COMP1640\\wwwroot\\UploadedFiles\\96\\file-sample.docx",
+      "PackagePath": "staticwebassets\\UploadedFiles\\96\\file-sample.docx"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Downloads\\GitClone\\University-Magazine-Contribution-System\\COMP1640\\COMP1640\\wwwroot\\UploadedFiles\\97\\AI.png",
+      "PackagePath": "staticwebassets\\UploadedFiles\\97\\AI.png"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Downloads\\GitClone\\University-Magazine-Contribution-System\\COMP1640\\COMP1640\\wwwroot\\UploadedFiles\\97\\file-sample.docx",
+      "PackagePath": "staticwebassets\\UploadedFiles\\97\\file-sample.docx"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Downloads\\GitClone\\University-Magazine-Contribution-System\\COMP1640\\COMP1640\\wwwroot\\UploadedFiles\\98\\AI.png",
+      "PackagePath": "staticwebassets\\UploadedFiles\\98\\AI.png"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Downloads\\GitClone\\University-Magazine-Contribution-System\\COMP1640\\COMP1640\\wwwroot\\UploadedFiles\\98\\file-sample.docx",
+      "PackagePath": "staticwebassets\\UploadedFiles\\98\\file-sample.docx"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Downloads\\GitClone\\University-Magazine-Contribution-System\\COMP1640\\COMP1640\\wwwroot\\UploadedFiles\\99\\AI.png",
+      "PackagePath": "staticwebassets\\UploadedFiles\\99\\AI.png"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Downloads\\GitClone\\University-Magazine-Contribution-System\\COMP1640\\COMP1640\\wwwroot\\UploadedFiles\\99\\file-sample.docx",
+      "PackagePath": "staticwebassets\\UploadedFiles\\99\\file-sample.docx"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Downloads\\GitClone\\University-Magazine-Contribution-System\\COMP1640\\COMP1640\\wwwroot\\UploadedFiles\\9\\AI.png",
+      "PackagePath": "staticwebassets\\UploadedFiles\\9\\AI.png"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Downloads\\GitClone\\University-Magazine-Contribution-System\\COMP1640\\COMP1640\\wwwroot\\UploadedFiles\\9\\file-sample.docx",
+      "PackagePath": "staticwebassets\\UploadedFiles\\9\\file-sample.docx"
     },
     {
       "Id": "C:\\Users\\Admin\\Downloads\\GitClone\\University-Magazine-Contribution-System\\COMP1640\\COMP1640\\wwwroot\\admin\\css\\style.css",
@@ -87,6 +2095,10 @@
     {
       "Id": "C:\\Users\\Admin\\Downloads\\GitClone\\University-Magazine-Contribution-System\\COMP1640\\COMP1640\\wwwroot\\admin\\img\\logo.svg",
       "PackagePath": "staticwebassets\\admin\\img\\logo.svg"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Downloads\\GitClone\\University-Magazine-Contribution-System\\COMP1640\\COMP1640\\wwwroot\\admin\\js\\upload.js",
+      "PackagePath": "staticwebassets\\admin\\js\\upload.js"
     },
     {
       "Id": "C:\\Users\\Admin\\Downloads\\GitClone\\University-Magazine-Contribution-System\\COMP1640\\COMP1640\\wwwroot\\css\\base.css",
@@ -111,6 +2123,14 @@
     {
       "Id": "C:\\Users\\Admin\\Downloads\\GitClone\\University-Magazine-Contribution-System\\COMP1640\\COMP1640\\wwwroot\\img\\admin.png",
       "PackagePath": "staticwebassets\\img\\admin.png"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Downloads\\GitClone\\University-Magazine-Contribution-System\\COMP1640\\COMP1640\\wwwroot\\img\\avatar2.jpg",
+      "PackagePath": "staticwebassets\\img\\avatar2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Downloads\\GitClone\\University-Magazine-Contribution-System\\COMP1640\\COMP1640\\wwwroot\\img\\avatar3.jpg",
+      "PackagePath": "staticwebassets\\img\\avatar3.jpg"
     },
     {
       "Id": "C:\\Users\\Admin\\Downloads\\GitClone\\University-Magazine-Contribution-System\\COMP1640\\COMP1640\\wwwroot\\img\\graphic_design.png",
