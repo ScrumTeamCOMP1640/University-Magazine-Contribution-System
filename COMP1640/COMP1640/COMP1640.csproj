@@ -53,4 +53,11 @@
     <None Include="Areas\Admin\Views\Shared\_Pagination.cshtml" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Content Update="wwwroot\js\avatar-upload.js">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+  </ItemGroup>
+
 </Project>

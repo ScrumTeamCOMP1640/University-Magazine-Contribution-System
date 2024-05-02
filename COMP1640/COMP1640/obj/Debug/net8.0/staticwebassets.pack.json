@@ -13,6 +13,10 @@
       "PackagePath": "staticwebassets\\OutPut\\COMP1640_CW.pdf"
     },
     {
+      "Id": "C:\\Users\\Admin\\Downloads\\GitClone\\University-Magazine-Contribution-System\\COMP1640\\COMP1640\\wwwroot\\OutPut\\COMP1640_Ver2.pdf",
+      "PackagePath": "staticwebassets\\OutPut\\COMP1640_Ver2.pdf"
+    },
+    {
       "Id": "C:\\Users\\Admin\\Downloads\\GitClone\\University-Magazine-Contribution-System\\COMP1640\\COMP1640\\wwwroot\\OutPut\\Pham Hoang Thai - 001392862 - Individual.pdf",
       "PackagePath": "staticwebassets\\OutPut\\Pham Hoang Thai - 001392862 - Individual.pdf"
     },
@@ -1417,6 +1421,26 @@
       "PackagePath": "staticwebassets\\UploadedFiles\\255\\architechture.jpg"
     },
     {
+      "Id": "C:\\Users\\Admin\\Downloads\\GitClone\\University-Magazine-Contribution-System\\COMP1640\\COMP1640\\wwwroot\\UploadedFiles\\256\\COMP1640_CW.docx",
+      "PackagePath": "staticwebassets\\UploadedFiles\\256\\COMP1640_CW.docx"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Downloads\\GitClone\\University-Magazine-Contribution-System\\COMP1640\\COMP1640\\wwwroot\\UploadedFiles\\256\\COMP1640_Ver2.doc",
+      "PackagePath": "staticwebassets\\UploadedFiles\\256\\COMP1640_Ver2.doc"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Downloads\\GitClone\\University-Magazine-Contribution-System\\COMP1640\\COMP1640\\wwwroot\\UploadedFiles\\256\\graphic_design.png",
+      "PackagePath": "staticwebassets\\UploadedFiles\\256\\graphic_design.png"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Downloads\\GitClone\\University-Magazine-Contribution-System\\COMP1640\\COMP1640\\wwwroot\\UploadedFiles\\257\\COMP1640_CW.docx",
+      "PackagePath": "staticwebassets\\UploadedFiles\\257\\COMP1640_CW.docx"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Downloads\\GitClone\\University-Magazine-Contribution-System\\COMP1640\\COMP1640\\wwwroot\\UploadedFiles\\257\\gre.png",
+      "PackagePath": "staticwebassets\\UploadedFiles\\257\\gre.png"
+    },
+    {
       "Id": "C:\\Users\\Admin\\Downloads\\GitClone\\University-Magazine-Contribution-System\\COMP1640\\COMP1640\\wwwroot\\UploadedFiles\\25\\AI.png",
       "PackagePath": "staticwebassets\\UploadedFiles\\25\\AI.png"
     },
@@ -2151,6 +2175,10 @@
     {
       "Id": "C:\\Users\\Admin\\Downloads\\GitClone\\University-Magazine-Contribution-System\\COMP1640\\COMP1640\\wwwroot\\img\\user_avatar.png",
       "PackagePath": "staticwebassets\\img\\user_avatar.png"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Downloads\\GitClone\\University-Magazine-Contribution-System\\COMP1640\\COMP1640\\wwwroot\\js\\avatar-upload.js",
+      "PackagePath": "staticwebassets\\js\\avatar-upload.js"
     },
     {
       "Id": "C:\\Users\\Admin\\Downloads\\GitClone\\University-Magazine-Contribution-System\\COMP1640\\COMP1640\\wwwroot\\js\\script.js",
